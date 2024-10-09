@@ -1,6 +1,6 @@
 <!-- Filename: J4.x:How_to_Show_a_Calendar_Month_List_of_Archived_Articles_Using_a_Module / Display title: How to Show a Calendar Month List of Archived Articles Using a Module -->
 
-Joomla!  4.x **<span class="mw-content-ltr" lang="en" dir="ltr">How To  
+Joomla!  4.x **<span class="mw-content-ltr" lang="en" dir="ltr">How To
 Show a Calendar Month List of Archived Articles Using a Module</span>**
 
 ## Introduction
@@ -139,7 +139,7 @@ srcset="https://docs.joomla.org/images/0/05/J4.x_archived_articles_module_publis
 data-file-width="1000" data-file-height="322" width="800" height="258"
 alt="J4.x archived articles module published-en.png" />
 
-## Quick Tips
+## Tips
 
 The more archived articles you have the greater the number of the links
 displayed by the module. It may be more appropriate to limit the number
