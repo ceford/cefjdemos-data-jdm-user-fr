@@ -1,103 +1,60 @@
-<!-- Filename: J4.x:Deleting_an_Article / Display title: Deleting an Article -->
-
-<span id="main-portal-heading">**Tutorial**
-How to Delete an Article</span> Joomla!  4.0
+<!-- Filename: J4.x:Deleting_an_Article / Display title: Articles : Supprimer -->
 
 ## Introduction
 
-This tutorial covers the steps to delete an article in Joomla!
+Dans Joomla, la suppression d'un article se fait en deux étapes. La première étape l'envoie à la *Corbeille* d'où il peut être restauré. La deuxième étape le supprime de la Corbeille, après quoi l'article est supprimé définitivement.
 
-When you delete an article in Joomla you *Trash* it.
+## Considérations
 
-Completely deleting an article involves two stages, the first sends it
-to Trash where it is possible to restore it. The second stage empties it
-from Trash after which the article is removed permanently.
+Réfléchissez aux raisons pour lesquelles vous souhaitez supprimer l'article :
 
-## Considerations
+- N'est-il plus nécessaire ? Si c'est le cas, la suppression est très probablement la bonne décision.
+- Est-ce un article qui pourrait être réutilisé à l'avenir ? Il peut être très frustrant de savoir que vous aviez un article qui aurait été une bonne base pour un autre, mais que vous l'avez supprimé - envisagez de l'archiver à la place.
 
-Consider why you want to delete the article:
+## Déplacer l'article à la corbeille
 
-- Is it no longer needed? If so, deletion is most likely the right
-  course of action.
-- Is it an article that could be re-used in the future? It can be very
-  frustrating to know you had an article that would have been a good
-  starting point for another but you deleted it - consider archiving it
-  instead.
+- Sélectionnez **Contenu -> Articles** dans le menu de l'administrateur.
+- Cochez la case pour sélectionner l'article que vous souhaitez supprimer. Un article 
+  **doit** être sélectionné pour activer le bouton **Actions** dans la barre d'outils.
+- Sélectionnez le bouton **Actions** dans la barre d'outils.
+- Sélectionnez **Corbeille** dans le menu déroulant.
 
-## Moving the Article to Trash
+![Article sélectionné pour la mise à la corbeille](../../../en/images/articles/articles-selected-to-trash.png)
 
-- Log in to the Administrator Home Dashboard. More on this here:
-   Logging in or out of the Administrator
-  Dashboard.
-- From the Sidebar Menu navigate to **Content** then **Articles** to
-  open the **Articles List**.
-- Click the checkbox to select the article you want to delete.
+Un message de confirmation apparaîtra et l'article aura disparu de 
+la liste actuelle d'articles car elle n'inclut normalement pas les éléments mis à la corbeille.
 
+## Filtrer pour Restaurer ou Supprimer
 
-<img
-src="https://docs.joomla.org/images/thumb/d/db/J4x_select_and_delete_article-en.png/800px-J4x_select_and_delete_article-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/d/db/J4x_select_and_delete_article-en.png 1.5x"
-data-file-width="1000" data-file-height="275" width="800" height="220"
-alt="J4x select and delete article-en.png" />
+À cette étape du processus, l'article n'a pas été complètement supprimé. C'est une fonctionnalité utile au cas où vous auriez supprimé l'article par erreur.
 
-The article *must* be selected to enable the **Actions** button in the
-toolbar.
+Pour voir la liste des articles mis à la corbeille :
 
-Click the **Actions** button then click **Trash** in the dropdown menu.
+- Sélectionnez le bouton **Options de Filtre** pour ouvrir la liste des filtres.
+- Sélectionnez **Mise à la corbeille** dans la liste *-- Sélectionner le Statut --*.
 
+![Vue de la corbeille des articles](../../../en/images/articles/articles-trash-list.png)
 
-<img
-src="https://docs.joomla.org/images/thumb/9/96/J4x_delete_article_confirmed-en.png/800px-J4x_delete_article_confirmed-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/9/96/J4x_delete_article_confirmed-en.png 1.5x"
-data-file-width="1000" data-file-height="125" width="800" height="100"
-alt="J4x delete article confirmed-en.png" />
+### Pour Restaurer
 
-The article has now been deleted and you will see a confirmation
-message. Clicking the **Trash** button removed the article from the
-**Article List** by changing its status to **Trashed**.
+Si vous avez changé d'avis, vous pouvez sélectionner le symbole **Mise à la corbeille** dans la colonne *Statut*. L'article reviendra à l'état *Publié* et disparaîtra de la liste des articles mis à la corbeille.
 
-At this stage of the process the article has not been completely
-removed. This is a helpful feature in case you deleted the article by
-mistake.
+### Pour Supprimer
 
-## Emptying the Article from Trash
+Cochez la case dans la colonne de gauche des données de l'article. Cela activera les boutons *Actions* et *Supprimer* dans la barre d'outils. Le bouton *Actions* vous permet d'appliquer la même action à tous les articles sélectionnés. Si vous êtes vraiment sûr :
 
-<img
-src="https://docs.joomla.org/images/thumb/a/a6/J4x_empty_article_trash-en.png/800px-J4x_empty_article_trash-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/a/a6/J4x_empty_article_trash-en.png 1.5x"
-data-file-width="1000" data-file-height="352" width="800" height="282"
-alt="J4x empty article trash-en.png" />
+1. Sélectionnez le bouton *Supprimer* dans la barre d'outils. Une boîte de message apparaîtra :<br>
+   <div class="alert alert-light">
+   Êtes-vous sûr de vouloir supprimer ? Confirmer entraînera la suppression définitive des éléments sélectionnés !</div>
+2. Sélectionnez **OK** pour confirmer et l'article sera supprimé de la Corbeille. L'article sera supprimé de la base de données. C'est fait, définitivement !
+3. Sélectionnez le bouton **Effacer** à côté des **Options de Filtre** pour revenir à la liste des **Articles** non filtrée.
 
-To permanently delete the article it must be removed from Trash. To do
-this:
+## Conseils
 
-1.  From the Article List Toolbar click the **Filter Options** button.
-    This will display a set of filter fields.
-2.  Set the **- Select Status -** field to **Trashed**. This will filter
-    out all articles except trashed ones.
-3.  Click the checkbox to select the article.
-4.  Click the **Empty Trash** button.
-5.  A message box will appear asking if you are sure you want to delete.
-    Click **OK** to confirm and the article will be removed from Trash.
-6.  Click the **Clear** button at the side of **Filter Options** and
-    this will remove the filter and return to the **Article List**.
+- N'oubliez pas que supprimer un article n'est pas la même chose qu'archiver un article. Une fois qu'il a été supprimé de la corbeille, il est définitivement perdu.
+- Si vous supprimez un article par erreur mais que vous ne l'avez pas supprimé de la corbeille, vous pouvez changer son statut. Vous avez la possibilité de le définir comme *Archivé*, *Publié* ou *Non publié*.
+- Joomla ne vous permettra pas de sauvegarder plus d'un article avec le même alias. Si un article est supprimé mais laissé dans la corbeille, il existe encore. Si vous essayez de sauvegarder un article et que vous obtenez une erreur indiquant que l'alias existe déjà, il peut être dans la corbeille ! Vous devriez donc soit le vider de la corbeille, soit entrer un alias différent pour votre nouvel article.
+- Joomla conserve les versions précédentes d'un article à moins que les versions soient désactivées. Si vous supprimez un article parce qu'il est d'une manière ou d'une autre "cassé", essayez de revenir à une version précédente.
 
-## Tips
+*Traduit par openai.com*
 
-- Remember, deleting an article is not the same as archiving an article.
-  Once it has been emptied from Trash it has gone for good.
-- If you delete an article by mistake but have not emptied it from
-  Trash, you can change its status. You have the options to set it as
-  *Archived*, *Published* or *Unpublished*.
-- Joomla will not let you save more than one article with the same
-  alias. If an article is deleted but left in Trash, it still exists. If
-  you try to save an article and you get an error stating the alias
-  already exists, it may be sat in Trash! You should therefore either
-  empty it from trash or you can enter a different alias for your new
-  article.
-- Joomla keeps previous versions of an article unless it is disabled. If
-  you are deleting an article because it somehow "broke", try reverting
-  it back to save time.

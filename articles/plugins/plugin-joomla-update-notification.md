@@ -1,93 +1,55 @@
-<!-- Filename: J3.x:Plugin_Joomla_Update_Notification / Display title: Plugin Joomla Update Notification -->
+<!-- Filename: J3.x:Plugin_Joomla_Update_Notification / Display title: Notification de mise à jour de Joomla! -->
 
-The **Joomla! Update Notification System Plugin** periodically checks
-for the availability of new Joomla! versions. When an update is
-available this plugin will send an email to the system administrator,
-reminding you to update Joomla.
+## Icône et Tâche
 
-The emails sent by the Joomla! Update Notification System Plugin are
-intended to help keep your software up to date, which helps your website
-stay secure. It is recommended to install the update as soon as
-possible. See the  Joomla! Security
-Checklist
-for more security tips.
+Il existe deux plugins avec des noms similaires :
 
-## Options du plugin
+* **Icône rapide - Notification de mise à jour Joomla!**
+* **Tâche - Notification de mise à jour Joomla!**
 
-### Statut
+Le premier vérifie les mises à jour de Joomla et vous en informe lorsque vous visitez la page du tableau de bord d'accueil. Il a un paramètre : le groupe de ce plugin (cette valeur est comparée à la valeur de groupe utilisée dans les modules d'icônes rapides pour injecter des icônes).
 
-- **Enabled:** When the plugin is enabled it will send email
-  notifications when an update becomes available.
+Le second vérifie périodiquement la disponibilité de nouvelles versions de Joomla!. Lorsqu'une nouvelle version est trouvée, il déclenche une tâche pour envoyer un rappel de mise à jour par email aux Super Utilisateurs. L'email peut être personnalisé via *Système → Modèles de mails*.
 
-<img src="https://docs.joomla.org/images/6/62/Plugin-status-enabled.png"
-class="thumbborder" decoding="async" data-file-width="250"
-data-file-height="75" width="250" height="75" alt="Plugin Enabled" />
+Les emails envoyés par les plugins du système de notification de mise à jour Joomla! visent à aider à maintenir le logiciel à jour, ce qui aide le site web à rester sécurisé. Les mises à jour doivent être installées dès que possible après leur publication.
 
-- **Disabled:** When the plugin is disabled, no emails will be sent.
+## État du Plugin
 
-<img
-src="https://docs.joomla.org/images/2/28/Plugin-status-disabled.png"
-class="thumbborder" decoding="async" data-file-width="250"
-data-file-height="75" width="250" height="75" alt="Plugin Disabled" />
+Les deux plugins distincts peuvent être activés ou désactivés.
 
-### Super User Emails
+- Avec **Icône Rapide ... Désactivée**, l'icône *Vérification de Joomla ...* sur le tableau de bord principal reste inactive, bien que vous puissiez la sélectionner pour accéder à la page de mise à jour de Joomla.
+- Avec **Tâche ... Désactivée :** la tâche consistant à envoyer un e-mail n'est pas déclenchée.
 
-The email notification is sent only to users who have the Super User
-privilege. This field allows you to select which Super users will
-receive the email notifications.
+## Paramètres des tâches
 
-- If left blank, all Super Users of the site will receive the update
-  notification email.
-- To select which Super Users receive the update notification enter the
-  email addresses for the Super Users here. If there are multiple Super
-  Users email addresses use a comma to separate them.
+Depuis le menu Administrateur, allez à **Système / Tâches planifiées** et sélectionnez l'élément **Notification de mise à jour** dans la liste des *Tâches planifiées*. Il y a un certain nombre d'onglets de paramètres et d'informations à consulter et à modifier si nécessaire.
 
-<img
-src="https://docs.joomla.org/images/3/3d/Email-notification-plugin-params.png"
-class="thumbborder" decoding="async" data-file-width="442"
-data-file-height="107" width="442" height="107"
-alt="Email Notification Plugin Parameters" />
+### Fréquence des e-mails de notification
 
-### Email Language
+La fréquence d'exécution des tâches est fixée par défaut à 24 heures. Cela signifie que le site Joomla vérifiera une mise à jour du core et de toutes les extensions, plugins, modules et gabarits installés à des intervalles de 24 heures. Une valeur de 0 enverrait un e-mail de mise à jour chaque fois que le site est consulté. 0 est seulement pour les tests !
 
-The notification can be sent in any language you have are using in your
-website.
+Notez que la tâche est déclenchée par l'activité du site. Si vous êtes le seul utilisateur, elle sera déclenchée à votre prochaine visite si plus de 24 heures se sont écoulées.
 
-- **Auto (default)** sends the update notification email in the default
-  site language.
-- Selecting a language other than Auto (default) forces the update
-  notification emails to be sent in this specific language.
+### E-mails des Super Utilisateurs
 
-### Frequency of Notification Emails
+La notification par e-mail est envoyée uniquement aux utilisateurs qui ont le privilège de Super Utilisateur. Ce champ vous permet de sélectionner quels Super Utilisateurs recevront les notifications par e-mail.
 
-The frequency of emails can only be controlled by the updates cache
-setting (0-24 hrs). Default is 6 hours which means every 6 hours your
-Joomla website will check for an update to core and all extensions,
-plugins, modules and templates installed. If this plugin is enabled, you
-will get a notification that a core Joomla update is available. 0 would
-send an update every time the site is accessed. 0 is not recommended if
-your Joomla website is a popular website.
+- S'il est laissé vide, tous les Super Utilisateurs du site recevront l'e-mail de notification de mise à jour.
+- Pour limiter quels Super Utilisateurs reçoivent la notification de mise à jour, entrez ici les adresses e-mail des Super Utilisateurs. Si plusieurs adresses e-mail de Super Utilisateurs sont utilisées, séparez-les par une virgule.
 
-- To update the update cache setting, go to
-  **Extensions **→** Manage **→** Manage** and Click the Options button.
-- Set the update cache to the number of hours (0-24) between checking
-  for an update and Click Save or Save and Close.
+### Langue de l'e-mail
 
-## Astuces
+La notification peut être envoyée dans n'importe quelle langue que vous utilisez sur votre site.
 
-- To turn off Joomla! update email notifications simply disable the
-  plugin.
-- The email Subject and Body text can be modified using a [Language
-  String
-  Override](https://docs.joomla.org/J3.x:Language_Overrides_in_Joomla "Special:MyLanguage/J3.x:Language Overrides in Joomla").
-  - Subject Language String: PLG_SYSTEM_UPDATENOTIFICATION_EMAIL_SUBJECT
-  - Body Language String: PLG_SYSTEM_UPDATENOTIFICATION_EMAIL_BODY
+- **Auto (par défaut)** envoie l'e-mail de notification de mise à jour dans la langue par défaut du site.
+- Sélectionner une langue autre que Auto (par défaut) force l'envoi des e-mails de notification de mise à jour dans cette langue spécifique.
 
-## Informations connexes
+## Conseils
 
--  Language
-  Overrides
--  Mettre à jour
-  Joomla!
--  Joomla! Security
-  Checklist
+- Pour désactiver les notifications par e-mail des mises à jour de Joomla!, il suffit de désactiver le plugin.
+- Le sujet et le texte du corps de l'e-mail peuvent être modifiés via la liste **Système / Modèles d'e-mails**. Sélectionnez l'élément **Joomla: Notification de mise à jour**. Sur un site multilingue, il sera dans la langue actuellement sélectionnée.
+  - **Sujet** Notez que les espaces réservés {SITENAME} – {URL} sont remplacés lorsque le message est envoyé.
+  - **Corps** Il y a aussi plus d'espaces réservés là !
+
+*Traduit par openai.com*
+

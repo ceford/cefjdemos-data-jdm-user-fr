@@ -1,118 +1,32 @@
-<!-- Filename: J3.x:Adding_custom_fields/List_Field / Display title: Ajout de champs personnalisés/Champ Liste -->
+<!-- Filename: J3.x:Adding_custom_fields/List_Field / Display title: # Champ de Liste -->
 
-## Champ Liste
+## Objectif
 
-**Les articles de cette série**
+Le type de champ de formulaire en liste fournit une liste déroulante ou une liste de choix avec des entrées définies sur mesure. Si le champ a une valeur enregistrée, celle-ci est sélectionnée lorsque la page est chargée pour la première fois. Sinon, la valeur par défaut (le cas échéant) est sélectionnée.
 
-1.  Introduction
-2.   Paramètres des champs
-    personnalisés
-3.   Champ
-    Calendrier
-4.   Champ Cases à
-    cocher
-5.   Champ
-    Couleur
-6.   Champ
-    Editeur
-7.   Champ Entier
-    relatif
-8.   Champ
-    Liste
-9.   Champ Liste
-    d'images
-10.  Champ
-    Média
-11.  Champ Bouton
-    Radio
-12.  Champ
-    Répétabilité
-13.  Champ
-    Sql
-14.  Champ
-    Texte
-15.  Champ Zone de
-    texte
-16.  Champ
-    URL
-17.  Champ
-    Utilisateur
-18.  Champ Groupe
-    d'utilisateurs
-19.  Comment grouper les champs
-    personnalisés
-20.  Quels sont les composants supportant les champs
-    personnalisés
-21.  Implémentation dans votre
-    composant
-22.  Utiliser les champs personnalisés dans vos
-    substitutions
+## Création de champ
 
-### Liste
+Les options spéciales dans ce champ sont :
 
-Le type de champ de formulaire Liste fournit une liste déroulante ou une
-liste d'entrées prédéfinies et personnalisées. Si le champ a une valeur
-enregistrée, cette option est sélectionnée lors du premier chargement de
-la page. Sinon, la valeur par défaut (le cas échéant) est sélectionnée.
+- **Multiple** Permet de sélectionner plusieurs valeurs. Si l'option est définie sur *Non*, un seul élément est affiché dans la liste. Si l'option est définie sur *Oui*, trois éléments sont affichés. La liste défile pour permettre la sélection d'un ou plusieurs éléments.
+- **Valeurs de la liste** Ajoutez des éléments selon les besoins et utilisez l'icône de glisser pour changer leur ordre. Commencez la liste avec le Texte défini sur *- Sélectionner -* et la Valeur vide. Cela fournit un défaut vide, ce qui fait que cette liste est absente de l'Article.
+- **Classe du champ** Définissez sur *w-auto* pour que la liste soit juste assez large pour ses étiquettes.
 
-#### Paramètres
+![Création de champ de liste](../../../en/images/fields/fields-list.png "Création de champ de liste")
 
-Les paramètres spécifiques pour ce champ sont ː
+## Saisie de données
 
-- Multiple
-  Si activé, permet le choix multiple de valeurs.
-- Valeurs de la liste
-  Les valeurs à afficher dans la liste.
+Simple : il suffit de sélectionner un élément dans la liste ou plusieurs éléments si *Multiple* est *Oui*.
 
-#### Informations connexes
+## Affichage des Données
 
-Lisez  Type de champ de formulaire
-Liste.
+La capture d'écran suivante du site montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-#### Captures d'écran
+Le résultat est un seul élément ou une liste séparée par des virgules.
 
-##### Créer le champ
+Cherchez l'élément **Origine**.
 
-Supposons que vous créez un champ avec les options présentées dans la
-figure suivante. <img
-src="https://docs.joomla.org/images/thumb/0/05/List_field_create-fr.png/800px-List_field_create-fr.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/0/05/List_field_create-fr.png 1.5x"
-data-file-width="1036" data-file-height="798" width="800" height="616"
-alt="List field create-fr.png" />
+![Affichage de tous les champs](../../../en/images/fields/fields-display.png "Affichage des champs")
 
-##### Utiliser le champ en backend
+*Traduit par openai.com*
 
-Dans l'administration lors de la création d'un article ou d'un contact,
-vous voyez le champ comme dans l'image suivante ː
-
-<img
-src="https://docs.joomla.org/images/thumb/8/81/List-fr.png/800px-List-fr.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/thumb/8/81/List-fr.png/1200px-List-fr.png 1.5x, https://docs.joomla.org/images/8/81/List-fr.png 2x"
-data-file-width="1462" data-file-height="512" width="800" height="280"
-alt="List-fr.png" />
-
-##### Utiliser le champ en frontend
-
-Sur le site public, vous pouvez voir le champ comme sur l'image
-ci-dessous.
-
-<img
-src="https://docs.joomla.org/images/5/56/List_field_frontend-fr.png"
-decoding="async" data-file-width="800" data-file-height="253"
-width="800" height="253" alt="List field frontend-fr.png" />
-
-Le paramètre *Affichage automatique* se charge de la position du champ
-et le modèle de site est responsable du rendu du champ.
-Les champs sont uniquement visibles sur le site public lorsqu'ils sont
-remplis avec des données dans l'article. Si le champ n'est pas requis,
-pouvez-vous vous en passer ?
-
-<a
-href="https://docs.joomla.org/J3.x:Adding_custom_fields/Integer_Field"
-id="content-button" class="button expand success">Précédent ː Champ
-Nombre entier</a> <a
-href="https://docs.joomla.org/J3.x:Adding_custom_fields/List_of_Images_Field"
-id="content-button" class="button expand">Suivant ː Champ Liste
-d'images</a>

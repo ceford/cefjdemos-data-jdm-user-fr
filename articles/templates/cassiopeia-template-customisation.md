@@ -1,338 +1,179 @@
-<!-- Filename: J4.x:Cassiopeia_Template_Customisation / Display title: Personnalisation du template Cassiopeia -->
+<!-- Filename: J4.x:Cassiopeia_Template_Customisation / Display title: Personnalisation de Cassiopée -->
 
 ## Introduction
 
-Cassiopeia est le template de site fourni avec Joomla 4. C'est un excellent
-modèle polyvalent, **accessible** et **réactif**. Il peut être personnalisé
-via les options de modèle et le fichier user.css par les utilisateurs ayant
-une certaine connaissance en HTML et CSS.
+Cassiopeia est le modèle de site fourni avec Joomla 4. C'est un modèle d'usage général **accessible** et **réactif**. Il peut être personnalisé via les options de modèle et le fichier *user.css* par des utilisateurs ayant quelques connaissances en HTML et CSS.
 
-L'illustration suivante montre l'apparence d'un site Joomla 4 avec un article
-et quelques liens de menu créés.
+L'illustration suivante montre l'apparence d'un site Joomla 4 avec un article et quelques éléments de menu créés.
 
-<img
-src="https://docs.joomla.org/images/2/2c/J4x-cassiopeia_template_customisation_article_view.png"
-class="thumbborder" decoding="async" data-file-width="720"
-data-file-height="366" width="720" height="366" alt="Article View" />
+![Vue d'article unique Cassiopeia](../../../en/images/templates/cassiopeia-customisation-article-view.png)
 
-## Templates : Modifier le style
+## Modèles : Modifier le style
 
-Vous pouvez expérimenter avec l'apparence du site en ouvrant le formulaire de
-modification de style. Allez à **Système → templates → Styles de template de site**
-et sélectionnez le titre du template dans la colonne Style, Cassiopeia - Par
-défaut. L'onglet Avancé contient des paramètres que vous pouvez ajuster :
+Vous pouvez expérimenter avec l'apparence du site en ouvrant le formulaire Modifier le style. Allez dans **Système → Modèles → Styles du modèle de site** et sélectionnez le titre du modèle dans la colonne Style, Cassiopeia - Par défaut. L'onglet Avancé contient des réglages que vous pouvez ajuster :
 
-<img
-src="https://docs.joomla.org/images/6/64/J4x-cassiopeia_template_customisation_edit_style.png"
-class="thumbborder" decoding="async" data-file-width="720"
-data-file-height="733" width="720" height="733"
-alt="Edit Style - Advanced Tab" />
+![Cassiopeia modifier le style onglet avancé](../../../en/images/templates/cassiopeia-customisation-edit-style.png)
 
-Pour essayer les options, ouvrez une première fenêtre ou un onglet avec
-l'interface d'administration et une seconde fenêtre ou onglet avec l'interface
-du site, puis basculez de l'une à l'autre après chaque modification enregistrée.
+Pour essayer les options, ouvrez un onglet ou une fenêtre de navigateur avec l'interface Administrateur et un second onglet ou une fenêtre avec l'interface Site, puis alternez après chaque changement enregistré.
 
 ### Marque
 
-* **Oui** par défaut. La barre de logo Cassiopeia contenant un logo ou un nom
-  de marque est affichée avec un fond sombre, bleu par défaut.
-* **Non** La barre de logo n'est pas affichée. Les options pour sélectionner
-  un logo, un titre et un slogan disparaissent.
+- **Oui** par défaut. La barre de logo Cassiopeia contenant un logo ou un nom de marque est affichée avec un arrière-plan sombre, bleu par défaut.
+- **Non** La barre de logo n'est pas affichée. Les options pour sélectionner un logo, un titre et une accroche disparaissent.
 
-L'image de marque par défaut est le mot Cassiopée en tant qu'image dans un
-fichier SVG. C'est ce qui est affiché dans la première illustration ci-dessus.
+L'image de marque par défaut est le mot Cassiopeia en tant qu'image dans un fichier SVG. C'est ce qui est affiché dans la première illustration ci-dessus.
 
-Vous pouvez définir la Marque sur Non si vous souhaitez fournir une image de
-marque dans un module HTML personnalisé.
+Vous pourriez définir la Marque sur Non si vous souhaitez fournir un branding dans un module HTML personnalisé.
 
 ### Logo
 
-* **Aucun** Le logo d'image par défaut de Cassiopeia sera utilisé à moins
-  qu'un Titre ne soit défini.
-* **Image de logo** Le logo sélectionné apparaîtra à la place du logo
-  Cassiopeia même si un Titre est défini.
+- **Aucun** Le logo d'image par défaut de Cassiopeia sera utilisé à moins qu'un Titre ne soit défini.
+- **Image de logo** Le Logo sélectionné apparaîtra à la place du logo Cassiopeia même si un Titre est défini.
 
 ### Titre (alternative au logo)
 
-* **Mon Nom de Marque** Si présent et si vous n'avez pas sélectionné d'image
-  de logo, les mots dans le champ Titre apparaîtront mais soulignés dans la
-  barre supérieure bleue.
+- **Mon nom de marque** S'il est présent et que vous n'avez pas sélectionné d'image de logo, les mots dans le champ Titre apparaîtront mais en soulignés dans la barre bleue supérieure.
 
-### Slogan
+### Accroche
 
-* **Toujours à votre service** Si présent, les mots dans le champ de slogan
-  apparaîtront dans une petite taille de police sous l'image du logo ou le nom
-  de marque.
+- **Toujours à votre service** Si elle est présente, les mots dans le champ accroche apparaîtront en petite taille de police sous l'image du logo ou le nom de la marque.
 
-<img
-src="https://docs.joomla.org/images/e/e1/J4x-cassiopeia_template_customisation_brand_with_tagline.png"
-class="thumbborder" decoding="async" data-file-width="570"
-data-file-height="255" width="570" height="255"
-alt="Brand with Tagline" />
+![Cassiopeia marque avec accroche](../../../en/images/templates/cassiopeia-customisation-brand-with-tagline.png)
 
 ### Schéma de polices
 
-* **Aucun** le défaut. La famille de polices spécifiée dans la feuille de
-  style du modèle est utilisée, ce qui signifie généralement que le site
-  utilisera les polices disponibles sur votre propre ordinateur.
-* **Autres** Une famille de polices située dans la hiérarchie de dossiers du
-  modèle ou téléchargée depuis le web sera utilisée. Vous pouvez voir
-  l'apparence modifiée du texte sur une page lorsque vous rechargez le site
-  après avoir changé cette option.
+- **Aucun** par défaut. La famille de polices spécifiée dans la feuille de style du modèle est utilisée, ce qui signifie généralement que le site utilisera les polices que vous connaissez déjà disponibles sur votre propre ordinateur.
+- **Autres** Une famille de polices située dans la hiérarchie des dossiers du modèle ou téléchargée depuis le web sera utilisée. Vous pouvez voir l'apparence modifiée du texte sur une page lorsque vous rechargez le site après avoir modifié cette option.
 
 ### Thème de couleur
 
-* **Standard** Une couleur de fond bleu foncé pour la barre de marque et
-  d'autres éléments tels que le bouton de connexion.
-* **Alternatif** Une couleur de fond bordeaux à la place du bleu foncé.
+- **Standard** Une couleur d'arrière-plan bleu foncé pour la barre de marque et d'autres éléments tels que le bouton Connexion.
+- **Alternative** Une couleur d'arrière-plan bordeaux au lieu du bleu foncé.
 
-<img
-src="https://docs.joomla.org/images/a/a9/J4x-cassiopeia_template_customisation_alt_color_scheme.png"
-class="thumbborder" decoding="async" data-file-width="570"
-data-file-height="243" width="570" height="243"
-alt="Alternative Colour Scheme" />
+![Cassiopeia schéma de couleurs alternatif](../../../en/images/templates/cassiopeia-customisation-alt-color-scheme.png)
 
-### Mise en page
+### Disposition
 
-* **Statique** par défaut. La largeur maximale est définie sur 1320px. Sur
-  des écrans plus larges, la marge devient simplement plus large.
-* **Fluide** Il n'y a pas de largeur maximale.
+- **Statique** par défaut. La largeur maximale est fixée à 1320px. Sur les écrans plus larges, la marge devient simplement plus large.
+- **Fluide** Il n'y a pas de largeur maximale.
 
 La vue sur un appareil mobile à écran étroit :
 
-<img
-src="https://docs.joomla.org/images/a/a5/J4x-cassiopeia_template_customisation_mobile_view.png"
-class="thumbborder" decoding="async" data-file-width="411"
-data-file-height="731" width="411" height="731" alt="Mobile View" />
+![Vue mobile Cassiopeia](../../../en/images/templates/cassiopeia-customisation-mobile-view.png)
 
 ### En-tête fixe
 
-* **Non** par défaut. Les éléments de l'en-tête et le contenu défilent vers le
-  haut hors de la fenêtre d'affichage.
-* **Oui** Sauf sur les écrans étroits, les éléments de l'en-tête restent fixes
-  en haut de la fenêtre d'affichage tandis que les éléments de contenu défilent
-  vers le haut. Cela est uniquement évident lorsque le contenu de la page est
-  plus grand que la fenêtre d'affichage.
+- **Non** par défaut. Les éléments d'en-tête et le contenu défilent vers le haut hors de la fenêtre.
+- **Oui** Sauf sur les écrans étroits, les éléments d'en-tête restent fixés en haut de la fenêtre tandis que les éléments de contenu défilent vers le haut. Cela n'est évident que lorsque le contenu de la page est plus grand que la fenêtre.
 
-### Lien Retour en haut de page
+### Lien retour en haut
 
-* **Non** par défaut. Il n'y a pas de lien Retour en haut de page.
-* **Oui** Lorsque le contenu est plus long que la fenêtre d'affichage, en bas
-  à droite de la page se trouve un bouton marqué d'une chevron vers le haut.
-  Sélectionnez-le pour remonter en haut de la page.
+- **Non** par défaut. Il n'y a pas de lien retour en haut.
+- **Oui** Lorsque le contenu est plus grand que la fenêtre, en bas à droite de la page se trouve un bouton marqué d'un chevron vers le haut. Sélectionnez-le pour faire défiler vers le haut de la page.
 
-<img
-src="https://docs.joomla.org/images/3/38/J4x-cassiopeia_template_customisation_back_to_top.png"
-class="thumbborder" decoding="async" data-file-width="373"
-data-file-height="337" width="373" height="337" alt="Back to Top" />
+![Cassiopeia retour en haut](../../../en/images/templates/cassiopeia-customisation-back-to-top.png)
 
-## Positions du template Cassiopeia
+## Positions des Modèles Cassiopeia
 
-Lorsque vous construisez un site avec Cassiopeia, il est vraiment utile de
-connaître les emplacements des positions que vous pouvez utiliser pour les
-modules. Certains sont descriptifs, comme menu et bottom-a, mais il n'est pas
-si évident de savoir où ils se trouvent avant de les utiliser. Cette
-illustration devrait vous aider :
+Lorsque vous construisez un site avec Cassiopeia, il devient vraiment utile de connaître les emplacements des positions que vous pouvez utiliser pour les modules. Certaines sont descriptives, comme *menu* et *bottom-a*, mais il n'est pas si évident de savoir où elles se trouvent avant de les utiliser. Cette illustration devrait vous aider :
 
-<img
-src="https://docs.joomla.org/images/2/28/J4x-cassiopeia_template_explained_positions.png"
-class="thumbborder" decoding="async" data-file-width="786"
-data-file-height="980" width="786" height="980"
-alt="Template Positions" />
+![Positions des modèles Cassiopeia](../../../en/images/templates/cassiopeia-template-positions.png)
 
 Essayez ce qui suit :
 
-### Déplacez le module de menu vers la position *menu*
+### Déplacer le Module Menu vers la Position *menu*
 
-Un site Joomla 4 nouvellement installé a un menu dans la position sidebar-right,
-comme vu dans la première illustration ci-dessus. Pour ce tutoriel, quelques
-éléments de menu ont été ajoutés, dont un parent avec deux éléments enfants.
-Pour déplacer ce menu vers la position de menu, accédez à Contenu → Modules de
-site dans le menu de l'administrateur. Dans la liste, il y a trois modules,
-dont le Menu principal. Sélectionnez-le pour ouvrir le formulaire de
-modification des modules : Menu.
+Un site Joomla 4 nouvellement installé a un menu dans la position *sidebar-right*, visible dans la première illustration ci-dessus. Pour ce tutoriel, certains éléments de menu ont été ajoutés, dont un qui est un parent avec deux éléments enfants. Pour déplacer ce menu vers la position menu, allez à **Contenu**→**Modules du site** dans le menu de l'Administrateur. Dans la liste, il y a trois modules, y compris le Menu Principal. Sélectionnez-le pour ouvrir le formulaire d'édition des Modules : Menu.
 
-Dans l'onglet Module, changez le champ Position à droite en Menu [menu].
-Enregistrez et jetez un coup d'œil au résultat dans l'affichage du site. Le
-menu semble correct, mais les éléments enfants ne sont pas là.
+Dans l'onglet Module, changez le champ Position à Menu \[menu\]. Enregistrez et regardez le résultat dans l'affichage du site. Le menu a l'air correct, mais les éléments enfants n'y sont pas.
 
-Dans le formulaire d'édition du menu, sélectionnez l'onglet Avancé et faites
-défiler jusqu'au champ Mise en page. C'est une liste déroulante avec quatre
-options. --Depuis le module-- / Par défaut est sélectionné par défaut.
-Essayez les autres options et consultez le résultat. (N'oubliez pas de
-Enregistrer dans le formulaire d'édition et de recharger dans la vue du Site.)
-Aucune des options --Depuis le module-- ne montre les éléments de menu enfants,
-mais les deux options --Depuis le template Cassiopeia-- le font.
+Dans le formulaire d'édition du menu, sélectionnez l'onglet Avancé et faites défiler jusqu'au champ Layout. C'est une liste déroulante avec quatre options. --From Module-- / Default est sélectionné par défaut. Essayez les autres options et visualisez le résultat. (N'oubliez pas de *sauvegarder* dans le formulaire d'édition et de recharger dans la vue du Site.) Aucune des options --From Module-- n'affiche les éléments du menu enfant, mais les deux options --From Cassiopeia Template-- le font.
 
-<img
-src="https://docs.joomla.org/images/b/b0/J4x-cassiopeia_template_customisation_menu_position.png"
-class="thumbborder" decoding="async" data-file-width="570"
-data-file-height="254" width="570" height="254" alt="Menu Position" />
+![Positions menu Cassiopeia](../../../en/images/templates/cassiopeia-customisation-menu-position.png)
 
-Alors, quelle différence apporte l'option *Repliable* ?
+Alors quelle différence fait **Rétractable** ?
 
-* Déroulant repliable : Sur les appareils mobiles à écran étroit, le menu se
-  replie en une icône Hamburger jusqu'à ce qu'il soit sélectionné. Lors de la
-  sélection, il s'étend pour afficher une liste verticale.
-* Déroulant : Le menu apparaît toujours sous forme de liste verticale.
+- Liste rétractable : Sur les appareils mobiles à écran étroit, le menu se rétracte en une icône Hamburger jusqu'à ce qu'il soit sélectionné. Lors de la sélection, il s'étend pour montrer une liste verticale.
+- Liste déroulante : Le menu apparaît toujours sous forme de liste verticale.
 
-### Déplacer le module de menu vers la position *topbar*
+### Déplacer le Module Menu vers la Position *topbar*
 
-Dans l'onglet Module du formulaire d'édition, définissez la Position sur Barre
-supérieure [topbar] et examinez le résultat. Il y a un problème - le menu est
-positionné plus à gauche que lorsqu'il était dans la position du menu. Cela est
-dû au fait que la position du menu et l'emplacement du logo ont une classe CSS
-grid-child, mais pas la barre supérieure. Cela peut être corrigé avec une entrée
-dans le fichier user.css, comme indiqué ci-dessous.
+Dans l'onglet Module du formulaire d'édition, définissez la Position à Barre Supérieure \[topbar\] et regardez le résultat. Il y a un problème - le menu est positionné plus à gauche que lorsqu'il était dans la position du menu. C'est parce que la position du menu et l'emplacement du logo ont une classe CSS de *grid-child*, mais la barre supérieure ne l'a pas. Cela peut être corrigé avec une entrée dans le fichier *user.css*, ci-dessous.  
 
 ## Personnaliser Cassiopeia
 
-Et si vous n'aimez pas la couleur de fond bleu foncé de l'en-tête ? Supposez
-que vous préfériez un thème vert foncé. Pour résoudre cela, vous avez besoin
-d'un peu de connaissance en CSS. Allez à **Système → templates de site →
-Détails et fichiers de Cassiopeia** pour ouvrir le formulaire Personnaliser
-le template(Cassiopeia).
+Que faire si vous n'aimez pas la couleur du fond d'en-tête bleu foncé ? Supposons que vous préfériez un thème vert foncé. Pour régler cela, vous devez avoir quelques connaissances en CSS. Allez dans **Système**→**Modèles de site**→**Détails et fichiers de Cassiopeia** pour ouvrir le formulaire du modèle : Personnaliser (Cassiopeia).
 
-L'illustration ci-dessous montre deux groupes de dossiers. Le premier groupe
-se compose des dossiers et fichiers de template que vous ne devez pas modifier,
-mais auxquels vous pouvez ajouter. En particulier, vous pouvez ajouter des
-fichiers HTML de substitution de modèle au dossier html. Le deuxième groupe
-contient les fichiers multimédias du template que vous ne devez pas modifier.
-Cependant, vous pouvez ajouter un fichier user.css au dossier css et/ou un
-fichier user.js au dossier js. Vous feriez cela si vous vouliez apporter
-quelques changements simples à l'apparence du site.
+L'illustration ci-dessous montre deux groupes de dossiers. Le premier groupe se compose des dossiers et fichiers de modèle que vous ne devez pas modifier, mais auxquels vous pouvez ajouter. En particulier, vous pouvez ajouter des fichiers HTML de remplacement de modèle au dossier *html*. Le second groupe contient les fichiers média du modèle que vous ne devez pas modifier. Cependant, vous pouvez ajouter un fichier *user.css* dans le dossier *css* et/ou un fichier *user.js* dans le dossier *js*. Vous le feriez si vous vouliez effectuer quelques modifications simples de l'apparence du site.
 
-<img
-src="https://docs.joomla.org/images/3/3b/J4x-cassiopeia_template_customisation_edit_files.png"
-class="thumbborder" decoding="async" data-file-width="720"
-data-file-height="365" width="720" height="365" alt="Edit Files" />
+![Cassiopeia éditer fichiers](../../../en/images/templates/cassiopeia-customisation-edit-files.png)
 
-Notez qu'il n'y a pas de fichier user.css présent dans le dossier css. C'est
-un fichier que vous créez vous-même afin de pouvoir remplacer les styles
-précédemment définis. S'il n'est pas présent, créez-le maintenant en
-sélectionnant le dossier css puis le bouton Nouveau. Dans la boîte de
-dialogue Nouveau fichier, sélectionnez le dossier css, sinon le nouveau
-fichier apparaîtra au mauvais endroit. Entrez user (en minuscules et
-sans .css) dans le champ Nom du fichier et sélectionnez .css dans le champ
-Type de fichier. Sélectionnez le bouton Créer pour créer le fichier. Si
-user.css est déjà présent, sélectionnez-le pour ouvrir le formulaire d'édition.
+Notez qu'il n'y a pas de fichier *user.css* présent dans le dossier *css*. C'est un fichier que vous créez vous-même afin de pouvoir remplacer les styles définis précédemment. S'il n'est pas présent, créez-le maintenant en sélectionnant le dossier *css* puis le bouton *Nouveau*. Dans la boîte de dialogue pour un nouveau fichier, sélectionnez le dossier *css* sinon le nouveau fichier apparaîtra au mauvais endroit. Entrez user (en minuscules et sans *.css*) dans le champ Nom du fichier et sélectionnez *.css* dans le champ Type de fichier. Sélectionnez le bouton Créer pour créer le fichier. Si *user.css* est déjà présent, sélectionnez-le pour ouvrir le formulaire d'édition.
 
-### Titres
+### En-têtes
 
-Pour commencer simplement, changez la couleur des titres en vert foncé. Les
-titres sont des balises dans la gamme *h1, h2, h3, h4, h5 et h6*. Dans le f
-ichier *user.css*, entrez la définition du style :
-```
+Pour commencer simplement, changez la couleur des en-têtes en vert foncé. Les en-têtes sont des balises dans la gamme *h1, h2, h3, h4, h5* et *h6*. Dans le fichier *user.css* entrez la définition du style :
+```css
     h1, h2, h3, h4, h5, h6 {
       color: darkgreen;
     }
 ```
-Enregistrez et rechargez le site pour voir le résultat. Le titre de la page ou
-de l'article devrait être en vert foncé. Sinon, vérifiez ce que vous avez tapé.
-Le langage formel pour la documentation Joomla est l'anglais britannique, donc
-couleur plutôt que color comme en anglais américain. Mais en CSS, cela doit
-être color. La ponctuation est-elle correcte ?
+Enregistrez et rechargez le site pour voir le résultat. Le titre de la page ou de l'article devrait être vert foncé. Si ce n'est pas le cas, vérifiez ce que vous avez tapé. Le langage officiel pour la documentation Joomla est l'anglais britannique, donc "colour" plutôt que "color" comme en anglais américain. Mais en CSS il faut que ce soit "color". La ponctuation est-elle correcte ?
 
-Moins évident est que certaines balises autres que les titres peuvent être
-stylisées pour ressembler à des titres. Ajoutez donc ceci :
-```
+Il n'est pas si évident que certaines balises autres que les en-têtes peuvent être stylisées pour ressembler à des en-têtes. Ajoutez donc ceci :
+```css
     .h1, .h2, .h3, .h4, .h5, .h6 {
       color: darkgreen;
     }
 ```
-Notez ici que le point (.) initial est un sélecteur de classe, par exemple
-`<span class="h1">Dummy H1</span>` - donc il y a un point dans le fichier
-CSS mais pas dans le nom de classe.
+Notez ici que le point avant (.) est un sélecteur de classe, par exemple Dummy H1 - donc il y a un point dans le fichier CSS mais pas dans le nom de la classe.
 
-### Arrière-plan de l'en-tête
+### Fond de l'en-tête
 
-Dans l'onglet du navigateur contenant le Site, ouvrez les outils de
-développement de votre navigateur, Firefox dans cet exemple, et sélectionnez
-la balise d'en-tête.
+Dans l'onglet du navigateur contenant le site, ouvrez vos outils de développement de navigateur, Firefox dans cet exemple, et sélectionnez la balise d'en-tête.
 
-<img
-src="https://docs.joomla.org/images/3/30/J4x-cassiopeia_template_customisation_developer-tools.png"
-class="thumbborder" decoding="async" data-file-width="720"
-data-file-height="203" width="720" height="203" alt="Developer Tools" />
+![Outils de développement Cassiopeia](../../../en/images/templates/cassiopeia-customisation-developer-tools.png)
 
-Cela montre les styles utilisés. Le style container-header est là où la couleur
-d'arrière-plan et l'image d'arrière-plan sont définies. Elles doivent être
-remplacées dans le fichier user.css. Essayez ceci :
-```
+Cela montre les styles utilisés. Le style container-header est où le couleur de fond et l'image de fond sont définis. Ils doivent être surchargés dans le fichier *user.css*. Essayez ceci :
+```css
     .container-header {
       background-color: darkgreen;
       background-image: none;
     }
 ```
-### Style de *topbar*
+### Style *topbar*
 
-Souvenez-vous de ce commentaire sur le menu étant trop à gauche dans la barre
-supérieure ? Cela est dû au fait qu'il n'a pas de largeur maximale et de marges
-appropriées définies. Mettez ceci dans le fichier user.css pour corriger cela :
-```
+Rappelez-vous ce commentaire sur le menu étant trop à gauche dans le topbar ? C'est parce qu'il n'a pas de largeur maximale et de marges appropriées définies. Mettez ceci dans le fichier *user.css* pour corriger cela :
+```css
     .container-topbar {
       max-width: 1320px;
       margin-left: auto;
       margin-right: auto;
     }
 ```
-Voici le thème vert fonctionnel :
+Ceci est le thème vert fonctionnel :
 
-<img
-src="https://docs.joomla.org/images/3/36/J4x-cassiopeia_template_customisation_green_theme.png"
-class="thumbborder" decoding="async" data-file-width="720"
-data-file-height="365" width="720" height="365" alt="Green Theme" />
+![Cassiopeia thème vert](../../../en/images/templates/cassiopeia-customisation-green-theme.png)
 
 ### Accessibilité
 
-Notez qu'il doit y avoir un contraste suffisant entre les couleurs de fond et
-de premier plan pour respecter les normes d'accessibilité Web. Vous pouvez
-vérifier votre contraste sur le WebAIM Contrast Checker. Le vert foncé
-est \#006400.
+Notez qu'il doit y avoir un contraste suffisant entre les couleurs de fond et de premier plan pour respecter les normes d'accessibilité du web. Vous pouvez vérifier votre contraste sur le WebAIM Contrast Checker. Le vert foncé est \#006400.
 
-## Substitutions
+## Remplacements
 
-L'onglet Créer des substitutions du formulaire Personnaliser les Templates
-(Cassiopeia) affiche la liste des extensions pour lesquelles vous pouvez
-créer une substitution. Notez les différents symboles : sélectionnez un
-symbole de dossier pour afficher une liste des dossiers et des fichiers
-qu'il contient ; sélectionnez un symbole de fichier multiple pour créer
-immédiatement une substitution pour cette extension ; l'élément créé
-disparaît de la liste - sélectionnez l'onglet Éditeur et localisez la
-substitution créée dans le dossier html. Il peut y avoir plus d'un fichier
-créé - les fichiers créés sont copiés à partir de l'extension d'origine,
-prêts pour que vous les éditiez. Pour cela, vous devez connaître un peu
-HTML et PHP !
+L'onglet Créer des Remplacements dans le formulaire Personnaliser les Modèles : Cassiopeia affiche la liste des extensions pour lesquelles vous pouvez créer un remplacement. Notez les différents symboles : sélectionnez un symbole de dossier pour afficher une liste des dossiers et fichiers qu'il contient ; sélectionnez un symbole de fichiers multiples pour créer immédiatement un remplacement pour cette extension ; l'élément créé disparaît de la liste - sélectionnez l'onglet Éditeur et trouvez le remplacement créé dans le dossier *html*. Il peut y avoir plus d'un fichier créé - les fichiers créés sont copiés depuis l'extension originale, prêts pour que vous les modifiiez. Pour cela, vous devez connaître un peu de HTML et de PHP !
 
-Voici l'onglet Créer des substitutions :
+Voici l'onglet Créer des Remplacements :
 
-<img
-src="https://docs.joomla.org/images/8/8d/J4x-cassiopeia_template_customisation-create_overrides.png"
-class="thumbborder" decoding="async" data-file-width="720"
-data-file-height="496" width="720" height="496"
-alt="Create Overrides" />
+![Création de remplacements dans Cassiopeia](../../../en/images/templates/cassiopeia-customisation-create-overrides.png)
 
-Si vous expérimentez simplement et que vous ne voulez pas vraiment une
-substitution, vous pouvez *Fermer* le formulaire d'édition, sélectionner
-le bouton Gérer les dossiers dans la barre d'outils, puis sélectionner le
-bouton Supprimer en bas du formulaire modal Gérer les dossiers.
+Si vous faites simplement des essais et ne souhaitez vraiment pas un remplacement, vous pouvez *Fermer* le formulaire d'édition, sélectionner le bouton Gérer les Dossiers dans la barre d'outils et sélectionner le bouton Supprimer en bas du formulaire modal Gérer les Dossiers.
 
-Les substitutions concernent vraiment la personnalisation des extensions
-plutôt que le template Cassiopeia, et c'est une autre histoire.
+Les remplacements concernent vraiment la personnalisation des extensions plutôt que le modèle Cassiopeia, et c'est une autre histoire.
 
-## Templates enfants
+## Modèles Enfants
 
-Si vous souhaitez apporter des modifications plus substantielles à l'apparence
-du site, vous pouvez créer un template enfant. Celui-ci copie seulement une
-petite sélection de dossiers et de fichiers que vous pouvez modifier ou ajouter,
-mais continue par ailleurs à utiliser les dossiers et fichiers du template
-parent. En utilisant des templates enfants, vous pourriez avoir certaines
-pages avec une couleur de thème et d'autres pages avec une deuxième couleur
-de thème. Les templates enfants sont abordés ailleurs. Ceci est une
-illustration de la structure de fichiers dans un template enfant de Cassiopeia :
+Si vous souhaitez apporter des modifications plus substantielles à l'apparence du site, vous pourriez créer un modèle enfant. Cela copie juste une petite sélection de dossiers et de fichiers que vous pouvez modifier ou ajouter, tout en continuant à utiliser les dossiers et fichiers du modèle parent. En utilisant des modèles enfants, vous pourriez avoir certaines pages avec une couleur de thème et d'autres pages avec une couleur de thème différente. Les modèles enfants sont abordés ailleurs. Voici une illustration de la structure de fichiers dans un enfant de Cassiopeia :
 
-<img
-src="https://docs.joomla.org/images/5/55/J4x-cassiopeia_template_customisation_child_template_files.png"
-class="thumbborder" decoding="async" data-file-width="720"
-data-file-height="264" width="720" height="264"
-alt="Child Template Files" />
+![Fichiers du modèle enfant Cassiopeia](../../../en/images/templates/cassiopeia-customisation-child-template-files.png)
+

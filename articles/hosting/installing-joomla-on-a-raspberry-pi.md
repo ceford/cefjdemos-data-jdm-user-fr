@@ -1,192 +1,105 @@
-<!-- Filename: Installing_Joomla_on_a_Raspberry_Pi / Display title: Installing Joomla on a Raspberry Pi -->
+<!-- Filename: Installing_Joomla_on_a_Raspberry_Pi / Display title: Installation de Raspberry Pi -->
 
-<img
-src="https://docs.joomla.org/images/thumb/e/e5/Quill_icon.png/30px-Quill_icon.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/thumb/e/e5/Quill_icon.png/45px-Quill_icon.png 1.5x, https://docs.joomla.org/images/thumb/e/e5/Quill_icon.png/60px-Quill_icon.png 2x"
-data-file-width="71" data-file-height="59" width="30" height="25"
-alt="Quill icon.png" />Content is Incomplete
+## Préface
 
-This article or section **is incomplete, which means it may be lacking
-information.** You are welcome to assist in its completion by editing it
-as well. If this article or section <a
-href="https://docs.joomla.org//docs.joomla.org/index.php?title=Installing_Joomla_on_a_Raspberry_Pi/fr&amp;action=history"
-class="external text" target="_blank" rel="noreferrer noopener"></a> <a
-href="https://docs.joomla.org//docs.joomla.org/index.php?title=Installing_Joomla_on_a_Raspberry_Pi/fr&amp;action=history"
-class="external text" target="_blank" rel="noreferrer noopener">has not
-been edited in several days</a>, please consider helping complete the
-content.
-<span class="small">This article was <a
-href="https://docs.joomla.org//docs.joomla.org/index.php?title=Installing_Joomla_on_a_Raspberry_Pi/fr&amp;diff=cur"
-class="external text" target="_blank" rel="noreferrer noopener">last
-edited</a> by
-FuzzyBot
-(talk\|
-contribs
-3 years ago. *(<a
-href="https://docs.joomla.org//docs.joomla.org/index.php?title=Installing_Joomla_on_a_Raspberry_Pi/fr&amp;action=purge"
-class="external text" target="_blank"
-rel="noreferrer noopener">Purge</a>)*</span>
+**Remarque : Ce document n'est pas encore complet ni entièrement testé.**
 
-**Note: Work-in-progress. This document is not yet ready & fully tested.
-Please wait with translation until it is finished. Thanks!**
+La <a href="https://www.raspberrypi.org/" rel="nofollow noreferrer noopener">Raspberry Pi</a> est un petit ordinateur monocarte initialement développé pour promouvoir l'enseignement des bases de l'informatique dans les écoles et les pays en développement. En raison de sa polyvalence, il est devenu très populaire et est utilisé comme lecteur multimédia, petit serveur autonome, etc. Vous pouvez l'utiliser comme serveur web et y installer Joomla!. Cette page vous montre comment faire fonctionner votre site Joomla! sur le Raspberry Pi.
 
-The <a href="https://www.raspberrypi.org/" class="external text"
-target="_blank" rel="nofollow noreferrer noopener">Raspberry Pi</a> is a
-small single-board computer that was originally developed to promote the
-teaching of basic computer science in schools and developing countries.
-Because of its versatility it has become very popular and is used as
-media player, small stand-alone server, etc. You can use it as webserver
-and install Joomla! on it. This page shows you how to get a your Joomla!
-website running on the Raspberry Pi.
+## Matériel
 
-## Hardware
+- **Raspberry Pi version 3 Modèle B** - Il existe différents modèles de Raspberry Pi. Vous pouvez utiliser la plupart des modèles qui possèdent un port Ethernet (les types Modèle B). Cependant, pour des raisons de performance, nous utiliserons la dernière version avec le plus de mémoire RAM.
+- **Carte micro SD** - Pour le système d'exploitation + serveur web + Joomla. (Le RPi version 3 modèle B utilise des cartes micro SD, d'autres versions pourraient utiliser des cartes SD normales)
+- **Adaptateur de 5 Volts (1 Ampère)** - Pour alimenter le Raspberry Pi, vous devrez convertir l'alimentation secteur (230V ou 110V) en 5 Volts. Le Raspberry Pi a besoin d'environ 1 Ampère, et peut-être plus si vous y connectez des appareils USB.
+- Câble **Ethernet standard** - Pour connecter le RPi à votre réseau local / routeur / internet.
 
-- **Rasberry Pi version 3 Model B** - There are various models of
-  Raspberry Pi. You can use most models that have an Ethernet port (the
-  Model B types). However for performance we will use the latest version
-  with most RAM memory.
-- **micro SD card** - For the operating system + webserver + Joomla.
-  (RPi version 3 model B uses micro SD other versions might use normal
-  SD cards)
-- **5 Volt adapter (1 Amp)** - to power the Raspberry Pi you'll need to
-  convert the mains power (230V or 110V) to 5 Volt. The Rasperry Pi
-  needs about 1 Amp, and maybe more if you connect USB devices to it.
-- standard **Ethernet cable** - to connect the RPi to your Local Area
-  Network / router / the internet.
+## Installation du système d'exploitation
 
-## Installing Operating System
+Le système d'exploitation Raspbian est une version de Debian Linux spécialement compilée pour le Raspberry Pi. Il existe deux versions de <a href="https://www.raspberrypi.com/software/" rel="nofollow noreferrer noopener">Raspbian</a> disponibles : **Raspbian Jessie avec Pixel Lite** (version avec bureau PIXEL basé sur Debian Jessie) et **Raspbian Jessie Lite** (version minimale basée sur Debian Jessie). Comme nous utilisons le Raspberry Pi comme serveur web pour Joomla, nous n'aurons pas besoin de l'interface graphique.
 
-The operating system Raspbian is a Debian Linux version specially
-compiled for the Raspberry Pi. There are two versions of
-<a href="https://www.raspberrypi.org/downloads/raspbian/"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">Raspbian</a> available: **Raspbian
-Jessie with Pixel Lite** (version with PIXEL desktop based on Debian
-Jessie) and **Raspbian Jessie Lite** (minimal version based on Debian
-Jessie). Because we use the Raspberry Pi as webserver for Joomla, we
-won't need the GUI.
+**Téléchargez** <a href="https://www.raspberrypi.org/downloads/raspbian/" rel="nofollow noreferrer noopener">Raspbian Jessie Lite</a> et décompressez le fichier téléchargé, par exemple **2016-09-23-raspbian-jessie-lite.zip** (306 MB) en **2016-09-23-raspbian-jessie-lite.img** (1,4 Go).
 
-**Download** <a href="https://www.raspberrypi.org/downloads/raspbian/"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">Raspbian Jessie Lite</a> and unzip
-the downloaded file, e.g. 2016-09-23-raspbian-jessie-lite**.zip** (306
-MB) to 2016-09-23-raspbian-jessie-lite**.img** (1.4 GB).
+Nous devons maintenant copier le fichier .img sur la carte SD (micro). Vous pouvez utiliser un outil avec une interface graphique tel que <a href="https://unetbootin.github.io/" rel="nofollow noreferrer noopener">UNetbootin</a> (pour Windows, Mac OS X et Linux) ou le faire en ligne de commande.
 
-Now we need to copy the .img file to the (micro) SD card. You can use a
-tool with graphical interface like
-<a href="https://unetbootin.github.io/" class="external text"
-target="_blank" rel="nofollow noreferrer noopener">UNetbootin</a> (for
-Windows, Mac OS X and Linux) or do it on the command line).
-
-**Be very careful** when writing the .img disk image to another disk. In
-case you use the wrong destination disk, you will overwrite that disk
-with the .img which makes that disk unusable, resulting in data loss.
+**Soyez prudent** lors de l'écriture de l'image disque *.img* sur un autre disque. Si vous spécifiez le mauvais disque de destination, vous le remplacerez par le fichier *.img*, rendant ce disque inutilisable, ce qui entraînera une perte de données.
 
 ### Windows
 
-In a terminal (CMD) check which device corresponds with the SD Card and
-do something like:
+Dans un terminal (CMD), vérifiez quel périphérique correspond à la carte SD et exécutez quelque chose comme :
 
-    dd bs=1M if=c:\temp\2016-09-23-raspbian-jessie-lite.img od=[the device of your SD Card]
+```
+    dd bs=1M if=c:\temp\2016-09-23-raspbian-jessie-lite.img od=[le périphérique de votre carte SD]
+```
 
-See also <a
-href="https://www.raspberrypi.org/documentation/installation/installing-images/windows.md"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">Installing Operating System Images
-using Windows</a>
+Voir aussi : <a href="https://www.raspberrypi.org/documentation/installation/installing-images/windows.md" rel="nofollow noreferrer noopener">Installation des images du système d'exploitation en utilisant Windows</a>
 
 ### Apple OSX
 
-Check which device is used for your SD Card. In our case it's disk1s1
-and we'll do in Terminal:
+Vérifiez quel périphérique est utilisé pour votre carte SD. Dans notre cas, il s'agit de *disk1s1* et nous allons exécuter dans le Terminal :
 
+```
     sudo dd bs=1M if=~/Downloads/2016-09-23-raspbian-jessie-lite.img of=/dev/disk1s1
+```
 
-See also: <a
-href="https://www.raspberrypi.org/documentation/installation/installing-images/mac.md"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">Installing Operating System Images on
-MacOS</a>
+Voir aussi : <a href="https://www.raspberrypi.org/documentation/installation/installing-images/mac.md" rel="nofollow noreferrer noopener">Installation des images du système d'exploitation sur MacOS</a>
 
 ### Linux
 
-We connect a SD Card reader with the (micro) SD Card to a computer. With
-**dmesg** we can find the device name of the SD Card. In our case dmesg
-shows something like
+Nous connectons un lecteur de carte SD avec la (micro) carte SD à un ordinateur. Avec *dmesg*, nous pouvons trouver le nom du périphérique de la carte SD. Dans notre cas, dmesg montre quelque chose comme `[xxxxxx.xxxxxxx]  sdd: sdd1 sdd2`, ce qui signifie que nous avons une carte SD avec 2 partitions. Ne pas écrire l'image Raspbian sur une partition mais sur le disque entier **sdd**.
 
-    [xxxxxx.xxxxxxx]  sdd: sdd1 sdd2
+Nous utiliserons *dd* ("Disk Dump") pour écrire un fichier d'entrée (*if*) dans un fichier de sortie (*of*) en utilisant une taille de bloc spécifiée (*bs*).
 
-meaning that we have a SD Card with 2 partitions. Do not write the
-Raspbian image to a partition but to the whole disk **sdd**.
+**Soyez prudent** : *dd* écrira sur un périphérique sans aucun avertissement. Vérifiez deux fois que vous écrivez sur le bon périphérique ! Si vous écrivez sur le mauvais disque, vous vous souviendrez toujours de la commande *dd* comme "Destructeur de Disque".
 
-We will use **dd** ("Disk Dump") to write an Input File (**if**) to an
-Output File (**of**) using a specified Block Size (**bs**).
-
-**Be VERY careful**: dd will write to a device without any warning.
-Triple double check that that you write to the right device! If you
-write to the wrong disk, then you'll always remember the dd command as
-"Disk Destroyer".
-
+```bash
     sudo dd if=~/Downloads/2016-09-23-raspbian-jessie-lite.img of=/dev/sdd bs=4M
+```
 
-See also <a
-href="https://www.raspberrypi.org/documentation/installation/installing-images/linux.md"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">Installing Operating System Images on
-Linux</a>
+Voir aussi : <a href="https://www.raspberrypi.org/documentation/installation/installing-images/linux.md" rel="nofollow noreferrer noopener">Installation des images du système d'exploitation sur Linux</a>
 
+**AVERTISSEMENT pour la version Raspbian Stretch** : pour avoir un serveur SSH fonctionnant dès le démarrage, vous devez créer un fichier vide *ssh* sur la partition racine.
 
-**WARNING for raspbian stretch version** : to have a ssh server working
-from boot you need to create an empty file ssh on the root partition.
+## Connecter le Raspberry Pi au réseau local (LAN)
 
-## Connecting Raspberry Pi to LAN
+Lorsque nous avons installé le système d'exploitation Raspbian sur la carte SD, nous devons :
 
-When we have installed the Raspbian Operating System on the SD Card, we
-will:
+- Insérer la carte micro SD dans le logement pour carte SD du Raspberry Pi.
+- Connecter un câble Ethernet au Raspberry Pi et au réseau local (le connecter à notre routeur).
+- Connecter l'alimentation de 5V au Raspberry Pi.
 
-- Insert the micro SD card in the SD Card slot on the Raspberry Pi.
-- Connect an an Ethernet cable to the Raspberry Pi and to the Local Area
-  Network (connect it to our router).
-- Connect the 5V power supply to the the Raspberry Pi.
+Le démarrage du Raspberry Pi prend environ 30 secondes. Nous devons trouver l'adresse IP pour nous y connecter via SSH. Nous pouvons utiliser différentes approches pour cela :
 
-Booting up the Raspberry Pi takes roughly 30 seconds. We've to find the
-IP address to connect to it using SSH. We can use different approaches
-for that:
-
-- log into the webinterface of your router and look up the connected
-  devices;
-- use a mobile phone connected the Wifi router using a network scanning
-  App called **Fing Overlook**;
-- use a command like **nmap**. Assuming that our PC has IP address
-  **192.168.0**.25 we can find all other devices in the same network
-  range by doing the following:
+- se connecter à l'interface web de votre routeur et rechercher les appareils connectés ;
+- utiliser un téléphone mobile connecté au routeur Wi-Fi avec une application de scan de réseau appelée **Fing Overlook** ;
+- utiliser une commande comme **nmap**. En supposant que notre PC a l'adresse IP **192.168.0**.25, nous pouvons trouver tous les autres appareils dans le même intervalle de réseau en faisant ce qui suit :
+```
     sudo nmap -sP 192.168.0/24
-
-Which might show the following details:
+```
+Ce qui pourrait afficher les détails suivants :
 
     Starting Nmap 6.47 ( http://nmap.org ) at 2016-10-22 17:42 CEST
     Nmap scan report for 192.168.0.35
     Host is up (0.00042s latency).
     MAC Address: 42:42:42:42:42:42 (Raspberry Pi Foundation)
 
-To log into our Raspberry Pi, we'll use the command **ssh**.
+Pour se connecter à notre Raspberry Pi, nous utiliserons la commande **ssh**.
 
+```
     ssh pi@192.168.0.35
+```
 
-The first time you'll connect to it, it will show something like:
+La première fois que vous vous connecterez, cela affichera quelque chose comme :
 
     The authenticity of host '192.168.0.35 (192.168.0.35)' can't be established.
     ECDSA key fingerprint is 42:42:42:42:42:42:42:42:42:42:42:42:42:42:42:42.
     Are you sure you want to continue connecting (yes/no)?
 
-We'll choose "**Yes**"
+Nous choisirons **Yes**
 
-    Warning: Permanently added '192.168.0.35' (ECDSA) to the list of known hosts.
+    Warning: Permanently added 192.168.0.35 (ECDSA) to the list of known hosts.
     pi@192.168.0.35's password:
 
-and use the **default password**: **raspberry** which on successful
-login will show:
+et utiliser le *mot de passe par défaut* : *raspberry* qui après une connexion réussie affichera :
 
     The programs included with the Debian GNU/Linux system are free software;
     the exact distribution terms for each program are described in the
@@ -196,79 +109,70 @@ login will show:
     permitted by applicable law.
     pi@raspberrypi:~ $
 
-We can configure the Raspberry Pi using a text interface via:
+Nous pouvons configurer le Raspberry Pi via une interface texte avec :
 
     sudo raspi-config
 
-### Raspberry Pi Software Configuration Tool (raspi-config)
+### Outil de configuration logicielle du Raspberry Pi (raspi-config)
 
-With this configuration tool we'll only change the following settings.
+Avec cet outil de configuration, nous changerons seulement les paramètres suivants.
 
-#### 1 Expand Filesystem
+#### 1 Étendre le système de fichiers
 
-By default the disk space on the SD Card is the same size as the 1.4GB
-.img file that you used to create the SD card for your Raspberry Pi. You
-can use this option to gain the rest of the disk space.
+Par défaut, l'espace disque sur la carte SD est de la même taille que le fichier de 1.4 Go .img utilisé pour créer la carte SD pour votre Raspberry Pi. Vous pouvez utiliser cette option pour obtenir le reste de l'espace disque.
 
-#### 2 Change User Password
+#### 2 Changer le mot de passe utilisateur
 
-For security reasons it's best to **change the default password**
-"raspberry" as soon as possible.
+Pour des raisons de sécurité, il est préférable de **changer le mot de passe par défaut** "raspberry" dès que possible.
 
-#### 3 Boot Options
+#### 3 Options de démarrage
 
-We would like the Raspberry Pi to boot the Text console
+Nous souhaitons que le Raspberry Pi démarre sur la console texte.
 
-##### B2 Console Autologin Text console, automatically logged in as 'pi' user
+##### B2 Console Autologin Console texte, automatiquement connectée en tant qu'utilisateur 'pi'
 
-#### 9 Advanced Options
+#### 9 Options avancées
 
-##### A3 Memory Split
+##### A3 Partage de la mémoire
 
-Because we will use the Raspberry Pi as a headless server without
-connecting it to a monitor, we can decrease the memory used for the GPU
-from 64 to **16**
+Parce que nous utiliserons le Raspberry Pi en tant que serveur sans écran, sans le connecter à un moniteur, nous pouvons diminuer la mémoire utilisée pour le GPU de 64 à **16**
 
-#### 5 Internationalisation Options
+#### 5 Options de localisation
 
-##### I2 Change Timezone
+##### I2 Changer le fuseau horaire
 
-We'll change the Timezone to our own time zone (e.g. Europe/Amsterdam)
+Nous changerons le fuseau horaire pour notre propre fuseau horaire (par exemple, Europe/Amsterdam)
 
-After all changes we'll Reboot the Raspberry Pi, and will login again
-with our new password.
+Après avoir effectué tous les changements, nous redémarrerons le Raspberry Pi, et nous nous reconnecterons avec notre nouveau mot de passe.
 
     ssh pi@192.168.0.35
 
-Now it's time to install everything else.
+Il est maintenant temps d'installer tout le reste.
 
-## Update software
+## Mettre à jour le logiciel
 
-Before installing anything else, we'll:
+Avant d'installer quoi que ce soit d'autre, nous allons :
 
-- **update** the list of software versions from all external
-  repositories
+- **mettre à jour** la liste des versions logicielles de tous les
+  dépôts externes
     sudo apt-get update
 
-- **upgrade** all installed software
+- **mettre à niveau** tous les logiciels installés
     sudo apt-get upgrade
 
-**Updating the version list and upgrading all software is something that
-should be done regularly.**
+**Mettre à jour la liste des versions et mettre à niveau tous les logiciels est quelque chose qui doit être fait régulièrement.**
 
-## Nginx Webserver
+## Serveur Web Nginx
 
-A fast and lightweight alternative for Apache web server is the
-increasingly becoming popular **Nginx** web server.
+Une alternative rapide et légère au serveur web Apache est le serveur web **Nginx**, qui devient de plus en plus populaire.
 
-### Installation of Nginx
+### Installation de Nginx
 
-We will install nginx and all dependencies (read: software that nginx
-needs to work) with
+Nous allons installer nginx et toutes ses dépendances (lire : les logiciels dont nginx a besoin pour fonctionner) avec
 
     sudo apt-get install nginx
 
-We'll get a message like:
+Nous recevrons un message comme celui-ci :
 
     Reading package lists... Done
     Building dependency tree
@@ -284,13 +188,11 @@ We'll get a message like:
     After this operation, 8,666 kB of additional disk space will be used.
     Do you want to continue? [Y/n] y
 
-By choosing "y" nginx and all needed packages will be installed.
+En choisissant "y", nginx et tous les paquets nécessaires seront installés.
 
-You can check the installation with a browser. Go to the IP address of
-your Raspberry pi, in our case
-<a href="http://192.168.0.35/" class="external free" target="_blank"
-rel="nofollow noreferrer noopener">http://192.168.0.35/</a> We should
-see a message like:
+Vous pouvez vérifier l'installation avec un navigateur. Rendez-vous à l'adresse IP de votre Raspberry Pi, dans notre cas
+<a href="http://192.168.0.35/"
+rel="nofollow noreferrer noopener">http://192.168.0.35/</a> Nous devrions voir un message comme :
 
     Welcome to nginx on Debian!
     If you see this page, the nginx web server is successfully installed and working on Debian. Further configuration is required.
@@ -299,54 +201,46 @@ see a message like:
     However, check existing bug reports before reporting a  new bug.
     Thank you for using debian and nginx.
 
-#### Starting and stopping Nginx
+#### Démarrage et arrêt de Nginx
 
-After installation Nginx will automatically be started. You can:
+Après l'installation, Nginx sera automatiquement démarré. Vous pouvez :
 
-- Stop Nginx: sudo service nginx stop
-- Start Nginx: sudo service nginx start
-- Restart Nginx: sudo service nginx restart
+- Arrêter Nginx : sudo service nginx stop
+- Démarrer Nginx : sudo service nginx start
+- Redémarrer Nginx : sudo service nginx restart
 
-### Configure Nginx
+### Configurer Nginx
 
-#### Global Nginx configuration
+#### Configuration globale de Nginx
 
-In the global configuration of Nginx we can configure default caching
-etc. The Raspberry Pi 3 uses 1.2 GHz 64-bit **quad-core** ARM Cortex-A53
-processor. If you have an earlier version with less CPU cores, then you
-should use
+Dans la configuration globale de Nginx, nous pouvons configurer le cache par défaut, etc. Le Raspberry Pi 3 utilise un processeur ARM Cortex-A53 **quad-core** 64 bits de 1,2 GHz. Si vous avez une version antérieure avec moins de cœurs CPU, vous devez utiliser
 
     sudo nano /etc/nginx/nginx.conf
 
-to change the "worker_processes" to fit the amount of CPUs of your
-device. By default it's configured as
+pour ajuster les "worker_processes" au nombre de CPU de votre appareil. Par défaut, c'est configuré comme
 
     worker_processes 4;
 
-so for Raspberry Pi 3 you don't have to change it.
+donc pour le Raspberry Pi 3, vous n'avez pas besoin de le changer.
 
-After changing the Nginx configuration or virtual domain configuration,
-you have to do a
+Après avoir modifié la configuration de Nginx ou la configuration du domaine virtuel, vous devez exécuter un
 
     sudo nginx reload
 
-to make the changes effective.
+pour rendre les modifications effectives.
 
-#### Virtual Domains
+#### Domaines virtuels
 
-It's possible to run multiple Joomla websites on the same server using
-virtual domains.
+Il est possible d'exécuter plusieurs sites Joomla sur le même serveur en utilisant des domaines virtuels.
 
-Put every website in a separate folder in the default webroot /var/www/
-for example:
+Placez chaque site dans un dossier séparé dans le répertoire racine web par défaut /var/www/ par exemple :
 
 - /var/www/example.com/
 - /var/www/voorbeeld.nl/
     sudo mkdir /var/www/example.com
     sudo mkdir /var/www/voorbeeld.nl
 
-For every site we will create a virtual domain which is basically a text
-file with domain specific information:
+Pour chaque site, nous créerons un domaine virtuel qui est essentiellement un fichier texte avec des informations spécifiques au domaine :
 
 - /etc/nginx/sites-available/example.com
     server {
@@ -376,148 +270,135 @@ file with domain specific information:
       }
     }
 
-We need to enable every site by linking from /etc/nginx/sites-enabled/
-to the virtual domain in "sites-available". We create a symbolic link
-for each virtual domain:
+Nous devons activer chaque site en créant un lien à partir de /etc/nginx/sites-enabled/ vers le domaine virtuel dans "sites-available". Nous créons un lien symbolique pour chaque domaine virtuel :
 
     sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/example.com
     sudo ln -s /etc/nginx/sites-available/voorbeeld.nl /etc/nginx/sites-enabled/voorbeeld.nl
 
-To make this virtual domain configuration effective, we do
+Pour rendre cette configuration de domaine virtuel effective, nous exécutons
 
     sudo nginx reload
 
-and when everything has been configured correctly it will respond:
+et lorsque tout est configuré correctement, il répondra :
 
     Reloading nginx configuration: nginx.
 
-## Database
+## Base de données
 
-We can install MariaDB or MySQL; Joomla will work with both. Let's
-install MariaDB with:
+Nous pouvons installer MariaDB ou MySQL ; Joomla fonctionnera avec les deux. Installons MariaDB avec la commande suivante :
 
-    sudo apt-get install mariadb-server
+```bash
+sudo apt-get install mariadb-server
+```
 
-During the installation you've to add a password for the **root** user.
-Lets create a **database password**, for example
-**correcthorsebatterystaple**.
+Pendant l'installation, vous devez ajouter un mot de passe pour l'utilisateur **root**. Créons un **mot de passe pour la base de données**, par exemple **correcthorsebatterystaple**.
 
-Finally let's improve the security of our MariaDB installation by
-removing root accounts that are accessible from outside the local host,
-anonymous-user accounts and the test database. We can do that with
+Enfin, améliorons la sécurité de notre installation de MariaDB en supprimant les comptes root accessibles depuis l'extérieur de l'hôte local, les comptes utilisateurs anonymes et la base de données de test. Nous pouvons le faire avec la commande suivante :
 
-    mysql_secure_installation
+```bash
+mysql_secure_installation
+```
 
 ## PHP
 
-For PHP we will install the **php-fpm** (FastCGI Process Manager) that
-runs as a daemon and receives Fast/CGI requests. Furthermore we will
-install **php5-mysql** which is a module for MySQL database connections
-directly from PHP scripts.
+Pour PHP, nous allons installer **php-fpm** (FastCGI Process Manager) qui fonctionne comme un démon et reçoit les requêtes Fast/CGI. De plus, nous allons installer **php5-mysql**, qui est un module pour les connexions à la base de données MySQL directement depuis les scripts PHP.
 
-more recent php7 should be installed with
+La version plus récente php7 doit être installée avec
 
-    sudo apt-get install php-fpm php-mysql
+```bash
+sudo apt-get install php-fpm php-mysql
+```
 
-Now we need to let Nginx know that it should use php-fpm for .php files.
-We add a couple of lines to our virtual domains:
+Nous devons maintenant informer Nginx qu'il doit utiliser php-fpm pour les fichiers .php. Nous ajoutons quelques lignes à nos domaines virtuels :
 
-    sudo nano /etc/nginx/sites-available/example.com
+```bash
+sudo nano /etc/nginx/sites-available/example.com
+```
 
-add:
+ajoutez :
 
-    location ~ \.php$ {
+```nginx
+location ~ \.php$ {
     fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
     fastcgi_index index.php;
     include fastcgi_params;
-    }
+}
+```
 
-Test it by creating the following PHP file
+Testez-le en créant le fichier PHP suivant
 
-    sudo nano /var/www/example.com/test.php
+```bash
+sudo nano /var/www/example.com/test.php
+```
 
-We use a browser to test if we see the PHP configuration page at
-<a href="http://192.168.0.35/example.com/test.php" class="external free"
-target="_blank"
-rel="nofollow noreferrer noopener">http://192.168.0.35/example.com/test.php</a>
+Nous utilisons un navigateur pour tester si nous voyons la page de configuration PHP à l'adresse
+<a href="http://192.168.0.35/example.com/test.php" rel="nofollow noreferrer noopener">http://192.168.0.35/example.com/test.php</a>
 
 ## Joomla!
 
-- to do
+- à faire
+```
     sudo wget https://github.com/joomla/joomla-cms/releases/download/3.6.3/Joomla_3.6.3-Stable-Full_Package.zip
     sudo unzip -x Joomla_3.6.3-Stable-Full_Package.zip
+```
 
-## Connecting Raspberry Pi to Internet
+## Connexion du Raspberry Pi à Internet
 
-We want people on the internet to be able to visit our Joomla website on
-our Raspberry Pi. In order to do that we need to **configure our
-Internet router** to forward all **incoming traffic** on port 80 **to
-our Raspberry Pi**.
+Nous souhaitons que les internautes puissent visiter notre site Joomla sur notre Raspberry Pi. Pour ce faire, nous devons **configurer notre routeur Internet** pour rediriger tout le **trafic entrant** sur le port 80 **vers notre Raspberry Pi**.
 
-Use your web browser to connect to the Web Interface of your router. A
-router is usually located on the first number of your IP range, in our
-case on 192.168.0.1. In our router we configure **Port Forwarding**:
+Utilisez votre navigateur web pour vous connecter à l’interface Web de votre routeur. Un routeur est généralement situé sur le premier numéro de votre plage d’IP, dans notre cas sur 192.168.0.1. Dans notre routeur, nous configurons le **transfert de port** :
 
-- External IP Address: 0.0.0.0
-- External Start Port: 80
-- External End Port: 80
-- Internal IP Address: 192.168.0.35 ( = our Raspberry Pi)
-- Internal Start Port: 80
-- Internal End Port: 80
-- Protocol: TCP
+- Adresse IP externe : 0.0.0.0
+- Port de départ externe : 80
+- Port de fin externe : 80
+- Adresse IP interne : 192.168.0.35 ( = notre Raspberry Pi)
+- Port de départ interne : 80
+- Port de fin interne : 80
+- Protocole : TCP
 
-Make sure that it is enabled.
+Assurez-vous qu'il est activé.
 
-If everything is working correctly then you should see your own Joomla
-website on the Raspberry Pi by visiting your external IP address (Find
-your external IP address with a tool like
-<a href="http://www.whatsmyip.org/" class="external text"
-target="_blank" rel="nofollow noreferrer noopener">whatsmyip.org</a>).
+Si tout fonctionne correctement, vous devriez voir votre propre site Joomla sur le Raspberry Pi en visitant votre adresse IP externe (Trouvez votre adresse IP externe avec un outil comme
+<a href="http://www.whatsmyip.org/"
+rel="nofollow noreferrer noopener">whatsmyip.org</a>).
 
-### Using a domain name
+### Utilisation d'un nom de domaine
 
-Let's assume that our external IP address is 42.42.42.42. Let's also
-assume that we have registered a domain name called example.com. We
-would like to serve our Joomla site on our Raspberry Pi to visitors
-visiting example.com. If your domain name registrar gives us the
-possibility to configure the **Domain Name System (DNS)** server, then
-we'll need to create an **MX record** in the DNS that points our
-**domain name to** our **IP address** 42.42.42.42. Note that it can take
-up to 24 hours till all internet providers will redirect the traffic of
-their customers to the configured MX record.
+Supposons que notre adresse IP externe soit 42.42.42.42. Supposons également que nous ayons enregistré un nom de domaine appelé example.com. Nous aimerions que notre site Joomla sur notre Raspberry Pi soit accessible aux visiteurs qui visitent example.com. Si notre registraire de nom de domaine nous donne la possibilité de configurer le **système des noms de domaine (DNS)**, alors nous devrons créer un **enregistrement MX** dans le DNS qui pointe notre **nom de domaine vers** notre **adresse IP** 42.42.42.42. Notez que cela peut prendre jusqu'à 24 heures pour que tous les fournisseurs d'accès à Internet redirigent le trafic de leurs clients vers l'enregistrement MX configuré.
 
-### Static IP address
+### Adresse IP statique
 
-Most routers will keep assigning the same internal IP address to your
-Raspberry Pi. Sometimes it's better to configure your Raspberry Pi to
-use a static IP address:
+La plupart des routeurs continueront à attribuer la même adresse IP interne à votre Raspberry Pi. Parfois, il est préférable de configurer votre Raspberry Pi pour utiliser une adresse IP statique :
 
     sudo nano /etc/network/interfaces
 
-change
+modifiez
 
     iface eth0 inet static
 
-to
+en
 
     iface eth0 inet static
     address 192.168.0.35
     netmask 255.255.255.0
     gateway 192.168.0.1
 
-The gateway is the IP address of your router. You can also find it using
+La passerelle est l'adresse IP de votre routeur. Vous pouvez également la trouver en utilisant
 
     route
 
-# External links
+# Liens externes
 
-- <a href="https://raspberrypi.org" class="external text" target="_blank"
-  rel="nofollow noreferrer noopener">Raspberry Pi Foundation</a> (RPF) -
-  official website and forums
-- <a href="http://elinux.org/RaspberryPiBoard" class="external text"
-  target="_blank" rel="nofollow noreferrer noopener">Raspberry Pi Wiki</a>,
-  supported by the RPF
-- Video of presentation
-  <a href="https://youtu.be/u2MFQCoexD0" class="external text"
-  target="_blank" rel="nofollow noreferrer noopener">Joomla on Raspberry
-  Pi (with Nginx)</a> at Joomladay Germany 2013 in Nuremberg, Germany
+- <a href="https://raspberrypi.org"
+  rel="nofollow noreferrer noopener">Fondation Raspberry Pi</a> (RPF) -
+  site officiel et forums
+- <a href="http://elinux.org/RaspberryPiBoard"
+rel="nofollow noreferrer noopener">Wiki Raspberry Pi</a>,
+  soutenu par la RPF
+- Vidéo de la présentation
+  <a href="https://youtu.be/u2MFQCoexD0"
+  rel="nofollow noreferrer noopener">Joomla sur Raspberry
+  Pi (avec Nginx)</a> lors du JoomlaDay Allemagne 2013 à Nuremberg, Allemagne
+
+*Traduit par openai.com*
+

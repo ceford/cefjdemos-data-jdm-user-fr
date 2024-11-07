@@ -1,134 +1,67 @@
-<!-- Filename: J4.x:Logging_in_to_Joomla / Display title: Se connecter sur Joomla -->
-
-<span id="main-portal-heading">**Didacticiel**  
-Se connecter et se déconnecter de Joomla !</span> Joomla!  4.0
+<!-- Filename: J4.x:Logging_in_to_Joomla / Display title: Connexion à Joomla -->
 
 ## Introduction
 
-L'un des grands avantages de Joomla ! est qu'il offre la possibilité
-d'effectuer des tâches par le biais du tableau de bord de
-l'administrateur (souvent appelé "backend") et, s'il est activé,
-d'effectuer des tâches directement à partir du front (la partie du site
-web destinée au public).
+L'une des grandes qualités de Joomla! est qu'il offre la flexibilité d'effectuer des tâches via le Tableau de bord d'administration (souvent appelé le backend) et, si activé, de réaliser des tâches directement depuis le frontend (la partie publique) du site web.
 
-L'accès frontal est un moyen simple et efficace de permettre aux
-rédacteurs de contenu d'ajouter ou de modifier rapidement des articles
-sans avoir à se rendre dans le tableau de bord de l'administrateur.
+L'accès au frontend est un moyen simple et efficace permettant aux rédacteurs de contenu d'ajouter ou de modifier rapidement des articles sans avoir besoin de se rendre sur le Tableau de bord d'administration.
 
-Votre connexion Joomla est configurée pour contrôler ce que vous pouvez
-voir et faire (ou ne pas faire) en utilisant le gestionnaire
-d'utilisateurs de Joomla et les puissants niveaux de contrôle d'accès
-(ACL). Cela signifie qu'un site web Joomla peut avoir des utilisateurs
-qui utilisent uniquement le backend, d'autres qui utilisent uniquement
-le front et d'autres encore qui utilisent les deux.
+La connexion Joomla est configurée pour contrôler ce que les utilisateurs peuvent voir et faire (ou ne pas faire) en utilisant le composant Utilisateur de Joomla et les puissants Niveaux de Contrôle d'Accès (ACL). Cela signifie qu'un site Joomla peut avoir des utilisateurs qui utilisent uniquement le backend, d'autres qui utilisent seulement le frontend et d'autres encore qui utilisent les deux.
 
-Ce qui suit couvre la connexion et la déconnexion à partir du backend et
-du front de votre site web Joomla.
+Ce qui suit couvre la connexion et déconnexion à la fois du backend et du frontend d'un site Joomla.
 
-**Note :** Votre administrateur Joomla a peut-être désactivé l'accès au
-front-end, ce qui implique que toutes les tâches doivent être effectuées
-à l'aide du tableau de bord de l'administrateur back-end.
+**Remarque :** Un administrateur Joomla peut avoir désactivé l'accès au frontend, nécessitant que toutes les tâches soient effectuées en utilisant le Tableau de bord d'administration du backend.
 
-Les étapes abordées dans ce tutoriel sont basées sur une installation
-standard de Joomla !
+### Connexion Administrateur
 
-## Connexion et déconnexion du tableau de bord de l'administrateur du backend
+Naviguez vers la page de connexion de l'administrateur. C'est l'adresse web du site web ajoutée à /administrator, par exemple, my-joomla-website.com/administrator qui affiche la page de connexion de l'administrateur Joomla :
 
-### Connexion
+![Formulaire de connexion administrateur](../../../en/images/getting-started/logging-in-to-joomla-administrator-login-form.png)
 
-Accédez à la page de connexion de l'administrateur. Il s'agit de
-l'adresse web de votre site web, suivie de /administrator, par exemple,
-mon-siteweb-joomla.com/administrator.
+1.  Ajoutez votre **Nom d'utilisateur**
+2.  Ajoutez votre **Mot de passe**
 
-Vous accédez alors à la connexion de l'administrateur de Joomla :
+Sélectionnez le bouton **Se connecter** pour accéder au Tableau de bord d'accueil de Joomla !.
 
-<img
-src="https://docs.joomla.org/images/thumb/2/2a/J4x_administrator_login_en.png/800px-J4x_administrator_login_en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/2/2a/J4x_administrator_login_en.png 1.5x"
-data-file-width="1000" data-file-height="562" width="800" height="450"
-alt="J4x administrator login en.png" />
+**Remarque :**
 
-1.  Ajouter votre **Nom d'utilisateur**.
-2.  Ajouter votre **Mot de passe**.
+1.  Joomla offre une option pour configurer et utiliser l'authentification Web. 
+    Cela n'est pas dans le cadre de ce tutoriel.
+2.  Si un site web a plusieurs langues installées, vous pourrez sélectionner une langue à utiliser à partir d'une liste déroulante avant de vous connecter.
 
-Cliquez sur le bouton de **Connexion** et vous accéderez au tableau de
-bord principal de Joomla !
+### Déconnexion Administrateur
 
-**Note :**
+Pour vous déconnecter, sélectionnez le **Menu Utilisateur** puis **Déconnexion**.
 
-1.  Joomla vous offre la possibilité de configurer et d'utiliser
-    l'authentification Web - cela n'entre pas dans le cadre de ce
-    tutoriel.
-2.  Si le site Web a d'autres langues installées, vous serez en mesure
-    de sélectionner la langue appropriée dans une liste déroulante avant
-    de vous connecter.
+![Lien de déconnexion administrateur](../../../en/images/getting-started/logging-in-to-joomla-logout-link.png)
 
-### Déconnexion
+### Connexion au site
 
-Pour vous déconnecter, cliquez sur le **Menu utilisateur** puis sur
-**Déconnexion**.
+Si l'accès au frontend est activé, un formulaire de connexion aura été ajouté au site. Joomla permet plusieurs façons de le faire. Une installation standard inclut un formulaire de connexion dans la barre latérale du site mais vous pouvez trouver un lien qui a été ajouté au menu du site ou peut-être dans le pied de page. Dans certains cas, un lien *Créer une page* peut exister. Le design du site déterminera où vous accédez au formulaire de connexion.
 
-<img
-src="https://docs.joomla.org/images/thumb/8/89/J4x_administrator_logout_en.png/800px-J4x_administrator_logout_en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/8/89/J4x_administrator_logout_en.png 1.5x"
-data-file-width="1000" data-file-height="159" width="800" height="127"
-alt="J4x administrator logout en.png" />
+Cet exemple utilise un formulaire de connexion situé dans la barre latérale droite.
 
-## Connexion et déconnexion à partir du front du site web
+![Module de formulaire de connexion au site](../../../en/images/getting-started/logging-in-to-joomla-site-login-form.png)
 
-### Connexion
+Dans le **Formulaire de connexion**
 
-Si l'accès frontal est activé, un formulaire de connexion aura été
-ajouté au site web. Joomla permet de le faire de plusieurs façons. Une
-installation standard inclut un formulaire de connexion dans la barre
-latérale du site web, mais vous pouvez constater qu'un lien a été ajouté
-au menu du site web, ou peut-être dans le pied de page. Dans certains
-cas, un lien "Créer une page" peut exister. La conception du site Web
-déterminera l'endroit où vous pourrez accéder au formulaire de
-connexion.
+1.  Ajoutez votre **Nom d'utilisateur**
+2.  Ajoutez votre **Mot de passe**
 
-Dans cet exemple, nous utilisons un formulaire de connexion sur le site
-Web qui se trouve dans la barre latérale.
+Sélectionnez le bouton **Se connecter**.
 
-<img
-src="https://docs.joomla.org/images/thumb/a/ae/J4x_front_end_login_en.png/800px-J4x_front_end_login_en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/a/ae/J4x_front_end_login_en.png 1.5x"
-data-file-width="1000" data-file-height="548" width="800" height="438"
-alt="J4x front end login en.png" />
-  
-Dans le **Formulaire de connexion** :
+Lors de la connexion depuis le frontend du site, vous pouvez rester sur la même page depuis laquelle vous vous êtes connecté ou vous pouvez être dirigé vers votre page de Profil. Vous remarquerez que le formulaire de connexion contient également un bouton **Déconnexion**.
 
-1.  Ajouter votre **Nom d'utilisateur**.
-2.  Ajouter votre **Mot de passe**.
+### Déconnexion du site
 
-Cliquez sur le bouton **Connexion**.
+![Module de formulaire de déconnexion du site](../../../en/images/getting-started/logging-in-to-joomla-site-logout-form.png)
 
-Lorsque vous vous connectez à partir de la page d'accueil du site, vous
-resterez sur la même page que celle où vous vous êtes connecté. Vous
-remarquerez que le formulaire de connexion sera également remplacé par
-un bouton *Déconnexion*.
+Pour vous déconnecter, allez au formulaire de connexion et sélectionnez le bouton **Déconnexion**.  
 
-### Déconnexion
+## Conseils
 
-<img
-src="https://docs.joomla.org/images/thumb/a/a9/J4x_front_end_logout_en.png/800px-J4x_front_end_logout_en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/a/a9/J4x_front_end_logout_en.png 1.5x"
-data-file-width="1000" data-file-height="233" width="800" height="186"
-alt="J4x front end logout en.png" />
+- Certains administrateurs de sites Joomla installent des extensions qui cachent ou restreignent l'accès au tableau de bord administrateur du backend. Vous pourriez avoir besoin de prendre des mesures supplémentaires ou de visiter une URL de connexion alternative.
+- Si vous effectuez des modifications en utilisant la connexion sur le frontend, gagnez du temps en vous connectant sur la page que vous souhaitez éditer.
 
-Pour vous déconnecter, allez à l'endroit où vous vous êtes connecté et
-cliquez sur le bouton **Déconnexion**.
+*Traduit par openai.com*
 
-## Astuces
-
-- Certains administrateurs de sites web Joomla installent des extensions
-  qui masquent ou limitent l'accès au tableau de bord de
-  l'administrateur. Vous devrez peut-être prendre des mesures
-  supplémentaires ou visiter une autre URL de connexion.
-- Si vous effectuez des modifications en utilisant la connexion
-  frontale, gagnez du temps en vous connectant à la page que vous
-  souhaitez modifier.

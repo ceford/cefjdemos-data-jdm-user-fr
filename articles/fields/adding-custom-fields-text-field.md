@@ -1,117 +1,31 @@
-<!-- Filename: J3.x:Adding_custom_fields/Text_Field / Display title: Ajout de champs personnalisés/Champ Texte -->
+<!-- Filename: J3.x:Adding_custom_fields/Text_Field / Display title: Champ de texte  -->
 
-## Champ Texte
+## Objectif
 
-**Les articles de cette série**
+Le champ de texte permet la saisie de données textuelles sur une seule ligne.
 
-1.  Introduction
-2.   Paramètres des champs
-    personnalisés
-3.   Champ
-    Calendrier
-4.   Champ Cases à
-    cocher
-5.   Champ
-    Couleur
-6.   Champ
-    Editeur
-7.   Champ Entier
-    relatif
-8.   Champ
-    Liste
-9.   Champ Liste
-    d'images
-10.  Champ
-    Média
-11.  Champ Bouton
-    Radio
-12.  Champ
-    Répétabilité
-13.  Champ
-    Sql
-14.  Champ
-    Texte
-15.  Champ Zone de
-    texte
-16.  Champ
-    URL
-17.  Champ
-    Utilisateur
-18.  Champ Groupe
-    d'utilisateurs
-19.  Comment grouper les champs
-    personnalisés
-20.  Quels sont les composants supportant les champs
-    personnalisés
-21.  Implémentation dans votre
-    composant
-22.  Utiliser les champs personnalisés dans vos
-    substitutions
 
-### Texte
+## Création de champ
 
-Fournit une zone de texte pour la saisie des données.
+Les options spéciales dans ce champ sont :
 
-#### Paramètres
+- **Filtre** Permet au système de sauvegarder certaines balises HTML ou des données brutes. Utilisez le filtre brut pour vous assurer que le code HTML est préservé lorsque le formulaire est traité.
+- **Longueur maximale** Le nombre maximum de caractères qui peuvent être saisis.
+- **Préfixe** Cela apparaît avant le texte dans la sortie de l'article. Exemple : £.
+- **Suffixe** Cela apparaît après le texte dans la sortie de l'article. Exemple : EUR.
 
-Les paramètres spécifiques pour ce champ sont ː
 
-- Filtre
-  Permet au système de sauvegarder certaines balises html ou des données
-  brutes. Utilisez le filtre brut pour assurer que le code html est
-  préservé quand le formulaire est traité.
-- Longueur maximale
-  Le nombre de caractères maximum pouvant être saisis.
+## Saisie de données
 
-#### Informations connexes
+Simple : Saisissez votre texte.
 
-Lisez  Type de champ de formulaire
-Texte.
+## Affichage des données
 
-#### Captures d'écran
+La capture d'écran du site suivante montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-##### Créer le champ
+Recherchez l'élément **Prix**.
 
-Supposons que vous créez un champ avec les options présentées dans la
-figure suivante.
+![Affichage de tous les champs](../../../en/images/fields/fields-display.png "Affichage des champs")
 
-<img
-src="https://docs.joomla.org/images/thumb/2/27/Text_field_create-fr.png/800px-Text_field_create-fr.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/2/27/Text_field_create-fr.png 1.5x"
-data-file-width="1043" data-file-height="663" width="800" height="509"
-alt="Text field create-fr.png" />
+Le champ Texte suit le champ Étiquette. Et remarquez que le symbole £ a été défini comme un Préfixe.
 
-##### Utiliser le champ en backend
-
-Dans l'administration lors de la création d'un article ou d'un contact,
-vous voyez le champ comme dans l'image suivante ː
-
-<img
-src="https://docs.joomla.org/images/thumb/4/4b/Text-fr.png/800px-Text-fr.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/4/4b/Text-fr.png 1.5x"
-data-file-width="1053" data-file-height="264" width="800" height="201"
-alt="Text-fr.png" />
-
-##### Utiliser le champ en frontend
-
-Sur le site public, vous pouvez voir le champ comme sur l'image
-ci-dessous. Le paramètre *Affichage automatique* se charge de la
-position du champ et le modèle de site est responsable du rendu du
-champ.
-Les champs sont uniquement visibles sur le site public lorsqu'ils sont
-remplis avec des données dans l'article. Si le champ n'est pas requis,
-pouvez-vous vous en passer ?
-
-<img
-src="https://docs.joomla.org/images/1/13/Text_field_frontend-fr.png"
-decoding="async" data-file-width="800" data-file-height="182"
-width="800" height="182" alt="Text field frontend-fr.png" />
-
-<a href="https://docs.joomla.org/J3.x:Adding_custom_fields/Sql_Field"
-id="content-button" class="button expand success">Précédent : Champ
-SQL</a> <a
-href="https://docs.joomla.org/J3.x:Adding_custom_fields/Textarea_Field"
-id="content-button" class="button expand">Suivant : Champ Zone de
-texte</a>

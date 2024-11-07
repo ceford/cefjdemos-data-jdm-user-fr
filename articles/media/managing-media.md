@@ -1,164 +1,96 @@
-<!-- Filename: J4.x:Managing_Media / Display title: Managing Media -->
+<!-- Filename: J4.x:Managing_Media / Display title: Gestion des Médias   -->
 
 ## Introduction
 
-In Joomla, media are images and files that appear as illustrations or
-links in articles, modules, templates and so on. An important feature of
-media is that they are delivered directly by the web server without
-being processed by Joomla code. This is fast and efficient. Also, be
-aware that media are usually stored in the **images** folder of your
-Joomla web site. Do not confuse this with the **media** folder, which
-contains javascript and style sheet files.
+Dans Joomla, les médias sont des images et des fichiers qui apparaissent comme des illustrations ou des liens dans les articles, modules, modèles, etc. Une caractéristique importante des médias est qu'ils sont livrés directement par le serveur web sans être traités par le code Joomla. C'est rapide et efficace. Sachez également que les médias sont généralement stockés dans le dossier **images** de votre site Joomla. Ne confondez pas cela avec le dossier **media**, qui contient des fichiers JavaScript et de feuilles de style.
 
-Image and file media are managed with the Media component of Joomla. It
-allows you to organise media content in a folder tree, upload individual
-items, perform some elementary image editing functions, and place images
-and links directly into articles.
+Les médias d'images et de fichiers sont gérés avec le composant Média de Joomla. Il vous permet d'organiser le contenu multimédia dans un arbre de dossiers, de télécharger des éléments individuels, d'effectuer certaines fonctions élémentaires de retouche d'image, et de placer des images et des liens directement dans les articles.
 
-## How to Access
+## Comment accéder
 
-From the Joomla Administrator interface there are several routes to open
-the Media component:
+Depuis l'interface d'administration de Joomla, il existe plusieurs façons d'ouvrir le composant Média :
 
-- Select **Content **→** Media** from the Administrator menu.
-- Select **Site panel **→** Media** from the Home Dashboard.
-- Select **CMS Content **→** Media** from an article edit screen.
+- Sélectionnez **Contenu → Médias** dans le menu de l'administrateur.
+- Sélectionnez **Panneau du site → Médias** depuis le tableau de bord principal.
+- Sélectionnez **Contenu CMS → Médias** depuis l'écran de modification d'un article.
 
-In the first two cases the Media component appears in a normal component
-screen. In the last it appears in a modal dialog.
+Dans les deux premiers cas, le composant Média apparaît dans un écran de composant normal. Dans le dernier cas, il apparaît dans une boîte de dialogue modale.
 
-## Screenshot
+## Capture d'écran
 
-The following image shows the Media page just after Joomla installation
-but with the cassiopeia/sampledata folder selected:
+L'image suivante montre la page Média juste après l'installation de Joomla, mais avec le dossier cassiopeia/sampledata sélectionné. Un dossier *fichiers* a été ajouté pour stocker des fichiers non-images et un dossier supplémentaire nommé *poubelle* a été ajouté pour illustrer la suppression de dossiers :
 
-<img
-src="https://docs.joomla.org/images/0/0a/J4.x-media-cassiopeia-sampledata-en.jpg"
-decoding="async" data-file-width="800" data-file-height="406"
-width="800" height="406"
-alt="J4.x-media-cassiopeia-sampledata-en.jpg" />
+![Page Média montrant les données d'exemple cassiopeia](../../../en/images/media/media-sample-data-cassiopeia.png)
 
-## Managing Folders
+## Gestion des Dossiers
 
-The sub-folder names in your images folder tree become part of the image
-url so it is important for linking and search engine optimisation
-purposes that the names conform to a convention:
+Les noms des sous-dossiers dans votre arborescence de dossiers d'images deviennent une partie de l'URL de l'image. Il est donc important, pour des raisons de lien et d'optimisation pour les moteurs de recherche, que les noms respectent une convention :
 
-- all lower case
-- no spaces or punctuation
-- if necessary, use a minus sign to create human readable words, for
-  example deciduous-trees rather than deciduous_trees.
+- tout en minuscules
+- pas d'espaces ou de ponctuation
+- si nécessaire, utilisez un tiret pour créer des mots lisibles, par exemple arbres-à-feuillage-caduque plutôt qu'arbres_feuillage_caduque.
 
-Before creating much content for your site it may pay to think ahead to
-how you might categorise your content and perhaps create an images
-folder tree that is similar to your category tree. Otherwise you may end
-up with a very large number of images and files in the root of your
-images tree and that will become difficult to manage. If you decide to
-move images into a better structure later you will have to find the
-links to those images in your articles and change them. That could be a
-time-consuming, daunting task!
+Avant de créer beaucoup de contenu pour votre site, il peut être judicieux de réfléchir à la manière dont vous pourriez catégoriser votre contenu et peut-être créer une arborescence de dossiers d'images similaire à votre arborescence de catégories. Sinon, vous pourriez vous retrouver avec un très grand nombre d'images et de fichiers à la racine de votre arborescence d'images, ce qui deviendrait difficile à gérer. Si vous décidez de déplacer les images dans une meilleure structure plus tard, vous devrez retrouver les liens vers ces images dans vos articles et les modifier. Cela pourrait être une tâche longue et décourageante !
 
-### Folder Navigation
+### Navigation dans les Dossiers
 
-Use the folder tree in the **Local** column to select a folder. In the
-case illustrated above the cassiopeia folder was first selected. That
-revealed the sampledata folder which was then select to show its
-content.
+Utilisez l'arborescence de dossiers dans la colonne **Locale** pour sélectionner un dossier. Dans l'exemple illustré ci-dessus, le dossier cassiopeia a d'abord été sélectionné. Cela a révélé le dossier *sampledata*, qui a ensuite été sélectionné pour montrer son contenu.
 
-The current location is also indicated in the breadcrumbs above the
-images. In this case **images **→** cassiopeia **→** sampledata**.
+L'emplacement actuel est également indiqué dans le fil d'Ariane au-dessus des images. Dans ce cas **images → cassiopeia → sampledata**.
 
-If you select a different folder the previous folder at the same level
-closes.
+Si vous sélectionnez un dossier différent, le dossier précédent au même niveau se ferme.
 
-### Creating a folder
+### Création d'un dossier
 
-- Select the parent folder under which the new folder should be created.
-- Select the **Create New Folder** button.
-- In the *Create New Folder* popup window, enter a name for the folder
-  in the **Folder Name** field.
-- Click the **Create** button.
-- The new folder will appear in in the selected parent folder along with
-  a green Success system message.
+- Sélectionnez le dossier parent sous lequel le nouveau dossier doit être créé.
+- Sélectionnez le bouton **Créer Nouveau Dossier**.
+- Dans la fenêtre contextuelle *Créer Nouveau Dossier*, entrez un nom pour le dossier dans le champ **Nom du Dossier**.
+- Cliquez sur le bouton **Créer**.
+- Le nouveau dossier apparaîtra dans le dossier parent sélectionné avec un message système de succès vert.
 
-### Deleting a folder
+### Suppression d'un dossier
 
-***Warning: deleting a folder will also delete all contents of the
-folder!***
+**Attention : la suppression d'un dossier supprimera également tout le contenu du dossier !**
 
-- Select the parent of the folder to be deleted using the directory tree
-  shown under **Local**. That will show all of the folders and files in
-  the parent.
-- Move the cursor over the folder to be deleted in the media area. It
-  will turn grey and a white button will appear near the top left.
-- Select the white button. A green tick will appear to indicate it is
-  selected.
-- Select the **Delete** button from the Toolbar.
-- In the **Confirm Delete** popup dialog select the **Delete** button.
-  The folder will be deleted along with all of it files, subfolders and
-  their files.
+- Sélectionnez le parent du dossier à supprimer en utilisant l'arborescence de répertoires affichée sous **Locale**. Cela montrera tous les dossiers et fichiers dans le parent.
+- Déplacez le curseur sur le dossier à supprimer dans la zone des médias. Il deviendra gris et un bouton apparaîtra près du coin supérieur gauche.
+- Sélectionnez le bouton. Une coche apparaîtra pour indiquer qu'il est sélectionné.
+- Sélectionnez le bouton **Supprimer** dans la barre d'outils.
+- Dans la boîte de dialogue contextuelle **Confirmer la Suppression**, sélectionnez le bouton **Supprimer**. Le dossier sera supprimé avec tous ses fichiers, sous-dossiers et leurs fichiers.
 
-The folder selected for deletion is illustrated below:
+Le dossier sélectionné pour la suppression est illustré ci-dessous :
 
-<img
-src="https://docs.joomla.org/images/4/40/J4.x-media-delete-folder-en.jpg"
-decoding="async" data-file-width="800" data-file-height="201"
-width="800" height="201" alt="J4.x-media-delete-folder-en.jpg" />
+![Page Média montrant le dossier poubelle](../../../en/images/media/media-sample-data-garbage-select.png)
 
-## Media Area Toolbar
+## Barre d'outils de la zone média
 
-This is the bar above the list of images, files and folders that has
-buttons for a variety of tasks.
+Ceci est la barre au-dessus de la liste des images, fichiers et dossiers qui possède des boutons pour une variété de tâches.
 
-### Select box
+### Case à cocher
 
-A check box that allows you to select all of the items in the folder
-displayed in the media area. You might want to use it to delete all of
-the current items without deleting the folder.
+Une case à cocher qui vous permet de sélectionner tous les éléments du dossier affiché dans la zone média. Vous pourriez l'utiliser pour supprimer tous les éléments actuels sans supprimer le dossier.
 
-### Breadcrumbs
+### Fil d'Ariane
 
-Use the folder names above the media area to go backwards in the folder
-hierarchy.
+Utilisez les noms de dossiers au-dessus de la zone média pour revenir en arrière dans la hiérarchie des dossiers.
 
-Double click a folder name in the media area to open that folder.
+Double-cliquez sur un nom de dossier dans la zone média pour ouvrir ce dossier.
 
-### Search
+### Recherche
 
-If you have a long list of images and files you can search for items
-containing any group of characters. The search is progressive: as you
-add characters to the search term the list is reduced to just those
-containing that character string.
+Si vous avez une longue liste d'images et de fichiers, vous pouvez rechercher des éléments contenant n'importe quel groupe de caractères. La recherche est progressive : à mesure que vous ajoutez des caractères au terme de recherche, la liste se réduit pour n'inclure que ceux contenant cette chaîne de caractères.
 
-### Magnify
+### Agrandir
 
-Use the magnify buttons to enlarge or reduce the thumbnail size.
-Depending on the size of your screen you may see 2, 4, 6 or 8 thumbnail
-images side by side.
+Utilisez les boutons d'agrandissement pour augmenter ou réduire la taille de la vignette. Selon la taille de votre écran, vous pouvez voir 2, 4, 6 ou 8 images vignette côte à côte.
 
-### List or Thumbnail Views
+### Vues en Liste ou Vignettes
 
-In thumbnail view, select the list symbol to switch to list view. In
-list view, select the thumbnail symbol to switch to thumbnail view. In
-list view you will see information on image size and dimensions, amongst
-other data.
+En vue vignette, sélectionnez le symbole de liste pour passer à la vue liste. En vue liste, sélectionnez le symbole de vignette pour passer à la vue vignette. En vue liste, vous verrez des informations sur la taille et les dimensions de l'image, entre autres données.
 
-### Information
+### Icône d'Information
 
-Select the Information icon to open a side panel showing information
-about whatever is selected.
+Sélectionnez l'icône d'information pour ouvrir un panneau latéral affichant des informations sur ce qui est sélectionné.
 
-## Further Information
+*Traduit par openai.com*
 
-In this series of tutorials:
-
--  Managing
-  Media
--  Media: Upload Delete
-  Rename
--  Media: Image Crop Resize
-  Rotate
--  Media:
-  Options
--  Media: Uploading SVG
-  files

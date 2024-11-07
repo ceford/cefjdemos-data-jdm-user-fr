@@ -1,128 +1,35 @@
-<!-- Filename: J3.x:Adding_custom_fields/Editor_Field / Display title: Ajout de champs personnalisés/Champ Editeur -->
+<!-- Filename: J3.x:Adding_custom_fields/Editor_Field / Display title: Champ de l'éditeur -->
 
-<span id="section-portal-heading"></span>
+## Objet
 
-## Champ Editor (éditeur)
+Le champ Éditeur permet la saisie de données WYSIWYG pour certains contenus liés à l'article en plus du contenu principal.
 
-**Les articles de cette série**
 
-1.  Introduction
-2.   Paramètres des champs
-    personnalisés
-3.   Champ
-    Calendrier
-4.   Champ Cases à
-    cocher
-5.   Champ
-    Couleur
-6.   Champ
-    Editeur
-7.   Champ Entier
-    relatif
-8.   Champ
-    Liste
-9.   Champ Liste
-    d'images
-10.  Champ
-    Média
-11.  Champ Bouton
-    Radio
-12.  Champ
-    Répétabilité
-13.  Champ
-    Sql
-14.  Champ
-    Texte
-15.  Champ Zone de
-    texte
-16.  Champ
-    URL
-17.  Champ
-    Utilisateur
-18.  Champ Groupe
-    d'utilisateurs
-19.  Comment grouper les champs
-    personnalisés
-20.  Quels sont les composants supportant les champs
-    personnalisés
-21.  Implémentation dans votre
-    composant
-22.  Utiliser les champs personnalisés dans vos
-    substitutions
+## Création de Champ
 
-### Editeurs
+Les options spéciales dans ce champ sont
 
-Fournit une liste déroulante des éditeurs WYSIWYG disponibles.
+- **Boutons** Afficher ou masquer la liste déroulante du contenu CMS. Pour le texte supplémentaire de l'article, il peut ne pas être approprié d'afficher certains ou tous les boutons de la liste. La valeur par défaut du plugin est Masquer.
+- **Masquer les Boutons** Si *Boutons* est défini sur *Oui* ou la valeur par défaut du plugin est *Afficher*, masquer les boutons sélectionnés dans la liste déroulante du contenu CMS.
+- **Largeur et Hauteur** les valeurs incluent l'espace occupé par la barre d'outils de l'éditeur, il est donc préférable de les laisser initialement vides.
+- **Largeur** La valeur de la largeur définit la largeur de l'éditeur WYSIWYG en % ou en pixels. La valeur par défaut est 100%.
+- **Hauteur** La valeur pour la hauteur définit la hauteur (en pixels) de l'éditeur WYSIWYG. La valeur par défaut est 250px. La valeur peut être représentée comme une fraction de la hauteur de la fenêtre, par exemple 50vh.
+- **Filtre** Permettre au système de sauvegarder certaines balises html ou des données brutes.
 
-#### Paramètres
+## Saisie de Données
 
-Les paramètres spécifiques pour ce champ sont ː
+Dans le formulaire de modification de l'article, le champ Éditeur supplémentaire est similaire au champ Éditeur de contenu principal.
 
-- Afficher les boutons
-  Vous pouvez décider si les boutons doivent être affichés ou non.
-- Boutons à cacher
-  Vous pouvez sélectionner dans le menu déroulant les boutons spéciaux à
-  cacher dans la barre d'outil de l'éditeur. **A Noter** : Ce paramètre
-  est seulement utile si 'Afficher les boutons' est mis à *Oui*.
-- Largeur
-  Cette valeur définit la largeur (en pixels) de l'éditeur WYSIWYG. La
-  valeur par défaut est 100%.
-- Height
-  Cette valeur définit la hauteur (en pixels) de l'éditeur WYSIWYG. La
-  valeur par défaut est 250px.
-- Filtre
-  Autorise le système à sauvegarder certaines balises html ou des
-  données brutes.
+![champ éditeur](../../../en/images/fields/fields-editor-entry.png "Champ Éditeur")
 
-#### Informations connexes
 
-Lisez  Type de champ de formulaire
-d'éditeur.
+## Affichage des données
 
-#### Captures d'écran
+La capture d'écran du site suivante montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ, et votre modèle est responsable du design du champ.
 
-##### Créer le champ
+Dans l'affichage de l'article, le texte saisi apparaît sous le titre, mais fait partie de la liste à puces pour cet élément de champ.
 
-Supposons que vous créez un champ avec les options présentées dans la
-figure suivante.
+Recherchez l'élément **Notes de culture**.
 
-<img
-src="https://docs.joomla.org/images/thumb/0/02/Editor_field_create-fr.png/800px-Editor_field_create-fr.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/0/02/Editor_field_create-fr.png 1.5x"
-data-file-width="965" data-file-height="828" width="800" height="686"
-alt="Editor field create-fr.png" />
+![Affichage de tous les champs](../../../en/images/fields/fields-display.png "Affichage des champs")
 
-##### Utiliser le champ en backend
-
-Dans l'administration lors de la création d'un article ou d'un contact,
-vous voyez le champ comme dans l'image suivante ː
-
-<img
-src="https://docs.joomla.org/images/thumb/1/19/Editor-fr.png/800px-Editor-fr.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/1/19/Editor-fr.png 1.5x"
-data-file-width="978" data-file-height="632" width="800" height="517"
-alt="Editor-fr.png" />
-
-##### Utiliser le champ en frontend
-
-Sur le site public, vous pouvez voir le champ comme sur l'image
-ci-dessous. Le paramètre *Affichage automatique* se charge de la
-position du champ et le modèle de site est responsable du rendu du
-champ.
-Les champs sont uniquement visibles sur le site public lorsqu'ils sont
-remplis avec des données dans l'article. Si le champ n'est pas requis,
-pouvez-vous vous en passer ?
-
-<img
-src="https://docs.joomla.org/images/2/20/Editor_field_frontend-fr.png"
-decoding="async" data-file-width="800" data-file-height="192"
-width="800" height="192" alt="Editor field frontend-fr.png" />
-
-<a href="https://docs.joomla.org/J3.x:Adding_custom_fields/Color_Field"
-id="content-button" class="button expand success">Précédent : Champ
-Couleur</a> <a
-href="https://docs.joomla.org/J3.x:Adding_custom_fields/Integer_Field"
-id="content-button" class="button expand">Suivant ː Champ Nombre
-entier</a>

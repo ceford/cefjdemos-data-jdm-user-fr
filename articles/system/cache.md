@@ -1,346 +1,198 @@
 <!-- Filename: Cache / Display title: Cache -->
 
-Joomla! propose différentes options de "mise en cache". Voici un aperçu
-destiné aux administrateurs et développeurs du quoi, où et quand...
+## Pour les administrateurs
 
-# Pour les administrateurs
+En tant qu'administrateur, Joomla vous offre la possibilité de mettre en cache des parties de votre site. Vous pouvez choisir de mettre en cache des pages web entières ou juste des parties de ces pages. Ce guide explique comment procéder.
 
-En tant qu'administrateur, Joomlaǃ vous fournit la capacité de mettre en
-cache des parties de votre site. Vous pouvez choisir de mettre en cache
-des pages web entières ou juste certaines parties de ces pages. Ce guide
-explique comment procéder.
+Sur une page web d'un site Joomla, il y a 3 éléments qui peuvent être mis en cache :
 
-Sur une page du site web Joomlaǃ, 3 choses peuvent être mises en cache :
+1. La page entière elle-même – le cache de la page
+2. Le rendu du composant Joomla pour cette page web – connu sous le nom de cache de la vue
+3. Le rendu des modules affichés sur cette page – connu sous le nom de cache du module
 
-1.  La page dans son intégralité – le cache de page
-2.  Le résultat du composant Joomlaǃ affiché sur cette page web – connu
-    sous le nom de cache de la vue
-3.  Le résultat des modules affiché sur cette page – connu sous le nom
-    de cache des modules
+Vous disposez de plusieurs paramètres de cache qui vous permettent de contrôler ce qui est mis en cache :
 
-Vous avez plusieurs paramètres de cache qui vous permettent de contrôler
-ce qui est mis en cache :
+1. Le plugin système "Système – Cache de page"
+2. La Configuration globale, onglet Système, Paramètres de cache. Ici, l'option de cache système peut être réglée sur
+   - ARRÊT – Mise en cache désactivée
+   - ACTIVÉ – Mise en cache conservatrice
+   - ACTIVÉ – Mise en cache progressive
+3. De nombreux modules disposent d'un onglet Avancé dans leurs options, où la mise en cache peut être réglée sur *Utiliser global* ou *Pas de mise en cache*
 
-1.  Le plugin "Système - Cache de page"
-2.  Dans la configuration, onglet Système, Paramètres de Cache. Voici
-    les paramètres "Cache système" qui peuvent être modifiés ː
-    - Cache désactivé
-    - Cache conservateur
-    - Cache progressif
-3.  De nombreux modules proposent, dans leurs paramètres, un onglet
-    Paramètres avancés dans lequel la mise en cache peut être placée à
-    "Paramètres globaux" ou "Pas de cache".
+Comme décrit ci-dessous, il existe également des règles de mise en cache implémentées dans le code de Joomla, sur lesquelles vous n'avez aucun contrôle.
 
-Comme décrit ci-dessous, il y a des règles pour la mise en cache qui
-sont implémentées dans le code Joomlaǃ et sur lesquelles vous n'avez pas
-la main.
+Vous pouvez effacer le cache via le menu Administrateur → Système → Vider le cache. En général, vous pouvez considérer que Joomla possède 3 niveaux de cache, augmentant en agressivité :
 
-Il est possible de vider le cache à travers l'élément du menu
-d'administration Système / Purger le cache.
+1. Mise en cache conservatrice
+2. Mise en cache progressive
+3. Mise en cache de la page
 
-En règle générale, vous pouvez considérer que Joomlaǃ a 3 niveaux de
-cache qui augmentent en agressivité ː
+De plus, les développeurs Joomla peuvent utiliser des fonctionnalités de mise en cache pour stocker le résultat des requêtes de base de données, par exemple, pour augmenter la réactivité du site, mais cela est en dehors du champ des capacités de l'administrateur.
 
-1.  Cache conservateur ;
-2.  Cache progressif ;
-3.  Cache de la page ;
+## Mise en cache des pages
 
-Nous allons détailler les trois en détail plus bas.
+Pour activer cette option, allez dans Administrateur → Extensions → Plugins. Ensuite, trouvez le plugin Système – Cache de page, et activez-le. Cela signifie que les pages du site seront désormais mises en cache et chaque fois qu'elles seront à nouveau demandées, la page mise en cache sera servie, plutôt que d'être générée par Joomla à partir des informations de la base de données. La page mise en cache continuera d'être servie jusqu'à son expiration – telle que définie par le paramètre *Durée du cache* dans Administrateur → Configuration globale → onglet Système → Paramètres de cache.
 
-De plus, les développeurs Joomlaǃ peuvent utiliser les fonctions de
-cache pour sauvegarder le résultat de requêtes depuis la base de donnée
-par exemple, pour améliorer le temps de réponse du site, mais ceci est
-en dehors du périmètre de ce sur quoi l'administrateur peut agir.
+Si vous lisez cette page en guise de tutoriel et souhaitez tester la mise en cache des pages, il est préférable de définir les paramètres de cache de la Configuration globale sur :
 
-## Cache de la page
+- Gestionnaire de cache – Fichier
+- Chemin vers le dossier de cache – laisser vide
+- Durée du cache – 15 (la valeur par défaut de 15 minutes)
+- Mise en cache spécifique à la plateforme - Non
+- Cache système – OFF – Mise en cache désactivée
 
-Pour démarrer le cache par page, allez sur le site d'administration dans
-Extensions / Plug-ins et activez le plugin Système - Cache de page. Ceci
-implique que les pages du site vont maintenant être mises en cache et
-que, si elles sont redemandées, la page en cache sera servie plutôt
-qu'elle ne soit à nouveau générée par Joomlaǃ à partir des informations
-en base de donnée. Cette page en cache continuera à être servie jusqu'à
-expiration - valeur définie par le paramètre Durée du cache dans
-Configuration / Système / Paramètres du cache.
+Pour vérifier que la mise en cache des pages est fonctionnelle, allez sur une page du site qui affiche un article. Après avoir affiché cette page, vous devriez trouver dans le système de fichiers un répertoire `cache/page` contenant un fichier avec un nom tel que `xxx-cache-page-yyy.php` où xxx et yyy sont de longues chaînes de hachage. Joomla doit stocker des pages de cache distinctes pour des URL distinctes, donc la deuxième chaîne de chiffres hexadécimaux est un hachage de l'URL de la page web du site, afin de rendre le nom de fichier unique à cette page.
 
-Si vous lisez cette page en tant que didacticiel et que vous voulez
-tester le fonctionnement du cache, alors il est préférable de mettre les
-paramètres de cache de la Configuration à
+Ensuite, utilisez les fonctionnalités de l'administrateur pour modifier le texte de cet article et réaffichez la page web du site. Vous devriez trouver la version mise en cache, pas votre texte modifié.
 
-- Gestion du cache – Fichier
-- Chemin du répertoire de cache – ne pas renseigner
-- Durée du cache – 15 (par défaut 15 minutes)
-- Cache système – cache désactivé
+Modifier un article (ou un autre élément Joomla) n'efface pas le cache de page pour les pages web où cet article est affiché. Pour effacer le cache de la page, allez dans Administrateur → Système → Vider le cache. Cochez la case à côté du *Groupe de cache* appelé "page", et appuyez sur le bouton Supprimer. Lorsque vous réaffichez votre page web, elle devrait maintenant afficher votre texte modifié.
 
-Pour vérifier que la mise en cache fonctionne, allez sur une page du
-site qui affiche un article. Après avoir affiché cette page, vous devez
-trouver dans le système de fichiers un répertoire `cache/page` contenant
-un fichier avec un nom tel que `-cache-page-.php`. (Joomla génère des
-fichiers de cache pour les différentes URLs et la seconde chaîne de
-chiffres hexadécimaux est un hachage de l'URL de la page web du site,
-afin de créer un nom de fichier unique à cette page).
+Si votre site a une fonction comme un panier d'achat, appliquer la mise en cache des pages posera des problèmes, car les pages doivent montrer ce que le client a déjà sélectionné, plutôt que d'afficher une page en cache qui est commune à tout le monde. Cependant, vous pouvez configurer le plugin Système - Cache de page pour exclure la mise en cache d'éléments de menu spécifiés ou d'URL et de plages d'URL spécifiées (dans l'onglet Avancé), de sorte que seules les pages réellement statiques soient mises en cache.  
 
-Utilisez ensuite la fonctionnalité d'administration pour changer le
-texte de cet article, et affichez à nouveau la page. Vous devez voir la
-version mise en cache, et pas le texte modifié.
+## Mise en cache conservative
 
-Modifier un article (ou tout autre élément Joomlaǃ) n'efface pas le
-cache pour les pages web où l'article est affiché. Pour vider le cache,
-utilisez dans l'administration du site Système / Purger le cache. Cochez
-la case à côté du groupe de cache appelé "page", et appuyez sur le
-bouton Supprimer. Si vous affichez à nouveau la page web, elle
-s'affichera dorénavant avec le texte modifié.
+Avec la mise en cache conservative, vous pouvez mettre en cache le rendu de la vue des composants et le rendu de ces modules qui permettent la mise en cache. Mais notez que cela ne fonctionnera que sur les pages qui ne sont pas mises en cache en utilisant la mise en cache de page. Pour ces pages, l'ensemble de la page web est mis en cache et la mise en cache conservative n'est même pas envisagée.
 
-Si votre site dispose d'une fonctionnalité de panier d'achat,
-l'application d'un système de cache posera soucis étant donné que ces
-pages doivent montrer ce que le client a déjà sélectionné plutôt que
-d'afficher une page mise en cache commune à tout le monde. Cependant,
-vous pouvez configurer le plugin "Système - Cache de page" pour exclure
-la mise en cache des éléments de menus spécifiés ou spécifier des URLs
-et des séries d'URLs (dans l'onglet Paramètres avancés), afin que seules
-les pages entièrement statiques soient mises en cache.
+Pour activer la mise en cache conservative :
 
-## Cache conservateur
+1. Allez dans Administrateur → Système → Configuration globale → Onglet Système et, dans les Paramètres de cache, réglez le Cache système sur ON – mise en cache conservative.
+2. Allez dans Administrateur → Extensions → Modules et sélectionnez les modules que vous souhaitez mettre en cache. Si ce module permet la mise en cache, vous devriez pouvoir le régler sous l'onglet Avancé sur
 
-Grâce au Cache conservateur, vous pouvez mettre en cache la Vue des
-composants et également l'affichage des modules qui autorisent la mise
-en cache. Notez cependant que cela ne fonctionnera que sur les pages qui
-n'utilisent pas le cache de page, car pour des pages, la page entière
-sera mise en cache et du coup le cache conservateur ne sera, par
-conséquent, même pas mis en œuvre.
+- Utiliser Global – ce module sera mis en cache (avec l'option Global maintenant réglée sur la mise en cache conservative)
+- Pas de mise en cache – ce module ne sera pas mis en cache.
 
-Pour activer le Cache conservateur :
+(Notez que le temps de cache dans la Configuration globale est en minutes mais que le temps de cache dans les paramètres du Module est en secondes.)
 
-1.  Dans l'administration du site, allez à Configuration / Système et
-    dans les Paramètres du cache, Mettez le paramètre Cache système à
-    "Cache conservateur"
-2.  Allez dans Extensions / Modules et sélectionnez les modules que vous
-    souhaitez mettre en cache. Si ce module autorise la mise en cache,
-    alors sous l'onglet Paramètres avancés vous pourrez mettre Mise en
-    cache à
+Pour vérifier son bon fonctionnement, allez sur votre site, **assurez-vous d'être déconnecté**, et naviguez vers une page web qui affiche un article. Vérifiez votre système de fichiers et vous devriez trouver un dossier `cache/com_content` contenant un fichier de cache.
 
-- Paramètres Globaux – ce module sera mis en cache (puisque le paramètre
-  global a été mis à Cache conservateur) ;
-- Pas de cache – ce module ne sera pas mis en cache ;
+Vous trouverez également d'autres répertoires tels que `cache/com_languages` (car l'affichage de la page implique le chargement de la langue actuelle, qui sera également mise en cache) et des répertoires relatifs à la mise en cache des modules, par exemple `cache/com_modules`. Ceux-ci résultent de l'utilisation du cache que les développeurs ont codé dans l'application Joomla.
 
-(Notez que la durée de mise en cache dans la configuration globale est
-en minutes alors que la durée de cache dans les paramètres des modules
-est en secondes.)
+Si vous modifiez et enregistrez cet article, puis actualisez la page du site, vous constaterez que le site affiche le texte mis à jour cette fois-ci. En effet, chaque fois que la modification est enregistrée, Joomla efface le cache pour cet article.
 
-Pour vérifier que cela fonctionne, allez sur votre site public,
-**assurez-vous que vous n'êtes pas connecté**, et naviguez sur une page
-web qui affiche un article. Vérifiez votre système de fichier et vous
-devriez trouver un répertoire `cache/com_content` contenant un fichier
-de cache.
+Cependant, vous pouvez démontrer que le cache fonctionne si vous modifiez le fichier de cache dans le répertoire `cache/com_content` en utilisant un éditeur de texte de base. Avec l'éditeur, changez une lettre dans le texte de l'article dans le fichier de cache et enregistrez le fichier. Ensuite, lorsque vous actualisez la page web, vous devriez voir le changement que vous avez apporté au fichier de cache.
 
-Vous devriez également trouver d'autres répertoires tels que
-`cache/com_languages` (l'affichage d'une page implique effectivement le
-chargement de la langue courante, et ceci sera également mis en cache)
-et également des répertoires relatifs au cache des modules, i.e.
-`cache/com_modules`. Ceci provient de l'utilisation du cache que les
-développeurs ont codé au sein de l'application Joomlaǃ.
+Comment pouvez-vous sélectionner quelles vues de composant sont mises en cache et dans quelles circonstances ? Malheureusement, vous ne pouvez pas faire cela. Cela est déterminé par les développeurs de composants de base de Joomla et codé dans le code PHP du composant. Les critères sont différents pour chaque composant. Cependant, vous pouvez facilement découvrir quels critères sont utilisés car pour chacun des composants du site, ils sont codés dans le fichier `DisplayController.php` du site. Par exemple, au moment de cette révision (version 5 de Joomla) pour le composant Contacts, on trouve dans `components/com_contact/src/Controller/DisplayController.php`
 
-Si vous éditez, modifiez et enregistrez cet article, puis rafraîchissez
-la page de cet article sur le site, vous verrez que le site affichera le
-texte mis à jour cette fois. Ceci se produit car, lors de
-l'enregistrement de la modification, Joomlaǃ efface le cache de cet
-article.
+```php
+    public function display($cachable = false, $urlparams = [])
+    {
+        if ($this->app->getUserState('com_contact.contact.data') === null) {
+            $cachable = true;
+        }
+```
 
-Cependant, vous pouvez vérifiez que le cache fonctionne en éditant le
-fichier de cache dans le répertoire `cache/com_content` avec un simple
-éditeur de texte. Avec l'éditeur, changez une lettre dans le texte de
-l'article du fichier cache et enregistrez le. En rafraîchissant la page
-de l'article sur le site, vous verrez la modification que vous avez
-faite dans le fichier de cache.
+Cela signifie que les vues associées aux contacts seront mises en cache sauf s'il y a des données de session identifiées par com_contact.contact.data – ce qui sera le cas si, dans la session utilisateur, l'utilisateur a affiché un formulaire de contact (par exemple sur une page pointée par un élément de menu de type Contacts → Contact unique).
 
-Comment sélectionnez les vues de composants qui vont être mises en cache
-et dans quelles circonstances ? Malheureusement, ceci ne peut pas être
-fait. Ceci a été défini par les développeurs des composants du noyau de
-Joomlaǃ et écrit dans le code php du composant. Les critères sont
-différents pour chaque composant. Cependant, vous pouvez aisément savoir
-quels critères ont été utilisés car, pour chaque composant du site, ils
-sont codés dans le fichier du site `controller.php`. Par exemple, au
-moment ou j'écris (version Joomlaǃ 3.9.2), nous trouvons trouver pour le
-composant des contacts `components/com_contact/controller.php`
+Le fichier équivalent pour les articles `components/com_content/src/Controller/DisplayController.php` contient :
 
-    if (JFactory::getApplication()->getUserState('com_contact.contact.data') === null)
+```php
+    public function display($cachable = false, $urlparams = false)
     {
         $cachable = true;
-    }
 
-Ceci signifie que les vues associées aux contacts seront mises en cache
-à moins qu'il y ait une donnée de session saisie dans
-com_contact.contact.data – ce qui sera le cas si dans la session
-utilisateur, l'utilisateur a affiché un formulaire de contact (i.e. dans
-une page pointée par un élément de menu de type Fiches de contact /
-Contact).
+        /**
+         * Définir le nom et le format de vue par défaut à partir de la requête.
+         * Notez que nous utilisons a_id pour éviter les collisions avec le routeur et la page de retour.
+         * Le frontal est un peu plus désordonné que le backend.
+         */
+        $id    = $this->input->getInt('a_id');
+        $vName = $this->input->getCmd('view', 'categories');
+        $this->input->set('view', $vName);
 
-Le fichier équivalent pour les articles
-`components/com_content/controller.php` contient :
+        $user = $this->app->getIdentity();
 
-    $cachable = true;
-    if ($user->get('id') || ($this->input->getMethod() === 'POST' && (($vName === 'category' && $this->input->get('layout') !== 'blog') || $vName === 'archive' )))
-    {
-        $cachable = false;
-    }
+        if (
+            $user->get('id')
+            || ($this->input->getMethod() === 'POST'
+            && (($vName === 'category' && $this->input->get('layout') !== 'blog') || $vName === 'archive'))
+        ) {
+            $cachable = false;
+        }
+```
 
-L'expression `$user->get('id')` est vraie si l'utilisateur est connecté,
-donc ceci signifie que les articles ne sont jamais mis en cache pour les
-utilisateurs connectés. Les expressions suivantes se rapportent à
-d'autres conditions où la mise en cache ne sera pas effectuée, même si
-l'utilisateur n'est pas connecté.
+L'expression `$user->get('id')` est vraie si c'est un utilisateur connecté. Cela signifie que les articles ne sont jamais mis en cache pour les utilisateurs connectés. Les expressions suivantes concernent d'autres conditions lorsque la mise en cache n'est pas effectuée, même si l'utilisateur n'est pas connecté.
 
-Ainsi, de cette manière, vous pouvez connaître les circonstances dans
-lesquelles la mise en case est effectuée, mais il n'est pas conseillé de
-modifier cela.
+Donc, de cette façon, vous pouvez découvrir les circonstances dans lesquelles la mise en cache est effectuée, mais modifier celles-ci n'est pas conseillé. Vous pouvez également démontrer que les modules sont mis en cache en utilisant le module Joomla Breadcrumbs, en vous assurant qu'il est affiché dans une certaine position de module sur la page web, en réglant son option de mise en cache et en éditant manuellement le fichier de cache dans cache/mod_breadcrumbs.
 
-Vous pouvez aussi savoir que les modules sont mis en cache en utilisant
-les modules du fil d’Ariane de Joomlaǃ, en s'assurant qu'ils sont
-affichés dans des positions de module sur la page du site et en
-paramétrant les options de mise en cache puis en éditant manuellement le
-fichier de cache cache/mod_breadcrumbs.
+## Mise en cache progressive
 
-## Cache progressif
+Tout comme la mise en cache conservative, la mise en cache progressive met également en cache la sortie des vues de composants et des modules. La différence fonctionnelle entre les deux est qu'avec la mise en cache progressive, **pour les utilisateurs déconnectés, tous les modules sont toujours mis en cache**. Dans ce cas, définir l'option *Pas de mise en cache* pour un module n'a aucun effet. Si l'option de stockage en cache est réglée sur *Fichier*, vous pouvez trouver le fichier de cache des modules (la sortie de tous les modules est stockée dans le même fichier) dans le répertoire `cache/com_modules`.
 
-Comme pour le cache conservateur, le cache progressif met également en
-cache l'affichage des vues composants et des modules. La différence
-fonctionnelle entre les deux est qu'avec le cache progressif, **tous les
-modules sont toujours mis en cache pour les utilisateurs déconnectés**.
-Dans le cas de ce paramétrage, la valeur "Pas de cache" pour les modules
-n'a pas d'effet. Si l'option de stockage de la mise en cache est
-Fichier, alors vous pouvez trouver les fichiers de mise en cache des
-modules dans le répertoire `cache/com_modules` (la mise en cache de tous
-les modules se fait dans un seul fichier commun à tous).
+Pour activer la mise en cache progressive, rendez-vous sur Administrateur → Système → Configuration globale → onglet Système et dans *Paramètres de cache*, réglez *Cache Système* sur *ACTIVÉ – Mise en cache progressive*.
 
-Pour activer le cache progressif, allez dans l'administration dans
-Configuration / Système et mettez le paramètre Cache système à "Cache
-progressif".
-
-Concernant les conditions de mise en cache des vues des composants du
-noyau de Joomlaǃ **il n'y a pas de différence entre le cache
-conservateur et progressif**. Malgré ce que vous pouvez lire sur
-certains sites et des réponses aux questions sur le débordement de pile,
-il n'est pas vrai que le cache conservateur s'applique aux utilisateurs
-non connectés et le cache progressif aux utilisateurs connectés.
+En ce qui concerne les conditions de mise en cache des vues des composants du noyau de Joomla, **il n'y a aucune différence entre la mise en cache conservative et progressive**. Malgré ce que vous pourriez lire sur certains sites web et les réponses aux questions sur Stack Overflow, il n'est pas vrai que la mise en cache conservative concerne lorsque l'utilisateur n'est pas connecté et la mise en cache progressive lorsque l'utilisateur est connecté.
 
 ## Résumé
 
-Un résumé des types de mises en cache est donné ci-dessous.
+Un résumé des types de mise en cache est présenté ci-dessous.
 
-### Cache de page
+### Mise en cache de la page entière
 
-- **Configuration** : Plugin intégré (Extensions -\> Gestionnaire de
-  plug-in -\> Système - Cache de page)
-- **Mise en cache** : chaque page complète du site
-- **Basé sur** : URL
-- **Information complémentaire** :
-  - Cache facultatif du navigateur : Met également en cache le
-    navigateur/ordinateur du visiteur du site.
-  - Met uniquement en cache les pages des invités (pas les pages des
-    utilisateurs connectés). Attention à l'utilisation de ce plugin si
-    vous avez un site interactif où vous souhaitez délivrer un contenu
-    basé sur la session ou les cookies plutôt que sur l'URL seulement.
-    Les fonctionnalités telles que le panier d'achat ne vont pas
-    fonctionner.
+- **Configuration** : Plugin intégré (Administrateur → Extensions → Gestionnaire de plugins → Système - Mise en cache des pages)
+- **Met en cache** : chaque page entière de votre site
+- **Basé sur** : URL
+- **Plus d'informations** :
+  - Cache optionnel par navigateur : Met également en cache sur le navigateur/ordinateur de vos visiteurs
+  - Ne met en cache que les pages pour les visiteurs invités (pas pour les visiteurs connectés). Soyez prudent lors de l'utilisation de ce plugin si vous avez un site interactif où vous souhaitez servir du contenu basé sur des informations de session/cookies plutôt que sur l'URL simple. Des fonctionnalités comme un panier d'achat ne fonctionneront pas.
 
-### Cache de vue
+### Mise en cache de la vue
 
-- **Configuration** : Configuration-\>Cache
-- **Mise en cache** : chaque vue d'un composant
-- **Basé sur** : URL, vue, paramètres...
-- **Plus d'infos** : les développeurs de composants doivent l'inclure
-  dans leur code pour qu'il fonctionne. La plupart du temps, ce n'est
-  pas le cas. Le composant principal de contenu pour Joomla! l'utilise,
-  mais uniquement pour les visiteurs de votre site car il n'est pas
-  obligatoire pour chacun des composants.
+- **Configuration** : Configuration globale → Cache
+- **Met en cache** : chaque vue d'un composant
+- **Basé sur** : URL, vue, paramètres, ...
+- **Plus d'informations** : Les développeurs de composants doivent inclure cela dans leur code pour que cela fonctionne. Cela n'est généralement pas fait. Le composant de contenu principal de Joomla utilise cela, mais uniquement pour les visiteurs invités de votre site, bien que cela ne soit pas obligatoire pour chaque composant.
 
-### Mise en cache de modules
+### Mise en cache du module
 
-- **Configuration** : Configuration-\>Cache
-- **Mise en cache** : chaque module (individuellement personnalisé via
-  les paramètres avancés de modules)
-- **Basé sur** : l'id du module, les niveaux de vue de l'utilisateur et
-  le paramètres itemid dans la requête HTTP
-- **Plus d'infos** : vous devez le désactiver sur certains modules afin
-  d'éviter certains problèmes.
+- **Configuration** : Configuration globale → Cache
+- **Met en cache** : chaque module (personnalisé individuellement via les paramètres avancés de chaque module)
+- **Basé sur** : l'identifiant du module, les niveaux de vue de l'utilisateur et le paramètre *Itemid* dans la requête HTTP
+- **Plus d'informations** : Vous devez le désactiver sur certains modules pour éviter les problèmes
 
-### Plus de cache
+### Autres systèmes de mise en cache
 
-Si vous souhaitez voir d'autres systèmes et possibilités de cache,
-consultez les extensions tierces traitant de la mise en cache.
+Si vous souhaitez explorer d'autres systèmes et possibilités de mise en cache, vous pouvez consulter les extensions tierces autour de la mise en cache.
 
-### Mise en cache des moteurs ou stockages
+### Moteurs ou stockages de mise en cache
 
-- **Configuration**: Configuration-\>Cache
+- **Configuration** : Configuration globale → Cache
 
-Vous pouvez choisir le système que vous souhaitez utiliser sur votre
-site pour tous les caches. Les options actuelles sont : APC,
-Eaccelorator, File, Memcache, Redis, XCache.
+Ici, vous pouvez choisir quel système vous souhaitez que votre site utilise pour toute la mise en cache. Certaines options sont : APC, Eaccelorator, File, Memcache, Redis, XCache.
 
-APC par exemple met également en cache votre opcode php.
+APC, par exemple, met également en cache votre opcode PHP.
 
-# Pour les développeurs
+## Pour les développeurs
 
-La classe **JCache** permet différentes sortes et niveaux de cache. Les
-sous-classes suivantes ont été créées spécifiquement, mais vous pouvez
-ajouter la votre, ou utiliser la classe principale de différentes
-façons.
+<div class="alert alert-warning">
+Cette section nécessite une révision pour Joomla! 4/5.
+</div>
 
-N'oubliez pas que le premier niveau de cache rencontré va remplacé toute
-mise en cache plus profonde. Je suppose qu'un trop grand nombre de
-niveaux est également contre-productif.
+La classe **JCache** permet de réaliser de nombreux types et niveaux de cache différents. Les sous-classes suivantes sont spécifiquement conçues, mais vous pouvez ajouter les vôtres, ou utiliser la classe principale de nombreuses manières différentes.
 
-- **JCacheView** met en cache et retourne la sortie d'une vue donnée (en
-  MVC). Un identifiant de cache est automatiquement généré à partir de
-  l'URI, une vue spécifique et sa méthode spécifique, ou vous pouvez
-  donner le votre.
+N'oubliez pas que le premier niveau de cache rencontré remplacera tout cache plus profond. Je suppose que trop de niveaux est également contre-productif (*à vérifier toutefois*).
 
-Cela peut être réalisé automatiquement via la fonction d'affichage de
-base du contrôleur. Par exemple, dans le contrôleur de votre composant :
+- **JCacheView** met en cache et retourne la sortie d'une vue donnée (en MVC). Un identifiant de cache est automatiquement généré à partir de l'URI, de la vue spécifique et de sa méthode spécifique, ou vous pouvez donner le vôtre.
+
+Ceci peut être automatiquement effectué via la fonction d'affichage du contrôleur de base. Par exemple, dans le contrôleur de votre composant :
 
     class DeliciousController extends JController {
         function display() {
-            parent::display(true); //true asks for caching.
+            parent::display(true); //true demande la mise en cache.
         }
     }
 
-Il existe également des paramètres d'url (urlparams) à considérer.
-Consultez <a
-href="http://joomla.stackexchange.com/questions/5781/how-can-i-use-joomlas-cache-with-my-components-view/7000#7000"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">"joomla stack"</a>.
+Il y a aussi quelques paramètres d'URL à prendre en compte. Consultez cette [Joomla StackExchange](http://joomla.stackexchange.com/questions/5781/how-can-i-use-joomlas-cache-with-my-components-view/7000#7000 "")
 
-Egalement, soyez conscient que toute mise à jour (comme les hits ou
-visites) ne sera PAS mise à jour (sauf si vous ajoutez cela à
-l'extérieur de cette méthode et donc plus en profondeur dans la partie
-MVC.)
+De plus, sachez que les mises à jour (comme les hits ou les comptes de visites) ne seront PAS mises à jour (sauf si vous ajoutez cela en dehors de cette méthode et donc de toute partie MVC plus profonde).
 
 - **JCachePage** met en cache et retourne le corps de la page.
-- **JCacheCallback** met en cache et retourne la sortie et les résultats
-  des fonctions ou des méthodes.
+- **JCacheCallback** met en cache et retourne la sortie et les résultats des fonctions ou méthodes.
 
-Si vous souhaitez mettre en cache des requêtes, c'est la classe pour le
-faire comme illustré ici : [Utiliser la mise en cache pour accélérer
-votre
-code](https://docs.joomla.org/Using_caching_to_speed_up_your_code "Special:MyLanguage/Using caching to speed up your code").
+Si vous souhaitez mettre en cache des requêtes, c'est une bonne classe pour cela, comme illustré ici : Utiliser le cache pour accélérer votre code
 
 - **JCacheOutput** met en cache et retourne la sortie.
 
-Plutôt utilisé pour la mise en cache d'une partie spécifique du code
-php. Il agit comme un tampon de sortie, mais mis en cache.
+Ceci est plutôt destiné à mettre en cache une partie spécifique du code PHP. Il fonctionne comme un tampon de sortie, mais mis en cache.
 
-## Références
+*Traduit par openai.com*
 
-- <a
-  href="http://forum.joomla.org/viewtopic.php?f=428&amp;t=326990&amp;start=0"
-  class="external text" target="_blank" rel="noreferrer noopener">Better
-  performance with joomla System Cache plugin (Joomla! Forum)</a> (en
-  anglais).
-- <a href="https://api.joomla.org/cms-3/classes/JCache.html"
-  class="external text" target="_blank"
-  rel="noreferrer noopener">JCache</a>
-- <a
-  href="http://joomla.stackexchange.com/questions/5781/how-can-i-use-joomlas-cache-with-my-components-view/7000#7000"
-  class="external text" target="_blank"
-  rel="nofollow noreferrer noopener">How can I use Joomla's Cache with my
-  components view? (joomla stackexchange beta)</a> (en anglais).

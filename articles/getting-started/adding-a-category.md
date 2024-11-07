@@ -1,100 +1,56 @@
-<!-- Filename: J4.x:Getting_Started:_Adding_a_Category / Display title: Mise en route : Ajout d'une catégorie -->
+<!-- Filename: J4.x:Getting_Started:_Adding_a_Category / Display title: Ajouter une catégorie  -->
 
 ## Introduction
 
-Les propriétaires de sites Web contenant plus d'une poignée d'articles
-doivent réfléchir à la meilleure façon de présenter le contenu pour
-faciliter la navigation. Par exemple, si vous avez un zoo, un musée, une
-collection de minéraux ou simplement un grand jardin, vous avez
-peut-être 1000 spécimens à décrire. Un article pour chaque spécimen,
-avec des photographies, nécessite une certaine structure
-organisationnelle. Si les articles étaient des fichiers, vous les
-placeriez probablement dans une hiérarchie de fichiers. Dans un CMS, les
-articles ne sont pas des fichiers, mais les catégories permettent une
-structure arborescente similaire. Exemple :
+Les propriétaires de sites web ayant plus qu'une poignée d'articles devraient penser à la meilleure façon de présenter le contenu pour faciliter la navigation. Par exemple, si vous avez un zoo, un musée, une collection de minéraux ou juste un grand jardin, vous pourriez avoir environ 1000 spécimens à décrire. Un article pour chaque spécimen, avec des photographies, nécessite une certaine structure organisationnelle. Si les articles étaient des fichiers, vous les placeriez probablement dans une hiérarchie de fichiers. Dans un CMS, les articles ne sont pas des fichiers, mais les catégories fournissent une structure arborescente similaire. Exemple :
 
-|            |                                        |
-|------------|----------------------------------------|
-| Category   | Sub-categories                         |
-| Mammals    | Apes, Monkeys, Ungulates, Dogs, Cats   |
-| Reptiles   | Snakes, Lizards, Crocodiles, Turtles   |
-| Amphibians | Frogs, Toads                           |
-| Birds      | Raptors, Ducks, Gulls, Finches, Tits   |
-| Insects    | Spiders, Butterflies, Bees, Locusts    |
-| Fish       | Sharks, Salmon, Cod, Herring, Mackerel |
+| Catégorie   | Sous-catégories                        |
+|-------------|----------------------------------------|
+| Mammifères  | Grands singes, Singes, Ongulés, Chiens, Chats |
+| Reptiles    | Serpents, Lézards, Crocodiles, Tortues |
+| Amphibiens  | Grenouilles, Crapauds                   |
+| Oiseaux     | Rapaces, Canards, Mouettes, Pinsons, Mésanges |
+| Arthropodes | Araignées, Papillons, Abeilles, Sauterelles |
+| Poissons    | Requins, Saumon, Morue, Hareng, Maquereau |
 
-Sub-categories may have further sub-categories too. An optimal number
-seems to be about seven.
+Les sous-catégories peuvent elles aussi avoir d'autres sous-catégories. Une profondeur maximale gérable semble être d'environ sept. Pour le tableau ci-dessus, un musée pourrait ajouter plus de catégories parentes :
 
-## Menu Item Types
+```text
+nature -> vie -> animaux -> mammifères...
+nature -> vie -> plantes -> arbres...
+nature -> minéraux...
+histoire -> Égypte...
+science -> astronomie...
+science -> chimie...
+```
 
-There are two menu item types designed to work with Categories:
+Imaginez combien de spécimens un musée national ou d'une petite ville détient !  
 
-- **Category Blog.** This is a page layout that has one or two leading
-  article tasters, often full page width, then several more tasters in
-  two or three columns, and finally a pagination mechanism to link to
-  more articles in the same category. The taster is the content before
-  the page-break. The Site Home page is a category blog that includes
-  All Categories.
-- **Category List.** This is a list layout that displays a list of
-  article titles in a category.
+## Types d'Éléments de Menu
 
-## Create a Category
+Il existe plusieurs types d'éléments de menu conçus pour fonctionner avec les Catégories :
 
-The article mentioned in this Getting Started series, *My First
-Article*, was a bit of an experiment. There may be more experiments so
-why not create an Experiments category? Proceed as follows:
+- **Blog de Catégorie** Il s'agit d'une mise en page qui présente un ou deux extraits d'articles principaux, souvent sur toute la largeur de la page, puis plusieurs autres extraits d'articles en deux ou trois colonnes, et enfin un mécanisme de pagination pour lier à d'autres articles de la même catégorie. L'extrait est le contenu avant un saut de page, souvent les un ou deux premiers paragraphes. Une page d'accueil de site est souvent un blog de catégorie qui inclut *Toutes les Catégories*. Une disposition d'*Articles en vedette* est similaire à un blog de catégorie et souvent utilisée comme page d'accueil également.
+- **Liste de Catégories** Il s'agit d'une mise en page de liste qui affiche une liste d'articles dans une catégorie. Elle peut être affichée avec un filtre de recherche pour permettre la recherche d'articles par Titre, Auteur, Visites, Tags ou Mois de publication.
+- **Lister Toutes les Catégories dans un Arbre de Catégories d’Article** Cette mise en page liste un arbre de catégories en partant d'un parent choisi. Chaque branche est rétractable et est très utile pour les structures d'arbres de catégories grandes et complexes.
 
-- Expand the Content item in the Administrator menu and select the **+**
-  icon alongside the Categories menu item. Note that other components,
-  such as Banners and Contacts, can have categories too. They are kept
-  separate from Content Categories.
-- The **Articles: New Category.** form has only one compulsory field:
-  the Title, in this case Experiments.
-- The **Description.** field is optional but it is best to fill it in as
-  it used in some lists.
-- The **Parent.** field specifies whether this is category, -No Parent-,
-  or a sub-category, selected from the list of categories.
+Les éléments de menu sont abordés dans un article ultérieur.  
 
-<img
-src="https://docs.joomla.org/images/thumb/0/01/J4.x-getting-started-category-screenshot-en.png/800px-J4.x-getting-started-category-screenshot-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/thumb/0/01/J4.x-getting-started-category-screenshot-en.png/1200px-J4.x-getting-started-category-screenshot-en.png 1.5x, https://docs.joomla.org/images/0/01/J4.x-getting-started-category-screenshot-en.png 2x"
-data-file-width="1440" data-file-height="1134" width="800" height="630"
-alt="J4.x-getting-started-category-screenshot-en.png" />
+## Créer une Catégorie
 
-Save and Close! This takes you to the **Articles: Categories** list
-screen.
+L'exemple suivant utilise une catégorie Mammifères inspirée de la liste ci-dessus pour démontrer comment créer une nouvelle Catégorie :
 
-## Change Article Category
+![Formulaire d'édition de catégorie](../../../en/images/getting-started/article-category-edit.png)
 
-- Select the **Articles** item from the **Administrator **→** Content**
-  menu.
-- Select the article title link the **Title** column to open the article
-  for editing.
-- In the **Category** field select the Experiments category from the
-  drop-down list.
-- **Save and Close.** There is no change in the Site Home page because
-  the article is still marked as featured and the Home page is a
-  category blog for All Categories.
+- Sélectionnez l'élément **Contenu** dans le menu Administrateur pour le déplier.
+- Sélectionnez l'icône **+** à côté de l'élément de menu *Catégories* pour ouvrir le formulaire d'édition de Catégorie.
+- Le formulaire **Articles : Nouvelle Catégorie** ne comporte qu'un seul champ obligatoire : le *Titre*, dans ce cas *Mammifères*.
+- Le champ **Description** est facultatif, mais il est préférable de le remplir car il est utilisé dans certaines listes. Suggestion :<br>
+  *Les mammifères sont des animaux à sang chaud qui donnent naissance à des petits vivants.*
+- Le champ **Parent** spécifie si c'est une catégorie principale (-Pas de Parent-) ou une sous-catégorie sélectionnée dans la liste des catégories.
+- **Enregistrer et Fermer** pour revenir à la page de liste **Articles : Catégories**.
 
-## Create Category List Menu Item
+Cette catégorie est maintenant disponible pour être utilisée avec les articles.
 
-- Select **Menus **→** Main Menu **→** +** from the Administrator menu
-  to open the Menus: New Item form.
-- Select **Articles **→** Category List** in the Menu Item Type field.
-- Select **Select **→** Experiments** in the Choose a Category field.
-- Enter a Title, Experiments in this case.
-- Save and Close.
+*Traduit par openai.com*
 
-Go to the Site Home page and reload. Select the new Experiments menu
-item.
-
-<img
-src="https://docs.joomla.org/images/thumb/0/07/J4.x-getting-started-category-list-screenshot-en.png/800px-J4.x-getting-started-category-list-screenshot-en.png"
-class="thumbborder" decoding="async"
-srcset="https://docs.joomla.org/images/0/07/J4.x-getting-started-category-list-screenshot-en.png 1.5x"
-data-file-width="852" data-file-height="272" width="800" height="255"
-alt="J4.x-getting-started-category-list-screenshot-en.png" />
-
-Not too pretty at this stage but the layout can be improved. Later...

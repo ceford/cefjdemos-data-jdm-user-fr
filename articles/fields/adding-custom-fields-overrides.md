@@ -1,70 +1,45 @@
-<!-- Filename: J3.x:Adding_custom_fields/Overrides / Display title: Champs personnalisés : les substitutions -->
+<!-- Filename: J3.x:Adding_custom_fields/Overrides / Display title: Substitution de Modèles  -->
 
-<span id="section-portal-heading"></span>
+## Affichage Automatique du Champ
 
-## Comment utiliser les champs personnalisés dans vos substitutions
+Chacun des champs disponibles possède une option intitulée *Affichage Automatique* qui peut être définie sur l'une des options suivantes :
 
-**Les articles de cette série**
+* Après le Titre
+* Avant le Contenu Affiché
+* Après le Contenu Affiché
+* Ne pas afficher automatiquement
 
-1.  Introduction
-2.   Paramètres des champs
-    personnalisés
-3.   Champ
-    Calendrier
-4.   Champ Cases à
-    cocher
-5.   Champ
-    Couleur
-6.   Champ
-    Editeur
-7.   Champ Entier
-    relatif
-8.   Champ
-    Liste
-9.   Champ Liste
-    d'images
-10.  Champ
-    Média
-11.  Champ Bouton
-    Radio
-12.  Champ
-    Répétabilité
-13.  Champ
-    Sql
-14.  Champ
-    Texte
-15.  Champ Zone de
-    texte
-16.  Champ
-    URL
-17.  Champ
-    Utilisateur
-18.  Champ Groupe
-    d'utilisateurs
-19.  Comment grouper les champs
-    personnalisés
-20.  Quels sont les composants supportant les champs
-    personnalisés
-21.  Implémentation dans votre
-    composant
-22.  Utiliser les champs personnalisés dans vos
-    substitutions
+Si le dernier de ces éléments est sélectionné, alors le champ n'est pas affiché à moins que vous ne créiez un remplacement de modèle pour gérer l'affichage vous-même. Vous pouvez également ajouter `{field ID}` dans un article pour placer le champ où vous le souhaitez. Mais vous devez vous souvenir de le faire dans chaque article.
 
-## Utiliser les champs personnalisés dans vos substitutions
+Cet exemple montre comment créer un remplacement de modèle pour un Contact. Les méthodes s'appliquent également aux composants Contenu et Utilisateur.
 
-### Introduction
+## Créer une Surcharge de Modèle
 
-Le véritable pouvoir des champs personnalisés réside dans le fait que
-vous pouvez l’utiliser dans vos propres substitutions. Voici un exemple
-de la manière de procéder.
+Depuis le menu Administrateur :
 
-## Utiliser les champs personnalisés dans vos substitutions
+* Sélectionnez **Système / Modèles de Site / Détails et Fichiers de Cassiopeia**
+* Sélectionnez l'onglet **Créer des Surcharges**.
+* Sélectionnez **com_contact** dans le panneau *Composants*.
+* Sélectionnez **Contact** dans la liste des vues disponibles. Il s'agit de la mise en page pour un seul contact.
 
-Classiquement, tous les champs personnalisés correspondant à l'élément
-en cours sont accessibles via une nouvelle propriété dans la variable
-`$item` appelée `jcfields`. La propriété `$item->jcfields` est un
-tableau qui contient les données suivantes par champ, un champ
-ressemblant à cet exemple:
+Dans le panneau **Éditeur** :
+* Sélectionnez **html / com_contact / contact / default.php**, qui est le fichier
+  qui définit la mise en page générale de la page de contact unique.
+* Faites défiler ce fichier et remarquez une série de blocs `<php if (...) : ?>`.
+  Chacun affichera ou masquera une section de texte en fonction des paramètres du contact.
+* Remarquez les lignes contenant
+  ```
+  <?php echo $this->item->event->afterDisplayTitle; ?> (ligne 73)
+  <?php echo $this->item->event->beforeDisplayContent; ?> (ligne 98)
+  <?php echo $this->item->event->afterDisplayContent; ?> (ligne 189)
+  ```
+  L'une de ces variables, ou aucune d'entre elles, est peuplée en fonction de la valeur du champ
+  Affichage Automatique.
+
+## Utilisation des champs dans votre remplacement
+
+Vous avez tous les champs correspondant à l'élément actuel accessibles via une
+propriété `$this->item->jcfields`, qui est un tableau contenant les données suivantes pour chaque champ (cet exemple est pour un champ Éditeur) :
 
 ```php
     Array
@@ -126,119 +101,76 @@ ressemblant à cet exemple:
                 [language_image] =>
                 [editor] =>
                 [access_level] => Public
-                [author_name] => Super User
+                [author_name] => Super Utilisateur
                 [group_title] =>
                 [group_access] =>
                 [group_state] =>
                 [value] => Bar
                 [rawvalue] => Bar
             )
-
     )
 ```
 
-### Rendre le champ à l'aide de FieldsHelper
+## Rendre le champ
 
-Pour rendre le champ, vous pouvez utiliser `FieldsHelper::render()` en
-transmettant les valeurs nécessaires.
+La fonction `FieldsHelper::render()` est utilisée pour rendre chaque champ. Ajoutez d'abord une
+instruction `use Joomla\Component\Fields\Administrator\Helper\FieldsHelper;` à
+la liste des instructions `use` en haut du fichier de remplacement :
 
 ```php
-    /**
-     * Renders the layout file and data on the context and does a fall back to
-     * Fields afterwards.
-     *
-     * @param   string  $context      The context of the content passed to the helper
-     * @param   string  $layoutFile   layoutFile
-     * @param   array   $displayData  displayData
-     *
-     * @return  NULL|string
-     *
-     * @since  3.7.0
-     */
-    public static function render($context, $layoutFile, $displayData)
+defined('_JEXEC') or die;
+
+use Joomla\CMS\Helper\ContentHelper;
+use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Language\Text;
+use Joomla\CMS\Layout\FileLayout;
+use Joomla\CMS\Layout\LayoutHelper;
+use Joomla\CMS\Plugin\PluginHelper;
+use Joomla\CMS\Router\Route;
+use Joomla\Component\Contact\Site\Helper\RouteHelper;
+use Joomla\Component\Fields\Administrator\Helper\FieldsHelper;
 ```
 
-#### Exemple de code pour la substitution à l'aide de FieldsHelper
-
+Ensuite, partout où vous souhaitez placer les champs dans votre modèle, utilisez le code suivant :
 ```php
-// Load the FieldsHelper
-<?php JLoader::register('FieldsHelper', JPATH_ADMINISTRATOR . '/components/com_fields/helpers/fields.php'); ?>
-
 <?php foreach ($this->item->jcfields as $field) : ?>
-	// Render the field using the fields render method
-	<?php echo FieldsHelper::render($field->context, 'field.render', array('field' => $field)); ?>
+	<?php echo FieldsHelper::render($field->context, 'field.render', array('field' => $field)); ?><br>
 <?php endforeach ?>
 ```
 
-#### Exemple de code pour un remplacement brut
+Ou pour un remplacement brut, qui ne traduit pas l'étiquette :
 
 ```php
 <?php foreach ($this->item->jcfields as $field) : ?>
-	// Render the field using the fields render method
-	<?php echo $field->label . ':' . $field->value; ?>
+	<?php echo $field->label . ':' . $field->value; ?><br>
 <?php endforeach ?>
 ```
 
-### `$item->jcfields` ne contient pas les champs dont j'ai besoin
+## Chargement des champs individuels
 
-La propriété `jcfields` est générée à l'aide de l'événement du plug-in
-`onContentPrepare` en passant le contexte des champs. Le plugin champs
-lit ensuite les champs de la base de données et ajoute les valeurs à la
-propriété jcfields. Assurez-vous donc que le composant que vous utilisez
-implémente également l'événement `onContentPrepare` avec le contexte que
-vous utilisez pour les champs.
+Pour ajouter des champs individuels à votre contenu, commencez par choisir des noms spécifiques pour vos champs personnalisés, en utilisant le champ **Nom**, qui sera utilisé pour référencer votre champ directement dans le code de surcharge. Dans l'onglet `Options`, sélectionnez **Non** dans le champ `Affichage Automatique` pour éviter qu'il ne soit affiché automatiquement dans l'une des positions standard.
 
-Si vous utilisez les composants principaux, cela devrait fonctionner
-immédiatement.
-
-### Chargement de champs individuels
-
-Pour ajouter des champs individuels à votre contenu, commencez par
-choisir des noms spécifiques pour vos champs personnalisés, à l'aide du
-champ Nom **Name**, qui servira à référencer votre champ directement
-dans le code de substitution. Dans l'onglet **Paramètres**, sélectionnez
-**Non** dans le champ `Affichage Automatique` pour empêcher son
-affichage automatique dans l'une des positions standard.
-
-Ensuite, pour activer l'accès direct par nom aux champs personnalisés
-d'une substitution, placez le code ci-dessous au début de votre fichier.
-Vous devriez le faire pour chaque fichier PHP de substitution sur lequel
-vous souhaitez placer des champs personnalisés individuels.
+Ensuite, pour permettre un accès direct par nom aux champs personnalisés dans une surcharge, placez le code ci-dessous au début de votre fichier. Vous devriez faire cela pour chaque fichier PHP de surcharge sur lequel vous souhaitez placer des champs personnalisés individuels.
 
 ```php
-<?php foreach($item->jcfields as $jcfield)
-     {
-          $item->jcFields[$jcfield->name] = $jcfield;
-     }
-?>
+<?php foreach($this->item->jcfields as $jcfield) {
+    $this->item->jcFields[$jcfield->name] = $jcfield;
+} ?>
 ```
 
-Enfin, vous devez ajouter le code d’emplacement du champ à l’endroit où
-vous souhaitez afficher l’étiquette ou la valeur du champ.
+Et enfin, vous devriez ajouter le code de placement du champ à l'endroit où vous souhaitez que l'étiquette ou la valeur du champ soit affichée.
 
-Pour ajouter le **label** du champ à votre substitution, insérez le code
-ci-dessous, en remplaçant `name-of-field` par le nom du champ.
+Pour ajouter l'**étiquette** du champ à votre surcharge, insérez le code ci-dessous, en remplaçant `name-of-field` par le nom du champ.
 
 ```php
-<?php echo $item->jcFields['name-of-field']->label; ?>
+<?php echo $this->item->jcFields['name-of-field']->label; ?>:&nbsp;
 ```
 
-Pour ajouter la valeur **value** du champ à votre substitution, insérez
-le code ci-dessous, en remplaçant `name-of-field` par le nom du champ.
-Attention: dans la série 3.x, **value** est en fait la **rawvalue**
-<a href="https://github.com/joomla/joomla-cms/issues/20216"
-class="external free" target="_blank"
-rel="nofollow noreferrer noopener">https://github.com/joomla/joomla-cms/issues/20216</a>
+Pour ajouter la **valeur** du champ à votre surcharge, insérez le code ci-dessous, en remplaçant `name-of-field` par le nom du champ.
 
 ```php
-<?php echo $item->jcFields['name-of-field']->rawvalue; ?>
+<?php echo $this->item->jcFields['name-of-field']->rawvalue; ?>
 ```
 
-Vous pouvez ajouter ce code dans n’importe quelle partie de votre
-substitution. Exemples: Le contenu d'un div, le src dans une balise
-`img`, dans un attribut de classe CSS, etc.
+Vous pouvez ajouter ce code à n'importe quelle partie de votre surcharge. Exemples : Le contenu d'un div, le src dans une balise `img`, dans un attribut de classe CSS, etc.
 
-<a
-href="https://docs.joomla.org/J3.x:Adding_custom_fields/Implement_into_your_component"
-id="content-button" class="button expand success">Préc: Implémentation
-dans votre composant</a>

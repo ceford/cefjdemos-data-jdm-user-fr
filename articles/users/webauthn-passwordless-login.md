@@ -1,444 +1,234 @@
-<!-- Filename: WebAuthn_Passwordless_Login / Display title: WebAuthn Connexion sans mot de passe -->
-
-Joomla!  4.x
-
-## Système - WebAuthn Connexion sans mot de passe
-
-Web Authentication, or WebAuthn for short, allows a user to securely log
-into a site without using a password — though you still need to provide
-your username. It does using strong cryptography and in a manner which
-is extremely resistant to the most common problems of passwords: someone
-guessed it (brute force attack), someone intercepted it (man in the
-middle attack), someone tricked you into divulging it (phishing attack),
-someone cracked it after getting ahold of a copy of your database data
-(SQL injection attacks) or someone stole it.
-
-WebAuthn is not just very secure; it is also very user friendly! You no
-longer have to remember long passwords or use a password manager. All
-you need is an *authenticator*, sometimes also called a *passkey*. An
-authenticator can have many forms, physical or virtual. It can be a
-separate hardware key connecting to your device via USB, Bluetooth or
-NFC. It can be your device itself, unlocking its built-in authenticator
-with a PIN, fingerprint reader, facial scan or similar biometric check.
-This feature already works on Android and iOS/iPadOS devices and we're
-working on enabling it on Windows as well. It can even be your phone —
-currently this is possible with Android phones but this feature is also
-coming to iOS / iPadOS devices.
-
-WebAuthn only works over HTTPS and only when your site is using a valid,
-trusted certificate for it. Don't worry, you don't have to spend any
-extra money; free of charge services like Let's Encrypt are typically
-integrated into web hosting control panels and work perfectly fine with
-WebAuthn.
-
-WebAuthn uses public key cryptography, the same proven technology that
-keeps your sites safe with HTTPS, your banking information secure and so
-on. The private key never leaves the authenticator. Your site only
-stores a public key. Even if you suffer a data breach the attacker will
-be left with a practically useless public key; it would take them
-thousands to millions of CPU years to crack it as opposed to a few
-minutes or hours required to crack the hash of a fixed password that you
-can remember.
-
-WebAuthn is the future of authentication. Easy, secure and hassle-free.
-Everything that fixed passwords are not.
-
-The following picture shows a hardware device inserted into a laptop
-computer's USB port. It cost £15 in February, 2022.
-
-<img
-src="https://docs.joomla.org/images/2/2e/J4x-passwordless-login-hardware-device.jpg"
-decoding="async" data-file-width="300" data-file-height="225"
-width="300" height="225" alt="Hardware device" />
-
-WebAuthn uses a system plugin that is enabled by default. A **Web
-Authentication** button will be present in default Joomla 4 login
-screens, as illustrated in the Administrator login screen:
-
-<img
-src="https://docs.joomla.org/images/2/20/J4x-passwordless-login-admin-login.png"
-class="thumbborder" decoding="async" data-file-width="400"
-data-file-height="474" width="400" height="474"
-alt="Administrator Login" />
-
-## User Configuration
-
-The user must first register with a normal Username and Password. After
-logging in go to the User Profile form. For an Administrator:
-
-- Select **User Menu **→** Edit Account **→** W3C Web Authentication
-  (WebAuthn) Login** to bring up the form, initially with no
-  authenticators registered.
-- Select **Add New Authenticator**
-
-The exact presentation of the next step depends on your browser.
-Typically, you will see an alert, message or window asking you to select
-an authenticator type or, if you're using a hardware authenticator
-attached to your device, reminding you to press the button on the
-hardware authenticator. For security and practical reasonts there is a
-relatively short time interval allowed for activating the authenticator:
-60 seconds.
-
-<img
-src="https://docs.joomla.org/images/3/38/J4x-passwordless-login-hardware-propmpt.png"
-decoding="async" data-file-width="400" data-file-height="139"
-width="400" height="139" alt="Hardware Prompt" />
-
-Once you unlock your authenticator — tapping on a button, scanning your
-fingerprint / face, entering a PIN or a combination of the above
-depending on your authenticator — the message disappears, the
-authenticator is registered and the screen appears as follows:
-
-<img
-src="https://docs.joomla.org/images/6/69/J4x-passwordless-login-registered-authenticator.png"
-decoding="async" data-file-width="508" data-file-height="366"
-width="508" height="366" alt="Registered Authenticator" />
-
-It is very important to note that you can only register or remove
-authenticators on your own user account. For security reasons, even a
-Super User is disallowed from registering, editing or adding
-authenticators on other user accounts.
-
-### Authenticators
-
-You can use any FIDO U2F or FIDO2 authenticator. FIDO U2F is an older
-standard which supports a more limited, less secure selection of
-cryptographic methods. FIDO2 is the newer standard which supports much
-more secure cryptographic methods including Elliptic Curve Cryptography,
-a cryptographic method which is believed to be resistant even to quantum
-computing (if and when it becomes a practical reality). Moreover, FIDO2
-authenticators can be set up to have additional protections such as a
-PIN or a biometric control (e.g. fingerprint scan) which means that even
-if you lose physical possession of the authenticator itself whoever
-finds it cannot log into your sites.
-
-If you are looking to buy a hardware authenticator you can look for
-"FIDO2" in your favorite marketplace, such as Amazon. There is a wide
-selection to choose from.
-
-You may also use a software FIDO key such as Krypton as your
-authenticator.
-
-Many devices have built-in FIDO2-compliant authentication:
-
-- Windows 10 and 11 have Windows Hello with a PIN, fingerprint scanner,
-  facial recognition camera or a combination of hardware key and PIN.
-  Support for Windows Hello is being added to the plugin with a release
-  target of Joomla 4.2.0.
-- macOS has TouchID on all laptops with the T2 chipset or those based on
-  Apple Silicon using the built-in TouchID sensor, as well as all Apple
-  Silicon–based desktops using the new Apple Aluminium keyboard with a
-  fingerprint scanner.
-- iOS / iPadOS has TouchID on all devices with a fingerprint scanner and
-  FaceID on all newer devices with a FaceID infrared dot projection
-  camera.
-- Some Android devices have a fingerprint scanner or a face recognition
-  camera. These can also work as FIDO2 authenticators, on Android 9 or
-  later using Google Chrome at least.
-- Other devices may be available too. For example, Android phones using
-  <a
-  href="https://groups.google.com/a/fidoalliance.org/g/fido-dev/c/go6GoFW27Dw/m/9flCLR5pBQAJ?pli=1"
-  class="external text" target="_blank"
-  rel="nofollow noreferrer noopener">caBLE</a>
-
-### WebAuthn compatible browsers
-
-Chromium and Firefox based browsers have supported WebAuthn since early
-2019.
-
-Safari and all iOS/iPadOS browsers (which are, in fact, Safari with a
-different skin) fully support WebAuthn since iOS/iPadOS 13 released late
-2019.
-
-Practically speaking, if your operating system and browser were released
-after mid-2020 you should have no problem. Only some very uncommon
-browsers still lack support for WebAuthn.
-
-## Authentication
-
-To login you must enter your username in the login form Username field.
-You do not need to enter your password but if your browser enters it for
-you just leave it. The password is NOT sent to the server when the form
-is submitted via the Web Authentication button.
-
-It follows that you can login with either your Username and Password or
-Username and Web Authentication.
-
-## How To Disable the Plugin
-
-If you do not wish to allow WebAuthn just go to the list of plugins and
-find System - WebAuthn Passwordless Login in the System group and
-disable it. There are no parameters to set.
-
-## Server Requirements
-
-For WebAuthn to work the following preconditions must be met:
-
-- HTTPS with a valid, signed certificate. Most hosts let you use free of
-  charge certificates issues by Let's Encrypt. These work perfectly fine
-  with WebAuthn.
-- The OpenSSL extension for PHP must be installed and enabled.
-- The PHP extension GMP or the PHP extension BCmath must be installed
-  and enabled (either will do).
-- The Sodium library should ideally be enabled; it enables the use of
-  Elliptic Curve Cryptography on compatible FIDO2 authenticators which,
-  as we said, is the most secure cryptographic method.
-
-## Frequently Asked Questions and Troubleshooting
-
-### I can't see the “Web Authentication” login button
-
-You are not accessing your site under HTTPS. WebAuthn is only available
-for HTTPS sites with a valid certificate. This is a security precaution
-baked into the WebAuthn standard. The plugin actually checks if the site
-is accessed through HTTPS using Joomla's Uri class. In rare cases where
-the server lies about the protocol you might not see the button even
-though your site (claims to be) HTTPS. Same goes if you have edited your
-configuration.php file and set up the optional \$live_site configuration
-parameter with an http:// protocol prefix instead of https://.
-
-Also note that third party login modules and components implementing
-their own login form may not display these buttons just yet. We added
-new infrastructure to support them, much like what we had to do in
-Joomla! 3.2 to support Two Factor Authentication.
-
-### I still need to provide a username. Isn't WebAuthn supposed to get rid of usernames?
-
-Not really, no. The current specification of WebAuthn does not provide
-identity management. Web browsers require us to send them a list of
-acceptable WebAuthn public keys during the login phase. This means that
-we need your username to fetch them.
-
-That said, using WebAuthn finally makes it clear that usernames *are not
-to be considered secrets*. They are considered public information which
-can be freely transmitted to an adversary, just like the public keys
-stored in the site's database. The only secret is stored in the
-authenticator itself and never leaves the authenticator!
-
-### I have registered an authenticator but trying to log in tells me that I haven't. Is this a bug?
-
-It is a bug but not with the WebAuthn plugin itself.
-
-One or more plugins on your site throw PHP Notices, Warnings or Errors,
-thus corrupting the reply sent back by your server. As a result the
-JavaScript on the page cannot parse the server response and is unsure
-whether any authenticators are registered by the user.
-
-Go to your site's backend, System, Global Configuration and set Error
-Reporting to None. In most cases of misbehaving core and 3PD plugins
-this is enough. Otherwise please examine the output of the request using
-your browser's developer tools to see what is corrupting the request.
-
-### There is no prompt on Safari to use my authenticator
-
-This should no longer be happening with iOS 13, iPadOS 13 and macOS
-Catalina or any later version.
-
-This is a Safari bug in older versions of Safari. Older versions of
-Safari only included support for WebAuthn as an experimental feature and
-not quite finished.
-
-### I cannot use a biometric sensor (TouchID, fingerprint, Windows Hello)
-
-Some older Chromium-based browsers (except Google Chrome proper) didn't
-have full support for built-in authenticators. They would crash or hang
-when you tried using one. These issues were fixed in these browsers
-around mid-2020.
-
-If you are using Windows please remember that your device MUST have a
-Trusted Platform Module (TPM) chip and it must be enabled in the BIOS.
-Just having a Windows Hello-compatible biometric sensor won't do the
-trick. This is a security precaution in the WebAuthn standard itself:
-the authenticator information must be processed using secure,
-tamper-resistant hardware to prevent key subversion (e.g. malware
-running on the computer cannot steal the key used for authentication).
-
-Finally, do keep in mind that Windows Hello support is still being
-worked on and will be released with Joomla 4.2.
-
-### If I can use a software authenticator why should I bother with a hardware token?
-
-The linchpin of WebAuthn is the absolute secrecy of the private key. It
-is only known to the authenticator and it should be impossible to
-communicate to the outside world.
-
-In the case of a hardware authenticator, be it a discrete hardware
-device or a TPM / Secure Enclave built into your device, this is a given
-by the very nature of that hardware.
-
-A software authenticator generates a secret key and stores it in the
-filesystem. However, it is still a regular software application which
-runs inside your regular operating system, be it your phone's or your
-computer's. As a result it is susceptible to several classes of attacks
-which can be used to surreptitiously steal information (security issues
-in the software itself, malware using Spectre-class vulnerabilities in
-modern CPUs etc).
-
-So, a software authenticator is far more convenient and secure than a
-regular password but a hardware authenticator offers the best security.
-Choose your authenticator based on your budget and security needs.
-
-Considering that the price of a FIDO key –which is compatible with
-WebAuthn– is under €10 on Amazon you can use a hardware authenticator in
-most practical use cases.
-
-### Why are the credentials encrypted in the database? Isn't this an overkill?
-
-The only thing stored in the database is the public key returned by the
-authenticator when we are performing the attestation ceremony (that's
-the formal name of registering an authenticator per the WebAuthn
-specification). Being a public key it does not need protecting from
-reading. Even if an unauthorised user was able to read this information
-they would not be able to impersonate the authenticator e.g. by cloning
-it.
-
-However, if a malicious user had write access just to the
-\#\_\_webauthn_credentials database table, without read access to the
-filesystem and without write access to any other table, they could
-conceivably **add** their own authenticator, therefore being able to
-impersonate the targeted user on the system. This is a very theoretical
-attack since they would also need to know the user handle for the user
-they are attacking which is harder to derive without some inside
-knowledge of the site itself. Besides, having write access to just this
-table and not the entire database (in which case they could create a new
-Super User) is extremely unlikely. Still, we are encrypting the
-credentials to make it impossible for even this entirely theoretical
-attack to succeed.
-
-We are fully aware that if a user has read access to the server
-filesystem they have access to the encryption key and the database
-connection information, all of which is stored in configuration.php.
-However, in this case you are already hacked: the attacker can read
-configuration.php therefore they know how to connect to your database.
-In this case they can do whatever they please to your site, including
-deleting all existing Super Users and creating their own Super User
-account. Therefore there's no reason to try to address this situation;
-you'd be fully compromised (hacked). The only that could be a saving
-grace is regular, tested, off-site backups.
-
-### I have set up Two Factor Authentication but I am logged in without providing my Secret Key. Isn't this insecure?
-
-No, it's intentional and by design.
-
-When we added Two Factor Authentication (TFA) in Joomla! 3.2 you were
-only able to log into your site using a username and password. Passwords
-can be stolen or guessed. Therefore TFA was the only way to provide a
-modicum of security on high risk and high value targets. That was back
-in 2013.
-
-WebAuthn is an entirely different authentication solution which has none
-of the problem of fixed passwords. It uses strong cryptography and
-secure hardware to make it practically impossible to subvert the
-authentication cryptographic keys. It's also unphishable, i.e. you
-cannot be fooled into using it on an impersonating site since the
-WebAuthn credential is tied to the exact domain name it was issued for
-(yes, if you use multiple domains for your site or transfer your site to
-another domain you'll need to re-register all your WebAuthn
-authenticators – you got that right!). As a result, authentication with
-WebAuthn is incredibly secure and supersedes the reasons that
-necessitated TFA. This means that if you successfully authenticate using
-WebAuthn the TFA secret key needs not be –and is therefore not– checked
-at all.
-
-In an ideal world, you would only be able to log into your site using
-WebAuthn. This is a feature we are working on and you may not want to
-enable; after all, if your domain name changes or you lose access to or
-reset all of your WebAuthn authenticators you'd be locked out of your
-site. Therefore you should still enable TFA on your user account on the
-basis that password login can still be used as a fallback to logging
-into your site and must be protected from known attacks against fixed
-passwords.
-
-### Isn't TFA good enough? Why do we need WebAuthn?
-
-TFA alone is good enough in most cases but suffers from two issues.
-
-First, it has a rather awkward user experience. You need to provide your
-ever-changing secret key with your username and password. Most people
-use TOTP (the six digit PIN that changes every 30 seconds) which slows
-down logging in and tends to frustrate users. Using a YubiKey is much
-faster but also more expensive and more complicated to provision when
-you have more than a couple of users on the site. A YubiKey also has an
-expected life of about 2 years of everyday use when generating One Time
-Passwords (it runs out of the write-once memory it uses to keep track of
-the signatures it has issued).
-
-Second, if you are using TOTP you still are susceptible to security
-issues such as keyloggers, phishing and the possibility that the secret
-key used for generating the TOTP is stolen. Moreover, with one million
-possibilities and thirty seconds to try them it is conceivable that an
-attacker can get lucky since Joomla doesn't lock your account or
-otherwise employ rate limiting for failed login attempts. While these
-protections could be implemented, the implementation itself could be
-abused to create a denial of service situation which locks a legitimate
-user out of their site while the attacker is busy infiltrating it. It's
-a case of the remedy being worse than the disease.
-
-WebAuthn greatly improves the user experience. Major browsers embraced
-WebAuthn and offer a compelling user experience, guiding the users into
-using authenticators successfully. Logging in with WebAuthn is more
-convenient even when compared to using a password manager's auto-fill
-feature. With recent versions of mobile operating systems even that
-experience, once slightly confusing, is rapidly becoming easier than
-passwords and TFA ever were.
-
-Where WebAuthn is truly killing it is at the security front. By virtue
-of using secure hardware and strong validation of the site's domain name
-it is practically immune to keyloggers, phishing and key subversion. It
-even has built-in protection against key cloning. Yes, you can still
-lose your hardware — but FIDO2 authenticators, be they external devices
-or built-in, can be locked out with a PIN or biometrics. Overall, using
-WebAuthn with FIDO2 authenticators is more theft- and loss-resistant
-than your house or car keys.
-
-## Developer Notes
-
-### Extra login buttons
-
-The plugin module and com_users now use the onUserLoginButtons event,
-defined and called in
-Joomla\CMS\Helper\AuthenticationHelper::getLoginButtons, to retrieve the
-definitions of any additional buttons which need to be placed after the
-regular login button.
-
-All developers implementing a login module or, more generally, a login
-form should also use the
-Joomla\CMS\Helper\AuthenticationHelper::getLoginButtons public static
-method to retrieve said definitions and render these buttons to make
-their software fully compatible with Joomla 4.
-
-Developers wishing to implement custom buttons should look at how the
-WebAuthn system plugin implements this functionality. Such buttons can
-be used for implementing third party single-sign-on services or even
-logging in using third party identity services such as those offered by
-popular social media (Facebook, Google, Twitter, GitHub etc).
-
-This change does not adversely impact backwards compatibility. Third
-party login modules and login forms will continue functioning normally
-even if they do not implement the extra login buttons feature with the
-notable omission of integrations afforded by said feature such as Web
-Authentication itself. That is to say they won't stop functioning (which
-would be a b/c break) but they won't be feature-complete.
-
-### Allowing com_ajax in the backend login page
-
-The Administrator login page whitelists com_ajax in
-AdministratorApplication so it can be used to handle requests by guest
-users.
-
-This change does not cause any backwards compatibility issues as long as
-developers use sane practices and do not assume that being called by
-com_ajax in the backend is proof that the user is logged into the
-backend. That would be a bad security practice. The sane practice is to
-use Joomla's User object to detect if it's a guest user and if not
-whether the user is allowed a permission required to effect the action
-requested through com_ajax. That is to say, if this change has broken
-your code then your code was already broken and needed to be reworked
-anyway.
-
-## Further Information
-
-*The initial documentation of this feature is in the pull request at
-<a href="https://github.com/joomla/joomla-cms/pull/28094"
-class="external text" target="_blank"
-rel="nofollow noreferrer noopener">PR #28094</a>.*
+<!-- Filename: WebAuthn_Passwordless_Login / Display title: Connexion WebAuthn -->
+
+## Connexion sans mot de passe WebAuthn
+
+L'authentification Web, ou WebAuthn en abrégé, permet à un utilisateur de se connecter en toute sécurité à un site sans utiliser de mot de passe — bien qu'un nom d'utilisateur soit toujours nécessaire. Elle utilise une cryptographie robuste d'une manière extrêmement résistante aux problèmes les plus courants liés aux mots de passe :
+* quelqu'un l'a deviné (attaque par force brute)
+* quelqu'un l'a intercepté (attaque de l'homme du milieu)
+* quelqu'un vous a trompé pour que vous le divulguiez (attaque de phishing)
+* quelqu'un l'a craqué après avoir obtenu une copie des données de votre base de données (attaques par injection SQL)
+* quelqu'un l'a volé.
+
+WebAuthn n'est pas seulement très sécurisé ; c'est aussi très convivial ! Vous n'avez plus besoin de vous souvenir de longs mots de passe ou d'utiliser un gestionnaire de mots de passe. Tout ce dont vous avez besoin est un *authentificateur*, parfois aussi appelé une *clé d'accès*.
+
+Un authentificateur peut avoir de nombreuses formes, physiques ou virtuelles. Il peut s'agir d'une clé matérielle séparée se connectant à votre appareil via USB, Bluetooth ou NFC. Il peut s’agir de votre appareil lui-même, déverrouillant son authentificateur intégré avec un code PIN, un lecteur d'empreintes digitales, une reconnaissance faciale ou une vérification biométrique similaire.
+
+Cette fonctionnalité fonctionne déjà sur les appareils Android et iOS/iPadOS et nous travaillons à la rendre disponible sur Windows également. Cela peut même être votre téléphone — actuellement, cela est possible avec les téléphones Android, mais cette fonctionnalité arrive également sur les appareils iOS / iPadOS.
+
+WebAuthn ne fonctionne qu'en HTTPS et uniquement lorsque votre site utilise un certificat valide et de confiance pour cela. Ne vous inquiétez pas, vous n'avez pas besoin de dépenser de l'argent supplémentaire ; des services gratuits comme Let’s Encrypt sont généralement intégrés dans les panneaux de contrôle d'hébergement web et fonctionnent parfaitement avec WebAuthn.
+
+WebAuthn utilise la cryptographie à clé publique, la même technologie éprouvée qui sécurise vos sites avec HTTPS, vos informations bancaires, etc. La clé privée ne quitte jamais l'authentificateur. Votre site ne stocke qu'une clé publique. Même si vous subissez une fuite de données, l'attaquant se retrouvera avec une clé publique pratiquement inutile ; il leur faudrait des milliers à des millions d'années CPU pour la craquer contrairement aux quelques minutes ou heures nécessaires pour craquer le hash d'un mot de passe fixe que vous pouvez mémoriser.
+
+WebAuthn est l'avenir de l'authentification. Facile, sécurisé et sans tracas. Tout ce que les mots de passe fixes ne sont pas.
+
+L'image suivante montre un appareil matériel inséré dans le port USB d'un ordinateur portable. Il a coûté 15 £ en février 2022.
+
+![photographie de l'appareil matériel](../../../en/images/users/passwordless-login-hardware-device.jpg)
+
+WebAuthn utilise un plugin système qui est activé par défaut. Un bouton **Web Authentication** sera présent dans les écrans de connexion par défaut de Joomla 4 et versions ultérieures, comme illustré dans l'écran de connexion Administrateur :
+
+![formulaire de connexion administrateur sécurisé](../../../en/images/users/passwordless-login-login-form.jpg)
+
+## Configuration de l'utilisateur
+
+L'utilisateur doit d'abord s'inscrire avec un Nom d'utilisateur et un Mot de passe normaux. Après s'être connecté, allez au formulaire de Profil Utilisateur. Pour un Administrateur :
+
+- Sélectionnez **Menu Utilisateur → Modifier le Compte → Connexion par Authentification Web W3C
+  (WebAuthn)** pour faire apparaître le formulaire, initialement sans
+  authentificateurs enregistrés.
+- Sélectionnez **Ajouter un nouvel authentificateur**
+
+La présentation exacte de l'étape suivante dépend de votre navigateur.
+En général, vous verrez une alerte, un message ou une fenêtre vous demandant de sélectionner
+un type d'authentificateur ou, si vous utilisez un authentificateur matériel
+rattaché à votre appareil, vous rappelant d'appuyer sur le bouton de l'
+authentificateur matériel. Pour des raisons de sécurité et pratiques, il y a un
+intervalle de temps relativement court autorisé pour activer l'authentificateur :
+60 secondes.
+
+![invite de connexion sécurisée pour l’administrateur avec authentificateur matériel](../../../en/images/users/passwordless-login-hardware-propmpt.png)
+
+Une fois que vous déverrouillez votre authentificateur – en appuyant sur un bouton, en scannant votre
+empreinte digitale / visage, en entrant un code PIN ou une combinaison des options ci-dessus
+en fonction de votre authentificateur – le message disparaît, l'
+authentificateur est enregistré et l'écran apparaît comme suit :
+
+![authentificateur enregistré pour la connexion sécurisée de l’administrateur](../../../en/images/users/passwordless-login-registered-authenticator.png)
+
+Il est très important de noter que vous pouvez uniquement enregistrer ou supprimer
+des authentificateurs sur votre propre compte utilisateur. Pour des raisons de sécurité, même un
+Super Utilisateur n'est pas autorisé à enregistrer, modifier ou ajouter
+des authentificateurs sur les comptes d'autres utilisateurs.
+
+### Authenticator
+
+Vous pouvez utiliser n'importe quel authentificateur FIDO U2F ou FIDO2. L'U2F de FIDO est une norme plus ancienne
+qui prend en charge une sélection plus limitée et moins sécurisée de
+méthodes cryptographiques. FIDO2 est la norme plus récente qui prend en charge des
+méthodes cryptographiques beaucoup plus sécurisées, y compris la Cryptographie à Courbe
+Elliptique, une méthode cryptographique qui est réputée résister même à
+l'ordinateur quantique (si et quand cela devient une réalité pratique). De plus, les
+authentificateurs FIDO2 peuvent être configurés pour avoir des protections supplémentaires telles qu'un
+code PIN ou un contrôle biométrique (par ex. scan d'empreinte digitale) ce qui signifie que même
+si vous perdez la possession physique de l'authentificateur, celui qui le trouve
+ne peut pas se connecter à vos sites.
+
+Si vous cherchez à acheter un authentificateur matériel, vous pouvez rechercher
+"FIDO2" sur votre marché préféré, tel qu'Amazon. Il y a un large
+choix à votre disposition.
+
+Vous pouvez également utiliser une clé FIDO logicielle comme Krypton
+comme votre authentificateur.
+
+De nombreux appareils disposent d'une authentification compatible FIDO2 intégrée :
+
+- Windows 10 et 11 disposent de Windows Hello avec un code PIN, un lecteur
+  d'empreintes digitales, une caméra de reconnaissance faciale ou une combinaison de clé
+  matérielle et de PIN. Le support de Windows Hello est en cours d'ajout au plugin avec une
+  version cible de Joomla 4.2.0.
+- macOS dispose de TouchID sur tous les ordinateurs portables avec la puce T2
+  ou ceux basés sur Apple Silicon utilisant le capteur TouchID intégré, ainsi que
+  tous les ordinateurs de bureau basés sur Apple Silicon utilisant le nouveau clavier
+  en aluminium d'Apple avec un lecteur d'empreintes digitales.
+- iOS / iPadOS dispose de TouchID sur tous les appareils avec un lecteur d'empreintes digitales et
+  FaceID sur tous les appareils récents avec une caméra de projection de points
+  infrarouges FaceID.
+- Certains appareils Android disposent d'un lecteur d'empreintes digitales ou d'une caméra de
+  reconnaissance faciale. Ceux-ci peuvent également fonctionner comme des authentificateurs FIDO2, sur
+  Android 9 ou plus récent utilisant Google Chrome, au minimum.
+- D'autres appareils peuvent également être disponibles. Par exemple, les téléphones Android utilisant
+  ![caBLE](https://groups.google.com/a/fidoalliance.org/g/fido-dev/c/go6GoFW27Dw/m/9flCLR5pBQAJ?pli=1)
+
+### Navigateurs compatibles WebAuthn
+
+Les navigateurs basés sur Chromium et Firefox prennent en charge WebAuthn depuis début 2019.
+
+Safari et tous les navigateurs iOS/iPadOS (qui sont, en fait, Safari avec une
+interface différente) prennent en charge pleinement WebAuthn depuis la sortie
+d'iOS/iPadOS 13 fin 2019.
+
+Pratiquement, si votre système d'exploitation et navigateur ont été publiés
+après mi-2020 vous ne devriez rencontrer aucun problème. Seuls quelques
+navigateurs très peu communs ne prennent toujours pas en charge WebAuthn.
+
+## Authentification
+
+Pour vous connecter, vous devez entrer votre nom d'utilisateur dans le champ Nom d'utilisateur du formulaire de connexion. Vous n'avez pas besoin de saisir votre mot de passe, mais si votre navigateur le remplit pour vous, laissez-le. Le mot de passe n'est PAS envoyé au serveur lorsque le formulaire est soumis via le bouton Authentification Web.
+
+Il en résulte que vous pouvez vous connecter soit avec votre nom d'utilisateur et votre mot de passe, soit avec votre nom d'utilisateur et l'authentification Web.
+
+## Comment désactiver le plugin
+
+Si vous ne souhaitez pas autoriser WebAuthn, rendez-vous simplement dans la liste des plugins, trouvez Système - Connexion sans mot de passe WebAuthn dans le groupe Système et désactivez-le. Il n'y a pas de paramètres à définir.
+
+## Exigences du serveur
+
+Pour que WebAuthn fonctionne, les conditions préalables suivantes doivent être remplies :
+
+- HTTPS avec un certificat valide et signé. La plupart des hébergeurs vous permettent d'utiliser gratuitement des certificats émis par Let's Encrypt. Ceux-ci fonctionnent parfaitement avec WebAuthn.
+- L'extension OpenSSL pour PHP doit être installée et activée.
+- L'extension PHP GMP ou l'extension PHP BCmath doit être installée et activée (l'une ou l'autre suffira).
+- La bibliothèque Sodium devrait idéalement être activée ; elle permet l'utilisation de la cryptographie à courbes elliptiques sur les authentificateurs FIDO2 compatibles, ce qui, comme nous l'avons dit, est la méthode cryptographique la plus sécurisée.
+
+## Questions Fréquemment Posées et Dépannage
+
+### Je ne vois pas le bouton de connexion “Authentification Web”
+
+Vous n'accédez pas à votre site sous HTTPS. WebAuthn n'est disponible que pour les sites HTTPS avec un certificat valide. C'est une précaution de sécurité intégrée dans la norme WebAuthn. Le plugin vérifie en fait si le site est accédé via HTTPS en utilisant la classe Uri de Joomla. Dans de rares cas où le serveur ment sur le protocole, vous pourriez ne pas voir le bouton même si votre site (prétend être) HTTPS. Même chose si vous avez modifié votre fichier configuration.php et configuré le paramètre optionnel \$live_site avec un préfixe de protocole http:// au lieu de https://.
+
+Notez également que les modules de connexion tiers et les composants implémentant leur propre formulaire de connexion peuvent ne pas encore afficher ces boutons. Nous avons ajouté une nouvelle infrastructure pour les prendre en charge, un peu comme ce que nous avons dû faire dans Joomla! 3.2 pour prendre en charge l'Authentification à Deux Facteurs.
+
+### Je dois toujours fournir un nom d'utilisateur. WebAuthn n'est-il pas censé se débarrasser des noms d'utilisateur ?
+
+Pas vraiment, non. La spécification actuelle de WebAuthn ne prévoit pas la gestion des identités. Les navigateurs Web nous demandent d'envoyer une liste de clés publiques WebAuthn acceptables pendant la phase de connexion. Cela signifie que nous avons besoin de votre nom d'utilisateur pour les récupérer.
+
+Cela dit, utiliser WebAuthn clarifie enfin que les noms d'utilisateur *ne doivent pas être considérés comme des secrets*. Ils sont considérés comme des informations publiques qui peuvent être librement transmises à un adversaire, tout comme les clés publiques stockées dans la base de données du site. Le seul secret est stocké dans l'authentificateur lui-même et ne quitte jamais l'authentificateur !
+
+### J'ai enregistré un authentificateur mais lorsqu'on essaie de se connecter, cela m'indique que je ne l'ai pas fait. Est-ce un bug ?
+
+C'est un bug, mais pas avec le plugin WebAuthn lui-même.
+
+Un ou plusieurs plugins sur votre site génèrent des notices, avertissements ou erreurs PHP, corrompant ainsi la réponse renvoyée par votre serveur. En conséquence, le JavaScript sur la page ne peut pas analyser la réponse du serveur et n'est pas sûr que des authentificateurs soient enregistrés par l'utilisateur.
+
+Allez dans l'interface d'administration de votre site, Système, Configuration Globale et réglez le Rapport d'Erreurs sur Aucun. Dans la plupart des cas de mauvais comportement des plugins cœur et 3PD cela suffit. Sinon, veuillez examiner la sortie de la requête en utilisant les outils de développement de votre navigateur pour voir ce qui corrompt la requête.
+
+### Il n'y a pas d'invite sur Safari pour utiliser mon authentificateur
+
+Cela ne devrait plus se produire avec iOS 13, iPadOS 13 et macOS Catalina ou toute version ultérieure.
+
+C'est un bug Safari dans les anciennes versions de Safari. Les anciennes versions de Safari n'incluaient le support de WebAuthn que comme une fonctionnalité expérimentale et pas tout à fait terminée.
+
+### Je ne peux pas utiliser un capteur biométrique (TouchID, empreinte digitale, Windows Hello)
+
+Certains anciens navigateurs basés sur Chromium (à l'exception de Google Chrome proprement dit) n'avaient pas un support complet pour les authentificateurs intégrés. Ils se bloquaient ou se figeaient lorsque vous essayiez d'en utiliser un. Ces problèmes ont été corrigés dans ces navigateurs vers la mi-2020.
+
+Si vous utilisez Windows, veuillez vous rappeler que votre appareil DOIT avoir une puce Trusted Platform Module (TPM) et qu'elle doit être activée dans le BIOS. Juste avoir un capteur biométrique compatible Windows Hello ne suffit pas. C'est une précaution de sécurité dans la norme WebAuthn elle-même : les informations d'authentification doivent être traitées en utilisant du matériel sécurisé et résistant aux altérations pour empêcher la subversion des clés (par exemple, un malware exécuté sur l'ordinateur ne peut pas voler la clé utilisée pour l'authentification).
+
+Enfin, gardez à l'esprit que le support Windows Hello est toujours en cours de développement et sera publié avec Joomla 4.2.
+
+### Si je peux utiliser un authentificateur logiciel, pourquoi devrais-je m'embêter avec un token matériel ?
+
+Le pivot de WebAuthn est le secret absolu de la clé privée. Elle est uniquement connue de l'authentificateur et il devrait être impossible de la communiquer au monde extérieur.
+
+Dans le cas d'un authentificateur matériel, qu'il s'agisse d'un dispositif matériel discret ou d'une TPM/Enclave Sécurisée intégrée à votre appareil, cela est intrinsèque à la nature même de ce matériel.
+
+Un authentificateur logiciel génère une clé secrète et la stocke dans le système de fichiers. Cependant, il reste une application logicielle régulière qui s'exécute dans votre système d'exploitation habituel, qu'il s'agisse de votre téléphone ou de votre ordinateur. En conséquence, elle est susceptible d'être la cible de plusieurs types d'attaques qui peuvent être utilisés pour voler des informations de manière subreptice (problèmes de sécurité dans le logiciel lui-même, logiciels malveillants utilisant des vulnérabilités de type Spectre dans les processeurs modernes, etc.).
+
+Ainsi, un authentificateur logiciel est bien plus pratique et sécurisé qu'un mot de passe régulier mais un authentificateur matériel offre la meilleure sécurité. Choisissez votre authentificateur en fonction de votre budget et de vos besoins en matière de sécurité.
+
+Considérant que le prix d'une clé FIDO – qui est compatible avec WebAuthn – est inférieur à 10 € sur Amazon, vous pouvez utiliser un authentificateur matériel dans la plupart des cas pratiques.
+
+### Pourquoi les informations d'identification sont-elles chiffrées dans la base de données ? Est-ce que ce n'est pas exagéré ?
+
+La seule chose stockée dans la base de données est la clé publique retournée par l'authentificateur lorsque nous effectuons la cérémonie d'attestation (c'est le nom formel de l'enregistrement d'un authentificateur selon la spécification WebAuthn). Étant une clé publique, elle n'a pas besoin d'être protégée contre la lecture. Même si un utilisateur non autorisé pouvait lire cette information, il ne serait pas capable d'usurper l'authentificateur, par exemple en le clonant.
+
+Cependant, si un utilisateur malveillant avait un accès en écriture uniquement à la table de base de données `#__webauthn_credentials`, sans accès en lecture au système de fichiers et sans accès en écriture à aucune autre table, il pourrait concevoir **ajouter** son propre authentificateur, pouvant ainsi se faire passer pour l'utilisateur ciblé sur le système. Il s'agit d'une attaque très théorique car il leur faudrait également connaître l'identifiant utilisateur de l'utilisateur qu'ils attaquent, ce qui est plus difficile à déduire sans une certaine connaissance interne du site lui-même. En outre, avoir un accès en écriture juste à cette table et non à l'ensemble de la base de données (auquel cas ils pourraient créer un nouvel Utilisateur Super) est extrêmement improbable. Cependant, nous chiffrons les informations d'identification pour rendre impossible même cette attaque entièrement théorique.
+
+Nous sommes pleinement conscients que si un utilisateur a un accès en lecture au système de fichiers du serveur, il a accès à la clé de chiffrement et aux informations de connexion à la base de données, toutes stockées dans configuration.php. Cependant, dans ce cas, vous êtes déjà piraté : l'attaquant peut lire configuration.php et sait donc comment se connecter à votre base de données. Dans ce cas, il peut faire ce qu'il veut de votre site, y compris supprimer tous les Utilisateurs Super existants et créer son propre compte d'Utilisateur Super. Par conséquent, il n'y a aucune raison d'essayer de traiter cette situation ; vous seriez complètement compromis (piraté). La seule chose qui pourrait être une planche de salut est des sauvegardes régulières, testées et hors site.
+
+### J'ai configuré l'Authentification à Deux Facteurs mais je suis connecté sans fournir ma clé secrète. N'est-ce pas non sécurisé ?
+
+Non, c'est intentionnel et par conception.
+
+Lorsque nous avons ajouté l'Authentification à Deux Facteurs (TFA) dans Joomla! 3.2, vous ne pouviez vous connecter à votre site qu'avec un nom d'utilisateur et un mot de passe. Les mots de passe peuvent être volés ou devinés. Par conséquent, la TFA était le seul moyen de fournir un minimum de sécurité sur des cibles à haut risque et à haute valeur. C'était en 2013.
+
+WebAuthn est une solution d'authentification entièrement différente qui n'a aucun des problèmes des mots de passe fixes. Elle utilise une cryptographie forte et du matériel sécurisé pour rendre pratiquement impossible la subversion des clés cryptographiques d'authentification. Elle est également inviolable, c'est-à-dire que vous ne pouvez pas être dupé en l'utilisant sur un site usurpateur, car l'information d'identification WebAuthn est liée au nom de domaine exact pour lequel elle a été délivrée (oui, si vous utilisez plusieurs domaines pour votre site ou transférez votre site vers un autre domaine, vous devrez réenregistrer tous vos authentificateurs WebAuthn – vous avez bien lu !). En conséquence, l'authentification avec WebAuthn est incroyablement sécurisée et remplace les raisons qui nécessitaient la TFA. Cela signifie que si vous vous authentifiez avec succès en utilisant WebAuthn, le secret de la TFA n'a pas besoin d'être – et n'est donc pas – vérifié du tout.
+
+Dans un monde idéal, vous ne pourriez vous connecter à votre site qu'avec WebAuthn. C'est une fonctionnalité sur laquelle nous travaillons et que vous pourriez ne pas vouloir activer ; après tout, si votre nom de domaine change ou si vous perdez l'accès à ou réinitialisez tous vos authentificateurs WebAuthn, vous seriez verrouillé hors de votre site. Par conséquent, vous devriez toujours activer la TFA sur votre compte utilisateur sur la base que la connexion par mot de passe peut toujours être utilisée comme une solution de secours pour vous connecter à votre site et doit être protégée contre les attaques connues contre les mots de passe fixes.
+
+### La TFA n'est-elle pas suffisante ? Pourquoi avons-nous besoin de WebAuthn ?
+
+La TFA seule est suffisante dans la plupart des cas, mais elle souffre de deux problèmes.
+
+Premièrement, elle offre une expérience utilisateur assez maladroite. Vous devez fournir votre clé secrète en constante évolution avec votre nom d'utilisateur et votre mot de passe. La plupart des gens utilisent TOTP (le code PIN à six chiffres qui change toutes les 30 secondes) ce qui ralentit l'accès et tend à frustrer les utilisateurs. Utiliser une YubiKey est beaucoup plus rapide, mais aussi plus coûteux et plus compliqué à fournir lorsque vous avez plus de quelques utilisateurs sur le site. Une YubiKey a également une durée de vie prévue d'environ 2 ans d'utilisation quotidienne lorsque vous générez des mots de passe à usage unique (elle épuise la mémoire écriture unique qu'elle utilise pour garder une trace des signatures qu'elle a émises).
+
+Deuxièmement, si vous utilisez TOTP, vous êtes toujours susceptible d'être victime de problèmes de sécurité tels que les enregistreurs de frappe, le phishing et la possibilité que la clé secrète utilisée pour générer le TOTP soit volée. De plus, avec un million de possibilités et trente secondes pour les essayer, il est concevable qu'un attaquant puisse avoir de la chance puisque Joomla ne verrouille pas votre compte et n'applique pas non plus de limitation de taux pour les tentatives de connexion échouées. Bien que ces protections puissent être mises en œuvre, leur mise en œuvre elle-même pourrait être utilisée pour créer une situation de déni de service qui bloque un utilisateur légitime hors de son site tandis que l'attaquant s'infiltre. C'est un cas où le remède est pire que le mal.
+
+WebAuthn améliore grandement l'expérience utilisateur. Les principaux navigateurs ont adopté WebAuthn et offrent une expérience utilisateur convaincante, guidant les utilisateurs dans l'utilisation des authentificateurs avec succès. Se connecter avec WebAuthn est plus pratique même par rapport à l'utilisation de la fonction de remplissage automatique d'un gestionnaire de mots de passe. Avec les récentes versions des systèmes d'exploitation mobiles, même cette expérience, autrefois légèrement déroutante, devient rapidement plus facile que les mots de passe et la TFA ne l'ont jamais été.
+
+Là où WebAuthn excelle vraiment, c'est sur le front de la sécurité. En utilisant du matériel sécurisé et une validation forte du nom de domaine du site, il est pratiquement immunisé contre les enregistreurs de frappe, le phishing et la subversion des clés. Il a même une protection intégrée contre le clonage des clés. Oui, vous pouvez toujours perdre votre matériel – mais les authentificateurs FIDO2, qu'ils soient des appareils externes ou intégrés, peuvent être verrouillés avec un code PIN ou des données biométriques. Dans l'ensemble, utiliser WebAuthn avec des authentificateurs FIDO2 est plus résistant au vol et à la perte que vos clés de maison ou de voiture.
+
+## Notes du Développeur
+
+### Boutons de connexion supplémentaires
+
+Le module plugin et com_users utilisent maintenant l'événement onUserLoginButtons, défini et appelé dans `Joomla\CMS\Helper\AuthenticationHelper::getLoginButtons`, pour récupérer les définitions de tous les boutons supplémentaires qui doivent être placés après le bouton de connexion régulier.
+
+Tous les développeurs qui implémentent un module de connexion ou, plus généralement, un formulaire de connexion, devraient également utiliser la méthode publique et statique `Joomla\CMS\Helper\AuthenticationHelper::getLoginButtons` pour récupérer ces définitions et afficher ces boutons afin de rendre leur logiciel pleinement compatible avec Joomla 4.
+
+Les développeurs souhaitant implémenter des boutons personnalisés devraient examiner comment le plugin système WebAuthn implémente cette fonctionnalité. De tels boutons peuvent être utilisés pour implémenter des services de connexion unique tiers ou même pour se connecter en utilisant des services d'identité tiers tels que ceux offerts par des réseaux sociaux populaires (Facebook, Google, Twitter, GitHub, etc.).
+
+Ce changement n'affecte pas négativement la compatibilité ascendante. Les modules de connexion tiers et les formulaires de connexion continueront à fonctionner normalement, même s'ils n'implémentent pas la fonctionnalité des boutons de connexion supplémentaires, incluant l'absence notable d'intégrations offertes par cette fonctionnalité telles que l'authentification Web elle-même. Autrement dit, ils ne cesseront pas de fonctionner (ce qui serait une rupture de compatibilité ascendante), mais ils ne disposeront pas de toutes les fonctionnalités.
+
+### Autorisation de com_ajax sur la page de connexion du backend
+
+La page de connexion de l'administrateur autorise com_ajax dans l'AdministratorApplication pour qu'elle puisse être utilisée pour traiter les requêtes par les utilisateurs invités.
+
+Ce changement ne cause aucun problème de compatibilité ascendante tant que les développeurs utilisent des pratiques sensées et ne supposent pas qu'être appelé par com_ajax dans le backend est une preuve que l'utilisateur est connecté au backend. Cela serait une mauvaise pratique de sécurité. La pratique raisonnable consiste à utiliser l'objet utilisateur de Joomla pour détecter s'il s'agit d'un utilisateur invité et si ce n'est pas le cas, vérifier si l'utilisateur dispose de l'autorisation requise pour effectuer l'action demandée via com_ajax. Autrement dit, si ce changement a cassé votre code, c'est que votre code était déjà défectueux et devait être retravaillé de toute façon.
+
+## Informations complémentaires
+
+La documentation initiale de cette fonctionnalité se trouve dans la demande de tirage à l'adresse suivante : [PR #28094](https://github.com/joomla/joomla-cms/pull/28094)
+
+*Traduit par openai.com*
+

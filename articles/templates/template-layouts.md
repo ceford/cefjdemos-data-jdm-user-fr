@@ -1,215 +1,173 @@
-<!-- Filename: J4.x:Template_Layouts / Display title: Mises en page de template -->
+<!-- Filename: J4.x:Template_Layouts / Display title: Modèles de mise en page -->
 
-## Mises en page de template
+## Structures de Fichiers de Gabarit
 
-En Joomla!, chaque extension qui génère une sortie HTML place le code de sortie dans un fichier de template au sein de la structure de fichiers de l'extension, souvent dans un dossier nommé tmpl. Voici quelques exemples :
+Dans un **gabarit**, chaque extension qui génère du code html place le code de sortie dans un fichier de gabarit au sein de la structure de fichiers de l'extension, souvent dans un dossier nommé tmpl. Quelques exemples :
 
-* /modules/mod_login/tmpl/default.php
-* /modules/mod_login/tmpl/default_logout.php
-* /components/com_content/tmpl/article/default.php
-* /plugins/content/vote/tmpl/vote.php
+- /modules/mod_login/tmpl/default.php
+- /modules/mod_login/tmpl/default_logout.php
+- /components/com_content/tmpl/article/default.php
+- /plugins/content/vote/tmpl/vote.php
 
-### Substitutions de template
+Dans un **surcharge de gabarit**, un fichier du même nom est créé au sein de la structure de fichiers du gabarit et est utilisé à la place du fichier dans la structure de fichiers de l'extension. Exemples correspondants :
 
-Dans une substitution de template, un fichier portant le même nom est créé au sein de la structure de fichiers du template et est utilisé à la place du fichier dans la structure de fichiers de l'extension. Exemples correspondants :
+- /templates/cassiopeia/html/mod_login/default.php
+- /templates/cassiopeia/html/mod_login/default_logout.php
+- /templates/cassiopeia/html/com_content/article/default.php
+- /templates/cassiopeia/html/plg_content_vote/vote.php
 
-* /templates/cassiopeia/html/mod_login/default.php
-* /templates/cassiopeia/html/mod_login/default_logout.php
-* /templates/cassiopeia/html/com_content/article/default.php
-* /templates/cassiopeia/html/plg_content_vote/vote.php
+Cela vous permet de personnaliser le rendu pour répondre à vos besoins. Cependant, vous n'avez pas l'option de choisir d'utiliser ou non votre surcharge. Elle est toujours utilisée.
 
-Cela vous permet de personnaliser la sortie pour l'adapter à vos besoins. Cependant, vous n'avez pas la possibilité de choisir d'utiliser ou non votre substitution. Elle est toujours utilisée.
+Dans une **mise en page alternative de gabarit**, vous créez un fichier avec un nom différent de l'original mais dans le même dossier de gabarit. Le nouveau nom ne doit pas contenir de caractère de soulignement. Vous créez également tout fichier qui partage la première partie du nom original. Un exemple :
 
-### Mises en page de template
+- /templates/cassiopeia/html/mod_login/expires.php
+- /templates/cassiopeia/html/mod_login/expires_logout.php
 
-Dans une mise en page de template, vous créez un fichier avec un nom différent de l'original mais dans le même dossier de template. Le nouveau nom ne doit pas contenir de caractère de soulignement. Vous créez également tout fichier qui partage la première partie du nom d'origine. Un exemple
-
-    /templates/cassiopeia/html/mod_login/expires.php
-    /templates/cassiopeia/html/mod_login/expires_logout.php
-
-Il devient alors possible de choisir d'utiliser la mise en page par défaut d'origine ou la mise en page alternative. Le choix se fait dans le formulaire d'édition du module ou du composant (onglet Avancé pour les modules, onglet Options pour les articles). Notez que toutes les extensions ne permettent pas les substitutions ni les mises en page alternatives.
+Il devient alors possible de choisir d'utiliser la mise en page par défaut originale ou la mise en page alternative. Le choix est fait dans le formulaire d'édition du module ou du composant (onglet Avancé pour les modules, onglet Options pour les Articles). Notez que toutes les extensions ne permettent pas les surcharges ou les mises en page alternatives.
 
 **Attention :** les plugins ne fournissent pas de mécanisme pour sélectionner des mises en page alternatives.
 
-## Mises en page alternatives des modules
+## Dispositions Alternatives de Module
 
-Créer une mise en page alternative pour un module est similaire à créer une substitution de template pour un module. Dans les deux cas, vous créez un dossier appelé templates/<votre modèle>/html/<nom du module>. Par exemple, le dossier pour une substitution ou une mise en page alternative du module "mod_login" pour le template Cassiopeia serait templates/cassiopeia/html/mod_login/.
+Créer une disposition alternative pour un module est similaire à créer une surcharge de modèle pour un module. Dans les deux cas, vous créez un dossier appelé `templates/.../html/`. Par exemple, le dossier pour une surcharge de modèle "mod_login" ou une disposition alternative pour le modèle cassiopeia serait `templates/cassiopeia/html/mod_login/`.
 
-Il existe deux différences importantes entre une substitution de template et une mise en page alternative. La première concerne le nom du fichier. Pour la substitution de template, vous nommeriez le fichier default.php pour correspondre au nom de fichier principal. Pour une mise en page alternative, vous utilisez un nom différent. La seule règle est que **le nom du fichier ne doit contenir aucun caractère de soulignement**.
+Il y a deux différences importantes entre une surcharge de modèle et une disposition alternative. La première est le nom du fichier. Pour la surcharge de modèle, vous nommez le fichier `default.php` pour correspondre au nom du fichier central. Pour une disposition alternative, vous utilisez un nom différent. La seule règle est que **le nom du fichier ne doit pas contenir de tirets bas**.
 
-La deuxième différence importante est que, contrairement aux fichiers de substitution de template qui sont utilisés automatiquement chaque fois que le module est affiché en utilisant le template avec la substitution, un fichier de mise en page alternative n'est utilisé que si vous le sélectionnez comme paramètre dans les réglages du module.
+La seconde différence importante est que, contrairement aux fichiers de surcharge de modèle qui sont utilisés automatiquement chaque fois que le module est affiché à l'aide du modèle avec la surcharge, un fichier de disposition alternative n'est utilisé que si vous le sélectionnez comme paramètre dans les paramètres du module.
 
 ### Un exemple pratique - mod_login
 
-* Allez sur **Système → Templates de site → Détails et fichiers de Cassiopeia**
-* Sélectionnez l'onglet **Créer des substitutions**.
-* Dans la liste des Modules, sélectionnez l'élément **mod_login**.
-* Dans l'onglet Éditeur, sélectionnez **html → mod_login** pour voir vos nouvelles copies des templates de sortie de mod_login.
-* Renommez **default.php** en quelque chose d'autre sans soulignement, par exemple expires.php.
-* Renommez **default_logout.php** en **expires_logout.php**.
+- Allez dans **Système** → **Templates de Site** → **Détails et Fichiers Cassiopeia**
+- Sélectionnez l'onglet **Créer des Surcharges**.
+- Dans la liste des Modules, sélectionnez l'élément **mod_login**.
+- Dans l'onglet Éditeur, sélectionnez **html** → **mod_login** pour voir vos copies nouvellement créées des modèles de sortie mod_login.
+- Renommez **default.php** en quelque chose d'autre sans tiret bas, **expires.php** dans cet exemple.
+- Renommez **default_logout.php** en **expires_logout.php**.
 
 Vous avez maintenant deux fichiers avec exactement le même contenu que les originaux. Modifiez le contenu de expires_logout.php pour ajouter un message informant l'utilisateur de l'heure à laquelle la session expirera après chaque chargement de page.
 
-À la ligne 16, juste en dessous des déclarations d'utilisation existantes, ajoutez ce qui suit :
-```
-    use Joomla\CMS\Factory;
+À la ligne 16, juste en dessous des instructions existantes, ajoutez ce qui suit :
 
-    date_default_timezone_set('Europe/London');
-    $config = Factory::getContainer()->get('config');
-    $lifetime = $config->get('lifetime', 0);
-    $time = time() + $lifetime * 60;
-    $endTime = date('H:i:s', $time); // time() returns a time in seconds already
+```php
+use Joomla\CMS\Factory;
+
+date_default_timezone_set('Europe/London');
+$config = Factory::getContainer()->get('config');
+$lifetime = $config->get('lifetime', 0);
+$time = time() + $lifetime * 60;
+$endTime = date('H:i:s', $time); // time() retourne un temps en secondes déjà
 ```
+
 Et à la ligne 36, immédiatement après la ligne contenant une instruction endif, ajoutez ce code :
 
 ```html
 <p class="text-center">
-Your session will expire at <br><?php echo $endTime; ?>
+Votre session expirera à <br><?php echo $endTime; ?>
 </p>
 ```
 
-Fermez les fichiers de Cassiopeia. Sélectionnez **Contenu → Modules du site** et ouvrez le module de connexion. Dans l'onglet Avancé, sous l'élément de mise en page, vous constaterez que vous avez le choix entre **-- Depuis le module -- / Par défaut** et **-- Depuis le template de Cassiopeia -- / expires**.
+Fermez les fichiers Cassiopeia. Sélectionnez **Contenu** → **Modules du Site** et ouvrez le module Login. Dans l'onglet Avancé, élément Disposition, vous trouverez que vous avez le choix entre **-- From Module -- / Default** et **-- From cassiopeia Template -- / expires**.
 
-<img
-src="https://docs.joomla.org/images/e/ee/J4x-alternative-layouts-example-en.png"
-class="thumbborder" decoding="async" data-file-width="742"
-data-file-height="546" width="742" height="546"
-alt="screenshot of modules login form showing alternative layouts" />
+![module de connexion montrant des dispositions alternatives](../../../en/images/templates/layouts-module-login.png)
 
-Une façon dont vous pourriez utiliser cette fonctionnalité est d'avoir deux formulaires de connexion, l'un avec un accès public et l'autre avec un accès Super Utilisateurs. Dans ce dernier, sélectionnez l'option **expires** et seuls les Super Utilisateurs verront le rappel de l'heure d'expiration de la session.
+Une façon d'utiliser cette fonctionnalité est d'avoir deux formulaires de connexion, l'un avec un accès public et l'autre avec un accès aux Super Users. Dans ce dernier, sélectionnez l'option **expires** et uniquement les Super Users verront le rappel du temps d'expiration de la session.
 
-Il est important de comprendre que si spécifié dans l'écran des paramètres du module, un fichier de mise en page alternative pour un module sera utilisé pour ce module indépendamment du template utilisé pour afficher la page où le module est affiché. Il incombe donc à l'administrateur de s'assurer que le fichier de mise en page fonctionnera comme souhaité dans tous les templates où ce module peut être affiché.
+Il est important de comprendre que si spécifié dans l'écran des paramètres du module, un fichier de disposition alternative pour un module sera utilisé pour ce module, quel que soit le modèle utilisé pour afficher la page où le module est affiché. Il est donc de la responsabilité de l'administrateur de s'assurer que le fichier de disposition fonctionnera comme souhaité dans tous les modèles où ce module peut être affiché.
 
-### Les traductions
+### Traduction
 
-Vous pouvez traduire le nom de fichier en utilisant les Substitutions de Langue. Essayez la procédure suivante :
+Vous pouvez traduire le nom du fichier en utilisant des Surcharges de Langue. Essayez la procédure suivante :
 
-* Sélectionnez **Système → Gérer le panneau → Substitutions de langue**.
-* Sélectionnez votre langue et l'emplacement de l'administrateur.
-* Sélectionnez le bouton **Nouveau** et remplissez le formulaire. Dans cet exemple, la clé de langue est **TPL_CASSIOPEIA_MOD_LOGIN_LAYOUT_EXPIRES** et le texte pourrait être **Connexion / Déconnexion avec heure d'expiration**
-* Enregistrez et fermez, puis revenez au formulaire du module de connexion.
+- Sélectionnez **Système** → **Panneau de Gestion** → **Surcharges de Langue**
+- Sélectionnez votre langue et l'emplacement Administrateur.
+- Sélectionnez le bouton **Nouveau** et remplissez le formulaire. Dans cet exemple, la clé de langue est **TPL_CASSIOPEIA_MOD_LOGIN_LAYOUT_EXPIRES** et le texte pourrait être **Connexion / Déconnexion avec expiration du temps**
+- Enregistrez et fermez et retournez au formulaire du module Login.
 
-<img
-src="https://docs.joomla.org/images/3/32/J4x-alternative-layouts-language-override-form-en.png"
-class="thumbborder" decoding="async" data-file-width="1000"
-data-file-height="508" width="1000" height="508"
-alt="screenshot of languages edit override form" />
+![formulaire de modification de surcharge de langues](../../../en/images/templates/layouts-language-override-form.png)
 
-Le champ de sélection de la mise en page du module avec **expires** traduit :
+Le champ de sélection de disposition de module avec **expires** traduit :
 
-<img
-src="https://docs.joomla.org/images/c/c3/J4x-alternative-layouts-example-translated-en.png"
-decoding="async" data-file-width="312" data-file-height="98" width="312"
-height="98" alt="small screenshot of alternative layouts example" />
+![formulaire alternatif de sélection des dispositions du module](../../../en/images/templates/layouts-example-translated.png)
 
-## Mises en page alternatives des composants
 
-Les mises en page alternatives des composants fonctionnent de manière similaire aux mises en page des modules. Un fichier est placé dans le même dossier où vous placeriez un fichier de substitution de template . Par exemple, pour créer une mise en page alternative pour un article pour le template "cassiopeia", vous placeriez un fichier dans le dossier `templates/cassiopeia/html/com_content/article/`. Comme pour les mises en page des modules, le fichier ne doit pas avoir le même nom que le fichier principal et ne doit pas contenir de caractères de soulignement dans le nom. De plus, il ne doit pas y avoir de fichier XML du même nom dans ce dossier. (Nous discuterons des fichiers XML ci-dessous dans les mises en page alternatives des liens de menu.)
+## Dispositions Alternatives des Composants
 
-Vous pouvez définir une valeur globale pour les mises en page des composants dans la fenêtre Options du composant. Par exemple, dans la fenêtre Options de l'article, il existe un paramètre `Choisir une mise en page` comme illustré ci-dessous :
+Les dispositions alternatives des composants fonctionnent de manière similaire aux dispositions des modules. Un fichier est placé dans le même dossier où vous placeriez un fichier de remplacement de modèle. Par exemple, pour créer une disposition alternative pour un article pour le modèle "cassiopeia", vous placeriez un fichier dans le dossier `templates/cassiopeia/html/com_content/article/`. Comme pour les dispositions de module, le fichier ne doit pas avoir le même nom que le fichier central et ne doit pas inclure de tirets bas dans le nom. De plus, il ne doit pas y avoir de fichier XML du même nom dans ce dossier. (Nous discuterons des fichiers XML ci-dessous, sous Dispositions Alternatives des Éléments de Menu.)
 
-<img
-src="https://docs.joomla.org/images/thumb/7/7a/J4x-article-global-alternative-layouts-en.png/800px-J4x-article-global-alternative-layouts-en.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/7/7a/J4x-article-global-alternative-layouts-en.png 1.5x"
-data-file-width="1000" data-file-height="508" width="800" height="406"
-alt="screenshot of articles options form with alternative layouts list" />
+Vous pouvez définir une valeur globale pour les dispositions de composants dans la fenêtre Options du composant. Par exemple, dans la fenêtre Article : Options, il y a un paramètre *Choisir une Disposition* comme illustré ci-dessous :
 
-Tout comme les mises en page des modules, les mises en page des composants sont affichées comme des options de paramètres dans l'écran d'édition individuel du composant. Par exemple, pour un article, le paramètre s'affiche dans l'onglet Options de modification des articles, comme illustré ci-dessous.
+![formulaire des options d'articles avec la liste des dispositions alternatives](../../../en/images/templates/layouts-articles-options.png)
 
-<img
-src="https://docs.joomla.org/images/thumb/b/b0/J4x-article-alternative-layout-en.png/800px-J4x-article-alternative-layout-en.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/b/b0/J4x-article-alternative-layout-en.png 1.5x"
-data-file-width="1000" data-file-height="507" width="800" height="406"
-alt="screenshot of article edit form showing alternative layouts list" />
+Comme pour les dispositions de module, les dispositions de composant sont affichées comme options de paramètre dans l'écran d'édition de chaque composant. Par exemple, pour un article, le paramètre s'affiche dans l'onglet Articles : Modifier les Options, comme illustré ci-dessous.
 
-Comme pour les autres paramètres, le réglage Utiliser le paramètre global utilisera le paramètre de la fenêtre Paramètres. Le réglage Par défaut du composant utilisera la mise en page par défaut du composant. Les mises en page alternatives que vous avez créées pour différents modèles sont affichées sous chaque en-tête de template.
+![formulaire d'édition d'article montrant la liste des dispositions alternatives](../../../en/images/templates/layout-article-edit.png)
 
-Les noms de fichier peuvent être traduits. La ligne ci-dessous :
+Comme pour d'autres paramètres, le paramètre Utiliser Global utilisera le paramètre des Options. Le paramètre Par Défaut du Composant utilisera la disposition par défaut du composant. Les dispositions alternatives que vous avez créées pour différents modèles s'affichent sous chaque en-tête de modèle.
+
+Les noms de fichiers peuvent être traduits. La ligne ci-dessous :
+```ini
+    TPL_CASSIOPEIA_COM_CONTENT_ARTICLE_LAYOUT_MYLAYOUT="Titre Seulement Pas de XML"
 ```
-    TPL_CASSIOPEIA_COM_CONTENT_ARTICLE_LAYOUT_MYLAYOUT="Title Only No XML"
-```
-traduira un fichier appelé "mylayout.php" en "Titre uniquement sans XML".
+traduira un fichier appelé "mylayout.php" par "Titre Seulement Pas de XML".
 
-Vous pouvez avoir plus d'un fichier pour une disposition. Le fichier initial doit être nommé sans underscores et tout fichier supplémentaire doit avoir des underscores.
+Vous pouvez avoir plus d'un fichier pour une disposition. Le fichier initial doit être nommé sans tirets bas et tous les fichiers supplémentaires doivent avoir des tirets bas.
 
-Les mises en page alternatives des composants peuvent être utilisées avec les articles, les contacts ou les flux d'actualités.
+Les dispositions alternatives de composants peuvent être utilisées avec des articles, des contacts ou des flux d'actualités.
 
-Les mise en page alternatives des composants ne sont utilisées que lorsque deux conditions sont remplies : (1) elles sont spécifiées dans les paramètres du composant ; et (2) il n'y a pas de lien de menu pour ce composant spécifique. Par exemple, si vous avez un ou plusieurs liens de menu de type "Article unique" configurés pour un article donné, alors la mise en page alternative pour cet article ne sera pas utilisée. À la place, la mise en page spécifiée dans le lien de menu sera utilisée. Cela est conforme à la façon générale dont fonctionnent les paramètres du composant, où le plus spécifique (dans ce cas, un lien de menu d'article unique) remplace le moins spécifique (dans ce cas, les paramètres de l'article).
+Les dispositions alternatives de composants ne sont utilisées que lorsque deux conditions sont remplies : (1) elles sont spécifiées dans les paramètres du composant ; et (2) il n'y a pas d'élément de menu pour ce composant spécifique. Par exemple, si vous avez un ou plusieurs éléments de menu de type "Article Seul" configurés pour un article donné, alors la disposition alternative pour cet article ne sera pas utilisée. Au lieu de cela, la disposition spécifiée dans l'élément de menu sera utilisée. Cela est cohérent avec la manière générale dont fonctionnent les paramètres de composants, où le plus spécifique (dans ce cas un élément de menu pour un seul article) remplace le moins spécifique (dans ce cas, les paramètres de l'article).
 
-## Mises en page alternatives des catégories
+## Dispositions Alternatives de Catégorie
 
-Les mises en page alternatives des catégories fonctionnent comme les mises en page des composants. Les règles pour spécifier les fichiers de mise en page sont les mêmes. La seule différence est que le dossier est le dossier de la catégorie, et non pas le dossier du composant. Par exemple, une mise en page alternative de catégorie de contact pour Cassiopeia irait dans le dossier `templates/cassiopeia/html/com_contact/category`.
+Les dispositions alternatives de catégorie fonctionnent comme les dispositions de composants. Les règles pour spécifier les fichiers de disposition sont les mêmes. La seule différence est que le dossier est le dossier de la catégorie, et non celui du composant. Par exemple, une disposition alternative de catégorie de contact pour cassiopeia se trouverait dans le dossier `templates/cassiopeia/html/com_contact/category`.
 
-Vous pouvez définir les mises en page de catégorie de manière globale, dans l'écran paramètres de chaque composant. Voici un exemple de la fenêtre paramètres / Catégorie des Contacts :
+Vous pouvez définir des dispositions de catégorie globalement, dans l'écran Options de chaque composant. Voici un exemple tiré des Contacts : Options / Formulaire de Catégorie :
 
-<img
-src="https://docs.joomla.org/images/thumb/e/ea/J4x-contact-component-options-category-alternative-layout-en.png/800px-J4x-contact-component-options-category-alternative-layout-en.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/e/ea/J4x-contact-component-options-category-alternative-layout-en.png 1.5x"
-data-file-width="1000" data-file-height="385" width="800" height="308"
-alt="screenshot of contacts component options form showing alternative layouts" />
+![formulaire des options du composant contacts montrant des dispositions alternatives](../../../en/images/templates/layouts-contacts-options.png)
 
-Les mises en page alternatives des catégories apparaissent lorsque vous ajoutez ou modifiez une catégorie dans le formulaire Options / Catégorie de l'édition du composant, comme illustré ci-dessous.
+Les dispositions alternatives de catégorie apparaissent lorsque vous ajoutez ou modifiez une catégorie dans le formulaire Composant : Modifier une Catégorie / Options comme montré ci-dessous.
 
-<img
-src="https://docs.joomla.org/images/thumb/b/b0/J4x-category-options-alternative-layout-en.png/800px-J4x-category-options-alternative-layout-en.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/b/b0/J4x-category-options-alternative-layout-en.png 1.5x"
-data-file-width="1000" data-file-height="494" width="800" height="395"
-alt="screenshot of contacts edit category form shwoing alternative layouts" />
+![formulaire des options du composant contacts montrant des dispositions alternatives](../../../en/images/templates/layouts-contacts-category-options.png)
 
-Les mises en page alternatives des catégories peuvent être utilisées pour les articles, les bannières, les contacts et les flux d'actualités.
+Les dispositions alternatives de catégorie peuvent être utilisées pour des articles, des bannières, des contacts et des flux de nouvelles.
 
-Tout comme les mises en page des composants, une disposition de catégorie ne sera utilisée que si :
+Comme pour les dispositions des composants, une disposition de catégorie ne sera utilisée que si :
 
 1. elle est sélectionnée dans les paramètres globaux ou de catégorie.
-22. il n'y a pas de lien de de menu spécifique pour la catégorie.
+2. il n’existe pas d’élément de menu spécifiquement pour la catégorie.
 
-Si un lien de menu est configuré pour une catégorie spécifique, la mise en page sélectionnée dans le menu sera utilisée à la place de la mise en page alternative de la catégorie.
+S'il existe un élément de menu configuré pour une catégorie spécifique, la disposition sélectionnée dans le menu sera utilisée à la place de la disposition alternative de catégorie.
 
-## Blog et Liste de catégories d'articles
+## Catégorie d'Articles Blog et Liste
 
-Pour les articles, il existe deux mises en page de catégorie de base disponibles : Blog et Liste. Chacune de ces dispositions apparaît dans l'onglet Catégorie du formulaire Options des Articles sous le titre "Depuis le composant". Les mises en page alternatives apparaissent également dans la liste, permettant de sélectionner la mise en page de catégorie par défaut, qu'il s'agisse de Blog, de Liste ou de mises en page alternatives de templates, soit globalement, soit lors de la modification d'une catégorie d'article individuelle.
+Pour les articles, il existe deux mises en page principales pour les catégories disponibles : Blog et Liste. Chacune de ces mises en page apparaît dans le formulaire Options des Articles sous l’onglet Catégorie, sous le titre "Depuis le Composant". Des mises en page alternatives apparaissent également dans la liste, permettant de choisir les mises en page Blog, Liste ou des modèles alternatifs comme mise en page par défaut pour les catégories, soit globalement, soit lors de la modification d'une seule catégorie d'article.
 
-<img
-src="https://docs.joomla.org/images/thumb/3/3c/J4x-articles-options-category-alternative-layout-en.png/800px-J4x-articles-options-category-alternative-layout-en.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/3/3c/J4x-articles-options-category-alternative-layout-en.png 1.5x"
-data-file-width="1000" data-file-height="425" width="800" height="340"
-alt="screenshot of articles options category showing alternative layouts" />
+![formulaire d'options du composant contacts montrant les mises en page alternatives](../../../en/images/templates/layouts-articles-options-category.png)
 
-Cela signifie que, comme pour d'autres options de mise en page, vous pouvez contrôler si les liens de catégorie d'article utilisent les mises en page de blog ou de liste. Il est important de comprendre que, comme pour d'autres paramètres de mise en page, cette option ne prendra effet que lorsqu'il n'y a pas de lien de menu à catégorie unique pour la catégorie.
+Cela signifie que, comme pour d'autres options de mise en page, vous pouvez contrôler si les liens des catégories d'articles utilisent une mise en page de blog ou de liste. Il est important de comprendre que, comme pour d'autres paramètres de mise en page, cette option ne prendra effet que lorsqu'il n'y a pas d'élément de menu pour une seule catégorie.
 
-## Liens de menu alternatifs
+## Éléments de Menu Alternatifs
 
-Les liens de menu alternatifs ont une différence importante avec les autres. Pour créer une disposition alternative de lien de menu, vous devez inclure un fichier XML dont le nom correspond au fichier de disposition initial. Par exemple, pour créer un lien de menu alternatif appelé "monarticle" pour un article dans le template cassiopeia, vous créeriez deux fichiers dans le dossier `templates/cassiopeia/html/com_content/article` appelés monarticle.php et monarticle.xml. Si vous vouliez inclure d'autres fichiers de mises en page, vous ajouteriez ces fichiers avec des underscores (tirets bas) dans les noms de fichier.
+Les éléments de menu alternatifs ont une différence importante avec les autres. Pour créer une mise en page alternative d'un élément de menu, vous devez inclure un fichier XML dont le nom correspond au fichier de mise en page initial. Par exemple, pour créer un élément de menu alternatif appelé "myarticle" pour un article dans le modèle cassiopeia, vous devez créer deux fichiers dans le dossier `templates/cassiopeia/html/com_content/article` appelés `myarticle.php` et `myarticle.xml`. Si vous souhaitez inclure plus de fichiers de mise en page, vous pouvez ajouter ces fichiers avec des underscores dans les noms de fichiers.
 
-Le fichier XML utilise le même format que les fichiers XML de lien de menu de base. Cela vous permet non seulement de créer une mise en page personnalisée pour ce lien de menu, mais vous permet également de créer des paramètres personnalisés. Par exemple, vous pourriez masquer certains paramètres ou ajouter de nouveaux paramètres.
+Le fichier XML utilise le même format que les fichiers XML des éléments de menu du noyau. Cela vous permet non seulement de créer une mise en page personnalisée pour cet élément de menu, mais aussi de créer des paramètres personnalisés. Par exemple, vous pourriez masquer certains paramètres ou ajouter de nouveaux paramètres.
 
-Les liens de menu alternatifs apparaissent lorsque vous sélectionnez un type de liens de menu dans le Gestionnaire de menu, comme illustré ci-dessous.
+Les éléments de menu alternatifs apparaissent lorsque vous sélectionnez un type d'élément de menu comme indiqué ci-dessous.
 
-<img
-src="https://docs.joomla.org/images/thumb/e/e3/J4x-template-layouts-menu-blog-alternate-layout-en.png/800px-J4x-template-layouts-menu-blog-alternate-layout-en.png"
-decoding="async"
-srcset="https://docs.joomla.org/images/e/e3/J4x-template-layouts-menu-blog-alternate-layout-en.png 1.5x"
-data-file-width="1000" data-file-height="508" width="800" height="406"
-alt="screenshot of menu item selection list" />
+![liste de sélection des éléments de menu](../../../en/images/templates/layouts-menu-blog-menu-creation.png)
 
-Les liens de menu alternatifs sont utilisés et fonctionnent de la même manière que les liens de menu standard. Étant donné qu'ils sont déjà basés sur des mises en page personnalisées, les substitutions de templates ne s'appliquent pas aux liens de menu alternatifs.
+Les éléments de menu alternatifs sont utilisés et fonctionnent de la même manière que les éléments de menu standard. Puisqu'ils sont déjà basés sur des mises en page personnalisées, les substitutions de modèle ne s'appliquent pas aux éléments de menu alternatifs.
 
-Comme indiqué ci-dessus, les mises en page des liens de menu ont la priorité sur les mises en page alternatives des composants ou des catégories.
+Comme indiqué ci-dessus, les mises en page des éléments de menu ont la priorité sur les mises en page alternatives des composants ou des catégories.
 
-La traduction des liens de menu alternatifs est réalisée avec les balises suivantes dans les fichiers XML. Le format est `"TPL_"<template name>_<component>_<view>_<menu item name>_<tag type>`. Par exemple, ces lignes ci-dessous traduiront le titre, l'option et la description pour un lien de menu alternatif appelé "catmenuitem".
+La traduction des éléments de menu alternatifs se fait avec les balises suivantes dans les fichiers XML. Le format est `"TPL_"<nom du modèle>_<composant>_<vue>_<nom de l'élément de menu>_<type de balise>`. Par exemple, les lignes ci-dessous traduiront le titre, l'option, et la description pour un élément de menu alternatif appelé "catmenuitem".
 ```
-    TPL_CASSIOPEIA_COM_CONTENT_CATEGORY_VIEW_CATMENUITEM_TITLE="cassiopeia Custom Category Layout"
-    TPL_CASSIOPEIA_COM_CONTENT_CATEGORY_VIEW_CATMENUITEM_OPTION="cassiopeia Custom"
-    TPL_CASSIOPEIA_COM_CONTENT_CATEGORY_VIEW_CATMENUITEM_DESC="Description for cassiopeia custom category layout."
+    TPL_CASSIOPEIA_COM_CONTENT_CATEGORY_VIEW_CATMENUITEM_TITLE="Mise en page personnalisée de catégorie cassiopeia"
+    TPL_CASSIOPEIA_COM_CONTENT_CATEGORY_VIEW_CATMENUITEM_OPTION="cassiopeia Personnalisé"
+    TPL_CASSIOPEIA_COM_CONTENT_CATEGORY_VIEW_CATMENUITEM_DESC="Description pour mise en page personnalisée de catégorie cassiopeia."
 ```
-Ces chaînes doivent être ajoutées à `administrator/language/overrides/en-GB.override.ini`, mais vous pouvez également utiliser le formulaire de Substitutions de Langue décrit ci-dessus.
+Ces chaînes doivent être ajoutées à `administrator/language/overrides/en-GB.override.ini` mais vous pouvez utiliser le formulaire de Substitutions de Langue décrit ci-dessus.
 
-Le catmenuitem.xml devrait commencer par :
+Le fichier catmenuitem.xml commencerait par :
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -224,11 +182,11 @@ Le catmenuitem.xml devrait commencer par :
    </layout>
 ```
 
-## Contrôler le template pour les liens de menu alternatifs
+## Contrôler le Modèle pour les Éléments de Menu Alternatifs
 
-Comme discuté précédemment, la présence d'un fichier XML rend une disposition alternative un lien de menu. Le format du fichier XML est le même que celui des fichiers XML d'élément de menu de base. Avec ce fichier XML, vous pouvez ajouter les paramètres que vous souhaitez inclure pour ce lien de menu. Ils peuvent être les mêmes que pour l'un des liens de menu de base, ou vous pouvez omettre les paramètres de base ou en ajouter de nouveaux. Notez que si vous ajoutez de nouveaux paramètres, ceux-ci peuvent être utilisés dans le fichier de mise en page mais ne seront pas utilisés dans les fichiers de modèle ou de vue de base.
+Comme discuté ci-dessus, la présence d'un fichier XML transforme une disposition alternative en un élément de menu. Le format du fichier XML est le même que celui des fichiers XML des éléments de menu principaux. Avec ce fichier XML, vous pouvez ajouter les paramètres que vous souhaitez inclure pour cet élément de menu. Ils peuvent être identiques à ceux de l'un des éléments de menu principaux, ou vous pouvez omettre des paramètres principaux ou en ajouter de nouveaux. Notez que si vous ajoutez de nouveaux paramètres, ceux-ci peuvent être utilisés dans le fichier de disposition mais ne seront pas utilisés dans les fichiers de modèle ou de vue principaux.
 
-Il est également possible de remplacer les paramètres des paramètres de base. Un exemple de cela est de contrôler quels templates une disposition alternative de liens de menu peut être affichée avec. Dans certains cas, vous voudrez peut-être permettre à un lien de menu personnalisé d'être affiché avec n'importe quel template pour le site. Dans d'autres cas, vous souhaiterez peut-être limiter la mise en page de ce lien de menu à un template spécifique. Dans cette situation, vous ajouteriez simplement le paramètre suivant au fichier XML du lien de menu :
+Il est également possible de remplacer les paramètres pour les paramètres principaux. Un exemple de cela est de contrôler avec quels modèles une disposition alternative d'un élément de menu peut être affichée. Dans certains cas, vous voudrez peut-être permettre qu'un élément de menu personnalisé soit affiché avec n'importe quel modèle du site. Dans d'autres cas, vous souhaiterez peut-être limiter la disposition de cet élément de menu à un modèle spécifique. Dans cette situation, vous ajouteriez simplement le paramètre suivant au fichier XML de l'élément de menu :
 
 ```xml
 <fields>
@@ -244,4 +202,16 @@ Il est également possible de remplacer les paramètres des paramètres de base.
  </fields>
  ```
 
-Cela remplacera le paramètre de base template_style_id. En définissant le modèle sur "cassiopeia" dans ce cas, l'utilisateur sera limité à ne sélectionner que les styles de template pour le template "cassiopeia".
+Cela remplacera le paramètre principal `template_style_id`. En définissant le modèle égal à "cassiopeia" dans ce cas, vous limiterez l'utilisateur à ne sélectionner que les styles de modèle pour le modèle "cassiopeia".
+
+## Informations supplémentaires
+
+- Notions de base du modèle
+- Dossiers et fichiers du modèle Cassiopeia
+- Personnalisation du modèle Cassiopeia
+- Substitutions de modèle
+- Dispositions du modèle
+- Cassiopeia Template Simplifié - Une étude de cas - un modèle simple basé sur Cassiopeia
+
+*Traduit par openai.com*  
+
