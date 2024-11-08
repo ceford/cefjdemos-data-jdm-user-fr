@@ -1,29 +1,35 @@
-<!-- Filename: J3.x:Adding_custom_fields/Usergroup_Field / Display title: Champ de groupe d'utilisateurs -->
+<!-- Filename: J3.x:Adding_custom_fields/Usergroup_Field / Display title: Champ de Groupe d'Utilisateurs -->
 
-## Objectif
+## Objet
 
 Le champ Groupe d'utilisateurs permet de sélectionner un ou plusieurs groupes d'utilisateurs à partir d'une liste de ceux disponibles.
 
+
 ## Création de champ
 
-Des options spéciales dans ce champ sont :
+Les options spéciales pour ce champ sont :
 
-- **Multiple** Permettre la sélection de plusieurs valeurs.
+- **Multiple** Permettre de sélectionner plusieurs valeurs.
 
-## Saisie de la date
+![création de champ de groupes d'utilisateurs](../../../en/images/fields/fields-usergroups-edit.png)
 
-C'est simple, il suffit de sélectionner un ou plusieurs groupes dans la liste des groupes.
+**Remarque :** Dans cet exemple, l'inclusion du type de champ dans le titre est uniquement à des fins de démonstration. Ne l'incluez pas dans vos propres titres de champs.
 
 
-## Affichage des Données
+## Saisie de Date
+
+Simple, il suffit de sélectionner un ou plusieurs groupes dans la liste des groupes.
+
+![saisie de données du champ groupes d'utilisateurs](../../../en/images/fields/fields-usergroups-data-entry.png)
+
+
+## Affichage des données
 
 La capture d'écran suivante du site montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-Recherchez l'élément **Groupes d'Éditeurs**.
+![affichage du site du champ des groupes d'utilisateurs](../../../en/images/fields/fields-usergroups-site.png)
 
-![Affichage de tous les champs](../../../en/images/fields/fields-display.png "Affichage des champs")
-
-L'étiquette du champ est suivie d'une liste des groupes sélectionnés, séparée par des virgules.
+L’étiquette du champ est suivie d’une liste des groupes sélectionnés, séparée par des virgules.
 
 *Traduit par openai.com*
 

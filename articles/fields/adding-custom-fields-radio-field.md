@@ -1,32 +1,30 @@
-<!-- Filename: J3.x:Adding_custom_fields/Radio_Field / Display title: Champ radio -->
+<!-- Filename: J3.x:Adding_custom_fields/Radio_Field / Display title: Champ Radio -->
 
 ## Objectif
 
-Le champ radio fournit des boutons radio dont un seul peut être sélectionné.
+Le champ Radio propose des boutons radios dont un seul peut être sélectionné.
 
+## Création de champ
 
-## Création de Champ
-
-* L'**Étiquette** est basée sur le titre et apparaît dans le résultat avant la valeur sélectionnée.
-* Les boutons radio sont ajoutés un par un, chacun avec un texte et une valeur. Le texte apparaît dans le résultat. La valeur est utilisée dans le formulaire de saisie de données et chacune doit être différente. Le premier élément de la liste doit avoir le texte défini sur *- Sélectionner -* et sa valeur laissée vide. Cela permet de ne pas définir le champ et de ne pas le faire apparaître dans le résultat.
+* Le **Label** est basé sur le Titre et apparaît dans le résultat avant la valeur sélectionnée.
+* Les boutons radio sont ajoutés un par un, chacun avec du Texte et une Valeur. Le Texte apparaît dans le résultat. La Valeur est utilisée dans le formulaire de saisie de données et chacune doit être différente. Le premier élément de la liste doit avoir le Texte défini sur *- Sélectionner -* et sa Valeur doit être laissée vide. Cela permet au champ de ne pas être défini et de ne pas apparaître dans le résultat.
 * Utilisez les icônes de glisser pour changer l'ordre de la liste des boutons radio.
 
-![Boutons Radio](../../../en/images/fields/fields-radio.png "Boutons Radio")
+![Création de champ radio](../../../en/images/fields/fields-radio-edit.png)
 
+**Remarque :** Dans cet exemple, l'inclusion du type de champ dans le Titre est à des fins de démonstration uniquement. Évitez de l'inclure dans vos propres titres de champs.
 
 ## Saisie de données
 
-Simple : il suffit de sélectionner la valeur requise.
+Simple : sélectionnez simplement la valeur requise.
 
-![Sélection de champ radio](../../../en/images/fields/fields-radio-entry.png "Sélection de champ radio")
+![Saisie de données pour le champ radio](../../../en/images/fields/fields-radio-data-entry.png)
 
 ## Affichage des données
 
-La capture d'écran suivante du site montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
+La capture d'écran du site suivante montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable de la conception du champ.
 
-Recherchez l'élément **Cycle de vie**.
-
-![Affichage de tous les champs](../../../en/images/fields/fields-display.png "Affichage des champs")
+![affichage du champ radio sur le site](../../../en/images/fields/fields-radio-site.png)
 
 Le titre du champ est suivi par le texte de la valeur sélectionnée.
 
