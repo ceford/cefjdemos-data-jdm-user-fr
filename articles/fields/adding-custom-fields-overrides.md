@@ -134,7 +134,7 @@ use Joomla\Component\Fields\Administrator\Helper\FieldsHelper;
 Ensuite, partout où vous souhaitez placer les champs dans votre modèle, utilisez le code suivant :
 ```php
 <?php foreach ($this->item->jcfields as $field) : ?>
-	<?php echo FieldsHelper::render($field->context, 'field.render', array('field' => $field)); ?><br>
+    <?php echo FieldsHelper::render($field->context, 'field.render', array('field' => $field)); ?><br>
 <?php endforeach ?>
 ```
 
@@ -142,7 +142,7 @@ Ou pour un remplacement brut, qui ne traduit pas l'étiquette :
 
 ```php
 <?php foreach ($this->item->jcfields as $field) : ?>
-	<?php echo $field->label . ':' . $field->value; ?><br>
+    <?php echo $field->label . ':' . $field->value; ?><br>
 <?php endforeach ?>
 ```
 
@@ -173,4 +173,3 @@ Pour ajouter la **valeur** du champ à votre surcharge, insérez le code ci-dess
 ```
 
 Vous pouvez ajouter ce code à n'importe quelle partie de votre surcharge. Exemples : Le contenu d'un div, le src dans une balise `img`, dans un attribut de classe CSS, etc.
-

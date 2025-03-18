@@ -23,24 +23,24 @@ Les modules sont assignés à une position sur une page définie par le modèle 
 Et la liste suivante montre les positions de module disponibles par nom :
 
 ```xml
-	<positions>
-		<position>bandeau-supérieur</position>
-		<position>sous-haut</position>
-		<position>menu</position>
-		<position>recherche</position>
-		<position>bannière</position>
-		<position>haut-a</position>
-		<position>haut-b</position>
-		<position>principal-haut</position>
-		<position>principal-bas</position>
-		<position>fil-ariane</position>
-		<position>barre-latérale-gauche</position>
-		<position>barre-latérale-droite</position>
-		<position>bas-a</position>
-		<position>bas-b</position>
-		<position>pied-de-page</position>
-		<position>debug</position>
-	</positions>
+    <positions>
+        <position>bandeau-supérieur</position>
+        <position>sous-haut</position>
+        <position>menu</position>
+        <position>recherche</position>
+        <position>bannière</position>
+        <position>haut-a</position>
+        <position>haut-b</position>
+        <position>principal-haut</position>
+        <position>principal-bas</position>
+        <position>fil-ariane</position>
+        <position>barre-latérale-gauche</position>
+        <position>barre-latérale-droite</position>
+        <position>bas-a</position>
+        <position>bas-b</position>
+        <position>pied-de-page</position>
+        <position>debug</position>
+    </positions>
 ```
 
 ## Ajouter un module de base
@@ -111,4 +111,3 @@ Tout est terminé ?
 - **Tags - Similaires** Le module Tags Similaires affiche des liens vers d'autres éléments avec des tags similaires. La proximité de la correspondance peut être spécifiée.
 - **Qui est en ligne** Le module Qui est en ligne affiche le nombre d'utilisateurs anonymes (invités) et d'utilisateurs enregistrés (utilisateurs connectés) qui accèdent actuellement au site Web.
 - **Wrapper** Ce module affiche une fenêtre iframe vers une localisation spécifiée.
-

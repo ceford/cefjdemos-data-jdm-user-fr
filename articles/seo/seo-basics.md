@@ -16,7 +16,7 @@ Ressource : Guide de démarrage pour l'optimisation pour les moteurs de recherch
 
 ## Structure du site et URLs descriptives
 
-Au début, les sites web étaient structurés comme des fichiers HTML individuels dans une hiérarchie en arbre. Certains sites sont encore structurés de cette manière. Les CMS sont différents. Les pages individuelles sont assemblées à partir de contenu stocké dans des tables de base de données. Les URLs pour les premiers et les seconds sont différentes, peut-être comme ceci : 
+Au début, les sites web étaient structurés comme des fichiers HTML individuels dans une hiérarchie en arbre. Certains sites sont encore structurés de cette manière. Les CMS sont différents. Les pages individuelles sont assemblées à partir de contenu stocké dans des tables de base de données. Les URLs pour les premiers et les seconds sont différentes, peut-être comme ceci :
 ```
 https://www.example.com/user/seo/seo-basics.html
 https://www.example.com/index.php?option=com_jdocmanual&view=manual&manual=user&heading=seo&filename=seo-basics
@@ -53,7 +53,7 @@ Pour Joomla 4 et 5, avant d'activer, le plugin nécessite que `if ($app->isAdmin
 
 Dans un article, sélectionnez l'onglet Publication puis le bouton **Auto** de l'*URL Canonique*. Cela placera un lien comme suit sur n'importe quelle page affichant l'article unique :
 ```
-	<link href="/jdm3/en/user/seo/seo-basics.html" rel="canonical" />
+    <link href="/jdm3/en/user/seo/seo-basics.html" rel="canonical" />
 ```
 
 ## Qualité du Contenu
@@ -119,4 +119,3 @@ Inutile de dire que des images attrayantes peuvent énormément améliorer un si
 * Utilisez des images réactives - il existe un plugin Joomla qui crée dynamiquement des versions webp des images png et jpg en plusieurs tailles.
 
 *Traduit par openai.com*
-

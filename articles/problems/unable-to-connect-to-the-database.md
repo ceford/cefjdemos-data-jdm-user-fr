@@ -8,14 +8,14 @@ Notez qu'il n'est pas nécessaire de créer un utilisateur de base de données e
 
 Si l'erreur se produit après avoir déplacé votre site vers un autre hôte, vérifiez les éléments suivants de votre fichier *configuration.php*. Les paramètres de base de données habituels sont les suivants :
 
-	public $dbtype = 'mysqli';
-	public $host = 'localhost';
-	public $user = 'yourdbuser';
-	public $password = 'yourdbpassword';
-	public $db = 'yourdbname';
-	public $dbprefix = 't6q6i_';
+    public $dbtype = 'mysqli';
+    public $host = 'localhost';
+    public $user = 'yourdbuser';
+    public $password = 'yourdbpassword';
+    public $db = 'yourdbname';
+    public $dbprefix = 't6q6i_';
 
-Si l'erreur survient sur un site qui fonctionnait auparavant, il y a plusieurs raisons possibles, parfois temporaires et parfois accidentelles.  
+Si l'erreur survient sur un site qui fonctionnait auparavant, il y a plusieurs raisons possibles, parfois temporaires et parfois accidentelles.
 
 ## Les pannes les plus courantes
 
@@ -24,4 +24,3 @@ Si l'erreur survient sur un site qui fonctionnait auparavant, il y a plusieurs r
 3. Votre nom d'utilisateur ou mot de passe de base de données a changé.
 
 *Traduit par openai.com*
-

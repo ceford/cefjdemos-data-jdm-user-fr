@@ -132,20 +132,19 @@ voir les étapes enregistrées dans le journal. Il affichera les étapes princip
 installer, exécuter les instructions SQL, nettoyer), quelque chose comme ceci :
 
 ```
-2024-04-17T09:13:16+00:00	INFO 127.0.0.1	update	Mise à jour lancée par l'utilisateur Jimmy (139). L'ancienne version est 5.0.3.
-2024-04-17T09:13:18+00:00	INFO 127.0.0.1	update	Téléchargement du fichier de mise à jour depuis ...
-2024-04-17T09:13:28+00:00	INFO 127.0.0.1	update	Fichier Joomla_5.1.0-Stable-Update_Package.zip téléchargé.
-2024-04-17T09:13:28+00:00	INFO 127.0.0.1	update	Début de l'installation de la nouvelle version.
-2024-04-17T09:13:40+00:00	INFO 127.0.0.1	update	Finalisation de l'installation.
-2024-04-17T09:13:40+00:00	INFO 127.0.0.1	update	Début des mises à jour SQL.
-2024-04-17T09:13:40+00:00	INFO 127.0.0.1	update	La version actuelle de la base de données (schéma) est 5.0.0-2023-09-11.
+2024-04-17T09:13:16+00:00    INFO 127.0.0.1    update    Mise à jour lancée par l'utilisateur Jimmy (139). L'ancienne version est 5.0.3.
+2024-04-17T09:13:18+00:00    INFO 127.0.0.1    update    Téléchargement du fichier de mise à jour depuis ...
+2024-04-17T09:13:28+00:00    INFO 127.0.0.1    update    Fichier Joomla_5.1.0-Stable-Update_Package.zip téléchargé.
+2024-04-17T09:13:28+00:00    INFO 127.0.0.1    update    Début de l'installation de la nouvelle version.
+2024-04-17T09:13:40+00:00    INFO 127.0.0.1    update    Finalisation de l'installation.
+2024-04-17T09:13:40+00:00    INFO 127.0.0.1    update    Début des mises à jour SQL.
+2024-04-17T09:13:40+00:00    INFO 127.0.0.1    update    La version actuelle de la base de données (schéma) est 5.0.0-2023-09-11.
 ... Beaucoup de requêtes SQL individuelles
-2024-04-17T09:13:41+00:00	INFO 127.0.0.1	update	Fin des mises à jour SQL.
-2024-04-17T09:13:41+00:00	INFO 127.0.0.1	update	Désinstallation des extensions
-2024-04-17T09:13:41+00:00	INFO 127.0.0.1	update	Suppression des fichiers et dossiers supprimés.
-2024-04-17T09:13:44+00:00	INFO 127.0.0.1	update	Nettoyage après installation.
-2024-04-17T09:13:44+00:00	INFO 127.0.0.1	update	Mise à jour vers la version 5.1.0 terminée.
+2024-04-17T09:13:41+00:00    INFO 127.0.0.1    update    Fin des mises à jour SQL.
+2024-04-17T09:13:41+00:00    INFO 127.0.0.1    update    Désinstallation des extensions
+2024-04-17T09:13:41+00:00    INFO 127.0.0.1    update    Suppression des fichiers et dossiers supprimés.
+2024-04-17T09:13:44+00:00    INFO 127.0.0.1    update    Nettoyage après installation.
+2024-04-17T09:13:44+00:00    INFO 127.0.0.1    update    Mise à jour vers la version 5.1.0 terminée.
 ```
 
 *Traduit par openai.com*
-

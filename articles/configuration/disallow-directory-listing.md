@@ -17,7 +17,7 @@ Options -Indexes
 
 ## Pas de listes de répertoires
 <IfModule mod_autoindex.c>
-	IndexIgnore *
+    IndexIgnore *
 </IfModule>
 ```
 
@@ -26,4 +26,3 @@ Options -Indexes
 Une manière de tester votre site est d'entrer l'URL de votre dossier d'images dans la barre d'URL du navigateur : `https://votredomaine.com/images/`. Comme le dossier d'images ne contient normalement pas de fichier index.html ou index.php, vous devriez voir une page complètement vide. Si vous voyez une liste de tous les fichiers et dossiers, alors vous ne prévenez pas les explorations de répertoires pour n'importe quelle partie de votre site. Corrigez cela !
 
 *Traduit par openai.com*
-
