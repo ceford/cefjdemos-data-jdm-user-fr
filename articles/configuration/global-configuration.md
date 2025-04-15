@@ -54,9 +54,14 @@ Les éléments de ce panneau sont bien expliqués par l'aide en ligne. Cependant
 
 ![Onglet serveur de configuration globale](../../../en/images/configuration/global-configuration-server-tab.png)
 
-### Panneau de courriel
 
-Un site Joomla doit être capable d'envoyer des courriels sortants. Entre autres, il enverra des messages automatisés au propriétaire du site lorsque des mises à jour seront disponibles. Cependant, certains services d'hébergement restreignent les méthodes par lesquelles le courrier sortant peut être envoyé. En utilisant votre propre adresse e-mail privée dans le champ Courriel de l'expéditeur :
+### Panneau de messagerie
+
+Un site Joomla doit être capable d’envoyer des e-mails sortants. Entre autres choses, il enverra des messages automatiques au propriétaire du site lorsque des mises à jour seront disponibles. Cependant, certains services d’hébergement restreignent les méthodes par lesquelles les e-mails sortants peuvent être envoyés.
+
+#### Envoyer un e-mail de test
+
+Avant Joomla 5.3, le bouton **Envoyer un e-mail de test** envoyait un message à l’adresse configurée dans le champ **E-mail de l’expéditeur**. Depuis la version 5.3, l’e-mail de test est envoyé directement à l’adresse e-mail de l’administrateur connecté.
 
 - Essayez d'abord PHP Mail et sélectionnez le bouton *Envoyer un mail de test*. Si l'e-mail arrive, tout va bien. Sinon :
 - Essayez l'option Sendmail. Si cela ne fonctionne pas :
