@@ -16,7 +16,7 @@ Une installation Joomla! se compose des fichiers utilisés pour gérer et affich
 
 Ce modèle contient tout ce dont vous avez besoin pour commencer avec votre propre site web. Il peut être personnalisé avec des paramètres de modèle et des fonctionnalités spécifiées par l'utilisateur telles que des images et des couleurs.
 
-![Le modèle Cassiopeia](../../../en/images/getting-started/introduction-to-joomla-cassiopeia.png "Le modèle Cassiopeia")
+![Le modèle Cassiopeia](../../../en/images/getting-started/introduction-to-joomla-cassiopeia.png)
 
 Si Cassiopeia ne convient pas tout à fait à votre site, il existe des centaines d'autres modèles disponibles auprès de fournisseurs tiers, gratuits et commerciaux.
 
@@ -30,7 +30,7 @@ Si Cassiopeia ne convient pas tout à fait à votre site, il existe des centaine
 
 Ce modèle n'est pas visible par le public, il est donc rarement nécessaire de chercher une alternative.
 
-![Le modèle Atum](../../../en/images/getting-started/introduction-to-joomla-atum.png "Le modèle Atum")
+![Le modèle Atum](../../../en/images/getting-started/introduction-to-joomla-atum.png)
 
 Vous pouvez configurer ce qui apparaît sur divers tableaux de bord, mais il vaut mieux attendre que l'expérience justifie un changement.
 

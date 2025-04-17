@@ -1,4 +1,4 @@
-<!-- Filename: J4.x:How_to_Create_a_Menu_Item_to_View_Archived_Articles / Display title: Articles Archivés -->
+<!-- Filename: J4.x:How_to_Create_a_Menu_Item_to_View_Archived_Articles / Display title: Menu des Articles Archivés -->
 
 ## Introduction
 
@@ -15,9 +15,9 @@ Mais que faire si les anciens articles doivent être mis à la disposition des v
 5. Modifiez les autres paramètres selon vos besoins. Par exemple, vous pourriez supprimer **Toutes les Catégories** et choisir une ou plusieurs catégories dans la liste déroulante.
 6. Sélectionnez **Enregistrer & Fermer** pour créer le nouvel élément de menu.
 
-![Formulaire de Menu des Articles Archivés](../../../en/images/menus/menus-articles-archived.png "Formulaire de Menu des Articles Archivés")
+![Formulaire de Menu des Articles Archivés](../../../en/images/menus/menus-articles-archived.png)
 
-Il y a un certain nombre de paramètres que vous pouvez modifier – vous pouvez trouver des informations plus détaillées dans l’écran d’[Aide](jdocmanual?article=help/menu-items/menu-item-article-archived "Élément de Menu : Article Archivé").
+Il y a un certain nombre de paramètres que vous pouvez modifier – vous pouvez trouver des informations plus détaillées dans l’écran d’[Aide](jdocmanual?article=help/menu-items/menu-item-article-archived).
 
 Après l’enregistrement, le nouvel élément de menu apparaîtra dans le menu du site dans l’ordre ajouté ou ajusté par glisser-déposer ou dans ce formulaire d’édition de menu.
 
@@ -25,7 +25,7 @@ Après l’enregistrement, le nouvel élément de menu apparaîtra dans le menu 
 
 Le lien *Articles Archivés* mène à une page qui affiche une liste d'articles archivés :
 
-![Formulaire du Menu des Articles Archivés](../../../en/images/menus/menus-articles-archived-display.png "Formulaire du Menu des Articles Archivés")
+![Formulaire du Menu des Articles Archivés](../../../en/images/menus/menus-articles-archived-display.png)
 
 Cet exemple est l'affichage par défaut. Vous pouvez choisir de le modifier afin de, par exemple, n'afficher que le titre lié et la catégorie – Joomla vous permet de le modifier facilement. Vous pouvez décider de ne montrer que le titre, mais cela vaut la peine d'expérimenter pour le configurer comme vous le souhaitez.
 

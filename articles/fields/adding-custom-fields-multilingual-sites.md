@@ -10,7 +10,7 @@ Si vous avez un site multilingue, vous pouvez afficher les étiquettes et les de
 
 Dans l'exemple suivant, un groupe de champs et un champ de contact sont créés pour les préférences personnelles d'un contact. Le groupe de champs est nommé Favoris et le champ d'exemple est nommé Voiture. Bien entendu, d'autres champs peuvent être ajoutés pour d'autres éléments favoris, tels que la nourriture ou les films.
 
-Pour suivre cet exemple, il est supposé que vous avez configuré un site multilingue comme décrit dans le tutoriel [Sites Multilingues](jdocmanual?article=user/languages/setup-a-multilingual-site "Sites Multilingues").
+Pour suivre cet exemple, il est supposé que vous avez configuré un site multilingue comme décrit dans le tutoriel [Sites Multilingues](jdocmanual?article=user/languages/setup-a-multilingual-site).
 
 ## Constantes de Langue
 
@@ -49,7 +49,7 @@ Depuis le menu de l'Administrateur :
 
 La capture d'écran suivante montre un exemple de création de remplacement pour une constante de langue allemande.
 
-![Création de remplacement en allemand](../../../en/images/fields/fields-overrides-creation-de.png "Création de remplacement en allemand")
+![Création de remplacement en allemand](../../../en/images/fields/fields-overrides-creation-de.png)
 
 ## Définir le Groupe de Champs
 
@@ -79,11 +79,11 @@ Depuis le menu Administrateur :
 
 Avec l'anglais sélectionné avant la connexion Administrateur, le formulaire de saisie des contacts doit contenir un onglet avec le nom anglais de votre groupe de champs et des champs de ce groupe également avec des valeurs en anglais.
 
-![Saisie de données en anglais](../../../en/images/fields/fields-overrides-entry.png "Saisie de données en anglais")
+![Saisie de données en anglais](../../../en/images/fields/fields-overrides-entry.png)
 
 Avec l'allemand sélectionné avant la connexion Administrateur, vous devriez voir les traductions allemandes de vos constantes de langue :
 
-![Saisie de données en allemand](../../../en/images/fields/fields-overrides-entry-de.png "Saisie de données en allemand")
+![Saisie de données en allemand](../../../en/images/fields/fields-overrides-entry-de.png)
 
 Avertissement : traduction par translate.google.co.uk !
 
@@ -91,8 +91,8 @@ Avertissement : traduction par translate.google.co.uk !
 
 En anglais :
 
-![Affichage des données en anglais](../../../en/images/fields/fields-overrides-display.png "Affichage des données en anglais")
+![Affichage des données en anglais](../../../en/images/fields/fields-overrides-display.png)
 
 Et en allemand :
 
-![Affichage des données en allemand](../../../en/images/fields/fields-overrides-display-de.png "Affichage des données en allemand")
+![Affichage des données en allemand](../../../en/images/fields/fields-overrides-display-de.png)

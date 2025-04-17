@@ -93,7 +93,7 @@ Conseils courants des Forums Joomla :
 ## Démarrage rapide Akeeba
 
 Si vous avez utilisé Akeeba Backup, utilisez Akeeba Quickstart pour restaurer votre sauvegarde.
-* Consultez le [Tutoriel Vidéo](http://akee.ba/abrestoreanywhere "").
+* Consultez le [Tutoriel Vidéo](http://akee.ba/abrestoreanywhere).
 * Téléchargez gratuitement Akeeba Quickstart (PDF 94Kb).
 * Vérifiez que le site restauré fonctionne correctement !
 

@@ -35,7 +35,7 @@ des problèmes imprévisibles.
 ### Configuration de la Base de Données
 
 Si vous n'avez pas encore configuré une base de données, faites-le maintenant. Cela est couvert pour un service d'hébergement cPanel dans le tutoriel
-[Hébergement cPanel](jdocmanual?article=user/hosting/cpanel-hosting "Hébergement cPanel"). Il y a aussi un tutoriel *Créer une base de données pour
+[Hébergement cPanel](jdocmanual?article=user/hosting/cpanel-hosting). Il y a aussi un tutoriel *Créer une base de données pour
 Joomla!*
 qui couvre les méthodes localhost et phpMyAdmin.
 

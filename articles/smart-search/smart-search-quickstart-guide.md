@@ -50,7 +50,7 @@ En fonction de la taille de votre site, l'indexation peut prendre de quelques mi
 
 La page Contenu Indexé répertorie tout le contenu indexé. Si vous préférez que certains éléments ne soient pas affichés dans les résultats de recherche, vous pouvez les dépublier de la base de données Smart Search en cochant la case à côté du titre de l'élément, puis en appuyant sur le bouton Dépublier.
 
-**NOTE IMPORTANTE** : Si votre site contient une grande quantité de contenu, ou des éléments de contenu particulièrement volumineux, ou si vous disposez d'un espace disque limité, vous devriez lire à propos de [Smart Search sur les grands sites](jdocmanual?article=user/smart-search/smart-search-on-large-sites "Smart Search sur les grands sites").
+**NOTE IMPORTANTE** : Si votre site contient une grande quantité de contenu, ou des éléments de contenu particulièrement volumineux, ou si vous disposez d'un espace disque limité, vous devriez lire à propos de [Smart Search sur les grands sites](jdocmanual?article=user/smart-search/smart-search-on-large-sites).
 
 ## Exposition de la recherche intelligente aux utilisateurs du site
 

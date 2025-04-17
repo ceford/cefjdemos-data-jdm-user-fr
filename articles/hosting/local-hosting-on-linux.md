@@ -8,13 +8,13 @@ Vous devez installer un ensemble de logiciels souvent appelé le stack LAMP. Les
 
 Depuis le menu système, marqué par le logo LM, sélectionnez Administration / Gestionnaire de paquets Synaptic. Vous serez invité à entrer votre mot de passe. Entrez votre mot de passe de connexion pour ouvrir l'interface graphique. En haut à droite se trouve un bouton `Rechercher`. Sélectionnez-le et entrez **apache**, puis sélectionnez `Rechercher`. Cochez la case `apache2` et, dans le label qui s'affiche, sélectionnez `Marquer pour installation`. Une autre fenêtre s'affichera avec une liste de paquets supplémentaires nécessaires pour prendre en charge apache. Sélectionnez `Marquer` :
 
-![gestionnaire de paquets synaptic](../../../en/images/hosting/synaptic-package-manager-gui.png "Interface graphique du gestionnaire de paquets Synaptic")
+![gestionnaire de paquets synaptic](../../../en/images/hosting/synaptic-package-manager-gui.png)
 
 Sélectionnez le bouton `Appliquer` dans la barre d'outils en haut et le bouton `Appliquer` dans la boîte de dialogue Récapitulatif. Apache sera installé et configuré. Le processus se terminera par une **boîte de dialogue Changements appliqués**. Sélectionnez `Fermer`.
 
 Vous pouvez confirmer qu'Apache est installé et fonctionne en ouvrant votre navigateur, Firefox par défaut dans une nouvelle installation de Linux Mint, et en entrant **localhost** dans la barre d'URL. Vous devriez voir la page par défaut d'Ubuntu Apache2 :
 
-![page par défaut d'apache](../../../en/images/hosting/apache-default-page.png "Page par défaut d'Apache")
+![page par défaut d'apache](../../../en/images/hosting/apache-default-page.png)
 
 La page contient des informations utiles sur les emplacements des fichiers qui pourraient ne pas être facilement disponibles plus tard. Vous pourriez donc vouloir imprimer cette page sur papier ou dans un fichier pdf.
 

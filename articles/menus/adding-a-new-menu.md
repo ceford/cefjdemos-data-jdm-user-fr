@@ -12,7 +12,7 @@ Il y a trois étapes dans la création d'un menu utilisable :
 
 Cette capture d'écran montre les menus disponibles dans un site multilingue. Dans une installation initiale de Joomla, il y a un seul *Menu Principal*.
 
-![Liste des menus](../../../en/images/menus/menus-manage.png "Liste des menus")
+![Liste des menus](../../../en/images/menus/menus-manage.png)
 
 La liste vous permet de sélectionner n'importe lequel des boutons verts ou rouges pour accéder directement à la liste des éléments de menu dans ce menu et cet état.
 
@@ -29,7 +29,7 @@ Utilisez l'une des étapes suivantes pour créer un nouveau menu :
   - **Titre** : Un titre approprié pour le menu. Celui-ci est utilisé pour identifier le menu dans le gestionnaire de menus.
   - **Nom Unique** : Il s'agit d'un nom d'identification unique utilisé par Joomla! pour identifier ce menu. Les espaces ne sont pas autorisés, mais vous pouvez utiliser le caractère '-' comme dans le cas de resources-menu.
   - **Description** : Bien que non requise, cette information est souvent utile sur un site comportant de nombreux menus. Elle apparaît sous le *Titre* dans la liste des menus comme illustré ci-dessus.<br>
-    ![Nouveau menu](../../../en/images/menus/menus-new.png "Nouveau menu")
+    ![Nouveau menu](../../../en/images/menus/menus-new.png)
 - **Enregistrer & Fermer**
 
 Dans la liste des menus, le menu nouvellement créé comporte un bouton intitulé **Ajouter un module pour ce menu**, ce qui est l'étape suivante dans la création du menu. Vous pouvez commencer à ajouter des éléments de menu et revenir plus tard pour créer le module de menu.  
@@ -38,7 +38,7 @@ Dans la liste des menus, le menu nouvellement créé comporte un bouton intitul�
 
 Dans la liste des Menus, la colonne *Modules Liés* permet de sélectionner n'importe quel module de menu existant à des fins d'édition. Vous pouvez jeter un coup d'œil puis *Fermer* sans apporter de modifications. Pour votre nouveau menu, sélectionnez le bouton **Ajouter un module pour ce menu** pour ouvrir un cadre modal contenant le formulaire de saisie de données du module Menu.
 
-![Formulaire de saisie de données du module Menu](../../../en/images/menus/menus-module.png "Formulaire de saisie de données du module Menu")
+![Formulaire de saisie de données du module Menu](../../../en/images/menus/menus-module.png)
 
 Champs à compléter :
 
@@ -71,11 +71,11 @@ Dans la liste des **Menus**, dans la colonne **Éléments de menu**, sélectionn
 - Le champ **Statut** doit être défini sur **Publié**.
 - Sélectionnez **Enregistrer & Fermer**.
 
-![Formulaire de saisie de données de l'élément de menu](../../../en/images/menus/menus-single-article.png "Formulaire de saisie de données de l'élément de menu")
+![Formulaire de saisie de données de l'élément de menu](../../../en/images/menus/menus-single-article.png)
 
 Ajoutez plus d'éléments au nouveau Menu selon les besoins.
 
 Une fois que des éléments ont été ajoutés au Menu, vérifiez que le Menu est affiché sur le site web à la position correcte.
 
-![Affichage du menu](../../../en/images/menus/menus-display.png "Affichage du menu")
+![Affichage du menu](../../../en/images/menus/menus-display.png)
 

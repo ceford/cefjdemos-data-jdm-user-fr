@@ -6,13 +6,13 @@ Les visites guidées sont conçues pour offrir aux nouveaux venus sur Joomla une
 
 Il existe un certain nombre de visites intégrées et la visite **Bienvenue sur Joomla!** démarre automatiquement la toute première fois qu'un utilisateur se connecte à l'interface administrateur.
 
-![Accueil des Visites Guidées](../../../en/images/help/guided-tours-welcome.png "Accueil des Visites Guidées")
+![Accueil des Visites Guidées](../../../en/images/help/guided-tours-welcome.png)
 
 ## Liste des Visites Guidées
 
 Les visites guidées sont répertoriées dans un menu déroulant dans la barre de titre du tableau de bord et des écrans de liste, comme illustré ci-dessous :
 
-![Visites Guidées](../../../en/images/help/guided-tours.png "Visites Guidées")
+![Visites Guidées](../../../en/images/help/guided-tours.png)
 
 La liste complète comprend les éléments suivants :
 

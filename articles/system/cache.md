@@ -181,7 +181,7 @@ Ceci peut être automatiquement effectué via la fonction d'affichage du contrô
         }
     }
 
-Il y a aussi quelques paramètres d'URL à prendre en compte. Consultez cette [Joomla StackExchange](http://joomla.stackexchange.com/questions/5781/how-can-i-use-joomlas-cache-with-my-components-view/7000#7000 "")
+Il y a aussi quelques paramètres d'URL à prendre en compte. Consultez cette [Joomla StackExchange](http://joomla.stackexchange.com/questions/5781/how-can-i-use-joomlas-cache-with-my-components-view/7000#7000)
 
 De plus, sachez que les mises à jour (comme les hits ou les comptes de visites) ne seront PAS mises à jour (sauf si vous ajoutez cela en dehors de cette méthode et donc de toute partie MVC plus profonde).
 

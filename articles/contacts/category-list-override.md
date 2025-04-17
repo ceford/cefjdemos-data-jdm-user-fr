@@ -36,7 +36,7 @@ La liste à puces des champs personnalisés peut être améliorée en supprimant
   padding-left: 0;
 }
 ```
-![comité d'affaires stylisé](../../../en/images/contacts/contact-business-committee-styled.png "Comité d'affaires stylisé")
+![comité d'affaires stylisé](../../../en/images/contacts/contact-business-committee-styled.png)
 
 C'est tout ce qui peut être fait avec le style. Mieux mais toujours pas suffisant. Pour ajouter plus d'éléments et modifier la disposition, un remplacement de disposition sera nécessaire.
 
@@ -150,7 +150,7 @@ a:has(.contact-thumbnail) {
 
 ### Résultat
 
-![comité d'entreprise en grille](../../../en/images/contacts/contact-business-committee-grid.png "Comité d'entreprise en grille")
+![comité d'entreprise en grille](../../../en/images/contacts/contact-business-committee-grid.png)
 
 *Traduit par openai.com*  
 

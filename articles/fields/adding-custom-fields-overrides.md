@@ -1,4 +1,4 @@
-<!-- Filename: J3.x:Adding_custom_fields/Overrides / Display title: Substitution de Modèles  -->
+<!-- Filename: J3.x:Adding_custom_fields/Overrides / Display title: Exemple Substitution de Modèles  -->
 
 ## Affichage Automatique du Champ
 

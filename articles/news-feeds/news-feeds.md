@@ -6,7 +6,7 @@ Il fut un temps où il était courant pour un site web d'afficher des articles d
 
 La méthode pour partager des actualités est la *Really Simple Syndication*, généralement abrégée en **RSS**, et cela a toujours sa place dans la promotion des sites web. La capture d'écran suivante montre *NetNewsWire*, un lecteur RSS gratuit et open source pour Mac. D'autres lecteurs RSS sont disponibles pour d'autres plateformes. L'illustration montre le flux RSS des **Annonces de Joomla!** sélectionné. Dix annonces sont répertoriées avec le titre et une brève description. L'annonce sélectionnée est affichée en entier dans la colonne de droite.
 
-![Flux RSS des annonces de Joomla](../../../en/images/news-feeds/news-netnewswire-display.png "Annonces de Joomla")
+![Flux RSS des annonces de Joomla](../../../en/images/news-feeds/news-netnewswire-display.png)
 
 Imaginez ce qu'un ou plusieurs flux RSS pourraient faire pour votre site web !
 
@@ -32,13 +32,13 @@ Le flux RSS ne peut pas être masqué dans une page d'accueil d'Articles en vede
 
 Il existe un module de base que vous pouvez placer sur les pages de blog en vedette ou de catégorie pour fournir un lien de syndication. Remplissez les champs dans l'onglet du module. La plupart ont des valeurs par défaut appropriées. Si le champ Étiquette est laissé vide, l'étiquette par défaut en anglais est *Entrées de flux*. Dans l'onglet *Affectation du menu*, sélectionnez **Sur toutes les pages**. Le module n'apparaîtra que sur les pages de blog en vedette et de catégorie.
 
-![Saisie de données des flux de syndication](../../../en/images/news-feeds/news-syndication-feeds-form.png "Saisie de données des flux de syndication")
+![Saisie de données des flux de syndication](../../../en/images/news-feeds/news-syndication-feeds-form.png)
 
 N'oubliez pas d'assigner le module à une *Position* et de le marquer comme *Publié*.
 
 Dans l'affichage de la page du site, le module affiche un lien. Il n'est pas destiné à être cliqué à moins que vous n'ayez un lecteur de nouvelles local configuré. Le lien doit être copié pour être utilisé dans un lecteur de nouvelles sur un autre site ou une application de lecteur de nouvelles.
 
-![Affichage des flux de syndication](../../../en/images/news-feeds/news-syndication-feeds-display.png "Affichage des flux de syndication")
+![Affichage des flux de syndication](../../../en/images/news-feeds/news-syndication-feeds-display.png)
 
 Notez que le lien concerne les éléments de cette page. Donc, si votre site a plusieurs pages de blog de catégorie, vous aurez plusieurs flux RSS différents.
 

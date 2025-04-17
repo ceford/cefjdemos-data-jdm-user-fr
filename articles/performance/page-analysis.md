@@ -12,7 +12,7 @@ Vous pouvez utiliser l'outil en ligne depuis [PageSpeed Insights](https://develo
 
 La capture d'écran suivante montre la première partie du rapport PageSpeed Insights :
 
-![Rapport PageSpeed Insights](../../../en/images/performance/performance-pagespeed-insights.png "Rapport PageSpeed Insights")
+![Rapport PageSpeed Insights](../../../en/images/performance/performance-pagespeed-insights.png)
 
 ## Améliorations des performances
 

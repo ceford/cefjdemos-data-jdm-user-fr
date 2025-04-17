@@ -4,17 +4,17 @@
 
 Il s'agit d'un plugin de base qui peut être utilisé pour vérifier l'accessibilité lors de la création de contenu d'articles. La capture d'écran suivante montre certains paramètres du plugin :
 
-![Paramètres du formulaire du plugin](../../../en/images/performance/performance-jooa11y-plugin-form.png "Paramètres du plugin")
+![Paramètres du formulaire du plugin](../../../en/images/performance/performance-jooa11y-plugin-form.png)
 
 Avec l'option **Afficher Toujours** définie sur *Activé*, l'icône de rapport apparaît sur chaque page du site. Cela est utile pour le développement mais ne devrait jamais être laissé activé pour un site en ligne. Réglez-la sur **Désactivé** !
 
 Avec l'option *Afficher Toujours* définie sur *Activé*, chaque page du site a une icône en bas à droite indiquant le nombre de problèmes. La capture d'écran suivante montre l'icône sélectionnée pour afficher un panneau d'information. Il inclut un Plan de Page, des commentaires de Lisibilité et des Avertissements, qui peuvent être sélectionnés un par un. Le premier problème a été sélectionné.
 
-![Vérification de l'accessibilité du site](../../../en/images/performance/performance-jooa11y-site-display.png "Vérification de l'accessibilité du site")
+![Vérification de l'accessibilité du site](../../../en/images/performance/performance-jooa11y-site-display.png)
 
 Le formulaire *Articles : Modifier* a un bouton **Vérification d'accessibilité** dans la barre d'outils. Il montre la vérification pour un article individuel dans une fenêtre popup :
 
-![Vérification de l'accessibilité de l'éditeur](../../../en/images/performance/performance-jooa11y-admin-display.png "Vérification de l'accessibilité de l'éditeur")
+![Vérification de l'accessibilité de l'éditeur](../../../en/images/performance/performance-jooa11y-admin-display.png)
 
 ## Résolution des problèmes
 
