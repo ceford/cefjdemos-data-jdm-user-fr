@@ -27,8 +27,11 @@ L'indexeur divise la tâche d'indexation en lots d'éléments de contenu. Par d�
 Si l'indexeur manque de mémoire, essayez d'apporter les ajustements suivants un par un jusqu'à ce que le problème soit résolu.
 
 1. Réduisez la taille du lot. Si vous avez des éléments de contenu particulièrement volumineux, l'indexeur peut manquer de mémoire même pour un seul élément de contenu, essayez donc de la réduire à 5 au début et si vous manquez toujours de mémoire, réduisez-la à 1.
-2. Si vous pouvez allouer plus de mémoire à l'indexeur, faites-le. Vous pouvez augmenter la mémoire allouée à l'indexeur en ligne de commande en utilisant un paramètre supplémentaire sur la ligne de commande. Par exemple, pour augmenter la limite de mémoire à 256 Mo, utilisez la commande suivante, en remplaçant les *256M* par autant de mémoire que vous pouvez allouer en toute sécurité à un processus sur votre système.<br> 
-5. Essayez d'identifier quels éléments de contenu font que l'indexeur manque de mémoire. Si ce n'est pas évident, vous pourriez essayer de désactiver tous les plugins Smart Search sauf un. Exécuter l'indexeur avec un seul plugin activé à la fois devrait révéler quel(s) type(s) de contenu causent le problème. En dernier recours, envisagez de diviser quelques éléments de contenu exceptionnellement volumineux en éléments séparés. Si le problème concerne un type de contenu personnalisé, examinez le code du plugin et envisagez d'indexer moins de contenu disponible par élément.
+2. Si vous pouvez allouer plus de mémoire à l'indexeur, faites-le. Vous pouvez augmenter la mémoire allouée à l'indexeur en ligne de commande en utilisant un paramètre supplémentaire sur la ligne de commande. Par exemple, pour augmenter la limite de mémoire à 256 Mo, utilisez la commande suivante, en remplaçant les *256M* par autant de mémoire que vous pouvez allouer en toute sécurité à un processus sur votre système.
+```php
+    php -d memory_limit=256M joomla.php finder:index
+```
+3. Essayez d'identifier quels éléments de contenu font que l'indexeur manque de mémoire. Si ce n'est pas évident, vous pourriez essayer de désactiver tous les plugins Smart Search sauf un. Exécuter l'indexeur avec un seul plugin activé à la fois devrait révéler quel(s) type(s) de contenu causent le problème. En dernier recours, envisagez de diviser quelques éléments de contenu exceptionnellement volumineux en éléments séparés. Si le problème concerne un type de contenu personnalisé, examinez le code du plugin et envisagez d'indexer moins de contenu disponible par élément.
 
 ## Problèmes d'Espace Disque Insuffisant
 
