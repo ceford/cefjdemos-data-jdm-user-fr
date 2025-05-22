@@ -84,5 +84,13 @@ Le titre est affiché dans la page de liste *Articles: Champs* où il peut être
 
 ### Onglet Permissions
 
+Les autorisations pour chaque groupe d'utilisateurs sont explicites pour les actions *Supprimer*, *Modifier* et *Modifier l'état*. Les autorisations indiquent qui peut faire quoi avec le champ dans son ensemble, comme le supprimer, le modifier ou le dépublier.
+
 ![Paramètres des champs onglet général](../../../en/images/fields/fields-parameters-permissions-tab.png)
 
+L’autorisation *Modifier la valeur du champ personnalisé* peut prêter à confusion. Elle indique qui peut modifier le contenu du champ. Par défaut, elle est définie sur **Non autorisé (hérité)** pour tous les groupes sauf les super utilisateurs. Deux exemples :
+
+* **Données personnalisées d'enregistrement utilisateur**
+  Supposons que vous créiez un champ utilisateur pour le *genre* à ajouter à un formulaire d'inscription. Il pourrait s'agir d'une liste ou de boutons radio permettant à l'utilisateur de sélectionner *Homme* ou *Femme*. Dans ce cas, l'autorisation pour le groupe Public doit être définie sur *Autorisé*. Sinon, un utilisateur invité ne pourra pas sélectionner de genre. Comme tous les autres groupes héritent du groupe Public, un utilisateur enregistré pourra modifier le genre de son profil après s'être connecté.
+* **Commentaire d'article**
+  Supposons que vous souhaitiez permettre à un auteur d’ajouter un commentaire à un article. Il pourrait s’agir d’un champ texte de longueur limitée. Dans ce cas, l’autorisation pour le groupe Auteur doit être définie sur *Autorisé*. Les groupes Éditeur et Publieur hériteront de ce paramètre lors de l’enregistrement du formulaire. Les groupes Gestionnaire et Administrateur ont la permission de modifier les articles, mais pas les valeurs des champs personnalisés, sauf si la valeur pour le groupe Gestionnaire est également définie sur *Autorisé*.
