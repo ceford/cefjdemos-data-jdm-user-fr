@@ -108,7 +108,12 @@ L'illustration ci-dessous montre deux groupes de dossiers. Le premier groupe se 
 
 ![Cassiopeia éditer fichiers](../../../en/images/templates/cassiopeia-customisation-edit-files.png)
 
-Notez qu'il n'y a pas de fichier *user.css* présent dans le dossier *css*. C'est un fichier que vous créez vous-même afin de pouvoir remplacer les styles définis précédemment. S'il n'est pas présent, créez-le maintenant en sélectionnant le dossier *css* puis le bouton *Nouveau*. Dans la boîte de dialogue pour un nouveau fichier, sélectionnez le dossier *css* sinon le nouveau fichier apparaîtra au mauvais endroit. Entrez user (en minuscules et sans *.css*) dans le champ Nom du fichier et sélectionnez *.css* dans le champ Type de fichier. Sélectionnez le bouton Créer pour créer le fichier. Si *user.css* est déjà présent, sélectionnez-le pour ouvrir le formulaire d'édition.
+Notez que dans une nouvelle installation de Joomla, aucun fichier ***user.css*** n’est présent dans le dossier **css**. Il s’agit d’un fichier que vous créez vous-même afin de remplacer les styles définis précédemment. Si ***user.css*** est déjà présent, sélectionnez-le pour ouvrir le formulaire de modification. S’il n’est pas présent, créez-le maintenant :
+
+1. Sélectionnez le bouton **New File**.
+2. Dans la boîte de dialogue modale **New File**, sélectionnez le dossier **css**, sinon le nouveau fichier sera créé au mauvais emplacement.
+3. Saisissez `user` (en minuscules et sans `.css`) dans le champ **File Name**, puis sélectionnez `.css` dans le champ **File Type**.
+4. Sélectionnez le bouton **Create** pour créer le fichier.
 
 ### En-têtes
 
