@@ -33,3 +33,4 @@ Supposons que vous ayez installé Joomla dans le dossier suivant : public_html/t
 6. Si vous avez activé le cache, connectez-vous à l'interface d'administration (qui se trouve maintenant à `http://www.example.com/administrator` et non `http://www.example.com/tryjoomla/administrator`). Allez dans Système / Cache et supprimez tous les fichiers de cache.
 
 *Traduit par openai.com*
+
