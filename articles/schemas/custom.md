@@ -1,4 +1,11 @@
-<!-- Filename: Localhost / Display title: Schema.org - Personnalisé -->
+<!--
+{
+  "source": "https://docs.joomla.org/Localhost",
+  "title": "Schema.org - Personnalisé ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -24,7 +31,7 @@ La propriété *timeRequired* représente le temps de lecture estimé au format 
 
 Voici un exemple de champ de schéma personnalisé dans un formulaire de modification d'article.
 
-![A custom schema edit form](../../../en/images/schemas/edit-schema-custom.png)
+![A custom schema edit form](../../../en/images/schemas/custom/01-edit-schema-custom.png)
 
 *Traduit par openai.com*
 

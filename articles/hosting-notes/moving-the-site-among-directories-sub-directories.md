@@ -1,4 +1,11 @@
-<!-- Filename: Moving_the_site_among_directories/sub-directories / Display title: Déplacement du Répertoire d'Installation -->
+<!--
+{
+  "source": "https://docs.joomla.org/Moving_the_site_among_directories",
+  "title": "Déplacement du Répertoire d'Installation ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 Il arrive souvent que vous installiez Joomla dans un sous-répertoire et que vous souhaitiez ensuite le déplacer vers un répertoire de niveau supérieur. Voici un court tutoriel sur la manière de procéder.
 

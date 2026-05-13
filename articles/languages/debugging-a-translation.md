@@ -1,4 +1,11 @@
-<!-- Filename: Debugging_a_translation / Display title: Déboguer une Traduction -->
+<!--
+{
+  "source": "https://docs.joomla.org/Debugging_a_translation",
+  "title": "Déboguer une Traduction ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Fichiers de langue Joomla
 
@@ -55,7 +62,7 @@ Ce plugin système contrôle ce qui est affiché lorsque le débogage est activ�
 
 Dans l'onglet **Langue** :
 
-![plugin système debug](../../../en/images/languages/languages-debug-plugin.png)
+![plugin système debug](../../../en/images/languages/debugging-a-translation/01-languages-debug-plugin.png)
 
 * **Erreurs Lors de l'Analyse des Fichiers de Langue** Afficher une erreur si un fichier de langue ne parvient pas à se charger.
 

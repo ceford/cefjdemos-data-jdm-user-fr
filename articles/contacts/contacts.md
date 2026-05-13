@@ -1,4 +1,11 @@
-<!-- Filename: contacts.md / Display title: Contacts  -->
+<!--
+{
+  "source": "https://docs.joomla.org/contacts.md",
+  "title": "Contacts  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -26,7 +33,7 @@ Les contacts sont créés via la page de liste des contacts. Sélectionnez le bo
 
 Dans le formulaire **Contacts : Modifier**, entrez toutes les données dont vous disposez sur le contact.
 
-![Capture d'écran de saisie des données](../../../en/images/contacts/contact-data-entry.png)
+![Capture d'écran de saisie des données](../../../en/images/contacts/contacts/01-contact-data-entry.png)
 
 **Notes :**
 
@@ -60,13 +67,13 @@ Chambre des Communes
 - Comité des Affaires
 - Comité de la Culture
 ```
-![toutes les catégories dans une arborescence de catégorie](../../../en/images/contacts/contact-all-committees.png)
+![toutes les catégories dans une arborescence de catégorie](../../../en/images/contacts/contacts/02-contact-all-committees.png)
 
 La deuxième ligne de chaque entrée provient de la Description de la Catégorie.
 
 Si vous sélectionnez un des liens de Comité, la page du Comité pourrait ressembler à celle-ci :
 
-![contacts dans une catégorie](../../../en/images/contacts/contact-culture-committee.png)
+![contacts dans une catégorie](../../../en/images/contacts/contacts/03-contact-culture-committee.png)
 
 La mise en page n'est pas tout à fait comme désirée. Il aurait été préférable d'inclure une
 image miniature de chaque individu et une meilleure mise en page des détails. Cela
@@ -77,7 +84,7 @@ peut être fait avec une surcharge de modèle (plus tard).
 Pour le Comité des Affaires, il y a un élément de menu Lister les Contacts dans une Catégorie.
 Cela entraîne l'utilisation d'une mise en page différente :
 
-![liste de catégories de contacts](../../../en/images/contacts/contact-category-list.png)
+![liste de catégories de contacts](../../../en/images/contacts/contacts/04-contact-category-list.png)
 
 Mieux mais toujours pas tout à fait correct ! Un surclassement de style était nécessaire pour réduire le style de l'image. Encore une fois, il semble qu'une surcharge de modèle pourrait être utile.
 
@@ -85,7 +92,7 @@ Mieux mais toujours pas tout à fait correct ! Un surclassement de style était 
 
 Pour cet exemple, les présidents de tous les comités ont été marqués comme en vedette.
 
-![contacts en vedette](../../../en/images/contacts/contact-featured.png)
+![contacts en vedette](../../../en/images/contacts/contacts/05-contact-featured.png)
 
 ## Ordre de Tri
 

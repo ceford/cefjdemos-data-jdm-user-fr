@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Module_Display_by_Menu_Item / Display title: Affichage du Module par Élément de Menu  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Module_Display_by_Menu_Item",
+  "title": "Affichage du Module par Élément de Menu  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -24,7 +31,7 @@ Il existe quatre options d'affectation de menu :
 - Sur toutes les pages sauf celles sélectionnées
 
 Pour les deux dernières options, un panneau de sélection de menu est affiché. Initialement, les menus qu'il contient sont entièrement développés, mais ils peuvent être réduits avec le bouton **Développer les sous-arborescences du menu** *Aucun*. Ensuite, développez le menu qui vous intéresse.
-![affectation du menu du module](../../../en/images/modules/module-display-by-menu.png)
+![affectation du menu du module](../../../en/images/modules/module-display-by-menu-item/01-module-display-by-menu.png)
 
 Sélectionnez les éléments de menu pour afficher ou ne pas afficher le module comme souhaité.
 

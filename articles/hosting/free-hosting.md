@@ -1,4 +1,11 @@
-<!-- Filename: How_to_build_your_free_Joomla_Website / Display title: Hébergement Gratuit -->
+<!--
+{
+  "source": "https://docs.joomla.org/How_to_build_your_free_Joomla_Website",
+  "title": "Hébergement Gratuit ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Qu'est-ce que joomla.com ?
 
@@ -11,7 +18,7 @@ Si vous êtes nouveau sur Joomla et souhaitez le voir en action sans avoir à le
 
 ### Étape 1 : Entrez un nom de sous-domaine approprié
 
-![Page de départ Joomla](../../../en/images/hosting/free-hosting-launch.png)
+![Page de départ Joomla](../../../en/images/hosting/free-hosting/01-free-hosting-launch.png)
 
 Alice et Bob sont probablement déjà pris, mais vous pouvez choisir n'importe quel nom facile à taper et à retenir.
 
@@ -19,13 +26,13 @@ Alice et Bob sont probablement déjà pris, mais vous pouvez choisir n'importe q
 
 Comme il s'agit d'une nouvelle installation, il est préférable de sélectionner la dernière version stable.
 
-![Choisissez la version de Joomla](../../../en/images/hosting/free-hosting-select-version.png)
+![Choisissez la version de Joomla](../../../en/images/hosting/free-hosting/02-free-hosting-select-version.png)
 
 ### Étape 3 : Créez un compte
 
 Remplissez vos informations personnelles et sélectionnez le bouton S’enregistrer.
 
-![Détails personnels de Joomla](../../../en/images/hosting/free-hosting-personal-details.png)
+![Détails personnels de Joomla](../../../en/images/hosting/free-hosting/03-free-hosting-personal-details.png)
 
 #### Remarques
 
@@ -42,13 +49,13 @@ Vous recevrez bientôt un jeton à 6 chiffres sur le numéro de téléphone que 
 
 ### Étape 5 : Vérifiez le compte
 
-![Vérifiez le compte de Joomla](../../../en/images/hosting/free-hosting-verify-account.png)
+![Vérifiez le compte de Joomla](../../../en/images/hosting/free-hosting/04-free-hosting-verify-account.png)
 
 Utilisez le jeton pour terminer le processus - vous serez connecté au panneau de contrôle CloudAccess.net (CCP).
 
 ### Étape 6 : Panneau de contrôle CloudAccess.net
 
-![Panneau de contrôle d'accès cloud de Joomla](../../../en/images/hosting/free-hosting-cloud-access-control-panel.png)
+![Panneau de contrôle d'accès cloud de Joomla](../../../en/images/hosting/free-hosting/05-free-hosting-cloud-access-control-panel.png)
 
 Vous recevrez également un e-mail avec vos identifiants de connexion pour votre site gratuit. Il peut prendre quelques minutes avant que votre site Joomla gratuit ne soit disponible. Si vous rencontrez des problèmes, ouvrez un nouveau ticket dans le CPP et l'équipe de support corrigera ce qui doit être corrigé.
 
@@ -64,7 +71,7 @@ C'est aussi simple que cela et une fois que votre site est en ligne et fonctionn
 
 Joomla est géré presque entièrement depuis ses pages d'administration. Cependant, il est parfois utile d'avoir accès à des outils système à des fins de résolution de problèmes. Sélectionnez le bouton Gérer sur la page CPP Vos Produits pour accéder à ces outils.
 
-![Lancer les outils cpp d'accès cloud de Joomla](../../../en/images/hosting/free-hosting-cpp-manage.png)
+![Lancer les outils cpp d'accès cloud de Joomla](../../../en/images/hosting/free-hosting/06-free-hosting-cpp-manage.png)
 
 ### phpMyAdmin
 
@@ -87,7 +94,7 @@ Comme la majorité des fonctionnalités de la plateforme se chevauchent avec cel
 
 Les tests sont importants dans un projet open source comme Joomla car ils assurent la qualité des futures versions. Vous pouvez aider à tester de nouvelles fonctionnalités et des correctifs en installant l'extension [Joomla Patchtester](https://github.com/joomla-extensions/patchtester/releases) sur votre site Joomla gratuit. Aucune compétence particulière n'est requise pour devenir testeur ! Si vous n'avez jamais testé de demandes de tirage, la Documentation Joomla vous fournit tous les [tutoriels dont vous avez besoin. Alors, faites-en partie et commencez à tester Joomla dès aujourd'hui.
 
-![Lancer les outils cpp d'accès au cloud Joomla](../../../en/images/hosting/free-hosting-patch-tester.png)
+![Lancer les outils cpp d'accès au cloud Joomla](../../../en/images/hosting/free-hosting/07-free-hosting-patch-tester.png)
 
 Avertissements : Vous aurez besoin d'un compte GitHub et d'un jeton GitHub. Vous ne pourrez pas tester les demandes de tirage impliquant des modifications CSS et JavaScript nécessitant des modifications des ressources NPM.
 

@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Adding_custom_fields/Multilingual_Sites / Display title: # Sites Multilingues -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
+  "title": "# Sites Multilingues ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -49,7 +56,7 @@ Depuis le menu de l'Administrateur :
 
 La capture d'écran suivante montre un exemple de création de remplacement pour une constante de langue allemande.
 
-![Création de remplacement en allemand](../../../en/images/fields/fields-overrides-creation-de.png)
+![Création de remplacement en allemand](../../../en/images/fields/adding-custom-fields-multilingual-sites/01-fields-overrides-creation-de.png)
 
 ## Définir le Groupe de Champs
 
@@ -79,11 +86,11 @@ Depuis le menu Administrateur :
 
 Avec l'anglais sélectionné avant la connexion Administrateur, le formulaire de saisie des contacts doit contenir un onglet avec le nom anglais de votre groupe de champs et des champs de ce groupe également avec des valeurs en anglais.
 
-![Saisie de données en anglais](../../../en/images/fields/fields-overrides-entry.png)
+![Saisie de données en anglais](../../../en/images/fields/adding-custom-fields-multilingual-sites/02-fields-overrides-entry.png)
 
 Avec l'allemand sélectionné avant la connexion Administrateur, vous devriez voir les traductions allemandes de vos constantes de langue :
 
-![Saisie de données en allemand](../../../en/images/fields/fields-overrides-entry-de.png)
+![Saisie de données en allemand](../../../en/images/fields/adding-custom-fields-multilingual-sites/03-fields-overrides-entry-de.png)
 
 Avertissement : traduction par translate.google.co.uk !
 
@@ -91,8 +98,8 @@ Avertissement : traduction par translate.google.co.uk !
 
 En anglais :
 
-![Affichage des données en anglais](../../../en/images/fields/fields-overrides-display.png)
+![Affichage des données en anglais](../../../en/images/fields/adding-custom-fields-multilingual-sites/04-fields-overrides-display.png)
 
 Et en allemand :
 
-![Affichage des données en allemand](../../../en/images/fields/fields-overrides-display-de.png)
+![Affichage des données en allemand](../../../en/images/fields/adding-custom-fields-multilingual-sites/05-fields-overrides-display-de.png)

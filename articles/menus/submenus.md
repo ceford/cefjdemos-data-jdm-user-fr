@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Submenus / Display title: Sous-menus  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Submenus",
+  "title": "Sous-menus  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Notions de base sur les menus
 
@@ -26,7 +33,7 @@ Supposons que vous ayez une série d'articles sur les animaux. Cela pourrait êt
 
 Les listes pourraient être assez longues, vous souhaiterez donc peut-être afficher uniquement une liste de races de chats sur les pages concernant les chats et uniquement une liste de races de chiens sur les pages concernant les chiens. La capture d'écran suivante montre la disposition cible que l'utilisateur souhaite obtenir :
 
-![objectifs sous-menus animaux chats](../../../en/images/menus/submenus-objectives-animals-cats.png)
+![objectifs sous-menus animaux chats](../../../en/images/menus/submenus/01-submenus-objectives-animals-cats.png)
 
 Dans cet exemple, lorsque l'utilisateur sélectionne l'élément de menu Animaux, la page Animaux est chargée et le module de menu Chats disparaît (pas de module Chiens non plus). Sélectionnez l'élément de menu Chats et le module de menu Chats apparaît à côté de la page Chats. Sélectionnez l'élément de menu Birmans et la page Birmans apparaît. Sélectionnez l'élément de menu Chiens et le module de menu Chats est remplacé par un module de menu Chiens à côté de la page Chiens.
 
@@ -53,7 +60,7 @@ Depuis le menu Administrateur :
 - Dans certains cas, vous pourriez avoir besoin de vous rappeler à quoi sert ce menu. Remplissez donc le champ de description.
 - Enregistrez ou Enregistrez & Fermez.
 
-![nouveau menu de sous-menus](../../../en/images/menus/submenus-new-menu.png)
+![nouveau menu de sous-menus](../../../en/images/menus/submenus/02-submenus-new-menu.png)
 
 ## Créer des éléments de menu
 
@@ -96,7 +103,7 @@ Continuez jusqu'à ce que vous ayez sept éléments de menu, un pour chaque arti
 
 Lorsque vous avez créé tous vos éléments de menu, vérifiez qu'ils ont les bonnes relations parent-enfant et qu'ils sont dans le bon ordre. Vous pouvez trier selon la colonne "Ordre" (la deuxième colonne) et utiliser les poignées de saisie (points de suspension verticaux) pour faire glisser les éléments dans le bon ordre. Si un élément a un mauvais parent, il vous suffit de sélectionner le titre de l'élément et de changer le parent dans le formulaire "Menus : Modifier l’élément".
 
-![listes des éléments de sous-menus](../../../en/images/menus/submenus-menu-items-list.png)
+![listes des éléments de sous-menus](../../../en/images/menus/submenus/03-submenus-menu-items-list.png)
 
 ## Modules de Menu
 
@@ -120,7 +127,7 @@ Depuis le menu Administrateur :
   - Niveau de fin : 2 (cela limite les éléments aux éléments de menu sur Chats et Chiens)
   - Position : sidebar-gauche (ou à l'endroit qui vous convient)
 
-![module sous-menus animaux](../../../en/images/menus/submenus-animals-module.png)
+![module sous-menus animaux](../../../en/images/menus/submenus/04-submenus-animals-module.png)
 
 ### Attribution du menu Animaux
 
@@ -132,7 +139,7 @@ Les sous-menus sont généralement affichés uniquement sur les pages où ils so
 - Assurez-vous qu'aucune autre case n'est cochée.
 - Enregistrez et Fermez
 
-![attribution du menu module sous-menus animaux](../../../en/images/menus/submenus-animals-module-menu-assignment.png)
+![attribution du menu module sous-menus animaux](../../../en/images/menus/submenus/05-submenus-animals-module-menu-assignment.png)
 
 ## Module de sous-menu pour les chats
 
@@ -175,7 +182,7 @@ Tout va bien jusqu'ici ! Mais il n'y a pas de lien vers la page des Animaux depu
   - Type d'Élément de Menu : Alias d'Élément de Menu
   - Élément de Menu : Animaux - sélectionné dans la liste des éléments de menu existants.
 
-![sous-menus alias animaux](../../../en/images/menus/submenus-animals-alias.png)
+![sous-menus alias animaux](../../../en/images/menus/submenus/06-submenus-animals-alias.png)
 
 - Enregistrer
 - Tri - après l'enregistrement, l'ordre peut être modifié. Dans cet exemple, il est placé en premier.
@@ -184,5 +191,5 @@ Tout va bien jusqu'ici ! Mais il n'y a pas de lien vers la page des Animaux depu
 
 Consultez les pages sur votre site. Dans cet exemple, la plupart des pages ne montreront pas les sous-menus sur la position gauche. Le lien "Animaux" dans le menu supérieur ouvrira la page des animaux à partir de laquelle il est possible de naviguer vers les pages "Chats" ou "Chiens" :
 
-![objectifs sous-menus animaux chiens](../../../en/images/menus/submenus-objectives-animals-dogs.png)
+![objectifs sous-menus animaux chiens](../../../en/images/menus/submenus/07-submenus-objectives-animals-dogs.png)
 

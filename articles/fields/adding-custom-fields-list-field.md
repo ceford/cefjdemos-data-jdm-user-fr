@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Adding_custom_fields/List_Field / Display title: Champ de Liste -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
+  "title": "Champ de Liste ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -12,7 +19,7 @@ Les options spéciales de ce champ sont :
 - **Valeurs de liste** Ajouter des éléments selon les besoins et utiliser l'icône de glissement pour changer leur ordre. Commencez la liste avec le texte réglé sur *- Sélectionner -* et la valeur vide. Cela offre une valeur par défaut vide, si bien que cette liste est absente de l'article.
 - **Classe de champ** Régler sur *w-auto* pour que la liste soit juste assez large pour son ensemble d'étiquettes.
 
-![Création de champ de liste](../../../en/images/fields/fields-list-edit.png)
+![Création de champ de liste](../../../en/images/fields/adding-custom-fields-list-field/01-fields-list-edit.png)
 
 **Remarque :** Dans cet exemple, l'inclusion du type de champ dans le titre est uniquement à des fins de démonstration. N'incluez pas ceci dans vos propres titres de champ.
 
@@ -20,7 +27,7 @@ Les options spéciales de ce champ sont :
 
 Simple : sélectionnez simplement un élément dans la liste ou plusieurs éléments si *Multiple* est *Oui*.
 
-![Saisie de données du champ de liste](../../../en/images/fields/fields-list-data-entry.png)
+![Saisie de données du champ de liste](../../../en/images/fields/adding-custom-fields-list-field/02-fields-list-data-entry.png)
 
 ## Affichage des Données
 
@@ -28,7 +35,7 @@ La capture d'écran suivante du site montre le champ affiché dans un article. L
 
 La sortie est un seul élément ou une liste séparée par des virgules.
 
-![affichage du champ de liste site](../../../en/images/fields/fields-list-site.png)
+![affichage du champ de liste site](../../../en/images/fields/adding-custom-fields-list-field/03-fields-list-site.png)
 
 *Traduit par openai.com*  
 

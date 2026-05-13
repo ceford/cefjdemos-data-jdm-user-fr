@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Menu_Positions / Display title: Positions du Menu -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Menu_Positions",
+  "title": "Positions du Menu ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -7,11 +14,11 @@ Un menu est positionné sur une page via un module de menu. Pour voir tous vos m
 - Sélectionnez **Contenu → Modules du site** dans le menu de l'administrateur.
 - Filtrez avec **- Sélectionner le type -** réglé sur *Menu* comme dans l'illustration suivante :
 
-![liste des modules filtrés par type de menu](../../../en/images/menus/menus-menu-positions.png)
+![liste des modules filtrés par type de menu](../../../en/images/menus/menu-positions/01-menus-menu-positions.png)
 
 Pour référence, le modèle Cassiopeia a les positions suivantes :
 
-![positions du modèle Cassiopeia](../../../en/images/templates/cassiopeia-template-positions.png)
+![positions du modèle Cassiopeia](../../../en/images/menus/menu-positions/02-cassiopeia-template-positions.png)
 
 ## Pour Changer une Position
 
@@ -24,7 +31,7 @@ Depuis la liste des Modules (Site) :
 
 L’illustration suivante montre un module de menu avec une partie de la liste des positions. Elle est assez longue car elle contient les positions disponibles dans le modèle Cassiopeia suivies des positions actives en cours d’utilisation.
 
-![Formulaire d'édition du module de menu](../../../en/images/menus/menus-menu-edit-position.png)
+![Formulaire d'édition du module de menu](../../../en/images/menus/menu-positions/03-menus-menu-edit-position.png)
 
 ## Disposition du Menu
 

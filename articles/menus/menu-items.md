@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Menu_Items / Display title: Éléments du Menu  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Menu_Items",
+  "title": "Éléments du Menu  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -8,7 +15,7 @@ Les éléments de menu sont les unités de navigation de base d'un site Joomla. 
 
 Les types d'éléments de menu sont définis dans chaque composant qui a des vues de site. Le noyau de Joomla comprend environ 10 de ces composants, chacun avec plusieurs vues, pour un total de plus de 30 types. La capture d'écran suivante montre la liste **Menus : Tous les Éléments de Menu** avec une sélection de types d'éléments de menu sous le titre du menu dans la colonne **Titre** :
 
-![liste des éléments de menu](../../../en/images/menus/menus-all-menu-items-list.png)
+![liste des éléments de menu](../../../en/images/menus/menu-items/01-menus-all-menu-items-list.png)
 
 ## Ajout d'un Élément de Menu
 
@@ -22,7 +29,7 @@ Dans le formulaire **Menus : Nouvel Élément** :
 - Dans le champ **Titre**, entrez un titre court approprié pour l'élément de menu.
 - Dans le champ **Type d'Élément de Menu**, utilisez le bouton **Sélectionner** pour ouvrir la boîte de dialogue Type d'Élément de Menu.
 
-![sélectionner type d'élément de menu](../../../en/images/menus/menus-menu-items-select-type.png)
+![sélectionner type d'élément de menu](../../../en/images/menus/menu-items/02-menus-menu-items-select-type.png)
 
 - Sélectionnez le type dont vous avez besoin, dans cet exemple un type Article Unique.
 
@@ -33,7 +40,7 @@ Le formulaire de saisie de données **Menus : Nouvel Élément** se modifiera po
 - **Enregistrez**
 - Si vous souhaitez changer l'ordre de cet élément dans le menu, utilisez le champ **Ordre** à droite. Par défaut, il est en dernier. Vous pouvez le mettre en **Premier** ou après tout autre élément de menu que vous sélectionnez.
 
-![modifier un élément de menu](../../../en/images/menus/menus-menu-items-edit-item.png)
+![modifier un élément de menu](../../../en/images/menus/menu-items/03-menus-menu-items-edit-item.png)
 
 - Consultez le site pour vérifier que le résultat est conforme à vos attentes.
 

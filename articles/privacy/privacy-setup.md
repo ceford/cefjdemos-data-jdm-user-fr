@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Privacy_Setup / Display title: Configuration de la confidentialité -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Privacy_Setup",
+  "title": "Configuration de la confidentialité ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Composant de Confidentialité
 
@@ -19,7 +26,7 @@ Le tableau de bord de la confidentialité fournit un résumé des **Requêtes de
 
 - Sélectionnez **Utilisateurs → Confidentialité** dans le menu Administrateur.
 
-![tableau de bord de la confidentialité](../../../en/images/privacy/privacy-dashboard.png)
+![tableau de bord de la confidentialité](../../../en/images/privacy/privacy-setup/01-privacy-dashboard.png)
 
 Il y a deux modules affichés par défaut dans le tableau de bord de la confidentialité :
 
@@ -47,7 +54,7 @@ Pour configurer les consentements :
 - Trouvez le plugin **Système - Consentement à la confidentialité** (à ne pas confondre avec le plugin Confidentialité - Consentements).
 - Choisissez d'ouvrir le formulaire d'entrée de données du plugin.
 
-![plugin système consentement à la confidentialité](../../../en/images/privacy/plugin-system-privacy-consent.png)
+![plugin système consentement à la confidentialité](../../../en/images/privacy/privacy-setup/02-plugin-system-privacy-consent.png)
 
 - Définissez l'**État** sur **Activé**.
 - Optionnel : Sélectionnez ou créez un article à lier depuis le formulaire d'inscription. Ou définissez le Type de confidentialité sur Élément de Menu et Sélectionnez ou Créez un élément de menu.
@@ -81,7 +88,7 @@ Ce plugin n'est pas activé par défaut. Pour l'activer :
 
 Ensemble, les deux plugins apparaissent sur le formulaire d'inscription utilisateur comme dans la capture d'écran suivante :
 
-![vue du consentement à la confidentialité du site](../../../en/images/privacy/privacy-consents-site.png)
+![vue du consentement à la confidentialité du site](../../../en/images/privacy/privacy-setup/03-privacy-consents-site.png)
 
 ## Élément de menu : Demande d'informations sur la confidentialité
 
@@ -117,13 +124,13 @@ Jetez un coup d'œil aux autres éléments du menu du Composant de Confidentiali
 
 Cet écran est le lieu central pour traiter et gérer les demandes d'informations des utilisateurs. Veuillez consulter l'article connexe sur le Flux de Travail de Confidentialité pour obtenir des conseils sur le traitement des demandes.
 
-![demandes d'informations de confidentialité](../../../en/images/privacy/privacy-information-requests.png)
+![demandes d'informations de confidentialité](../../../en/images/privacy/privacy-setup/04-privacy-information-requests.png)
 
 ### Capacités des Extensions
 
 Cet écran collecte et affiche des informations sur les capacités liées à la confidentialité signalées par les extensions individuelles. Il est destiné à aider à la préparation de documents tels qu'un article de politique de confidentialité ou un article sur les conditions de service.
 
-![capacités d'informations de confidentialité](../../../en/images/privacy/privacy-extension-capabilities.png)
+![capacités d'informations de confidentialité](../../../en/images/privacy/privacy-setup/05-privacy-extension-capabilities.png)
 
 Le contenu de la page provient des chaînes de langue dans le noyau, dans le composant de confidentialité et dans les plugins qui mettent en œuvre l'événement onPrivacyCollectAdminCapabilities. Cela comprend :
 
@@ -140,7 +147,7 @@ Les informations seront affichées dans la langue sélectionnée pour la connexi
 
 Cet écran affiche une liste de consentements, les plus récents en premier. Celle-ci sera dans la langue utilisée dans le formulaire de consentement, généralement lors de l'inscription. Vous pouvez rechercher par nom un utilisateur spécifique. Notez que le consentement à accepter les Termes et Conditions du site n'est pas enregistré ici. Cela figure uniquement dans le Journal des Actions Utilisateur.
 
-![consentements de confidentialité](../../../en/images/privacy/privacy-consents.png)
+![consentements de confidentialité](../../../en/images/privacy/privacy-setup/06-privacy-consents.png)
 
 *Traduit par openai.com*
 

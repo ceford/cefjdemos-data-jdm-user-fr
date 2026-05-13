@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Switching_Templates / Display title: Modification des modèles  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Switching_Templates",
+  "title": "Modification des modèles  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Modèles de Site et d’Administrateur
 
@@ -14,7 +21,7 @@ Un de vos modèles doit être marqué comme le modèle par défaut. Il est utili
   dans le menu Administrateur.
 - Sélectionnez l'un des boutons dans la colonne Par Défaut.
 
-![liste des styles de modèles du site](../../../en/images/templates/switch-templates-styles-list.png)
+![liste des styles de modèles du site](../../../en/images/template-tips/switching-templates/01-switch-templates-styles-list.png)
 
 Jetez un coup d'œil à votre site pour vérifier que toutes les pages utilisent le modèle par défaut.
 
@@ -31,7 +38,7 @@ Depuis la liste des styles de modèles :
 - Sélectionnez des éléments de menu individuels ou basculez tous les éléments d'un menu.
 - Enregistrez
 
-![onglet d'affectation du menu de la page d'édition de style des modèles](../../../en/images/templates/switch-templates-styles-edit-style-menu-assignment.png)
+![onglet d'affectation du menu de la page d'édition de style des modèles](../../../en/images/template-tips/switching-templates/02-switch-templates-styles-edit-style-menu-assignment.png)
 
 Dans cet exemple, tous les éléments de menu du menu `Main Menu Testing` ont été sélectionnés. Retournez sur votre site et sélectionnez n'importe lequel des éléments de menu qui devraient utiliser le modèle sélectionné.
 
@@ -44,7 +51,7 @@ Cette méthode est utilisée pour définir le modèle pour des éléments de men
 - Dans le champ **Style de modèle**, sélectionnez le style de modèle souhaité.
 - Enregistrez
 
-![formulaire d'édition d'éléments de menu montrant la sélection de style](../../../en/images/templates/switch-templates-styles-edit-menu-style.png)
+![formulaire d'édition d'éléments de menu montrant la sélection de style](../../../en/images/template-tips/switching-templates/03-switch-templates-styles-edit-menu-style.png)
 
 Retournez sur votre site et sélectionnez l'élément de menu modifié pour vérifier qu'il s'affiche avec le style de modèle sélectionné.
 

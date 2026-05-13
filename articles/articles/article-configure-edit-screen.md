@@ -1,4 +1,11 @@
-<!-- Filename: J6.x:_Article_Edit_Configure_Edit_Screen / Display title: Article : Modifier - Configurer l'écran d'édition  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J6.x:_Article_Edit_Configure_Edit_Screen",
+  "title": "Article : Modifier - Configurer l'écran d'édition  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@ Les écrans de modification des articles ont des mises en page différentes dans
 
 ## Capture d'écran
 
-![L'onglet de configuration de l'écran d'édition](../../../en/images/articles/articles-edit-configure-edit-screen-tab.png)
+![L'onglet de configuration de l'écran d'édition](../../../en/images/articles/article-configure-edit-screen/01-articles-edit-configure-edit-screen-tab.png)
 
 ## Configurer le panneau d'édition de l'écran
 

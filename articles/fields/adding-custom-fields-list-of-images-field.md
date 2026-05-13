@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Adding_custom_fields/List_of_Images_Field / Display title: Liste des images -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
+  "title": "Liste des images ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -13,7 +20,7 @@ image à lister. Seules les images d'un seul répertoire peuvent être sélectio
 - **Multiple** Permettre la sélection de plusieurs valeurs.
 - **Classe de l'image** La classe à ajouter à l'image. Par exemple, *w-25 p-1* limite la largeur de chaque image à 25 % de son conteneur et ajoute 1 unité de marge intérieure.
 
-![création de champ liste d'images](../../../en/images/fields/fields-list-of-images-edit.png)
+![création de champ liste d'images](../../../en/images/fields/adding-custom-fields-list-of-images-field/01-fields-list-of-images-edit.png)
 
 **Remarque :** Dans cet exemple, l'inclusion du type de champ dans le titre est
 uniquement à des fins de démonstration. Ne l'incluez pas dans vos propres titres de champ.
@@ -23,14 +30,14 @@ uniquement à des fins de démonstration. Ne l'incluez pas dans vos propres titr
 
 Simple : sélectionnez une ou plusieurs images de la liste.
 
-![liste des images saisie de données](../../../en/images/fields/fields-list-of-images-data-entry.png)
+![liste des images saisie de données](../../../en/images/fields/adding-custom-fields-list-of-images-field/02-fields-list-of-images-data-entry.png)
 
 
 ## Affichage des données
 
 La capture d'écran du site suivante montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-![liste des images affichage du site](../../../en/images/fields/fields-list-of-images-site.png)
+![liste des images affichage du site](../../../en/images/fields/adding-custom-fields-list-of-images-field/03-fields-list-of-images-site.png)
 
 *Traduit par openai.com*
 

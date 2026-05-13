@@ -1,4 +1,11 @@
-<!-- Filename: Article_Images_and_Links / Display title: Article : Modifier - Images et Liens  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Article_Images_and_Links",
+  "title": "Article : Modifier - Images et Liens  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -13,7 +20,7 @@ D'autres articles ont décrit comment intégrer des images et des liens dans le 
 Pour cet article, à partir d'une image d'une rainette verte de 1024 pixels de large, deux images plus petites ont été créées, mesurant respectivement 128 et 256 pixels de large.  
 Remarque : il est préférable de préparer les images dans votre outil de traitement d'image préféré, tel que *Gimp*. Les images de petite et moyenne taille ont été utilisées pour créer les captures d'écran suivantes.
 
-![Formulaire de modification de l'article, onglet images et liens](../../../en/images/articles/articles-edit-images-and-links-tab.png)
+![Formulaire de modification de l'article, onglet images et liens](../../../en/images/articles/article-images-and-links/01-articles-edit-images-and-links-tab.png)
 
 ## Champs de Formulaire
 
@@ -50,11 +57,11 @@ Exactement la même saisie de données que le Lien A.
 
 La capture d'écran ci-dessous montre une mise en page de blog de catégorie avec l'*Image d'Intro*. Il aurait peut-être été préférable d'utiliser une image panoramique de la même hauteur mais beaucoup plus large pour occuper l'espace blanc vacant.
 
-![Page de blog de la catégorie Amphibiens](../../../en/images/articles/articles-site-amphibians-blog.png)
+![Page de blog de la catégorie Amphibiens](../../../en/images/articles/article-images-and-links/02-articles-site-amphibians-blog.png)
 
 La capture d'écran ci-dessous montre la page d'un article individuel avec l'*Image de l'Article Complet* et le Lien A. L'image a été alignée à droite et la légende visible dit quelque chose pour compléter ce que la Description dit, afin que cela semble logique pour les lecteurs d'écran.
 
-![Page d'un article individuel sur les grenouilles](../../../en/images/articles/articles-site-amphibians-frogs.png)
+![Page d'un article individuel sur les grenouilles](../../../en/images/articles/article-images-and-links/03-articles-site-amphibians-frogs.png)
 
 *Traduit par openai.com*
 

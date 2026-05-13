@@ -1,4 +1,11 @@
-<!-- Filename: jdocmanual?manual=user&heading=modules&filename=module-styles.md / Display title: Styles de Module -->
+<!--
+{
+  "source": "https://docs.joomla.org/jdocmanual?manual=user&heading=modules&filename=module-styles.md",
+  "title": "Styles de Module ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Concepts de Style
 
@@ -58,7 +65,7 @@ Le titre du module est maintenant en bleu foncé. Il existe plusieurs façons de
 * Changez également la bordure inférieure de l'en-tête.
 * Appliquez ce style à plusieurs modules au lieu de les traiter un par un
 
-![Exemple de module d'articles archivés](../../../en/images/modules/modules-archived-articles.png)
+![Exemple de module d'articles archivés](../../../en/images/modules/module-styles/01-modules-archived-articles.png)
 
 *Traduit par openai.com*
 

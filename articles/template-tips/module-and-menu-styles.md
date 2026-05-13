@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Module_and_Menu_Styles / Display title: Styles de module et de menu -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Module_and_Menu_Styles",
+  "title": "Styles de module et de menu ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## À propos des feuilles de style en cascade
 
@@ -20,7 +27,7 @@ Mais que faire si vous voulez styliser un module ou une page entière ? Par exem
 
 Cet exemple simple applique des styles personnalisés au module de connexion et à son titre. La capture d'écran suivante montre les noms de style saisis dans l'onglet Avancé du formulaire d'édition du module : Connexion. La Classe de module a été définie sur `make-me-light-green` et la Classe d'en-tête a été définie sur `make-me-dark-green`. Notez que vous pouvez inclure des tirets ou des traits de soulignement dans les noms de classe, mais les espaces séparent les différents noms de classe.
 
-![formulaire d'édition du module de connexion, onglet avancé, montrant la classe personnalisée](../../../en/images/templates/templates-edit-module-style.png)
+![formulaire d'édition du module de connexion, onglet avancé, montrant la classe personnalisée](../../../en/images/template-tips/module-and-menu-styles/01-templates-edit-module-style.png)
 
 Les déclarations de style suivantes sont utilisées dans le fichier user.css :
 ```css
@@ -35,7 +42,7 @@ Les déclarations de style suivantes sont utilisées dans le fichier user.css :
 ```
 Faites attention au point (.) utilisé en CSS pour définir une classe avec ce nom. Le point ne doit pas être utilisé dans le formulaire de saisie de données du module. Le résultat dans cet exemple est le suivant :
 
-![apparence du site du module personnalisé avec les outils de développement](../../../en/images/templates/templates-edit-module-style-result.png)
+![apparence du site du module personnalisé avec les outils de développement](../../../en/images/template-tips/module-and-menu-styles/02-templates-edit-module-style-result.png)
 
 Le bas de l'image montre le panneau des outils de développement du navigateur avec la balise `<div>` entourant le module de connexion sélectionné. Vous pouvez voir que le style de la Classe de module personnalisée a été ajouté aux styles déjà définis dans le modèle de module. La ligne suivante montre la balise `<h3>` également avec la Classe d'en-tête personnalisée ajoutée aux styles déjà définis.
 
@@ -59,7 +66,7 @@ C'est le dernier point de cette liste qui est traité dans cet article. Que se p
 ```
 La classe est ajoutée à la balise body de la page :
 
-![apparence du site de la page personnalisée avec les outils de développement](../../../en/images/templates/templates-edit-page-class-result.png)
+![apparence du site de la page personnalisée avec les outils de développement](../../../en/images/template-tips/module-and-menu-styles/03-templates-edit-page-class-result.png)
 
 CQFD !
 

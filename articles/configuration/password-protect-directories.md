@@ -1,4 +1,11 @@
-<!-- Filename: How_do_you_password_protect_directories_using_htaccess%3F / Display title: Protéger les répertoires par mot de passe  -->
+<!--
+{
+  "source": "https://docs.joomla.org/How_do_you_password_protect_directories_using_htaccess%3F",
+  "title": "Protéger les répertoires par mot de passe  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 

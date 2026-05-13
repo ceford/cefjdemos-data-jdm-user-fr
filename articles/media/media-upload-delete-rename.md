@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Media:_Upload_Delete_Rename / Display title: Télécharger Supprimer Renommer  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Media:_Upload_Delete_Rename",
+  "title": "Télécharger Supprimer Renommer  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Fonctions Médias Simples
 

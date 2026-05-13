@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Adding_custom_fields/Parameters_for_all_Custom_Fields / Display title: Paramètres de champ -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
+  "title": "Paramètres de champ ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Formulaire de Saisie de Données
 
@@ -9,7 +16,7 @@ Une liste des champs sera initialement vide. Pour commencer, par exemple avec le
 
 Le formulaire comprend un champ Titre et quatre onglets.
 
-![Paramètres généraux des champs onglet](../../../en/images/fields/fields-parameters-general-tab.png)
+![Paramètres généraux des champs onglet](../../../en/images/fields/adding-custom-fields-parameters/01-fields-parameters-general-tab.png)
 
 ## Titre
 
@@ -44,7 +51,7 @@ Le titre est affiché dans la page de liste *Articles: Champs* où il peut être
 
 ### Onglet Options
 
-![Paramètres des champs onglet général](../../../en/images/fields/fields-parameters-options-tab.png)
+![Paramètres des champs onglet général](../../../en/images/fields/adding-custom-fields-parameters/02-fields-parameters-options-tab.png)
 
 #### Options du Formulaire
 
@@ -80,13 +87,13 @@ Le titre est affiché dans la page de liste *Articles: Champs* où il peut être
 
 ### Onglet Publication
 
-![Paramètres des champs onglet général](../../../en/images/fields/fields-parameters-publishing-tab.png)
+![Paramètres des champs onglet général](../../../en/images/fields/adding-custom-fields-parameters/03-fields-parameters-publishing-tab.png)
 
 ### Onglet Permissions
 
 Les autorisations pour chaque groupe d'utilisateurs sont explicites pour les actions *Supprimer*, *Modifier* et *Modifier l'état*. Les autorisations indiquent qui peut faire quoi avec le champ dans son ensemble, comme le supprimer, le modifier ou le dépublier.
 
-![Paramètres des champs onglet général](../../../en/images/fields/fields-parameters-permissions-tab.png)
+![Paramètres des champs onglet général](../../../en/images/fields/adding-custom-fields-parameters/04-fields-parameters-permissions-tab.png)
 
 L’autorisation *Modifier la valeur du champ personnalisé* peut prêter à confusion. Elle indique qui peut modifier le contenu du champ. Par défaut, elle est définie sur **Non autorisé (hérité)** pour tous les groupes sauf les super utilisateurs. Deux exemples :
 

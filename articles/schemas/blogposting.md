@@ -1,4 +1,11 @@
-<!-- Filename: J5.x:Schema_org/Type_Organization_-_Using_Organization_Plugin / Display title: Schema.org - BlogPosting -->
+<!--
+{
+  "source": "https://docs.joomla.org/J5.x:Schema_org",
+  "title": "Schema.org - BlogPosting ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -30,7 +37,7 @@ La section *Generic Field* permet de saisir des paires de *Titre* et *Valeur* en
 
 Ci-dessous un exemple de schéma BlogPosting dans un formulaire d'édition d'article.
 
-![A blogposting schema edit form](../../../en/images/schemas/edit-schema-blogposting.png)
+![A blogposting schema edit form](../../../en/images/schemas/blogposting/01-edit-schema-blogposting.png)
 
 *Traduit par openai.com*
 

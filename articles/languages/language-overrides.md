@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Language_Overrides / Display title: Remplacements de Langue -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Language_Overrides",
+  "title": "Remplacements de Langue ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Emplacements des Fichiers de Langue
 
@@ -70,11 +77,11 @@ La nouvelle clé peut maintenant être traduite dans chaque langue. Les traducti
 - Enregistrez & Fermez le formulaire.
 - Répétez le processus de traduction pour chaque langue.
 
-![formulaire d'édition des substitutions de langue](../../../en/images/languages/language-overrides-edit.png)
+![formulaire d'édition des substitutions de langue](../../../en/images/languages/language-overrides/01-language-overrides-edit.png)
 
 Enfin, vérifiez que la traduction a été mise en œuvre.
 
-![Résultat de substitution dans le formulaire de connexion du site](../../../en/images/languages/language-overrides-custom-logout.png)
+![Résultat de substitution dans le formulaire de connexion du site](../../../en/images/languages/language-overrides/02-language-overrides-custom-logout.png)
 
 *Traduit par openai.com*
 

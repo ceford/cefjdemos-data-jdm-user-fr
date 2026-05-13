@@ -1,4 +1,11 @@
-<!-- Filename: Enabling_Search_Engine_Friendly_(SEF)_URLs_on_Nginx / Display title: URL SEF sur Nginx  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Enabling_Search_Engine_Friendly_(SEF)_URLs_on_Nginx",
+  "title": "URL SEF sur Nginx  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Assorted_Issues / Display title: Divers Problèmes  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Assorted_Issues",
+  "title": "Divers Problèmes  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Problème de redirection après la mise à niveau vers la version 4.0.6
 

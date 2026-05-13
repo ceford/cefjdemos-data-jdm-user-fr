@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Article_Check-out_and_Check-in / Display title: Article : Enregistrement  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Article_Check-out_and_Check-in",
+  "title": "Article : Enregistrement  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -41,7 +48,7 @@ Depuis le menu Administrateur :
   **Système → Panneau de maintenance → Enregistrement global**.
 - La liste affiche le nombre d'éléments empruntés.
 
-![Page d'enregistrement global](../../../en/images/articles/global-checkin.png)
+![Page d'enregistrement global](../../../en/images/articles/article-check-in/01-global-checkin.png)
 
 - Dans la liste des tables de la base de données, sélectionnez la case pour le type d'élément à enregistrer.
 - Sélectionnez *Enregistrement* dans la barre d'outils.

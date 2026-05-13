@@ -1,4 +1,11 @@
-<!-- Filename: How_do_Windows_file_permissions_work%3F / Display title: Permissions de fichiers Windows  -->
+<!--
+{
+  "source": "https://docs.joomla.org/How_do_Windows_file_permissions_work%3F",
+  "title": "Permissions de fichiers Windows  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 

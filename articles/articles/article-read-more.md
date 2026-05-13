@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Read_More_Links / Display title: Article : Modifier - En savoir plus  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Read_More_Links",
+  "title": "Article : Modifier - En savoir plus  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Dispositions de Blog et d'Article en Vedette
 

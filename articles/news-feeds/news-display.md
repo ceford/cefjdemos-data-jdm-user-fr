@@ -1,14 +1,21 @@
-<!-- Filename: jdocmanual?manual=user&heading=news&filename=news-display.md / Display title: Affichage des Nouvelles -->
+<!--
+{
+  "source": "https://docs.joomla.org/jdocmanual?manual=user&heading=news&filename=news-display.md",
+  "title": "Affichage des Nouvelles ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Le Module d'Affichage de Flux
 
 Il existe un module de base *Affichage de Flux* disponible pour afficher les actualités d'autres sites. La capture d'écran suivante montre le formulaire de saisie avec l'URL du flux d'actualités des annonces de Joomla. Remarquez que le Nombre de Mots est réglé sur 100. Sinon, la longueur d'une annonce peut être excessive pour un module de la barre latérale.
 
-![Module d'affichage de flux, saisie de données](../../../en/images/news-feeds/news-joomla-news-form.png)
+![Module d'affichage de flux, saisie de données](../../../en/images/news-feeds/news-display/01-news-joomla-news-form.png)
 
 Le résultat peut être peu attrayant mais peut être amélioré avec quelques styles personnalisés dans user.css :
 
-![Module d'affichage de flux, saisie de données](../../../en/images/news-feeds/news-joomla-news-display.png)
+![Module d'affichage de flux, saisie de données](../../../en/images/news-feeds/news-display/02-news-joomla-news-display.png)
 
 ## Pages d'affichage des flux
 
@@ -22,7 +29,7 @@ En alternative à l'affichage des actualités dans un module, vous pouvez créer
     - L'onglet **Options** contient des éléments pour contrôler l'affichage du flux.
 * **Enregistrer & Fermer**
 
-![Saisie des données du composant NewsFeed](../../../en/images/news-feeds/news-feed-data-entry.png)
+![Saisie des données du composant NewsFeed](../../../en/images/news-feeds/news-display/03-news-feed-data-entry.png)
 
 Créez un élément de menu à partir du menu Administrateur :
 
@@ -32,11 +39,11 @@ Créez un élément de menu à partir du menu Administrateur :
 * Remplissez le reste du formulaire comme il convient.
 * **Enregistrer & Fermer**
 
-![Saisie des données de l'élément de menu NewsFeed](../../../en/images/news-feeds/news-feed-data-entry.png)
+![Saisie des données de l'élément de menu NewsFeed](../../../en/images/news-feeds/news-display/04-news-feed-menu-form.png)
 
 Testez-le : allez dans le menu du site et sélectionnez l'élément de menu de flux.
 
-![Affichage du NewsFeed](../../../en/images/news-feeds/news-feed-display.png)
+![Affichage du NewsFeed](../../../en/images/news-feeds/news-display/05-news-feed-display.png)
 
 Chaque élément du flux est un `<li>` dans une balise `<ul>`, donc par défaut, il apparaît marqué par un point. Cela n'est pas si évident si les éléments sont longs. Vous pouvez appliquer vos propres styles dans *user.css*. Le suivant placera chaque élément dans une boîte distincte :
 
@@ -55,13 +62,13 @@ ul.com-newsfeeds-newsfeed__items > li {
 
 Ce qui apparaît comme ceci :
 
-![Affichage personnalisé du NewsFeed](../../../en/images/news-feeds/news-feed-custom-display.png)
+![Affichage personnalisé du NewsFeed](../../../en/images/news-feeds/news-display/06-news-feed-custom-display.png)
 
 ## Lister les flux d'actualités dans une catégorie
 
 La page *Joomla! RSS News Feeds* répertorie huit flux d'actualités séparés. Vous pouvez créer un flux pour certains ou tous ces flux et les attribuer à une catégorie, par exemple *Actualités Joomla*. Ensuite, vous pouvez créer un élément de menu avec le *Type d'élément de menu* défini sur *Lister les flux d'actualités dans une catégorie* et la catégorie définie sur *Actualités Joomla*.
 
-![Formulaire de menu des flux d'actualités par catégorie](../../../en/images/news-feeds/news-feed-menu-category-form.png)
+![Formulaire de menu des flux d'actualités par catégorie](../../../en/images/news-feeds/news-display/07-news-feed-menu-category-form.png)
 
 Essayez-le pour voir le résultat !
 *Traduit par openai.com*

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Using_the_CLI / Display title: Utilisation de l'interface en ligne de commande   -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Using_the_CLI",
+  "title": "Utilisation de l'interface en ligne de commande   ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## L'interface en ligne de commande (CLI)
 
@@ -17,7 +24,7 @@ Sinon, lors de l'utilisation de la ligne de commande terminal, changez de réper
     cd /home/nomutilisateur/public_html/[sous-dossier facultatif]/cli
     php joomla.php
 
-![Liste des commandes](../../../en/images/command-line-interface/cli-command-list.png)
+![Liste des commandes](../../../en/images/command-line-interface/using-the-cli/01-cli-command-list.png)
 
 Et essayez quelques commandes d'aide pour vous familiariser avec ce à quoi vous attendre :
 
@@ -59,11 +66,11 @@ Effacer les entrées expirées du cache système :
     php joomla.php cache:clean --help
     php joomla.php cache:clean
 
-![Sortie de cache clean](../../../en/images/command-line-interface/cli-cache-clean.png)
+![Sortie de cache clean](../../../en/images/command-line-interface/using-the-cli/02-cli-cache-clean.png)
 
     php joomla.php cache:clean expired
 
-![Sortie de cache clean expired](../../../en/images/command-line-interface/cli-cache-clean-expired.png)
+![Sortie de cache clean expired](../../../en/images/command-line-interface/using-the-cli/03-cli-cache-clean-expired.png)
 
 ### Config
 
@@ -74,15 +81,15 @@ mail,
     php joomla.php config:get debug --help
     php joomla.php config:get debug
 
-![Sortie de config get debug](../../../en/images/command-line-interface/cli-get-debug.png)
+![Sortie de config get debug](../../../en/images/command-line-interface/using-the-cli/04-cli-get-debug.png)
 
     php joomla.php config:set debug=true
 
-![Sortie de config set debug](../../../en/images/command-line-interface/cli-set-debug.png)
+![Sortie de config set debug](../../../en/images/command-line-interface/using-the-cli/05-cli-set-debug.png)
 
     php joomla.php config:get --group session
 
-![Sortie de config get group session](../../../en/images/command-line-interface/cli-config-get-group-session.png)
+![Sortie de config get group session](../../../en/images/command-line-interface/using-the-cli/06-cli-config-get-group-session.png)
 
 ### Core
 
@@ -91,12 +98,12 @@ Vérifier les mises à jour ou mettre à jour Joomla.
     php joomla.php core:check-updates --help
     php joomla.php core:check-updates
 
-![Sortie de core check updates](../../../en/images/command-line-interface/cli-check-updates.png)
+![Sortie de core check updates](../../../en/images/command-line-interface/using-the-cli/07-cli-check-updates.png)
 
     php joomla.php core:update --help
     php joomla.php core:update
 
-![Sortie de core update](../../../en/images/command-line-interface/cli-core-update.png)
+![Sortie de core update](../../../en/images/command-line-interface/using-the-cli/08-cli-core-update.png)
 
 ### Database
 
@@ -149,7 +156,7 @@ Purge et reconstruit l'index (les filtres de recherche sont préservés).
     php joomla.php finder:index
     php joomla.php finder:index purge
 
-![Sortie de finder index purge](../../../en/images/command-line-interface/cli-finder-index-purge.png)
+![Sortie de finder index purge](../../../en/images/command-line-interface/using-the-cli/09-cli-finder-index-purge.png)
 
 ### Scheduler
 
@@ -197,7 +204,7 @@ avoir été supprimés lors d'une mise à jour de Joomla
     php joomla.php update:joomla:remove-old-files --help
     php joomla.php update:joomla:remove-old-files
 
-![Sortie de update joomla remove old files](../../../en/images/command-line-interface/cli-update-remove-old-files.png)
+![Sortie de update joomla remove old files](../../../en/images/command-line-interface/using-the-cli/10-cli-update-remove-old-files.png)
 
 ### User
 
@@ -210,7 +217,7 @@ Lister et gérer les utilisateurs.
     php joomla.php user:add --username cinderella --name Cinderella --email cinders@localhost --usergroup Manager (invite pour le mot de passe)
     php joomla.php user:add (invite pour les données)
 
-![Sortie de user add avec invites](../../../en/images/command-line-interface/cli-add-user.png)
+![Sortie de user add avec invites](../../../en/images/command-line-interface/using-the-cli/11-cli-add-user.png)
 
     php joomla.php user:addtogroup --help
     php joomla.php user:addtogroup (invite pour les données)

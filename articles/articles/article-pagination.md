@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Article_Pagination / Display title: Article : Modifier - Pagination  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Article_Pagination",
+  "title": "Article : Modifier - Pagination  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Articles Longs
 
@@ -17,12 +24,12 @@ Pour ajouter des sauts de page, ouvrez d'abord un article dans l'éditeur de tex
     des Matières. Exemple : Chapitre 2
 - Sélectionnez le bouton **Insérer un saut de page**.
 
-![Formulaire de dialogue saut de page](../../../en/images/articles/articles-edit-pagination.png)
+![Formulaire de dialogue saut de page](../../../en/images/articles/article-pagination/01-articles-edit-pagination.png)
 
 - Répétez l'opération pour chaque saut de page que vous souhaitez créer.
 - Enregistrez l'article et jetez un œil à l'Aperçu ou à l'affichage du site.
 
-![Affichage du site avec pagination de l'article](../../../en/images/articles/articles-site-pagination.png)
+![Affichage du site avec pagination de l'article](../../../en/images/articles/article-pagination/02-articles-site-pagination.png)
 
 ## Modifier ou Déplacer un Saut de Page
 
@@ -41,5 +48,5 @@ Vous pouvez sélectionner un saut de page et le supprimer. Cependant, vous ne po
 
 L'éditeur de code source se trouve dans une boîte de dialogue contextuelle :
 
-![Éditeur de code source](../../../en/images/articles/articles-edit-pagination-source-code.png)
+![Éditeur de code source](../../../en/images/articles/article-pagination/03-articles-edit-pagination-source-code.png)
 

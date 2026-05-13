@@ -1,10 +1,17 @@
-<!-- Filename: J4.x:Administrator_Modules / Display title: Modules administrateur -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Administrator_Modules",
+  "title": "Modules administrateur ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
 Le modèle Administrateur Atum est fourni avec un ensemble complet de modules Administrateur installés et configurés pour un usage quotidien. L'illustration suivante montre les positions du Tableau de Bord d'Accueil pour indiquer où les modules sont situés.
 
-![positions du tableau de bord atum](../../../en/images/modules/atum-template-positions.png)
+![positions du tableau de bord atum](../../../en/images/modules/administrator-modules/01-atum-template-positions.png)
 
 Dans l'illustration ci-dessus, les panneaux sont des instances du module Icône Rapide liées à des plugins quickicon.
 
@@ -42,11 +49,11 @@ Positions du modèle Atum par nom
 
 Vous pouvez souhaiter ajouter un module personnalisé pour avertir les administrateurs d'un problème du système. Sélectionnez **Contenu → Modules Administrateur** dans le menu Administrateur. La liste des modules installés est assez longue :
 
-![liste des modules admin atum](../../../en/images/modules/atum-admin-modules-list.png)
+![liste des modules admin atum](../../../en/images/modules/administrator-modules/02-atum-admin-modules-list.png)
 
 Sélectionnez le bouton Nouveau et ensuite le module Personnalisé. Dans le formulaire de modification Modules : Personnalisé, entrez un titre, un message personnalisé et sélectionnez une position pour le module. Dans l'exemple ci-dessous, la position Haut a été sélectionnée. De plus, dans l'onglet Avancé, champ Classe du module, certains styles ont été saisis pour centrer le texte et fournir un peu de marge intérieure : **alert alert-warning text-center**. Enregistrez pour voir le résultat. Fermez pour voir le résultat sur la page de la liste des modules.
 
-![message système du module personnalisé atum](../../../en/images/modules/atum-admin-module-system-message.png)
+![message système du module personnalisé atum](../../../en/images/modules/administrator-modules/03-atum-admin-module-system-message.png)
 
 Lorsque vous avez terminé avec le message, vous pouvez simplement sélectionner le bouton Statut dans la liste des modules pour Dépublier le module.
 

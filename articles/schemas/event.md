@@ -1,4 +1,11 @@
-<!-- Filename: J5.x:Schema_org/Type_Event_-_Using_Event_Plugin / Display title: Schema.org - Événement -->
+<!--
+{
+  "source": "https://docs.joomla.org/J5.x:Schema_org",
+  "title": "Schema.org - Événement ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -21,7 +28,7 @@ La section *Champ générique* permet d'entrer des paires *Titre* et *Valeur* en
 
 Ci-dessous un exemple de schéma d'Événement dans un formulaire de modification d'Article.
 
-![An event schema edit form](../../../en/images/schemas/edit-schema-event.png)
+![An event schema edit form](../../../en/images/schemas/event/01-edit-schema-event.png)
 
 *Traduit par openai.com*
 

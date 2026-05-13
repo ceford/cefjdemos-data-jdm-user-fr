@@ -1,4 +1,11 @@
-<!-- Filename: J5.x:Schema_org/Type_JobPosting_-_Using_JobPosting_Plugin / Display title: Schema.org - OffresD'emploi -->
+<!--
+{
+  "source": "https://docs.joomla.org/J5.x:Schema_org",
+  "title": "Schema.org - OffresD'emploi ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -29,7 +36,7 @@ La section *Generic Field* permet d'entrer des paires *Title* et *Value* en plus
 
 Voici un exemple de schéma JobPosting dans un formulaire d'édition d'article.
 
-![A jobposting schema edit form](../../../en/images/schemas/edit-schema-jobposting.png)
+![A jobposting schema edit form](../../../en/images/schemas/jobposting/01-edit-schema-jobposting.png)
 
 *Traduit par openai.com*
 

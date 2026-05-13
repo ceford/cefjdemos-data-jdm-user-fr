@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Home_Dashboard / Display title: Tableau de bord de la maison -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Home_Dashboard",
+  "title": "Tableau de bord de la maison ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -17,7 +24,7 @@ La plupart des éléments sont des liens explicites qui dupliquent ceux du menu 
 
 ## Capture d'écran
 
-![Tableau de bord d'accueil](../../../en/images/dashboards/home-dashboard.png)
+![Tableau de bord d'accueil](../../../en/images/dashboards/home-dashboard/01-home-dashboard.png)
 
 *Traduit par openai.com*
 

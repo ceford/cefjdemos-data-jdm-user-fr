@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Adding_custom_fields/Editor_Field / Display title: Champ de l'Éditeur -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
+  "title": "Champ de l'Éditeur ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -16,7 +23,7 @@ Les options spéciales dans ce champ sont
 - **Hauteur** La valeur pour la hauteur définit la hauteur (en pixels) de l'éditeur WYSIWYG. La valeur par défaut est de 250px. La valeur peut être représentée comme une fraction de la hauteur de la fenêtre, par exemple 50vh.
 - **Filtre** Permettre au système de sauvegarder certaines balises html ou des données brutes.
 
-![Création de champ d'éditeur](../../../en/images/fields/fields-editor-edit.png)
+![Création de champ d'éditeur](../../../en/images/fields/adding-custom-fields-editor-field/01-fields-editor-edit.png)
 
 **Remarque :** Dans cet exemple, l'inclusion du type de champ dans le titre est uniquement à des fins de démonstration. Ne l’incluez pas dans vos propres titres de champ.
 
@@ -24,7 +31,7 @@ Les options spéciales dans ce champ sont
 
 Dans le formulaire de modification d'article, le champ Éditeur supplémentaire est similaire au champ Éditeur de contenu principal.
 
-![saisie de données dans le champ éditeur](../../../en/images/fields/fields-editor-data-entry.png)
+![saisie de données dans le champ éditeur](../../../en/images/fields/adding-custom-fields-editor-field/02-fields-editor-data-entry.png)
 
 ## Affichage des Données
 
@@ -34,5 +41,5 @@ Dans l'affichage de l'article, le texte saisi apparaît sous le titre mais fait 
 
 Cherchez l'élément **Notes de culture**.
 
-![affichage du champ de l'éditeur sur le site](../../../en/images/fields/fields-editor-site.png)
+![affichage du champ de l'éditeur sur le site](../../../en/images/fields/adding-custom-fields-editor-field/03-fields-editor-site.png)
 

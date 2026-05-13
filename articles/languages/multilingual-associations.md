@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Multilingual_Associations / Display title: Associations multilingues -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Multilingual_Associations",
+  "title": "Associations multilingues ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Sites Multilingues
 
@@ -16,7 +23,7 @@ Les éléments suivants peuvent être inclus dans les associations :
 
 La capture d'écran suivante montre un exemple de liste d'articles en anglais avec leurs équivalents dans d'autres langues.
 
-![liste d'associations multilingues](../../../en/images/languages/multilingual-associations-list.png)
+![liste d'associations multilingues](../../../en/images/languages/multilingual-associations/01-multilingual-associations-list.png)
 
 Le dernier article sur les Montagnes n'a pas encore d'articles équivalents créés dans d'autres langues. Les articles manquants peuvent être traduits de l'anglais original à partir de cette page.
 
@@ -33,7 +40,7 @@ Si vous avez créé un site multilingue, vous aurez créé une catégorie de lan
 - Sélectionnez **Fermer**.
 - Répétez pour les autres langues.
 
-![édition des associations multilingues](../../../en/images/languages/multilingual-associations-edit.png)
+![édition des associations multilingues](../../../en/images/languages/multilingual-associations/02-multilingual-associations-edit.png)
 
 ## Création d'une traduction de menu
 
@@ -58,7 +65,7 @@ En continuant avec l'exemple des Montagnes :
 
 Ouvrez ou rechargez l'affichage du site pour vérifier que vos menus et articles s'affichent comme prévu.
 
-![vue du site des associations multilingues](../../../en/images/languages/multilingual-associations-site.png)
+![vue du site des associations multilingues](../../../en/images/languages/multilingual-associations/03-multilingual-associations-site.png)
 
 *Traduit par openai.com*
 

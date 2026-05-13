@@ -1,4 +1,11 @@
-<!-- Filename: Entering_raw_HTML_in_editors / Display title: Filtres HTML  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Entering_raw_HTML_in_editors",
+  "title": "Filtres HTML  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Balise Textarea en HTML
 
@@ -23,7 +30,7 @@ Vous pouvez sélectionner l'un des éditeurs disponibles, y compris Aucun, depui
 
 Depuis le Tableau de Bord Principal, sélectionnez Configuration Globale puis l'onglet Filtres de Texte. Les paramètres par défaut ont *Aucun HTML* sélectionné pour les groupes d'utilisateurs Invité, Public et Enregistré. Chacun de ces groupes pourrait avoir l'opportunité de remplir un champ de zone de texte, par exemple dans un formulaire de contact qui recherche des informations supplémentaires sur un problème, il est donc généralement approprié de supprimer automatiquement toutes les balises HTML. Les autres groupes, à l'exception des Super Utilisateurs, sont restreints par la Liste Interdite par Défaut. Les Super Utilisateurs ne sont soumis à aucun filtrage.
 
-![configuration globale des filtres de texte](../../../en/images/configuration/global-configuration-filters-tab.png)
+![configuration globale des filtres de texte](../../../en/images/editors/html-filters/01-global-configuration-filters-tab.png)
 
 Les notes expliquent ce qui est inclus dans la liste interdite par défaut et comment utiliser les autres listes.
 

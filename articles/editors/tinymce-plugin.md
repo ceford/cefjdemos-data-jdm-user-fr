@@ -1,4 +1,11 @@
-<!-- Filename: Content_editors / Display title: Plugin TinyMCE  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Content_editors",
+  "title": "Plugin TinyMCE  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -12,19 +19,19 @@ TinyMCE est configuré avec 3 ensembles différents de boutons de barre d'outils
 
 Cet ensemble d'outils est le plus complet et est par défaut attribué aux groupes *Administrateur*, *Éditeur* et *Super Utilisateurs*.
 
-![Plugin TinyMCE affichant l'ensemble de boutons 2](../../../en/images/editors/tinymce-set0.png)
+![Plugin TinyMCE affichant l'ensemble de boutons 2](../../../en/images/editors/tinymce-plugin/01-tinymce-set0.png)
 
 ### Ensemble d'Outils 1
 
 Cet ensemble d'outils est attribué aux groupes *Manager* et *Enregistré*.
 
-![Plugin TinyMCE affichant l'ensemble de boutons 2](../../../en/images/editors/tinymce-set1.png)
+![Plugin TinyMCE affichant l'ensemble de boutons 2](../../../en/images/editors/tinymce-plugin/02-tinymce-set1.png)
 
 ### Ensemble d'Outils 2
 
 Cet ensemble dispose d'outils minimaux et est attribué au groupe *Public*. Il serait utilisé pour remplir des formulaires publics.
 
-![Plugin TinyMCE affichant l'ensemble de boutons 2](../../../en/images/editors/tinymce-set2.png)
+![Plugin TinyMCE affichant l'ensemble de boutons 2](../../../en/images/editors/tinymce-plugin/03-tinymce-set2.png)
 
 ## Autres Paramètres
 

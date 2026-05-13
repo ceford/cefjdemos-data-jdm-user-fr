@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Joomla_Standard_Font_Awesome_Fonts / Display title: Polices Font Awesome  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Joomla_Standard_Font_Awesome_Fonts",
+  "title": "Polices Font Awesome  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Comment Utiliser
 

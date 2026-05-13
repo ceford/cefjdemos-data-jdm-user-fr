@@ -1,4 +1,11 @@
-<!-- Filename: J6.x:_Article_Metadata / Display title: Article : Modifier - Métadonnées  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J6.x:_Article_Metadata",
+  "title": "Article : Modifier - Métadonnées  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -42,7 +49,7 @@ Dans Joomla, pour une seule page, le titre de l'article devient le titre de la p
 
 L'article *Meta Description* est un champ dans l'onglet *Publication* du formulaire de saisie de données de l'article :
 
-![L'onglet de publication du formulaire d'édition d'article](../../../en/images/articles/articles-edit-publishing-tab.png)
+![L'onglet de publication du formulaire d'édition d'article](../../../en/images/articles/article-metadata/01-articles-edit-publishing-tab.png)
 
 S'il n'y a pas de description de métadonnées d'article, alors une description de métadonnées de l'élément de menu d'un seul article sera utilisée si elle est définie. S'il n'y a pas de description de métadonnées de l'élément de menu, alors la méta description globale du site est utilisée si elle est définie. Sinon, le champ de description de métadonnées est omis.
 

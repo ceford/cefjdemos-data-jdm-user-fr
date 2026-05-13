@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:How_to_Archive_an_Article / Display title: Articles : Archive   -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:How_to_Archive_an_Article",
+  "title": "Articles : Archive   ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -44,7 +51,7 @@ Il y a un module [Articles – Archivés](jdocmanual?article=user/modules/articl
 
 La capture d'écran suivante montre une page d'*Articles archivés* obtenue avec un élément de menu. Il y a des filtres pour le *Mois* et l'*Année* et une limite de liste avec des réglages de 5 à 100 et Tous. Veillez toujours à l’utilisation de *Tous*. Si vous obtenez des milliers de résultats, il se peut que votre page prenne du temps à charger et ne réponde pas. Vous risquez de manquer de temps ou de mémoire, ce qui entraînerait le retour d'une erreur serveur.
 
-![Vue de la page des articles archivés](../../../en/images/articles/articles-archived-site.png)
+![Vue de la page des articles archivés](../../../en/images/articles/articles-archive/01-articles-archived-site.png)
 
 Au bas de la colonne de droite se trouve le module *Articles archivés*.
 

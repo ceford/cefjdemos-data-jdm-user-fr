@@ -1,4 +1,11 @@
-<!-- Filename: WebAuthn_Passwordless_Login / Display title: Connexion WebAuthn -->
+<!--
+{
+  "source": "https://docs.joomla.org/WebAuthn_Passwordless_Login",
+  "title": "Connexion WebAuthn ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Connexion sans mot de passe WebAuthn
 
@@ -23,11 +30,11 @@ WebAuthn est l'avenir de l'authentification. Facile, sécurisé et sans tracas. 
 
 L'image suivante montre un appareil matériel inséré dans le port USB d'un ordinateur portable. Il a coûté 15 £ en février 2022.
 
-![photographie de l'appareil matériel](../../../en/images/users/passwordless-login-hardware-device.jpg)
+![photographie de l'appareil matériel](../../../en/images/users/webauthn-passwordless-login/01-passwordless-login-hardware-device.jpg)
 
 WebAuthn utilise un plugin système qui est activé par défaut. Un bouton **Web Authentication** sera présent dans les écrans de connexion par défaut de Joomla 4 et versions ultérieures, comme illustré dans l'écran de connexion Administrateur :
 
-![formulaire de connexion administrateur sécurisé](../../../en/images/users/passwordless-login-login-form.jpg)
+![formulaire de connexion administrateur sécurisé](../../../en/images/users/webauthn-passwordless-login/02-passwordless-login-login-form.jpg)
 
 ## Configuration de l'utilisateur
 
@@ -46,14 +53,14 @@ authentificateur matériel. Pour des raisons de sécurité et pratiques, il y a 
 intervalle de temps relativement court autorisé pour activer l'authentificateur :
 60 secondes.
 
-![invite de connexion sécurisée pour l’administrateur avec authentificateur matériel](../../../en/images/users/passwordless-login-hardware-propmpt.png)
+![invite de connexion sécurisée pour l’administrateur avec authentificateur matériel](../../../en/images/users/webauthn-passwordless-login/03-passwordless-login-hardware-propmpt.png)
 
 Une fois que vous déverrouillez votre authentificateur – en appuyant sur un bouton, en scannant votre
 empreinte digitale / visage, en entrant un code PIN ou une combinaison des options ci-dessus
 en fonction de votre authentificateur – le message disparaît, l'
 authentificateur est enregistré et l'écran apparaît comme suit :
 
-![authentificateur enregistré pour la connexion sécurisée de l’administrateur](../../../en/images/users/passwordless-login-registered-authenticator.png)
+![authentificateur enregistré pour la connexion sécurisée de l’administrateur](../../../en/images/users/webauthn-passwordless-login/04-passwordless-login-registered-authenticator.png)
 
 Il est très important de noter que vous pouvez uniquement enregistrer ou supprimer
 des authentificateurs sur votre propre compte utilisateur. Pour des raisons de sécurité, même un

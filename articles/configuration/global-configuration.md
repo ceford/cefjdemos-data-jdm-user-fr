@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Global_Configuration / Display title: Configuration Globale -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Global_Configuration",
+  "title": "Configuration Globale ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Aperçu
 
@@ -10,7 +17,7 @@ Le formulaire de Configuration Globale permet à un Super Utilisateur de modifie
 
 Le formulaire de configuration globale comporte six onglets, dont certains contiennent de longues listes de paramètres. Utilisez le bouton *Basculer l'aide en ligne* dans la barre d'outils pour afficher plus ou moins d'informations sur chaque paramètre.
 
-![Onglet site de configuration globale](../../../en/images/configuration/global-configuration-site-tab.png)
+![Onglet site de configuration globale](../../../en/images/configuration/global-configuration/01-global-configuration-site-tab.png)
 
 Certains paramètres affichent ou masquent d'autres paramètres lorsqu'ils sont sélectionnés. Par exemple, le bouton **Site hors ligne** affiche plus de champs lorsqu'il est réglé sur *Oui* que lorsqu'il est réglé sur *Non*. Avec l'aide en ligne développée, la plupart des champs sont suffisamment bien documentés pour ne nécessiter aucune explication supplémentaire ici, à l'exception de quelques notes supplémentaires pour l'utilisateur sur chaque onglet.
 
@@ -44,7 +51,7 @@ SEO est un acronyme pour *l'optimisation pour les moteurs de recherche*. Les ré
 
 ## Onglet Système
 
-![Onglet système de configuration globale](../../../en/images/configuration/global-configuration-system-tab.png)
+![Onglet système de configuration globale](../../../en/images/configuration/global-configuration/02-global-configuration-system-tab.png)
 
 ### Panneau de débogage
 
@@ -52,7 +59,7 @@ Les éléments de ce panneau sont bien expliqués par l'aide en ligne. Cependant
 
 ## Onglet Serveur
 
-![Onglet serveur de configuration globale](../../../en/images/configuration/global-configuration-server-tab.png)
+![Onglet serveur de configuration globale](../../../en/images/configuration/global-configuration/03-global-configuration-server-tab.png)
 
 
 ### Panneau de messagerie
@@ -107,19 +114,19 @@ Les combinaisons suivantes fonctionnent également :
 
 ## Onglet Journalisation
 
-![Onglet de configuration globale du site](../../../en/images/configuration/global-configuration-logging-tab.png)
+![Onglet de configuration globale du site](../../../en/images/configuration/global-configuration/04-global-configuration-logging-tab.png)
 
 En fonctionnement normal, un site Joomla doit avoir la journalisation désactivée. S'il y a des problèmes, vous pouvez activer la journalisation en définissant le champ **Journaliser presque tout** sur `Oui`. La fonction **Journaliser l'API obsolète** est vraiment réservée aux développeurs. Le champ **Chemin vers le dossier des journaux** vous indique où chercher les journaux si vous avez configuré la journalisation pour faciliter le débogage. Les journaux d'erreurs que vous y trouvez sont uniquement ceux interceptés par Joomla. Il peut y avoir d'autres erreurs qui n'apparaîtront que dans les journaux d'erreurs de votre serveur.
 
 ## L'onglet Filtres de texte
 
-![Onglet de configuration globale du site](../../../en/images/configuration/global-configuration-filters-tab.png)
+![Onglet de configuration globale du site](../../../en/images/configuration/global-configuration/05-global-configuration-filters-tab.png)
 
 Les paramètres de filtrage du texte seront appliqués à tous les champs de l'éditeur de texte soumis par les utilisateurs des groupes sélectionnés. Ces options de filtrage offrent plus de contrôle sur le HTML que vos fournisseurs de contenu soumettent. Vous pouvez être aussi strict ou libéral que nécessaire pour répondre aux besoins de votre site. Le filtrage est optionnel et les paramètres par défaut offrent une bonne protection contre le balisage couramment associé aux attaques sur les sites web.
 
 ## Onglet Permissions
 
-![Onglet du site de configuration globale](../../../en/images/configuration/global-configuration-permissions-tab.png)
+![Onglet du site de configuration globale](../../../en/images/configuration/global-configuration/06-global-configuration-permissions-tab.png)
 
 Les permissions contrôlent ce que les utilisateurs de chaque groupe d'utilisateurs peuvent voir et faire. Les entrées dans l'onglet Permissions définissent les autorisations par défaut pour le site.
 

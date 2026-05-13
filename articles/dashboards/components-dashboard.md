@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Components_Dashboard / Display title: Tableau de bord des composants  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Components_Dashboard",
+  "title": "Tableau de bord des composants  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@ Pour ouvrir le tableau de bord des composants, sélectionnez l'icône du tableau
 
 ## Capture d'écran
 
-![Tableau de bord des composants](../../../en/images/dashboards/components-dashboard.png)
+![Tableau de bord des composants](../../../en/images/dashboards/components-dashboard/01-components-dashboard.png)
 
 *Traduit par openai.com*
 ```

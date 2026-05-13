@@ -1,4 +1,11 @@
-<!-- Filename: Search_Engine_Friendly_URLs / Display title: URL conviviales pour les moteurs de recherche  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Search_Engine_Friendly_URLs",
+  "title": "URL conviviales pour les moteurs de recherche  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Chemins et Itinéraires
 

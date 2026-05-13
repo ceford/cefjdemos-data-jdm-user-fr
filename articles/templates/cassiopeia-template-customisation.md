@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Cassiopeia_Template_Customisation / Display title: Personnalisation de Cassiopée -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Cassiopeia_Template_Customisation",
+  "title": "Personnalisation de Cassiopée ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,13 +13,13 @@ Cassiopeia est le modèle de site fourni avec Joomla 4. C'est un modèle d'usage
 
 L'illustration suivante montre l'apparence d'un site Joomla 4 avec un article et quelques éléments de menu créés.
 
-![Vue d'article unique Cassiopeia](../../../en/images/templates/cassiopeia-customisation-article-view.png)
+![Vue d'article unique Cassiopeia](../../../en/images/templates/cassiopeia-template-customisation/01-cassiopeia-customisation-article-view.png)
 
 ## Modèles : Modifier le style
 
 Vous pouvez expérimenter avec l'apparence du site en ouvrant le formulaire Modifier le style. Allez dans **Système → Modèles → Styles du modèle de site** et sélectionnez le titre du modèle dans la colonne Style, Cassiopeia - Par défaut. L'onglet Avancé contient des réglages que vous pouvez ajuster :
 
-![Cassiopeia modifier le style onglet avancé](../../../en/images/templates/cassiopeia-customisation-edit-style.png)
+![Cassiopeia modifier le style onglet avancé](../../../en/images/templates/cassiopeia-template-customisation/02-cassiopeia-customisation-edit-style.png)
 
 Pour essayer les options, ouvrez un onglet ou une fenêtre de navigateur avec l'interface Administrateur et un second onglet ou une fenêtre avec l'interface Site, puis alternez après chaque changement enregistré.
 
@@ -38,7 +45,7 @@ Vous pourriez définir la Marque sur Non si vous souhaitez fournir un branding d
 
 - **Toujours à votre service** Si elle est présente, les mots dans le champ accroche apparaîtront en petite taille de police sous l'image du logo ou le nom de la marque.
 
-![Cassiopeia marque avec accroche](../../../en/images/templates/cassiopeia-customisation-brand-with-tagline.png)
+![Cassiopeia marque avec accroche](../../../en/images/templates/cassiopeia-template-customisation/03-cassiopeia-customisation-brand-with-tagline.png)
 
 ### Schéma de polices
 
@@ -50,7 +57,7 @@ Vous pourriez définir la Marque sur Non si vous souhaitez fournir un branding d
 - **Standard** Une couleur d'arrière-plan bleu foncé pour la barre de marque et d'autres éléments tels que le bouton Connexion.
 - **Alternative** Une couleur d'arrière-plan bordeaux au lieu du bleu foncé.
 
-![Cassiopeia schéma de couleurs alternatif](../../../en/images/templates/cassiopeia-customisation-alt-color-scheme.png)
+![Cassiopeia schéma de couleurs alternatif](../../../en/images/templates/cassiopeia-template-customisation/04-cassiopeia-customisation-alt-color-scheme.png)
 
 ### Disposition
 
@@ -59,7 +66,7 @@ Vous pourriez définir la Marque sur Non si vous souhaitez fournir un branding d
 
 La vue sur un appareil mobile à écran étroit :
 
-![Vue mobile Cassiopeia](../../../en/images/templates/cassiopeia-customisation-mobile-view.png)
+![Vue mobile Cassiopeia](../../../en/images/templates/cassiopeia-template-customisation/05-cassiopeia-customisation-mobile-view.png)
 
 ### En-tête fixe
 
@@ -71,13 +78,13 @@ La vue sur un appareil mobile à écran étroit :
 - **Non** par défaut. Il n'y a pas de lien retour en haut.
 - **Oui** Lorsque le contenu est plus grand que la fenêtre, en bas à droite de la page se trouve un bouton marqué d'un chevron vers le haut. Sélectionnez-le pour faire défiler vers le haut de la page.
 
-![Cassiopeia retour en haut](../../../en/images/templates/cassiopeia-customisation-back-to-top.png)
+![Cassiopeia retour en haut](../../../en/images/templates/cassiopeia-template-customisation/06-cassiopeia-customisation-back-to-top.png)
 
 ## Positions des Modèles Cassiopeia
 
 Lorsque vous construisez un site avec Cassiopeia, il devient vraiment utile de connaître les emplacements des positions que vous pouvez utiliser pour les modules. Certaines sont descriptives, comme *menu* et *bottom-a*, mais il n'est pas si évident de savoir où elles se trouvent avant de les utiliser. Cette illustration devrait vous aider :
 
-![Positions des modèles Cassiopeia](../../../en/images/templates/cassiopeia-template-positions.png)
+![Positions des modèles Cassiopeia](../../../en/images/templates/cassiopeia-template-customisation/07-cassiopeia-template-positions.png)
 
 Essayez ce qui suit :
 
@@ -89,7 +96,7 @@ Dans l'onglet Module, changez le champ Position à Menu \[menu\]. Enregistrez et
 
 Dans le formulaire d'édition du menu, sélectionnez l'onglet Avancé et faites défiler jusqu'au champ Layout. C'est une liste déroulante avec quatre options. --From Module-- / Default est sélectionné par défaut. Essayez les autres options et visualisez le résultat. (N'oubliez pas de *sauvegarder* dans le formulaire d'édition et de recharger dans la vue du Site.) Aucune des options --From Module-- n'affiche les éléments du menu enfant, mais les deux options --From Cassiopeia Template-- le font.
 
-![Positions menu Cassiopeia](../../../en/images/templates/cassiopeia-customisation-menu-position.png)
+![Positions menu Cassiopeia](../../../en/images/templates/cassiopeia-template-customisation/08-cassiopeia-customisation-menu-position.png)
 
 Alors quelle différence fait **Rétractable** ?
 
@@ -106,7 +113,7 @@ Que faire si vous n'aimez pas la couleur du fond d'en-tête bleu foncé ? Suppos
 
 L'illustration ci-dessous montre deux groupes de dossiers. Le premier groupe se compose des dossiers et fichiers de modèle que vous ne devez pas modifier, mais auxquels vous pouvez ajouter. En particulier, vous pouvez ajouter des fichiers HTML de remplacement de modèle au dossier *html*. Le second groupe contient les fichiers média du modèle que vous ne devez pas modifier. Cependant, vous pouvez ajouter un fichier *user.css* dans le dossier *css* et/ou un fichier *user.js* dans le dossier *js*. Vous le feriez si vous vouliez effectuer quelques modifications simples de l'apparence du site.
 
-![Cassiopeia éditer fichiers](../../../en/images/templates/cassiopeia-customisation-edit-files.png)
+![Cassiopeia éditer fichiers](../../../en/images/templates/cassiopeia-template-customisation/09-cassiopeia-customisation-edit-files.png)
 
 Notez que dans une nouvelle installation de Joomla, aucun fichier ***user.css*** n’est présent dans le dossier **css**. Il s’agit d’un fichier que vous créez vous-même afin de remplacer les styles définis précédemment. Si ***user.css*** est déjà présent, sélectionnez-le pour ouvrir le formulaire de modification. S’il n’est pas présent, créez-le maintenant :
 
@@ -137,7 +144,7 @@ Notez ici que le point avant (.) est un sélecteur de classe, par exemple Dummy 
 
 Dans l'onglet du navigateur contenant le site, ouvrez vos outils de développement de navigateur, Firefox dans cet exemple, et sélectionnez la balise d'en-tête.
 
-![Outils de développement Cassiopeia](../../../en/images/templates/cassiopeia-customisation-developer-tools.png)
+![Outils de développement Cassiopeia](../../../en/images/templates/cassiopeia-template-customisation/10-cassiopeia-customisation-developer-tools.png)
 
 Cela montre les styles utilisés. Le style container-header est où le couleur de fond et l'image de fond sont définis. Ils doivent être surchargés dans le fichier *user.css*. Essayez ceci :
 ```css
@@ -158,7 +165,7 @@ Rappelez-vous ce commentaire sur le menu étant trop à gauche dans le topbar ? 
 ```
 Ceci est le thème vert fonctionnel :
 
-![Cassiopeia thème vert](../../../en/images/templates/cassiopeia-customisation-green-theme.png)
+![Cassiopeia thème vert](../../../en/images/templates/cassiopeia-template-customisation/11-cassiopeia-customisation-green-theme.png)
 
 ### Accessibilité
 
@@ -170,7 +177,7 @@ L'onglet Créer des Remplacements dans le formulaire Personnaliser les Modèles 
 
 Voici l'onglet Créer des Remplacements :
 
-![Création de remplacements dans Cassiopeia](../../../en/images/templates/cassiopeia-customisation-create-overrides.png)
+![Création de remplacements dans Cassiopeia](../../../en/images/templates/cassiopeia-template-customisation/12-cassiopeia-customisation-create-overrides.png)
 
 Si vous faites simplement des essais et ne souhaitez vraiment pas un remplacement, vous pouvez *Fermer* le formulaire d'édition, sélectionner le bouton Gérer les Dossiers dans la barre d'outils et sélectionner le bouton Supprimer en bas du formulaire modal Gérer les Dossiers.
 
@@ -180,5 +187,5 @@ Les remplacements concernent vraiment la personnalisation des extensions plutôt
 
 Si vous souhaitez apporter des modifications plus substantielles à l'apparence du site, vous pourriez créer un modèle enfant. Cela copie juste une petite sélection de dossiers et de fichiers que vous pouvez modifier ou ajouter, tout en continuant à utiliser les dossiers et fichiers du modèle parent. En utilisant des modèles enfants, vous pourriez avoir certaines pages avec une couleur de thème et d'autres pages avec une couleur de thème différente. Les modèles enfants sont abordés ailleurs. Voici une illustration de la structure de fichiers dans un enfant de Cassiopeia :
 
-![Fichiers du modèle enfant Cassiopeia](../../../en/images/templates/cassiopeia-customisation-child-template-files.png)
+![Fichiers du modèle enfant Cassiopeia](../../../en/images/templates/cassiopeia-template-customisation/13-cassiopeia-customisation-child-template-files.png)
 

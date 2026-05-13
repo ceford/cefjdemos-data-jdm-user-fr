@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Adding_a_New_Article / Display title: Article : Modifier - Contenu -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Adding_a_New_Article",
+  "title": "Article : Modifier - Contenu ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@
 
 La capture d'écran suivante montre le formulaire d'édition avec un article qui a déjà été enregistré.
 
-![Le formulaire d'édition de contenu](../../../en/images/articles/articles-edit-content.png)
+![Le formulaire d'édition de contenu](../../../en/images/articles/article-content/01-articles-edit-content.png)
 
 ## Saisie de Données
 

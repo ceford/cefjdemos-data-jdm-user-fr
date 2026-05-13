@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Menu_Item_Order / Display title: Commande d'article du menu  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Menu_Item_Order",
+  "title": "Commande d'article du menu  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -24,7 +31,7 @@ Les deux méthodes déplacent les menus enfants avec leurs menus parents. Les é
 - Sélectionnez et faites glisser le symbole de l'élément que vous souhaitez déplacer.
 - Déposez l'élément déplacé à sa nouvelle position.
 
-![ordre des éléments de menu glisser](../../../en/images/menus/menus-menu-item-order-drag.png)
+![ordre des éléments de menu glisser](../../../en/images/menus/menu-item-order/01-menus-menu-item-order-drag.png)
 
 Cette méthode peut être gênante s'il y a des éléments de menu parent avec de nombreux
 enfants. Vous pouvez déplacer un élément parent plus facilement en masquant les enfants :
@@ -48,7 +55,7 @@ cas :
 - Sélectionnez le lien du titre de l'élément de menu que vous souhaitez déplacer pour ouvrir le formulaire d'édition de l'élément de menu.
 - Dans le formulaire Menus : champ de l'élément d'édition, sélectionnez l'élément après lequel vous souhaitez placer l'élément à déplacer, ou les positions *- Premier -* ou *- Dernier -*.
 
-![liste d'ordre des éléments de menu](../../../en/images/menus/menus-menu-item-order-list.png)
+![liste d'ordre des éléments de menu](../../../en/images/menus/menu-item-order/02-menus-menu-item-order-list.png)
 
 - **Enregistrer** ou **Enregistrer & Fermer**
 

@@ -1,4 +1,11 @@
-<!-- Filename: J6.x:_Article_Options / Display title: Article : Modifier - Options  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J6.x:_Article_Options",
+  "title": "Article : Modifier - Options  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -10,7 +17,7 @@ Cet article concerne l'onglet *Options* dans le formulaire *Article : Modifier*.
 
 L'onglet *Options* du formulaire *Article : Édition* comprend une série de panneaux offrant principalement le choix entre *Utiliser global (Masquer ou Afficher)*, *Masquer* ou *Afficher*. La capture d'écran partielle suivante montre la disposition générale.
 
-![Onglet des options d'édition d'articles](../../../en/images/articles/articles-edit-options-tab.png)
+![Onglet des options d'édition d'articles](../../../en/images/articles/article-options/01-articles-edit-options-tab.png)
 
 ## Panneau de disposition
 

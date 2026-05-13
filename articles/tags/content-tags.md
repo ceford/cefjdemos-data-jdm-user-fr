@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:How_To_Use_Content_Tags_in_Joomla / Display title: Balises de Contenu  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:How_To_Use_Content_Tags_in_Joomla",
+  "title": "Balises de Contenu  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -22,7 +29,7 @@ L'affichage des tags peut être désactivé ! Cela peut sembler illogique, mais 
 
 - Sélectionnez **Composants → Balises** dans le menu Administrateur.
 
-![la page de la liste des balises](../../../en/images/tags/tags-list.png)
+![la page de la liste des balises](../../../en/images/tags/content-tags/01-tags-list.png)
 
 Quel que soit le mode de création des balises, elles peuvent être trouvées dans cette liste.
 
@@ -32,7 +39,7 @@ Quel que soit le mode de création des balises, elles peuvent être trouvées da
 
 Sélectionnez le bouton **Nouveau** dans la barre d'outils de la liste des Tags.
 
-![nouveau tag nommé predator](../../../en/images/tags/new-tag-predator.png)
+![nouveau tag nommé predator](../../../en/images/tags/content-tags/02-new-tag-predator.png)
 
 - **Titre** C'est le seul champ *obligatoire*.
 - **Alias** Celui-ci est créé à partir du Titre lors de la sauvegarde.
@@ -67,7 +74,7 @@ Lorsque vous ajoutez de nouveaux Tags dans Joomla, ils apparaissent tous dans la
 
 ### Le Filtre de la Liste des Tags
 
-![filtre de la liste des tags par type](../../../en/images/tags/tags-list-filter.png)
+![filtre de la liste des tags par type](../../../en/images/tags/content-tags/03-tags-list-filter.png)
 
 Vous pouvez manipuler la liste de plusieurs manières :
 
@@ -94,11 +101,11 @@ Dans le formulaire d'édition du tag :
 
 Une fois que les balises ont été créées sur votre site, elles sont disponibles pour une utilisation non seulement dans le contenu, mais aussi dans certains modules utiles tels que **Balises Populaires** et **Balises Similaires**. Les exemples suivants montrent à quoi cela ressemble sur une installation standard utilisant le modèle par défaut **Cassiopeia**.
 
-![exemple d'utilisation des balises site labrador jaune](../../../en/images/tags/tag-examples-yellow-labrador.png)
+![exemple d'utilisation des balises site labrador jaune](../../../en/images/tags/content-tags/04-tag-examples-yellow-labrador.png)
 
 Lorsque vous cliquez sur l'une des balises, vous serez dirigé vers une page qui liste tous les éléments attribués à cette balise particulière :
 
-![exemple d'utilisation des balises site labrador noir](../../../en/images/tags/tag-examples-black-labrador.png)
+![exemple d'utilisation des balises site labrador noir](../../../en/images/tags/content-tags/05-tag-examples-black-labrador.png)
 
 Cliquer sur une balise vous amènera à une page qui affiche une liste de tous les éléments assignés à cette balise particulière - il s'agit en effet d'une liste filtrée du contenu de votre site web balisé. Une boîte de filtre est fournie pour faciliter la recherche d'éléments à mesure que la liste s'allonge. Vous pouvez également définir le nombre de résultats que vous souhaitez voir dans une seule vue.
 

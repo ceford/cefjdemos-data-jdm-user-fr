@@ -1,4 +1,11 @@
-<!-- Filename: Adding_an_image_to_an_article / Display title: Article : Édition - Images -->
+<!--
+{
+  "source": "https://docs.joomla.org/Adding_an_image_to_an_article",
+  "title": "Article : Édition - Images ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -20,7 +27,7 @@ La meilleure façon d'insérer des images locales est d'utiliser le bouton **CMS
 
 **Important :** Placez d'abord le curseur à l'endroit où vous souhaitez que l'image apparaisse. Cela peut être au début ou à la fin d'un paragraphe ou dans un paragraphe vide.
 
-![La boîte de dialogue à fenêtres contextuelles média](../../../en/images/articles/articles-edit-images-media.png)
+![La boîte de dialogue à fenêtres contextuelles média](../../../en/images/articles/article-images/01-articles-edit-images-media.png)
 
 Dans la boîte de dialogue, naviguez vers l'image que vous souhaitez utiliser et sélectionnez-la. Une fois sélectionnée, un formulaire apparaîtra pour demander des informations supplémentaires.
 
@@ -50,7 +57,7 @@ Si l'image que vous souhaitez utiliser n'est pas dans le dossier des images de v
 - Complétez les autres champs selon vos besoins.
 - L'onglet **Avancé** offre quelques options de formatage appliquées sous forme de styles en ligne. Expérimentez avec 1rem, 2, groove.
 
-![La boîte de dialogue contextuelle d'insertion d'image](../../../en/images/articles/articles-edit-images-external-image.png)
+![La boîte de dialogue contextuelle d'insertion d'image](../../../en/images/articles/article-images/02-articles-edit-images-external-image.png)
 
 ### Utiliser le glisser-déposer pour insérer des liens vers des images distantes
 

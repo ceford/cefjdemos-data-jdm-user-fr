@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Adding_custom_fields/Text_Field / Display title: Champ de texte -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
+  "title": "Champ de texte ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -14,7 +21,7 @@ Les options spéciales pour ce champ sont :
 - **Préfixe** Ceci apparaît avant le texte dans la sortie de l'article. Exemple : £.
 - **Suffixe** Ceci apparaît après le texte dans la sortie de l'article, Exemple : EUR.
 
-![création de champ de texte](../../../en/images/fields/fields-text-edit.png)
+![création de champ de texte](../../../en/images/fields/adding-custom-fields-text-field/01-fields-text-edit.png)
 
 **Remarque :** Dans cet exemple, l'inclusion du type de champ dans le titre est uniquement à des fins de démonstration. Ne l'incluez pas dans vos propres titres de champs.
 
@@ -22,13 +29,13 @@ Les options spéciales pour ce champ sont :
 
 Simple : Saisissez votre texte.
 
-![saisie de texte dans un champ](../../../en/images/fields/fields-text-data-entry.png)
+![saisie de texte dans un champ](../../../en/images/fields/adding-custom-fields-text-field/02-fields-text-data-entry.png)
 
 ## Affichage des données
 
 La capture d'écran du Site suivante montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-![affichage du champ texte sur le site](../../../en/images/fields/fields-text-site.png)
+![affichage du champ texte sur le site](../../../en/images/fields/adding-custom-fields-text-field/03-fields-text-site.png)
 
 Le champ Texte suit le champ Étiquette.
 *Traduit par openai.com*

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:User_Registration / Display title: Inscription de l'utilisateur  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:User_Registration",
+  "title": "Inscription de l'utilisateur  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Politique d'inscription
 
@@ -16,7 +23,7 @@ L'auto-enregistrement des utilisateurs est désactivé par défaut. Tout nouvel 
   - Soi-même : L'utilisateur recevra un e-mail avec un lien d'activation. Le compte sera activé lorsque l'utilisateur cliquera sur le lien d'activation.
   - Administrateur : L'utilisateur recevra un e-mail avec un lien d'activation. Lorsque l'utilisateur clique sur ce lien, l'administrateur du site sera averti par e-mail. L'administrateur du site doit ensuite activer le compte de l'utilisateur.
 
-![Onglet des options de configuration de l'utilisateur](../../../en/images/users/users-configuration-user-options.png)
+![Onglet des options de configuration de l'utilisateur](../../../en/images/users/user-registration/01-users-configuration-user-options.png)
 
 - **Enregistrer & Fermer**
 - Ajouter un module *Connexion*. Ou
@@ -34,7 +41,7 @@ Si l'auto-inscription n'est pas autorisée, tout nouvel utilisateur doit être c
 - Sélectionnez **Utilisateurs** → **Gérer +** dans le menu Administrateur.
 - Remplissez le formulaire **Détails du Nouvel Utilisateur**. La plupart des champs ont des valeurs par défaut appropriées.
 
-![Page de saisie des données du nouvel utilisateur](../../../en/images/users/users-new-user.png)
+![Page de saisie des données du nouvel utilisateur](../../../en/images/users/user-registration/02-users-new-user.png)
 
 - Sélectionnez l'onglet **Groupes d'Utilisateurs Assignés** et cochez la case correspondant au groupe d'utilisateurs souhaité. Inscrits est coché par défaut.
 - **Enregistrer & Fermer**.
@@ -50,7 +57,7 @@ Pour bloquer un utilisateur :
 - Trouvez l'utilisateur dans la liste des *Utilisateurs*. Utilisez le filtre texte si nécessaire.
 - Sélectionnez l'icône Activée apparaissant sous la forme d'une coche verte à côté du nom de l'utilisateur. Un libellé **Bloquer** apparaît au survol.
 
-![Page de saisie de données d'utilisateur nouveau](../../../en/images/users/users-hover-block.png)
+![Page de saisie de données d'utilisateur nouveau](../../../en/images/users/user-registration/03-users-hover-block.png)
 
 - Sélectionnez l'icône *Activée*. La page se recharge avec l'icône Activée apparaissant sous la forme d'une croix grise.
 

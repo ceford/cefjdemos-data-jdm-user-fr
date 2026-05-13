@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Access_Control / Display title: Contrôle d'accès  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Access_Control",
+  "title": "Contrôle d'accès  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -8,7 +15,7 @@ Joomla dispose d’un mécanisme sophistiqué pour contrôler qui peut voir et m
 
 Les groupes d'utilisateurs sont utilisés pour diviser les utilisateurs du site en groupes avec des responsabilités différentes. Par exemple, les membres du groupe d'utilisateurs Auteur ont la permission de se connecter au site, de créer des articles et de modifier leurs propres articles. Rien d'autre ! Les membres du groupe Super Utilisateurs sont responsables de tous les aspects de la gestion et du fonctionnement du site. Joomla fournit neuf groupes d'utilisateurs par défaut et vous pouvez en créer d'autres si nécessaire.
 
-![Liste des groupes d'utilisateurs](../../../en/images/users/access-control-users-groups-list.png)
+![Liste des groupes d'utilisateurs](../../../en/images/users/access-control/01-access-control-users-groups-list.png)
 
 Les groupes d'utilisateurs par défaut sont configurés avec des relations parent-enfant pour minimiser la duplication des autorisations. Exemples d'héritage :
 
@@ -21,7 +28,7 @@ Vous pouvez créer de nouveaux groupes d'utilisateurs à des fins spéciales sel
 
 Chaque fois que vous créez un objet, tel qu'un article, un module ou un élément de menu, vous verrez un champ Accès, généralement dans la colonne de droite du formulaire de saisie de données. Il s'agit d'une liste déroulante offrant un choix entre Public, Invité, Enregistré, Spécial et Super Utilisateurs. Par défaut, c'est Public. Les niveaux d'accès par défaut sont affichés dans la capture d'écran suivante :
 
-![Niveaux d'accès des utilisateurs](../../../en/images/users/access-control-users-access-levels.png)
+![Niveaux d'accès des utilisateurs](../../../en/images/users/access-control/02-access-control-users-access-levels.png)
 
 Exemples :
 
@@ -32,7 +39,7 @@ Exemples :
 
 Les Permissions de Configuration Globale sont le point de départ à partir duquel les paramètres de permission dans les composants ou les éléments individuels peuvent hériter ou remplacer. Capture d'écran :
 
-![permissions de configuration globale](../../../en/images/users/access-control-global-configuration-permissions.png)
+![permissions de configuration globale](../../../en/images/users/access-control/03-access-control-global-configuration-permissions.png)
 
 La capture d'écran montre que les membres du groupe Public n'ont pas la permission d'effectuer des actions. Si vous sélectionnez chaque groupe à tour de rôle, vous verrez comment les permissions changent d'un groupe à l'autre. Notez que le Gestionnaire et l'Administrateur sont autorisés à se connecter en tant qu'Administrateur, mais l'Auteur, l'Éditeur et l'Éditeur ne le sont pas. Ces derniers sont effectivement des rôles de Site plutôt que des rôles d'Administrateur.
 
@@ -42,13 +49,13 @@ Toutes les permissions de groupe héritent du groupe Public. Il n'a pas la permi
 
 Les actions de Permissions des Articles diffèrent des actions de Permissions de Configuration Globale. Ne sont pas présentes les actions liées à la connexion et sont présentes les actions liées aux flux de travail. Il s'agit d'un modèle assez typique : un composant aura des permissions pertinentes pour le composant ; un élément de composant (tel qu'un article) aura des permissions pertinentes pour cet élément unique.
 
-![permissions de contenu](../../../en/images/users/access-control-global-content-permissions.png)
+![permissions de contenu](../../../en/images/users/access-control/04-access-control-global-content-permissions.png)
 
 ### Permissions d'un Article Unique
 
 Les permissions d'un article unique comportent seulement trois actions : Supprimer, Modifier et Modifier l'État :
 
-![permissions d'un article unique](../../../en/images/users/access-control-article-permissions.png)
+![permissions d'un article unique](../../../en/images/users/access-control/05-access-control-article-permissions.png)
 
 ## Exemple de Contrôle d'Accès : Utilisateur à But Spécial
 
@@ -61,7 +68,7 @@ Supposons que vous devez créer un Groupe d'Utilisateurs pour les utilisateurs a
 - Remplissez le champ Titre du Groupe : Administrateur d'Articles
 - Le Parent du Groupe doit être Public - il n'a aucune permission pour quoi que ce soit.
 
-![Formulaire de nouveau groupe d'utilisateurs](../../../en/images/users/access-control-new-group.png)
+![Formulaire de nouveau groupe d'utilisateurs](../../../en/images/users/access-control/06-access-control-new-group.png)
 
 ### Affecter à Spécial
 
@@ -70,7 +77,7 @@ Supposons que vous devez créer un Groupe d'Utilisateurs pour les utilisateurs a
 - Cochez la case Administrateur d'Articles dans le formulaire **Utilisateurs : Modifier le Niveau d'Accès de Visualisation**.
 - Enregistrez & Fermez.
 
-![Sélectionner l'accès pour le groupe](../../../en/images/users/access-control-select-access-for-group.png)
+![Sélectionner l'accès pour le groupe](../../../en/images/users/access-control/07-access-control-select-access-for-group.png)
 
 ### Permissions de Configuration Globale
 
@@ -80,7 +87,7 @@ Supposons que vous devez créer un Groupe d'Utilisateurs pour les utilisateurs a
 - Réglez la **Connexion Administrateur** sur Autorisé.
 - Enregistrez & Fermez
 
-![Sélectionner l'accès pour le groupe](../../../en/images/users/access-control-article-administrator-global-permissions.png)
+![Sélectionner l'accès pour le groupe](../../../en/images/users/access-control/08-access-control-article-administrator-global-permissions.png)
 
 ### Permissions des Options des Articles
 
@@ -91,7 +98,7 @@ Supposons que vous devez créer un Groupe d'Utilisateurs pour les utilisateurs a
 - Réglez tous les éléments sauf les deux premiers (Configurer ACL & Options et Configurer Options Seulement) sur Autorisé.
 - Enregistrez & Fermez
 
-![Sélectionner l'accès pour le groupe](../../../en/images/users/access-control-article-administrator-content-permissions.png)
+![Sélectionner l'accès pour le groupe](../../../en/images/users/access-control/09-access-control-article-administrator-content-permissions.png)
 
 ### Créer ou Modifier un Utilisateur
 
@@ -100,7 +107,7 @@ Supposons que vous devez créer un Groupe d'Utilisateurs pour les utilisateurs a
 - Enregistrez & Fermez.
 - Connectez-vous en tant qu'utilisateur appartenant uniquement au Groupe Administrateur d'Articles. Le menu ne devrait afficher que les éléments liés aux articles :
 
-![Sélectionner l'accès pour le groupe](../../../en/images/users/access-control-article-administrator-home-dashboard.png)
+![Sélectionner l'accès pour le groupe](../../../en/images/users/access-control/10-access-control-article-administrator-home-dashboard.png)
 
 *Traduit par openai.com*
 

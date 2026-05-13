@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Joomla_CLI_Installation / Display title: Installation de Joomla via CLI  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Joomla_CLI_Installation",
+  "title": "Installation de Joomla via CLI  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 

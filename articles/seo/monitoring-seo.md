@@ -1,4 +1,11 @@
-<!-- Filename: Monitoring_SEO / Display title: Suivi du SEO  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Monitoring_SEO",
+  "title": "Suivi du SEO  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Pourquoi surveiller votre site ?
 
@@ -44,11 +51,11 @@ La puissance des segments personnalisés est énorme. Elle vous permet d'inclure
 
 Pour commencer à utiliser un segment personnalisé, cliquez simplement sur la flèche en haut de la page pour afficher les segments personnalisés disponibles (entourés en rouge). Si vous n'en avez aucun disponible, vous pouvez soit créer les vôtres, soit importer des segments existants depuis la Galerie Google Analytics (entourée en bleu).
 
-![Segments personnalisés Google Analytics](../../../en/images/seo/seo-google-analytics-custom-segments.png)
+![Segments personnalisés Google Analytics](../../../en/images/seo/monitoring-seo/01-seo-google-analytics-custom-segments.png)
 
 Une fois que vous avez choisi les segments que vous souhaitez utiliser, appuyez sur appliquer et ils seront appliqués aux données que vous visualisez. Ci-dessous, vous pouvez voir les filtres appliqués pour montrer un, deux, trois, et trois+ mots clés.
 
-![Mots clés des segments personnalisés Google Analytics](../../../en/images/seo/seo-google-analytics-custom-segments-keywords.png)
+![Mots clés des segments personnalisés Google Analytics](../../../en/images/seo/monitoring-seo/02-seo-google-analytics-custom-segments-keywords.png)
 
 ### Tableaux de Bord
 
@@ -58,7 +65,7 @@ Les tableaux de bord peuvent être utilisés pour n'importe quel but et vous pou
 
 Pour commencer, développez simplement la section Tableaux de bord de votre profil Analytics.
 
-![Tableau de bord Google Analytics](../../../en/images/seo/seo-google-anaytics-dashboard.png)
+![Tableau de bord Google Analytics](../../../en/images/seo/monitoring-seo/03-seo-google-anaytics-dashboard.png)
 
 ### La Galerie Google Analytics
 

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Cassiopeia_templateDetails.xml / Display title: Cassiopeia templateDetails.xml -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Cassiopeia_templateDetails.xml",
+  "title": "Cassiopeia templateDetails.xml ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Emplacement et Objectif
 
@@ -40,11 +47,11 @@ La première section des données du modèle définit généralement les informa
 
 Notez qu'un modèle pouvant avoir des modèles enfants a la valeur héritable fixée à 1. Les modèles enfants ont cette valeur fixée à 0. Ces données sont utilisées dans la liste des modèles : Modèles (Site) comme illustré ci-dessous.
 
-![liste des modèles de site](../../../en/images/templates/templates-list.png)
+![liste des modèles de site](../../../en/images/templates/cassiopeia-templatedetails-xml/01-templates-list.png)
 
 La description contient une clé de langue et non la chaîne de texte de description réelle. La clé est remplacée par le texte obtenu à partir d'un fichier de langue lors de l'exécution. Les fichiers de langue sont définis dans la section langue de `templateDetails.xml`.
 
-![formulaire de modification du style des modèles](../../../en/images/templates/templates-edit-style.png)
+![formulaire de modification du style des modèles](../../../en/images/templates/cassiopeia-templatedetails-xml/02-templates-edit-style.png)
 
 ### Répertoires et fichiers
 
@@ -70,7 +77,7 @@ Les dossiers et fichiers pour le modèle Cassiopeia sont stockés à deux endroi
 
 C'est le schéma observé dans tous les modèles modernes Joomla 4 et 5. La structure peut être vue dans le formulaire Modèles : Personnaliser (Cassiopeia) :
 
-![page de personnalisation du modèle Cassiopeia](../../../en/images/templates/templates-customise-cassiopeia.png)
+![page de personnalisation du modèle Cassiopeia](../../../en/images/templates/cassiopeia-templatedetails-xml/03-templates-customise-cassiopeia.png)
 
 ### Positions des modules
 
@@ -101,11 +108,11 @@ Chaque balise crée une position de module disponible dans la liste des position
 
 Cassiopeia a suffisamment de positions de modèle ! Si vous pensez en avoir besoin d'une supplémentaire, vous avez probablement tort. Souvenez-vous que tout nombre de modules peut être attribué à une seule position et trié dans l'ordre sur la page de liste des Modules. Positions disponibles :
 
-![schéma des positions des modèles Cassiopeia](../../../en/images/templates/cassiopeia-template-positions.png)
+![schéma des positions des modèles Cassiopeia](../../../en/images/templates/cassiopeia-templatedetails-xml/04-cassiopeia-template-positions.png)
 
 Vous pouvez également voir les positions des modules dans n'importe quel modèle : depuis **Système → Modèles de site**, sélectionnez le bouton Options dans la barre d'outils. Dans le formulaire Options, définissez le champ Présentation des positions des modules sur Activé. Enregistrez et Fermez. Accédez à votre site et ajoutez ?tp=1 à la fin de n'importe quel URL (ou &tp=1 s'il y a déjà un ? dans l'URL). Joomla affichera toutes les positions des modèles disponibles, même celles qui n'ont pas été utilisées :
 
-![positions des modèles Cassiopeia](../../../en/images/templates/templates-template-positions-by-tp.png)
+![positions des modèles Cassiopeia](../../../en/images/templates/cassiopeia-templatedetails-xml/05-templates-template-positions-by-tp.png)
 
 ### Langues
 
@@ -124,7 +131,7 @@ Les fichiers de langue pour la langue par défaut anglaise GB sont stockés dans
 
 Un modèle peut offrir des options d'affichage pouvant être choisies par l'Administrateur dans le formulaire Modèle : Modifier le style. Par exemple, l'onglet Avancé du modèle Cassiopeia permet à un Administrateur de changer la Marque, d'ajouter un Logo, de sélectionner un Schéma de Polices, et plus encore.
 
-![formulaire de modification du style des modèles onglet avancé](../../../en/images/templates/templates-edit-style-advanced.png)
+![formulaire de modification du style des modèles onglet avancé](../../../en/images/templates/cassiopeia-templatedetails-xml/06-templates-edit-style-advanced.png)
 
 Les options du modèle sont définies dans une structure qui crée des champs dans des groupes de champs. Chaque groupe de champs apparaît comme un onglet dans le formulaire de modification. Voici la structure qui crée l'onglet Avancé vu ci-dessus.
 

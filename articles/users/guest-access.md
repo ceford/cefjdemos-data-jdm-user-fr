@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Guest_Access / Display title: Accès Invité -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Guest_Access",
+  "title": "Accès Invité ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Niveaux d'accès
 
@@ -18,7 +25,7 @@ L'utilisation du niveau d'accès Invité peut être illustrée avec un élément
 - Enregistrez
 - Facultativement, sélectionnez la liste Ordre et choisissez l'élément **après** lequel vous souhaitez que l'élément de menu Connexion apparaisse.
 
-![formulaire de menu de connexion restreint à l'accès invité](../../../en/images/users/guest-access-menu-login.png)
+![formulaire de menu de connexion restreint à l'accès invité](../../../en/images/users/guest-access/01-guest-access-menu-login.png)
 
 - Enregistrer et Fermer.
 - Visualisez le site. Vérifiez que l'élément de menu Connexion fonctionne. Vérifiez qu'il disparaît après la connexion.
@@ -35,7 +42,7 @@ L'utilisation du niveau d'accès Enregistré peut être illustrée avec un élé
 - Enregistrez.
 - Optionnellement, sélectionnez le menu déroulant de Classement et choisissez l'élément **après** lequel vous souhaitez que l'élément de connexion apparaisse.
 
-![formulaire de menu déconnexion restreint à l'accès enregistré](../../../en/images/users/guest-access-menu-logout.png)
+![formulaire de menu déconnexion restreint à l'accès enregistré](../../../en/images/users/guest-access/02-guest-access-menu-logout.png)
 
 - Enregistrez et Fermez.
 - Visualisez le site. Vérifiez que l'élément de menu Déconnexion fonctionne. Vérifiez qu'il disparaît après la déconnexion.

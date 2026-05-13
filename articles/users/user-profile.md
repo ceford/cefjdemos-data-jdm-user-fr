@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:User_Profile / Display title: Profil Utilisateur -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:User_Profile",
+  "title": "Profil Utilisateur ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Données d'inscription
 
@@ -10,7 +17,7 @@ Les informations des utilisateurs collectées via le formulaire d'inscription pa
 - Dans la seconde partie du formulaire, désactivez les éléments qui ne doivent pas apparaître dans le formulaire de profil utilisateur.
 - Enregistrez et fermez
 
-![plugin de profil utilisateur](../../../en/images/users/user-profile-plugin.png)
+![plugin de profil utilisateur](../../../en/images/users/user-profile/01-user-profile-plugin.png)
 
 - Si l'auto-inscription est autorisée, ouvrez le formulaire d'inscription des utilisateurs pour vérifier que tous les champs supplémentaires du profil utilisateur sont présents.
 - Dans le menu Administrateur, créez un nouvel utilisateur ou modifiez un utilisateur existant. Sélectionnez l'onglet **Profil utilisateur** et vérifiez que tous les champs supplémentaires du profil utilisateur sont présents.
@@ -28,11 +35,11 @@ Depuis le menu Administrateur :
 - Réglez le champ **Accès** sur **Enregistré**. C'est IMPORTANT ! L'élément de menu doit uniquement être visible lorsqu'on est connecté.
 - Sauvegarder et fermer.
 
-![formulaire d'élément de menu de profil utilisateur](../../../en/images/users/user-profile-menu-item-form.png)
+![formulaire d'élément de menu de profil utilisateur](../../../en/images/users/user-profile/02-user-profile-menu-item-form.png)
 
 - Connectez-vous au site et utilisez le lien pour vérifier le profil utilisateur.
 
-![formulaire de résumé de l'élément de menu de profil utilisateur](../../../en/images/users/user-profile-summary.png)
+![formulaire de résumé de l'élément de menu de profil utilisateur](../../../en/images/users/user-profile/03-user-profile-summary.png)
 
 - Essayez le bouton **Modifier le profil**.
 

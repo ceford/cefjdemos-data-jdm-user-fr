@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Apache_PHP_Handler / Display title: Gestionnaires Apache PHP -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Apache_PHP_Handler",
+  "title": "Gestionnaires Apache PHP ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Notes
 

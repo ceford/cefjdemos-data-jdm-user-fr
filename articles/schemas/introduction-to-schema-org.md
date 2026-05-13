@@ -1,4 +1,11 @@
-<!-- Filename: J5.x:Schema_org / Display title: Introduction aux schémas -->
+<!--
+{
+  "source": "https://docs.joomla.org/J5.x:Schema_org",
+  "title": "Introduction aux schémas ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Extraits Enrichis
 
@@ -18,7 +25,7 @@ Dans Joomla, les extraits enrichis sont générés en utilisant un balisage de d
 
 Pour commencer, allez à **Système -> Plugins** et activez le plugin *Système - Schema.org*. Si ce plugin n'est pas activé, il n'y aura pas d'onglet Schéma dans un formulaire de modification d'article même si tous les plugins individuels sont activés.
 
-![List of schema plugins](../../../en/images/schemas/schema-plugins-list.png)
+![List of schema plugins](../../../en/images/schemas/introduction-to-schema-org/01-schema-plugins-list.png)
 
 ### Modifier le système - Plugin Schema.org
 
@@ -28,13 +35,13 @@ Pour commencer, allez à **Système -> Plugins** et activez le plugin *Système 
 - **Comptes de médias sociaux** Ajoutez les comptes de médias sociaux de votre entreprise ou personnels. Sélectionnez le bouton vert avec signe plus pour ajouter des lignes au formulaire.
 - Sélectionnez **Enregistrer et fermer**.
 
-![edit system schema org plugin](../../../en/images/schemas/edit-system-schema-org-plugin.png)
+![edit system schema org plugin](../../../en/images/schemas/introduction-to-schema-org/02-edit-system-schema-org-plugin.png)
 
 ### Modifier un article
 
 Allez dans l'un de vos articles et remplissez les champs du formulaire de schéma. Si le *Type de schéma* est défini sur *Aucun*, valeur par défaut, il n'y a pas de champs à remplir. Sélectionnez un schéma pour voir une liste de champs appropriés pour ce schéma. La capture d'écran suivante montre un article avec le schéma Article sélectionné :
 
-![edit article scheme form](../../../en/images/schemas/schema-form-in-an-article.png)
+![edit article scheme form](../../../en/images/schemas/introduction-to-schema-org/03-schema-form-in-an-article.png)
 
 ### Sortie
 

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Content_Dashboard / Display title: Tableau de Bord de Contenu -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Content_Dashboard",
+  "title": "Tableau de Bord de Contenu ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@ Le tableau de bord de contenu est accessible via l'icône à droite de l'éléme
 
 ## Capture d'écran
 
-![Tableau de bord du contenu](../../../en/images/dashboards/content-dashboard.png)
+![Tableau de bord du contenu](../../../en/images/dashboards/content-dashboard/01-content-dashboard.png)
 
 *Traduit par openai.com*
 

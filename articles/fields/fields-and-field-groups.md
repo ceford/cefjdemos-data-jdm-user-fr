@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Fields_and_Field_Groups / Display title: Champs et Groupes de Champs -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Fields_and_Field_Groups",
+  "title": "Champs et Groupes de Champs ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -14,7 +21,7 @@ Si un champ n'est pas attribué à un groupe, il apparaîtra dans le formulaire 
 
 Pour les articles sur la nature, la catégorie d'article et les sous-catégories pour chaque branche du monde vivant pourraient apparaître comme dans l'exemple suivant :
 
-![Catégories d'articles pour la nature](../../../en/images/fields/fields-articles-categories-list.png)
+![Catégories d'articles pour la nature](../../../en/images/fields/fields-and-field-groups/01-fields-articles-categories-list.png)
 
 Quelques caractéristiques évidentes de la nature à noter :
 
@@ -37,7 +44,7 @@ Créer des Groupes de Champs pour les Articles est très simple :
 - Entrez une **Description**. Celle-ci apparaît sous le champ dans le formulaire d'édition de l'article lorsque *Activer l'aide contextuelle* est sélectionné.
 - Sélectionnez **Enregistrer et Fermer** dans la barre d'outils.
 
-![Liste des groupes de champs de contenu](../../../en/images/fields/fields-field-groups-list.png)
+![Liste des groupes de champs de contenu](../../../en/images/fields/fields-and-field-groups/02-fields-field-groups-list.png)
 
 ### Ordonnancement
 
@@ -51,7 +58,7 @@ Pour créer un nouveau champ d'article, sélectionnez **Contenu → Champs** d
 
 Notez que dans la capture d'écran ci-dessous, ce champ a été attribué au groupe de champs Nature et à la catégorie Nature. Cela garantit qu'il apparaît toujours dans les articles de la catégorie Nature et toute sous-catégorie.
 
-![Champ texte - nom latin dans le groupe nature](../../../en/images/fields/fields-latin-name.png)
+![Champ texte - nom latin dans le groupe nature](../../../en/images/fields/fields-and-field-groups/03-fields-latin-name.png)
 
 ### Cases à cocher - Saison de floraison
 
@@ -59,13 +66,13 @@ Les cases à cocher apparaissent dans le formulaire de modification d'article po
 
 Notez que dans cette capture d'écran, le champ a été attribué au groupe Fleurs et à la catégorie Fleurs. Cela devrait garantir que le champ est uniquement présent dans les articles sur les fleurs.
 
-![Champ case à cocher - saison de floraison](../../../en/images/fields/fields-flowering-season.png)
+![Champ case à cocher - saison de floraison](../../../en/images/fields/fields-and-field-groups/04-fields-flowering-season.png)
 
 ### Couleur - Color
 
 Juste pour compliquer les choses, le nom du type de champ est Color (orthographe américaine) mais l'étiquette dans la documentation est Colour (orthographe britannique).
 
-![Champ couleur](../../../en/images/fields/fields-colour.png)
+![Champ couleur](../../../en/images/fields/fields-and-field-groups/05-fields-colour.png)
 
 Le champ Couleur est attribué au groupe de champs Nature et à la catégorie Nature, car il n'est pas unique aux fleurs.
 
@@ -73,7 +80,7 @@ Le champ Couleur est attribué au groupe de champs Nature et à la catégorie Na
 
 La rusticité d'une plante peut être représentée par un entier de 1 à 7. Il n'existe pas de champ pour un nombre réel, donc la longueur et la largeur pourraient être des entiers avec une échelle (cm ou m ou ft) incluse dans l'étiquette. Il existe des paramètres *Préfixe* et *Suffixe* dans l'onglet *Options*. S'il n'y a pas de limite supérieure évidente, laissez le champ *Dernier :* vide.
 
-![Champ rusticité](../../../en/images/fields/fields-hardiness.png)
+![Champ rusticité](../../../en/images/fields/fields-and-field-groups/06-fields-hardiness.png)
 
 La rusticité RHS est une propriété généralement appliquée aux fleurs !
 
@@ -85,14 +92,14 @@ Lorsqu'un formulaire Articles : Nouveau est ouvert, la Catégorie par défaut es
 
 ### Onglet Nature
 
-![Onglet nature de l'article jacinthe des bois](../../../en/images/fields/field-article-bluebell-nature-tab.png)
+![Onglet nature de l'article jacinthe des bois](../../../en/images/fields/fields-and-field-groups/07-field-article-bluebell-nature-tab.png)
 
 - **Nom Latin** Il s'agit d'un champ de saisie de texte, donc il suffit de taper le nom latin de la forme de vie que l'article couvre. Cependant, la catégorie Nature couvre la vie en général ainsi que des animaux ou plantes spécifiques. Ce n'est donc pas un champ *obligatoire*.
 - **Couleur** Le champ de sélection de couleur peut prendre soit une saisie clavier d'une valeur hexadécimale de couleur, soit une couleur sélectionnée à partir de l'outil de sélection des couleurs. Le numéro hexadécimal est xrrggbb où rr sont les valeurs de rouge, gg les valeurs de vert et bb les valeurs de bleu. En sortie, le site affiche la valeur hexadécimale, ce qui n'est pas très utile !
 
 ### Onglet Fleurs
 
-![Onglet nature de l'article jacinthe des bois](../../../en/images/fields/field-article-bluebell-flowers-tab.png)
+![Onglet nature de l'article jacinthe des bois](../../../en/images/fields/fields-and-field-groups/08-field-article-bluebell-flowers-tab.png)
 
 - **Saison de Floraison** Le champ à cases à cocher - les jacinthes des bois sont des fleurs bien connues du printemps, donc la sélection d'une case à cocher est appropriée.
 - **Résistance** Le champ entier. Il y a un problème ici - il n'existe aucune méthode pour laisser ce champ vide. Il est donc toujours présent dans la sortie, même pour les articles plus généraux sur les fleurs où ce n'est pas approprié. Il existe une solution de contournement impliquant une substitution de modèle.
@@ -101,7 +108,7 @@ Lorsqu'un formulaire Articles : Nouveau est ouvert, la Catégorie par défaut es
 
 Jetez un coup d'œil au résultat visible sur votre site. Dans cet exemple, un élément de menu pour un seul article a été créé :
 
-![Vue de l'article Bluebell sur le site](../../../en/images/fields/field-article-bluebell-site.png)
+![Vue de l'article Bluebell sur le site](../../../en/images/fields/fields-and-field-groups/09-field-article-bluebell-site.png)
 
 ### La couleur hexadécimale
 

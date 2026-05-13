@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Multi-factor_Authentication / Display title: Authentification Multi-facteurs  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Multi-factor_Authentication",
+  "title": "Authentification Multi-facteurs  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -64,7 +71,7 @@ Notez qu'il existe un plugin séparé **Système - Connexion WebAuthn sans mot d
 
 Le formulaire Options des Utilisateurs inclut un formulaire d'Authentification à Facteurs Multiples pour configurer le fonctionnement de l'authentification à facteurs multiples dans Joomla. Sélectionnez le bouton Basculer l'Aide En Ligne pour obtenir des informations sur chaque option.
 
-![formulaire d'authentification à facteurs multiples des options des utilisateurs](../../../en/images/users/users-configuration-mfa.png)
+![formulaire d'authentification à facteurs multiples des options des utilisateurs](../../../en/images/users/multi-factor-authentication/01-users-configuration-mfa.png)
 
 ## Profil Utilisateur
 
@@ -72,7 +79,7 @@ Le formulaire Administrateur / Utilisateurs : Modifier le Profil a des onglets s
 
 Le formulaire Site / Modifier Votre Profil dispose des onglets de formulaire backend disposés l'un au-dessus de l'autre, ce qui peut être déroutant car l'Authentification Web apparaît deux fois, d'abord pour la connexion sans mot de passe et ensuite pour l'Authentification Multi-Facteurs. L'illustration suivante montre la partie du formulaire concernant l'Authentification à Plusieurs Facteurs après qu'une méthode a été créée. Cela active automatiquement la fonctionnalité et affiche l'option de créer des Codes de Secours.
 
-![vue du site du formulaire d'authentification multi-facteurs de l'utilisateur](../../../en/images/users/multi-factor-authentication-site-profile.jpg)
+![vue du site du formulaire d'authentification multi-facteurs de l'utilisateur](../../../en/images/users/multi-factor-authentication/02-multi-factor-authentication-site-profile.jpg)
 
 Comme mentionné ci-dessus, vous pouvez essayer chacun en sélectionnant le bouton + Ajouter ..., mais sélectionnez Annuler dans le formulaire suivant si vous décidez de ne pas continuer.
 

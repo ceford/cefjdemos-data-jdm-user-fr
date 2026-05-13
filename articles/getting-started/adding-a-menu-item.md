@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Getting_Started:_Adding_a_Menu_Item / Display title: Ajouter un Élément de Menu -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Getting_Started:_Adding_a_Menu_Item",
+  "title": "Ajouter un Élément de Menu ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -10,7 +17,7 @@ Supposons qu'un de vos articles soit suffisamment important pour mériter un él
 
 ## La Page d'Édition du Menu
 
-![Formulaire d'édition d'élément de menu](../../../en/images/getting-started/menu-item-edit-form.png)
+![Formulaire d'édition d'élément de menu](../../../en/images/getting-started/adding-a-menu-item/01-menu-item-edit-form.png)
 
 Le formulaire *Menus : Nouvel Élement* comporte quatre champs obligatoires à compléter :
 
@@ -26,7 +33,7 @@ Le formulaire *Menus : Nouvel Élement* comporte quatre champs obligatoires à c
 C'est tout ce qui doit être fait. Tout le reste est optionnel. Jetez un coup d'œil à la
 page d'accueil du site. L'élément de menu dans le menu principal renvoie directement à cette page.
 
-![Vue du site de l'article unique](../../../en/images/getting-started/menu-item-single-article-site-view.png)
+![Vue du site de l'article unique](../../../en/images/getting-started/adding-a-menu-item/02-menu-item-single-article-site-view.png)
 
 ## Éléments de menu multiples
 
@@ -42,7 +49,7 @@ Jusqu'ici tout va bien. Mais que se passe-t-il lorsque vous avez 10, 100, 1000 a
 
 Allez à la page d'accueil du site et rechargez. Sélectionnez le nouvel élément de menu *Articles sur les Mammifères*.
 
-![Liste de catégories des articles sur les mammifères](../../../en/images/getting-started/menu-item-category-list-site-view.png)
+![Liste de catégories des articles sur les mammifères](../../../en/images/getting-started/adding-a-menu-item/03-menu-item-category-list-site-view.png)
 
 Sélectionnez le titre de l'article, Mammifères, pour accéder à l'affichage de l'article. Si vous avez de nombreux articles, vous pouvez les trouver ici sans avoir besoin d'éléments de menu pour chaque article individuel.
 

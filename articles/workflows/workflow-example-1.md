@@ -1,4 +1,11 @@
-<!-- Filename: J6.x:Workflow_Scenarios_Example_1 / Display title: Exemple de Flux de Travail 1  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J6.x:Workflow_Scenarios_Example_1",
+  "title": "Exemple de Flux de Travail 1  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@ Un flux de travail consiste en des *étapes* et des *transitions* entre ces éta
 
 Un seul site peut avoir de nombreux flux de travail. Ici, un *Flux de travail de bulletin d'information* est utilisé comme exemple pour expliquer comment trois personnes ayant des rôles différents peuvent être impliquées dans la production d'un article de bulletin d'information. L'exemple utilise les groupes d'utilisateurs par défaut de Joomla : Auteur, Éditeur et Éditeur en chef. Cela pose un problème : un Auteur peut uniquement voir les articles publiés et ne peut donc pas rééditer les articles non publiés. Une méthode pour éviter ce problème est couverte dans [Exemple 2](jdocmanual?article=user/workflows/workflow-example-2).
 
-![Liste des flux de travail](../../../en/images/workflows/example-1-workflows-list.png)
+![Liste des flux de travail](../../../en/images/workflows/workflow-example-1/01-example-1-workflows-list.png)
 
 Remarquez que le *Flux de travail de base* est défini comme le *Par défaut*. Cela peut avoir des conséquences problématiques couvertes plus loin dans cet article !
 
@@ -20,7 +27,7 @@ Remarquez que le *Flux de travail de base* est défini comme le *Par défaut*. C
 
 Il y a quatre étapes dans ce flux de travail :
 
-![Liste des flux de travail](../../../en/images/workflows/example-1-workflow-stages.png)
+![Liste des flux de travail](../../../en/images/workflows/workflow-example-1/02-example-1-workflow-stages.png)
 
 - **Brouillon** est l'étape créée par Arthur pour un nouvel article.
 - **Relecture** est l'étape où Eddie prend le relais pour relire le contenu.
@@ -33,7 +40,7 @@ Les formulaires de saisie de données des étapes nécessitent peu d'explication
 
 Deux transitions sont nécessaires entre chaque étape : une pour revenir à l'étape précédente si plus de travail est requis ; et une seconde pour migrer à l'étape suivante. Des transitions supplémentaires sont nécessaires pour gérer la suppression d'un article :
 
-![Liste des flux de travaux](../../../en/images/workflows/example-1-workflow-transitions.png)
+![Liste des flux de travaux](../../../en/images/workflows/workflow-example-1/03-example-1-workflow-transitions.png)
 
 - **Ébauche/Revue** pour déplacer l'étape de l'Ébauche à la Revue.
 - **Revue/Ébauche** pour revenir de l'étape Revue à l'Ébauche.
@@ -51,7 +58,7 @@ Les trois dernières transitions permettent à Pru de changer le statut d'un art
 
 Le formulaire de saisie des données comporte quatre onglets en commençant par l'onglet *Transition* :
 
-![Liste des flux de travaux](../../../en/images/workflows/example-1-edit-transition.png)
+![Liste des flux de travaux](../../../en/images/workflows/workflow-example-1/04-example-1-edit-transition.png)
 
 - **Nom** Il est préférable d'utiliser les étapes actuelles et cibles dans le nom.
 - **Étape actuelle** L'étape avant que la transition n'ait lieu.
@@ -60,14 +67,14 @@ Le formulaire de saisie des données comporte quatre onglets en commençant par 
 
 #### L'onglet *Actions de Transition* :
 
-![Liste des flux de travaux](../../../en/images/workflows/example-1-edit-transition-actions.png)
+![Liste des flux de travaux](../../../en/images/workflows/workflow-example-1/05-example-1-edit-transition-actions.png)
 
 - **État en Vedette** Définir l'état en vedette que doit avoir un élément après avoir exécuté cette transition. Laissez cette option à *-Non Sélectionné-* si l'utilisateur susceptible d'exécuter cette transition n'a pas la permission de mettre en avant des articles.
 - **État de Publication** Définir l'état publié qu'un élément doit avoir après avoir exécuté cette transition. Laissez cette option à *-Non Sélectionné-* si l'utilisateur susceptible d'exécuter cette transition n'a pas la permission de changer l'état de l'article.
 
 #### L'onglet *Notifications* :
 
-![Liste des flux de travaux](../../../en/images/workflows/example-1-edit-transition-notification.png)
+![Liste des flux de travaux](../../../en/images/workflows/workflow-example-1/06-example-1-edit-transition-notification.png)
 
 - **Envoyer une Notification** Réglez ceci à *Oui* là où des notifications sont nécessaires, par exemple quand Arthur doit informer Eddie qu'un article est prêt pour la revue.
 - **Texte du Message Supplémentaire** Ceci est un texte supplémentaire générique pour aider le destinataire.
@@ -87,7 +94,7 @@ assigné à une catégorie qui a un flux de travail sélectionné, il est assign
 
 Une nouvelle catégorie de Newsletter est nécessaire pour afficher la Newsletter comme un Blog de Catégorie et pour s'assurer que les articles de la Newsletter sont assignés au flux de travail de la Newsletter.
 
-![Liste des flux de travail](../../../en/images/workflows/example-1-newsletter-category.png)
+![Liste des flux de travail](../../../en/images/workflows/workflow-example-1/07-example-1-newsletter-category.png)
 
 ## L'Élément de Menu Bulletin
 
@@ -148,11 +155,11 @@ Vous pouvez autoriser l'accès au backend pour tous les membres de ces groupes c
 
 Cela permettra à Arthur, Eddie et Pru de se connecter au backend avec accès aux éléments de Contenu. Un tableau de bord d'accueil beaucoup réduit :
 
-![Tableau de bord d'accueil pour Arthur](../../../en/images/workflows/example-1-backend-home.png)
+![Tableau de bord d'accueil pour Arthur](../../../en/images/workflows/workflow-example-1/08-example-1-backend-home.png)
 
 Mais Arthur a accès à ses articles en brouillon :
 
-![Liste d'articles pour Arthur](../../../en/images/workflows/example-1-backend-articles.png)
+![Liste d'articles pour Arthur](../../../en/images/workflows/workflow-example-1/09-example-1-backend-articles.png)
 
 Notez qu'Arthur ne peut pas modifier le dernier élément de la liste car ce n'est pas l'un de ses propres articles. Le titre de l'article n'est pas lié. De même, Arthur ne peut modifier aucune des catégories existantes car il n'a pas la permission et elles ne sont pas non plus liées. Il peut créer une nouvelle catégorie, mais celle-ci est non publiée et il ne peut pas la publier !
 
@@ -170,7 +177,7 @@ Si vous assignez un article au mauvais flux de travail, deux méthodes sont disp
 - Choisissez un flux de travail et une étape appropriés.
 - Sélectionnez le bouton **Traiter**.
 
-![Liste des articles pour Arthur](../../../en/images/workflows/example-1-backend-batch.png)
+![Liste des articles pour Arthur](../../../en/images/workflows/workflow-example-1/10-example-1-backend-batch.png)
 
 ### Méthode de Secours
 

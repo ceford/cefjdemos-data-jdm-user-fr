@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Module_Positions / Display title: Positions des modules -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Module_Positions",
+  "title": "Positions des modules ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -20,15 +27,15 @@ Pour voir les positions des modules, vous devez ajouter soit ?tp=1, soit &tp=1 �
 
 ### Positions du modèle Administrateur Atum
 
-![positions des modèles atum](../../../en/images/modules/template-positions-templates-page.png)
+![positions des modèles atum](../../../en/images/modules/module-positions/01-template-positions-templates-page.png)
 
 ### Positions du modèle de site Cassiopeia
 
-![positions des modèles cassiopeia](../../../en/images/modules/template-positions-site-page.png)
+![positions des modèles cassiopeia](../../../en/images/modules/module-positions/02-template-positions-site-page.png)
 
 Vous pouvez également trouver ce schéma des positions des modules utile :
 
-![schéma des positions du modèle cassiopeia](../../../en/images/modules/cassiopeia-template-positions.png)
+![schéma des positions du modèle cassiopeia](../../../en/images/modules/module-positions/03-cassiopeia-template-positions.png)
 
 ## Sites de Production
 

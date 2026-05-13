@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Adding_custom_fields/Textarea_Field / Display title: Champ de zone de texte -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
+  "title": "Champ de zone de texte ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -13,7 +20,7 @@ Les options spéciales dans ce champ sont :
 - **Longueur maximale** Le nombre maximum de caractères qui peuvent être saisis.
 - **Filtre** Permet au système de sauvegarder certaines balises HTML ou des données brutes.
 
-![création de champ textarea](../../../en/images/fields/fields-textarea-edit.png)
+![création de champ textarea](../../../en/images/fields/adding-custom-fields-textarea-field/01-fields-textarea-edit.png)
 
 **Remarque :** Dans cet exemple, l'inclusion du type de champ dans le titre est à des fins de démonstration uniquement. N'incluez pas cela dans vos propres titres de champ.
 
@@ -21,14 +28,14 @@ Les options spéciales dans ce champ sont :
 
 Simple : saisissez le texte à afficher.
 
-![zone de saisie de texte](../../../en/images/fields/fields-textarea-data-entry.png)
+![zone de saisie de texte](../../../en/images/fields/adding-custom-fields-textarea-field/02-fields-textarea-data-entry.png)
 
 
 ## Affichage des Données
 
 La capture d'écran du site suivante montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-![affichage du champ zone de texte sur le site](../../../en/images/fields/fields-textarea-site.png)
+![affichage du champ zone de texte sur le site](../../../en/images/fields/adding-custom-fields-textarea-field/03-fields-textarea-site.png)
 
 L'étiquette du champ commence un seul bloc de texte à moins que vous n'ayez entré des balises HTML telles que `<p>...</p>`.
 

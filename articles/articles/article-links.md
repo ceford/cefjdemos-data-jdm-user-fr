@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Article_Links / Display title: Article : Édition - Liens  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Article_Links",
+  "title": "Article : Édition - Liens  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Liens Accessibles
 

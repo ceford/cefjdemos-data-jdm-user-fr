@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Managing_Media / Display title: Gestion des Médias   -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Managing_Media",
+  "title": "Gestion des Médias   ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -20,7 +27,7 @@ Dans les deux premiers cas, le composant Média apparaît dans un écran de comp
 
 L'image suivante montre la page Média juste après l'installation de Joomla, mais avec le dossier cassiopeia/sampledata sélectionné. Un dossier *fichiers* a été ajouté pour stocker des fichiers non-images et un dossier supplémentaire nommé *poubelle* a été ajouté pour illustrer la suppression de dossiers :
 
-![Page Média montrant les données d'exemple cassiopeia](../../../en/images/media/media-sample-data-cassiopeia.png)
+![Page Média montrant les données d'exemple cassiopeia](../../../en/images/media/managing-media/01-media-sample-data-cassiopeia.png)
 
 ## Gestion des Dossiers
 
@@ -60,7 +67,7 @@ Si vous sélectionnez un dossier différent, le dossier précédent au même niv
 
 Le dossier sélectionné pour la suppression est illustré ci-dessous :
 
-![Page Média montrant le dossier poubelle](../../../en/images/media/media-sample-data-garbage-select.png)
+![Page Média montrant le dossier poubelle](../../../en/images/media/managing-media/02-media-sample-data-garbage-select.png)
 
 ## Barre d'outils de la zone média
 

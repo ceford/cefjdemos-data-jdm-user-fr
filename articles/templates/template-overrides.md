@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Template_Overrides / Display title: Remplacements de Modèles -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Template_Overrides",
+  "title": "Remplacements de Modèles ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -10,7 +17,7 @@ Beaucoup d'extensions Joomla ont des templates de sortie assez complexes qui son
 
 Commencez par sélectionner **Système → Templates → Templates du site** dans le menu de l'administrateur, puis sélectionnez l'élément Détails et fichiers de Cassiopeia. Cela ouvrira le formulaire Templates : Personnaliser (Cassiopeia) :
 
-![template personnaliser cassiopeia onglet du site](../../../en/images/templates/templates-customise-cassiopeia.png)
+![template personnaliser cassiopeia onglet du site](../../../en/images/templates/template-overrides/01-templates-customise-cassiopeia.png)
 
 **Important :** ne modifiez aucun des fichiers fournis dans le cadre du modèle Cassiopeia. Lors de la prochaine mise à jour de Joomla, ces fichiers peuvent être écrasés et vos modifications seront perdues.
 
@@ -21,7 +28,7 @@ Le dossier html est l'endroit où se trouvent les remplacements. Si vous déplie
 Sélectionnez l'onglet Créer des Overrides pour voir la liste des Modules, Composants,
 Plugins et Layouts pour lesquels vous pouvez créer des overrides :
 
-![modèles personnalisation cassiopeia onglet des overrides](../../../en/images/templates/cassiopeia-customisation-create-overrides.png)
+![modèles personnalisation cassiopeia onglet des overrides](../../../en/images/templates/template-overrides/02-cassiopeia-customisation-create-overrides.png)
 
 Sélectionnez l'élément mod_login. Les fichiers php du template mod_login seront
 copiés dans le dossier html et vous serez renvoyé à l'onglet Éditeur.
@@ -40,7 +47,7 @@ ne pas supprimer quelque chose que vous n'avez pas créé vous-même.
 
 Dans l'onglet Éditeur, sélectionnez le fichier default_logout.php. Remarquez les boutons en haut à droite : Afficher le fichier original et Afficher les différences. Ce dernier a été réglé sur Oui pour la capture d'écran suivante afin de montrer quelques lignes de code ajoutées près du haut du fichier. Ces lignes de code calculent quand la session de l'utilisateur expirera après le chargement de la page contenant le formulaire de déconnexion.
 
-![personnalisation des modèles cassiopeia onglet des substitutions](../../../en/images/templates/cassiopeia-customisation-edit-logout-override.png)
+![personnalisation des modèles cassiopeia onglet des substitutions](../../../en/images/templates/template-overrides/03-cassiopeia-customisation-edit-logout-override.png)
 
 La zone Diff montre les lignes ajoutées avec un fond vert et les lignes supprimées avec un fond rouge. Il n'y a pas de lignes supprimées dans ce cas. Le code est montré ici si vous souhaitez le copier pour essayer vous-même.
 
@@ -64,7 +71,7 @@ Votre session expirera à <br><?php echo $endTime; ?>
 
 Enregistrez et rechargez la page du site contenant le formulaire de déconnexion.
 
-![personnalisation des modèles cassiopeia onglet des substitutions](../../../en/images/templates/cassiopeia-customisation-logout-override-result.png)
+![personnalisation des modèles cassiopeia onglet des substitutions](../../../en/images/templates/template-overrides/04-cassiopeia-customisation-logout-override-result.png)
 
 Vous devriez voir le formulaire de déconnexion changer chaque fois que la page est rechargée. Mais que faire si vous changez d'avis ? Ou avez des options différentes pour différents groupes d'utilisateurs ? Bienvenue dans Layouts, le sujet d'un article séparé.
 
@@ -72,7 +79,7 @@ Vous devriez voir le formulaire de déconnexion changer chaque fois que la page 
 
 L'onglet Créer des Substitutions du formulaire Templates : Personnaliser (Cassiopeia) est utilisé pour créer n'importe lequel des éléments de sortie de Joomla pour lesquels il est possible de créer des substitutions. Les noms des dossiers de substitution commencent principalement par com\_, mod\_ ou plg\_. Notez que la deuxième partie d'un dossier de substitution de plugin indique le groupe de plugins. Voici une sélection d'exemples de dossiers de substitution :
 
-![onglet des substitutions personnaliser des templates cassiopeia](../../../en/images/templates/templates-customise-example-override-folder.png)
+![onglet des substitutions personnaliser des templates cassiopeia](../../../en/images/templates/template-overrides/05-templates-customise-example-override-folder.png)
 
 ## Substitutions de Disposition
 

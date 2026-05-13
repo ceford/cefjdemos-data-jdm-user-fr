@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Adding_a_Custom_Administrator_Menu / Display title: Menu Administrateur Personnalisé -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Adding_a_Custom_Administrator_Menu",
+  "title": "Menu Administrateur Personnalisé ",
+  "description": "", 
+  "author": ""
+}
+-->
 ## Introduction
 
 Supposons que vous ayez un utilisateur à qui vous souhaitez permettre d'effectuer uniquement une tâche sur votre site web. Prenons le cas d'une organisation qui a des branches partout dans le monde et la seule tâche que chaque branche est autorisée à accomplir est de placer des emplacements sur une carte pour les afficher sur le site. Le composant pour cette tâche est Ffmap, mais cela ne sera pas couvert ici, à part les éléments du menu Administrateur impliqués.
@@ -72,13 +79,13 @@ Dans la liste des menus, sélectionnez le bouton **Modules Liés** dans l'enregi
 
 ## Capture d'écran
 
-![sélection du composant de menu administrateur personnalisé](../../../en/images/menus/menus-custom-administrator-menu.png)
+![sélection du composant de menu administrateur personnalisé](../../../en/images/menus/adding-a-custom-administrator-menu/01-menus-custom-administrator-menu.png)
 
 ## Résultat
 
 Créez un utilisateur dans le groupe Branch pour vous-même afin de tester. Connectez-vous à l'interface Administrateur en tant que cet utilisateur pour voir le résultat :
 
-![résultat du menu administrateur personnalisé](../../../en/images/menus/menus-custom-administrator-menu-result.png)
+![résultat du menu administrateur personnalisé](../../../en/images/menus/adding-a-custom-administrator-menu/02-menus-custom-administrator-menu-result.png)
 
 ## Notes
 

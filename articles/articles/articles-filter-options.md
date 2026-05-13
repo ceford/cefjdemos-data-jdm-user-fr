@@ -1,4 +1,11 @@
-<!-- Filename: J6.x:Articles:_Filter_Options / Display title: Articles : Options de filtre -->
+<!--
+{
+  "source": "https://docs.joomla.org/J6.x:Articles:_Filter_Options",
+  "title": "Articles : Options de filtre ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -8,7 +15,7 @@ La capture d'écran suivante montre les articles utilisés pour préparer cet en
 
 Les *Options de filtre* ont été ouvertes pour montrer les filtres disponibles.
 
-![Liste des articles](../../../en/images/articles/articles-filter-options.png)
+![Liste des articles](../../../en/images/articles/articles-filter-options/01-articles-filter-options.png)
 
 Cette liste contient plus de 20 articles créés à partir de l'installation des *Données d'exemple multilingues* et quelques autres articles ajoutés par la suite.
 

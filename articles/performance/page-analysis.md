@@ -1,4 +1,11 @@
-<!-- Filename: jdocmanual?manual=user&heading=performance&filename=page-analysis.md / Display title: Analyse de la Page -->
+<!--
+{
+  "source": "https://docs.joomla.org/jdocmanual?manual=user&heading=performance&filename=page-analysis.md",
+  "title": "Analyse de la Page ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Phare
 
@@ -12,7 +19,7 @@ Vous pouvez utiliser l'outil en ligne depuis [PageSpeed Insights](https://develo
 
 La capture d'écran suivante montre la première partie du rapport PageSpeed Insights :
 
-![Rapport PageSpeed Insights](../../../en/images/performance/performance-pagespeed-insights.png)
+![Rapport PageSpeed Insights](../../../en/images/performance/page-analysis/01-performance-pagespeed-insights.png)
 
 ## Améliorations des performances
 

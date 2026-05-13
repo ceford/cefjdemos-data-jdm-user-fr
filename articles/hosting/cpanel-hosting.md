@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Hosting_Setup / Display title: Hébergement cPanel -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Hosting_Setup",
+  "title": "Hébergement cPanel ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@
 
 Lorsque vous vous connectez à votre service d'hébergement cPanel, voici ce à quoi vous devez vous attendre :
 
-![panneau de contrôle d'hébergement cPanel](../../../en/images/hosting/cpanel-hosting.png)
+![panneau de contrôle d'hébergement cPanel](../../../en/images/hosting/cpanel-hosting/01-cpanel-hosting.png)
 
 ### Configuration de la base de données
 
@@ -24,7 +31,7 @@ C'est tout - vous avez maintenant une base de données prête pour une installat
 
 À un certain moment, vous aurez téléchargé le fichier zip du code source de Joomla sur votre ordinateur portable ou de bureau. Vous devez maintenant décider comment structurer votre site. La racine des documents pour votre site est le dossier *public_html*. Vous pourriez y mettre Joomla. Cependant, cela vous empêche d'utiliser une autre application sur le même site. Par exemple, vous pourriez avoir deux installations Joomla complètement séparées, une pour la production (visualisation publique) et une pour les tests (visualisation privée). Ainsi, vous pourriez créer un dossier dans *public_html*, nommé *j4* par exemple, et y télécharger Joomla. Vous pourriez avoir un autre dossier nommé *j4test* et y mettre une autre copie de Joomla. L'illustration ci-dessous montre une telle configuration avec deux sites Joomla.
 
-![gestionnaire de fichiers d'hébergement cPanel](../../../en/images/hosting/cpanel-file-manager.png)
+![gestionnaire de fichiers d'hébergement cPanel](../../../en/images/hosting/cpanel-hosting/02-cpanel-file-manager.png)
 
 Lorsque vous avez décidé de votre structure, sélectionnez le dossier Joomla choisi dans le gestionnaire de fichiers et cliquez sur le bouton Télécharger. Dans le formulaire de téléchargement, sélectionnez le fichier zip source de Joomla sur votre ordinateur local pour le télécharger dans le dossier sélectionné. Après le téléchargement, retournez dans le gestionnaire de fichiers, sélectionnez le fichier *zip* et cliquez sur le bouton Extraire. Après extraction, vous pouvez sélectionner et supprimer le fichier *zip*.
 

@@ -1,4 +1,11 @@
-<!-- Filename: J6.x:Access_Control / Display title: Article : Modifier - Autorisations  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J6.x:Access_Control",
+  "title": "Article : Modifier - Autorisations  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -8,7 +15,7 @@ La description ici concerne l'onglet *Permissions* du formulaire *Article : Modi
 
 ## Capture d'écran
 
-![L'onglet des autorisations de l'article avec auteur sélectionné](../../../en/images/articles/articles-edit-permissions-tab.png)
+![L'onglet des autorisations de l'article avec auteur sélectionné](../../../en/images/articles/article-permissions/01-articles-edit-permissions-tab.png)
 
 Il peut être surprenant qu'un auteur ne semble pas avoir la permission de modifier un article !
 

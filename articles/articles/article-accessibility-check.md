@@ -1,4 +1,11 @@
-<!-- Filename: Help6.x:_Article_Accessibility_Check / Display title: Article : Vérification de l'accessibilité   -->
+<!--
+{
+  "source": "https://docs.joomla.org/Help6.x:_Article_Accessibility_Check",
+  "title": "Article : Vérification de l'accessibilité   ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -15,7 +22,7 @@ Joomla dispose d'un vérificateur d'accessibilité intégré. Il est disponible 
 
 ## Capture d'écran
 
-![Vérification de l'accessibilité](../../../en/images/articles/articles-accessibility-check.png)
+![Vérification de l'accessibilité](../../../en/images/articles/article-accessibility-check/01-articles-accessibility-check.png)
 
 L'outil de vérification est accessible via l'icône de cercle bleu en bas à droite de l'écran. Sélectionnez-la pour ouvrir ou fermer un rapport. Sélectionnez la coche verte (ou la croix jaune) pour examiner chaque élément qui a été testé.
 

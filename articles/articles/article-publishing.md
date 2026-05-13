@@ -1,4 +1,11 @@
-<!-- Filename: J6.x:_Article_Publishing / Display title: Article : Edition - Publication  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J6.x:_Article_Publishing",
+  "title": "Article : Edition - Publication  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -10,7 +17,7 @@ La plupart du temps, les articles sont publiés le jour de leur création et le 
 
 ## Capture d'écran
 
-![Onglet de publication du formulaire d'édition d'article](../../../en/images/articles/articles-edit-publishing-tab.png)
+![Onglet de publication du formulaire d'édition d'article](../../../en/images/articles/article-publishing/01-articles-edit-publishing-tab.png)
 
 Le panneau *Méta-données* est expliqué dans un article distinct. Cet article traite du panneau *Publication*.
 
@@ -58,7 +65,7 @@ Avant la date de Début de Publication, les articles sont considérés comme **E
 
 Les valeurs de date et d'heure peuvent être tapées dans les champs de date ou sélectionnées avec l'outil Calendrier, ouvert en sélectionnant l'icône du calendrier à la fin de chaque champ de date.
 
-![Dates de publication](../../../en/images/articles-access/article-schedule-publishing.png)
+![Dates de publication](../../../en/images/articles/article-publishing/02-article-schedule-publishing.png)
 
 Le calendrier navigue entre les jours, mois et années à l'aide des flèches avant, arrière, haut et bas du clavier. Le bouton **Aujourd'hui** fixe la date actuelle. Le bouton **Effacer** efface la date et l'heure.
 

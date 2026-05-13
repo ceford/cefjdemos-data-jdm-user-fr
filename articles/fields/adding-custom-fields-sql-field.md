@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Adding_custom_fields/Sql_Field / Display title: Champ SQL -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
+  "title": "Champ SQL ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -18,7 +25,7 @@ FROM `#__countrybase_countries`
 WHERE `state` = 1
 ORDER BY `title` ASC
 ```
-![Création de champ SQL](../../../en/images/fields/fields-sql-edit.png)
+![Création de champ SQL](../../../en/images/fields/adding-custom-fields-sql-field/01-fields-sql-edit.png)
 
 **Note :** Dans cet exemple, l'inclusion du type de champ dans le titre est uniquement à des fins de démonstration. Ne l'incluez pas dans vos propres titres de champs.
 
@@ -26,14 +33,14 @@ ORDER BY `title` ASC
 
 Simple - sélectionnez dans la liste.
 
-![Saisie de données dans le champ SQL](../../../en/images/fields/fields-sql-data-entry.png)
+![Saisie de données dans le champ SQL](../../../en/images/fields/adding-custom-fields-sql-field/02-fields-sql-data-entry.png)
 
 
 ## Affichage des Données
 
 La capture d'écran suivante du site montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-![Affichage du champ SQL sur le site](../../../en/images/fields/fields-sql-site.png)
+![Affichage du champ SQL sur le site](../../../en/images/fields/adding-custom-fields-sql-field/03-fields-sql-site.png)
 
 La sortie est un seul élément ou une liste d'éléments séparés par des virgules (noms de pays) suivant le label du champ (Pays d'origine).
 

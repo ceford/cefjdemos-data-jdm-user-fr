@@ -1,10 +1,17 @@
-<!-- Filename: J4.x:Site_Offline / Display title: Site hors ligne -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Site_Offline",
+  "title": "Site hors ligne ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Uniquement pour les utilisateurs du site
 
 Il peut arriver que vous ayez besoin de rendre votre site Joomla! indisponible pour les visiteurs pendant une courte période. Il existe un simple commutateur de configuration **Site hors ligne** à cet effet, qui peut être modifié de **Non** à **Oui** selon les besoins. Lorsque réglé sur *Oui*, tous les visiteurs du site voient une page de message hors ligne avec un formulaire de connexion. Le formulaire hors ligne par défaut peut être personnalisé avec une image :
 
-![Écran site hors ligne](../../../en/images/configuration/site-offline.png)
+![Écran site hors ligne](../../../en/images/configuration/site-offline/01-site-offline.png)
 
 Le commutateur Site hors ligne ne s'applique pas à l'interface administrateur, et les utilisateurs qui peuvent se connecter à l'arrière-plan peuvent continuer à se connecter au front-end. La connexion au front-end est refusée uniquement aux utilisateurs des groupes d'utilisateurs Enregistré, Auteur, Éditeur et Éditeur en chef.
 

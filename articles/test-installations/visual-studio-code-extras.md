@@ -1,4 +1,11 @@
-<!-- Filename: Visual_Studio_Code / Display title: Extras de Visual Studio Code -->
+<!--
+{
+  "source": "https://docs.joomla.org/Visual_Studio_Code",
+  "title": "Extras de Visual Studio Code ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 

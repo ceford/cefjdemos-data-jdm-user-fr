@@ -1,4 +1,11 @@
-<!-- Filename: J6.x:Media_File_Locations / Display title: Emplacements des fichiers multimédias -->
+<!--
+{
+  "source": "https://docs.joomla.org/J6.x:Media_File_Locations",
+  "title": "Emplacements des fichiers multimédias ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -12,7 +19,7 @@ Pour configurer un emplacement pour les fichiers séparé des images, créez d'a
 
 Trouvez le plug-in *FileSystem - Local* dans la liste des plug-ins et ouvrez-le. Ajoutez votre dossier *files* nouvellement créé à la liste des emplacements où vous pouvez conserver des médias. Cliquez simplement sur le bouton + et sélectionnez **files** dans la liste des dossiers disponibles.
 
-![Plug-in Système de Fichiers](../../../en/images/plugins/plugin-group-file-system-local.png)
+![Plug-in Système de Fichiers](../../../en/images/media/media-file-locations/01-plugin-group-file-system-local.png)
 
 L'option **Créer des Miniatures** réglée sur **Oui** entraîne la création de petites images avec une hauteur ou une largeur maximale de 200 pixels dans media/cache/com_media/thumbs, avec la même structure de dossiers que le dossier de médias. Cela devrait grandement augmenter la vitesse d'affichage d'un dossier contenant de nombreuses images. Ce n'est pas nécessaire pour les fichiers car ils sont représentés par des icônes.
 

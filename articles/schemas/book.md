@@ -1,4 +1,11 @@
-<!-- Filename: J5.x:Schema_org/Type_Organization_-_Using_Organization_Plugin / Display title: Schema.org - Livre -->
+<!--
+{
+  "source": "https://docs.joomla.org/J5.x:Schema_org",
+  "title": "Schema.org - Livre ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -25,7 +32,7 @@ La section *Champ Générique* permet d'entrer des paires *Titre* et *Valeur* en
 
 Ci-dessous un exemple de schéma de Livre dans un formulaire de modification d'Article.
 
-![A book schema edit form](../../../en/images/schemas/edit-schema-book.png)
+![A book schema edit form](../../../en/images/schemas/book/01-edit-schema-book.png)
 
 *Traduit par openai.com*
 

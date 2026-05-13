@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Home_Page_in_Different_Style / Display title: Page d'accueil dans un style différent -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Home_Page_in_Different_Style",
+  "title": "Page d'accueil dans un style différent ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Page d'accueil du site
 
@@ -16,7 +23,7 @@ Supposons que vous souhaitiez donner à votre page d'accueil une apparence disti
 
 Les données d'exemple de Cassiopeia créent une page d'accueil en utilisant un type de menu **Articles en vedette**. Elle est présentée comme sur la capture d'écran ci-dessous (quelques modifications mineures ont été apportées à certains articles pour obtenir une meilleure capture d'écran ici).
 
-![page d'accueil utilisant cassiopeia et les données d'exemple](../../../en/images/templates/templates-home-page-style-cassiopeia-sample-data.png)
+![page d'accueil utilisant cassiopeia et les données d'exemple](../../../en/images/template-tips/home-page-in-different-style/01-templates-home-page-style-cassiopeia-sample-data.png)
 
 Voici comment la mise en page est réalisée :
 
@@ -24,11 +31,11 @@ Voici comment la mise en page est réalisée :
 
 La grande image sous la barre de menu se trouve dans un module personnalisé nommé Image affecté à la position du bandeau dans le modèle Cassiopeia.
 
-![module personnalisé utilisé dans le style des données d'exemple](../../../en/images/templates/templates-home-page-style-custom-module-image.png)
+![module personnalisé utilisé dans le style des données d'exemple](../../../en/images/template-tips/home-page-in-different-style/02-templates-home-page-style-custom-module-image.png)
 
 Dans l'onglet Affectation du menu, le module est affecté uniquement à l'accueil :
 
-![onglet d'affectation du menu du module personnalisé](../../../en/images/templates/templates-home-page-style-custom-module-menu-assignment.png)
+![onglet d'affectation du menu du module personnalisé](../../../en/images/template-tips/home-page-in-different-style/03-templates-home-page-style-custom-module-menu-assignment.png)
 
 L'image de fond est sélectionnée dans l'onglet Options du formulaire de modification Modules : Personnalisé.
 
@@ -44,7 +51,7 @@ Il existe des articles séparés sur les substitutions et les mises en page.
 
 Sous la grande image se trouvent trois petits boîtiers chacun avec une image et du texte en dessous. Ils sont créés à l'aide d'un module Articles - Newsflash dans la position haut-a du modèle. Le module est configuré pour afficher 3 articles. Son affectation de menu est uniquement pour l'accueil. L'onglet Avancé a la mise en page réglée sur horizontal et le style du module réglé sur noCard.
 
-![module newsflash](../../../en/images/templates/templates-home-page-style-newsflash-module-image.png)
+![module newsflash](../../../en/images/template-tips/home-page-in-different-style/04-templates-home-page-style-newsflash-module-image.png)
 
 Ceci conclut l'explication de la création de la page d'accueil avec les données d'exemple de Cassiopeia.
 

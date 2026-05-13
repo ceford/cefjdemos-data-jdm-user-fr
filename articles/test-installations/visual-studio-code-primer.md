@@ -1,4 +1,11 @@
-<!-- Filename: Visual_Studio_Code_Primer / Display title: Introduction à Visual Studio Code  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Visual_Studio_Code_Primer",
+  "title": "Introduction à Visual Studio Code  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## VS Code - Un IDE Gratuit Populaire
 
@@ -97,7 +104,7 @@ Dans la Configuration Globale de Joomla, réglez *Système de Débogage* sur *Ou
 
 Lorsque vous ouvrez une page contenant le module bogué, vous verrez une trace de pile indiquant où une erreur a été déclenchée.
 
-![trace de pile vscode](../../../en/images/test-installations/vscode-primer-stack-trace.png)
+![trace de pile vscode](../../../en/images/test-installations/visual-studio-code-primer/01-vscode-primer-stack-trace.png)
 
 Parfois, l'erreur de codage se trouve sur la première ligne de la trace de pile. Autrement, si l'erreur est déclenchée dans le code de la bibliothèque, par exemple en passant des données invalides à une fonction de base de données, l'erreur de codage peut se trouver plus bas dans la liste des appels de fonction.
 
@@ -105,7 +112,7 @@ Parfois, l'erreur de codage se trouve sur la première ligne de la trace de pile
 
 Dans VS Code, utilisez le menu Fichier / Ouvrir un dossier pour localiser et ouvrir le dossier contenant votre copie locale du code de l'extension *mod_debugme*. Vous devriez voir quelque chose de similaire à ce qui suit :
 
-![vue du dossier vscode](../../../en/images/test-installations/vscode-primer-screen.png)
+![vue du dossier vscode](../../../en/images/test-installations/visual-studio-code-primer/02-vscode-primer-screen.png)
 
 Vous pouvez peut-être diagnostiquer le problème simplement en lisant le code. Dans le cas de l'erreur *Class "DebugHelper" not found*, vous verrez qu'une déclaration *use* a été commentée quelques lignes plus haut. Oublier d'insérer une déclaration *use* est une erreur courante lors du développement initial !
 
@@ -259,7 +266,7 @@ Quelques problèmes pas si évidents :
 
 Lorsque tout est réparé, voici ce que vous pourriez voir :
 
-![vue du module corrigé dans vscode](../../../en/images/test-installations/vscode-primer-debugme-fixed.png)
+![vue du module corrigé dans vscode](../../../en/images/test-installations/visual-studio-code-primer/03-vscode-primer-debugme-fixed.png)
 
 Jours de fête ?  
 

@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Users_Dashboard / Display title: Tableau de bord des utilisateurs -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Users_Dashboard",
+  "title": "Tableau de bord des utilisateurs ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@ Le tableau de bord des utilisateurs est accessible via l'icône à droite de l'�
 
 ## Capture d'écran
 
-![Tableau de bord des utilisateurs](../../../en/images/dashboards/users-dashboard.png)
+![Tableau de bord des utilisateurs](../../../en/images/dashboards/users-dashboard/01-users-dashboard.png)
 
 *Traduit par openai.com*  
 

@@ -1,4 +1,11 @@
-<!-- Filename: Nginx / Display title: Nginx -->
+<!--
+{
+  "source": "https://docs.joomla.org/Nginx",
+  "title": "Nginx ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 <a href="http://nginx.org/" rel="nofollow noreferrer noopener">Nginx</a> est un serveur Web léger qui alimente <a href="https://en.wikipedia.org/wiki/Nginx" rel="nofollow noreferrer noopener">environ 33%</a> des serveurs Web dans tous les domaines. À moins que vous n'ayez des exigences spécifiques nécessitant un serveur Web lourd comme Apache, il est préférable d'utiliser Nginx.
 

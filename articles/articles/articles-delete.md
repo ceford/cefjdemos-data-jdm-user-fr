@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Deleting_an_Article / Display title: Articles : Supprimer -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Deleting_an_Article",
+  "title": "Articles : Supprimer ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -19,7 +26,7 @@ Réfléchissez aux raisons pour lesquelles vous souhaitez supprimer l'article :
 - Sélectionnez le bouton **Actions** dans la barre d'outils.
 - Sélectionnez **Corbeille** dans le menu déroulant.
 
-![Article sélectionné pour la mise à la corbeille](../../../en/images/articles/articles-selected-to-trash.png)
+![Article sélectionné pour la mise à la corbeille](../../../en/images/articles/articles-delete/01-articles-selected-to-trash.png)
 
 Un message de confirmation apparaîtra et l'article aura disparu de 
 la liste actuelle d'articles car elle n'inclut normalement pas les éléments mis à la corbeille.
@@ -33,7 +40,7 @@ Pour voir la liste des articles mis à la corbeille :
 - Sélectionnez le bouton **Options de Filtre** pour ouvrir la liste des filtres.
 - Sélectionnez **Mise à la corbeille** dans la liste *-- Sélectionner le Statut --*.
 
-![Vue de la corbeille des articles](../../../en/images/articles/articles-trash-list.png)
+![Vue de la corbeille des articles](../../../en/images/articles/articles-delete/02-articles-trash-list.png)
 
 ### Pour Restaurer
 

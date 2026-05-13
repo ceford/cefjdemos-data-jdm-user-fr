@@ -1,4 +1,11 @@
-<!-- Filename: Keyboard_Shortcuts / Display title: Raccourcis Clavier  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Keyboard_Shortcuts",
+  "title": "Raccourcis Clavier  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 

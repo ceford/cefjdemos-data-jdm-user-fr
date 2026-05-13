@@ -1,4 +1,11 @@
-<!-- Filename: Help4.x:Components_Version_History / Display title: Article : Versions  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Help4.x:Components_Version_History",
+  "title": "Article : Versions  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -16,7 +23,7 @@ Sélectionnez le bouton **Versions** dans la barre d'outils pendant que vous éd
 
 ## Capture d'écran
 
-![Boîte de dialogue pop-up des versions](../../../en/images/articles/articles-versions.png)
+![Boîte de dialogue pop-up des versions](../../../en/images/articles/article-versions/01-articles-versions.png)
 
 ## En-têtes de colonnes
 
@@ -33,9 +40,9 @@ En haut de la page, vous verrez la barre d'outils affichée dans la capture d'é
 
 - **Restaurer** La version actuelle de l'élément est marquée d'une étoile à droite de la date. Si vous souhaitez restaurer l'une des autres versions enregistrées, cochez la case de la version souhaitée et sélectionnez le bouton *Restaurer*. La version actuelle de l'élément sera remplacée par la version sélectionnée, et l'écran d'édition se rechargera avec la version restaurée chargée dans l'éditeur.
 - **Prévisualiser** Pour prévisualiser une version, soit sélectionnez l'élément dans la colonne Date, soit cochez la case et cliquez sur le bouton Prévisualiser. Une fenêtre de navigateur distincte s'ouvrira affichant la version sélectionnée de l'élément, similaire à la capture d'écran ci-dessous. Après avoir visualisé la version, fermez la fenêtre du navigateur.
-![Boîte de dialogue de prévisualisation des versions](../../../en/images/articles/articles-versions-preview.png)
+![Boîte de dialogue de prévisualisation des versions](../../../en/images/articles/article-versions/02-articles-versions-preview.png)
 - **Comparer** Pour comparer deux versions et voir ce qui a changé, cochez les cases de chacune des versions et cliquez sur le bouton Comparer. Une nouvelle fenêtre de navigateur s'ouvrira, comme montré dans la capture d'écran ci-dessous. La première colonne est le nom du champ, la deuxième est la version la plus ancienne, la troisième est la version la plus récente, et la dernière colonne met en évidence les différences entre les deux versions.
-![Boîte de dialogue de comparaison des versions](../../../en/images/articles/articles-versions-compare.png)
+![Boîte de dialogue de comparaison des versions](../../../en/images/articles/article-versions/03-articles-versions-compare.png)
 - **Conserver Activé/Désactivé** Ce bouton vous permet d'activer ou de désactiver la fonctionnalité Conserver Pour Toujours pour une version. Normalement, la version la plus ancienne d'un élément sera supprimée automatiquement lorsque le nombre maximum de versions (défini dans les Options pour le composant) aura été dépassé. Si vous définissez la propriété Conserver Pour Toujours pour une version, elle ne sera jamais supprimée automatiquement.
 - **Supprimer** Ce bouton vous permet de supprimer manuellement une ou plusieurs versions. Sélectionnez la case pour les versions que vous souhaitez supprimer et ensuite sélectionnez le bouton Supprimer. Notez que cela ne supprime *pas* l'élément en cours d'édition. Cela supprime uniquement la version sélectionnée de l'élément.
 

@@ -1,4 +1,11 @@
-<!-- Filename: jdocmanual?manual=user&heading=migration&filename=migration-basics.md / Display title: Notions de Base sur la Migration  -->
+<!--
+{
+  "source": "https://docs.joomla.org/jdocmanual?manual=user&heading=migration&filename=migration-basics.md",
+  "title": "Notions de Base sur la Migration  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Terminologie
 

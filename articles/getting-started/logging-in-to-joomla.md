@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Logging_in_to_Joomla / Display title: Connexion à Joomla -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Logging_in_to_Joomla",
+  "title": "Connexion à Joomla ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -16,7 +23,7 @@ Ce qui suit couvre la connexion et déconnexion à la fois du backend et du fron
 
 Naviguez vers la page de connexion de l'administrateur. C'est l'adresse web du site web ajoutée à /administrator, par exemple, my-joomla-website.com/administrator qui affiche la page de connexion de l'administrateur Joomla :
 
-![Formulaire de connexion administrateur](../../../en/images/getting-started/logging-in-to-joomla-administrator-login-form.png)
+![Formulaire de connexion administrateur](../../../en/images/getting-started/logging-in-to-joomla/01-logging-in-to-joomla-administrator-login-form.png)
 
 1.  Ajoutez votre **Nom d'utilisateur**
 2.  Ajoutez votre **Mot de passe**
@@ -33,7 +40,7 @@ Sélectionnez le bouton **Se connecter** pour accéder au Tableau de bord d'accu
 
 Pour vous déconnecter, sélectionnez le **Menu Utilisateur** puis **Déconnexion**.
 
-![Lien de déconnexion administrateur](../../../en/images/getting-started/logging-in-to-joomla-logout-link.png)
+![Lien de déconnexion administrateur](../../../en/images/getting-started/logging-in-to-joomla/02-logging-in-to-joomla-logout-link.png)
 
 ### Connexion au site
 
@@ -41,7 +48,7 @@ Si l'accès au frontend est activé, un formulaire de connexion aura été ajout
 
 Cet exemple utilise un formulaire de connexion situé dans la barre latérale droite.
 
-![Module de formulaire de connexion au site](../../../en/images/getting-started/logging-in-to-joomla-site-login-form.png)
+![Module de formulaire de connexion au site](../../../en/images/getting-started/logging-in-to-joomla/03-logging-in-to-joomla-site-login-form.png)
 
 Dans le **Formulaire de connexion**
 
@@ -54,7 +61,7 @@ Lors de la connexion depuis le frontend du site, vous pouvez rester sur la même
 
 ### Déconnexion du site
 
-![Module de formulaire de déconnexion du site](../../../en/images/getting-started/logging-in-to-joomla-site-logout-form.png)
+![Module de formulaire de déconnexion du site](../../../en/images/getting-started/logging-in-to-joomla/04-logging-in-to-joomla-site-logout-form.png)
 
 Pour vous déconnecter, allez au formulaire de connexion et sélectionnez le bouton **Déconnexion**.  
 

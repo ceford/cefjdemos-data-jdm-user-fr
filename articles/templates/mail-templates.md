@@ -1,4 +1,11 @@
-<!-- Filename: J5.x:Managing_Mail_Template_Layout / Display title: Modèles de courrier -->
+<!--
+{
+  "source": "https://docs.joomla.org/J5.x:Managing_Mail_Template_Layout",
+  "title": "Modèles de courrier ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@ Les modèles de courrier sont utilisés pour envoyer des messages email du syst�
 
 La capture d'écran suivante montre une sélection des 26 modèles de courrier standard disponibles. La liste est accessible en sélectionnant **Système -> Modèles de courrier** dans le menu Administrateur.
 
-![mail templates list](../../../en/images/templates/mail-templates-list.png)
+![mail templates list](../../../en/images/templates/mail-templates/01-mail-templates-list.png)
 
 Les messages électroniques peuvent être personnalisés pour modifier la mise en page, l'apparence et le libellé afin de répondre aux besoins de votre site. Par exemple, vous pourriez vouloir utiliser un logo de site et un schéma de couleurs dans ces e-mails envoyés aux clients. La personnalisation des e-mails envoyés aux administrateurs est moins importante.
 
@@ -16,7 +23,7 @@ Il existe deux méthodes de personnalisation : via les *Options du modèle de ma
 
 Sélectionnez le bouton **Options** dans la barre d'outils de la liste *Modèles de courrier* pour accéder aux paramètres généraux des modèles de courrier. Sélectionnez le bouton *Basculer l'aide en ligne* pour voir si certains champs du formulaire ont une aide supplémentaire.
 
-![mail templates options](../../../en/images/templates/mail-templates-options.png)
+![mail templates options](../../../en/images/templates/mail-templates/02-mail-templates-options.png)
 
 ### Format du courrier
 
@@ -32,7 +39,7 @@ Dans la liste des modèles de courrier, vous pouvez sélectionner n'importe quel
 
 ### L'onglet Courrier
 
-![edit mail template form](../../../en/images/templates/mail-template-edit.png)
+![edit mail template form](../../../en/images/templates/mail-templates/03-mail-template-edit.png)
 
 Le contenu des zones Sujet et Corps est initialement stocké dans des chaînes de langue. Cela permet de *Réinitialiser le Sujet par Défaut* ou le *Corps*. Cependant, une fois qu'un modèle de courrier spécifique a été modifié, ses champs Sujet et Corps sont stockés dans la table `#__mail_templates`.
 
@@ -44,7 +51,7 @@ Les balises de remplacement disponibles varient d'un mail à l'autre. Vous pouve
 
 Cet onglet est présent uniquement si les *Paramètres de courriel par modèle* sont définis sur *Oui* dans *Modèles de courriel : Options*. L'illustration ci-dessous montre une capture d'écran avec les *Paramètres de courriel* définis sur *Non*. S'ils sont définis sur *Oui*, davantage de champs de formulaire apparaissent, remplaçant les options de courriel définies dans la configuration globale, onglet Serveur.
 
-![edit mail template form](../../../en/images/templates/mail-template-edit-options.png)
+![edit mail template form](../../../en/images/templates/mail-templates/04-mail-template-edit-options.png)
 
 Si vous souhaitez envoyer une copie carbone invisible d'un email sortant à une adresse email spécifique, vous pouvez l'entrer dans le champ *Envoyer une copie à l'email*.
 

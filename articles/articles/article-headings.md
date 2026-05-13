@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Article_Headings / Display title: Article : Modifier - Titres   -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Article_Headings",
+  "title": "Article : Modifier - Titres   ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Sémantique des Titres
 
@@ -39,7 +46,7 @@ Ouvrez l'article que vous souhaitez éditer. Remarquez que le conteneur de texte
 - En bas de l'écran, l'indicateur de conteneur affichera HX.
 - Vous pouvez double-cliquer sur n'importe quel texte sélectionné pour effectuer un changement rapide, par exemple de P à H2 (bascule) ou de H2 à H3 en utilisant une barre contextuelle comme dans la capture d'écran suivante :
 
-![formulaire d'édition d'article avec h3 sélectionné](../../../en/images/articles/articles-edit-headings.png)
+![formulaire d'édition d'article avec h3 sélectionné](../../../en/images/articles/article-headings/01-articles-edit-headings.png)
 
 Remarque : par convention, toutes les balises HTML utilisent des lettres minuscules. Si vous sélectionnez le bouton *Basculer l'Éditeur* pour voir la source, vous verrez les paragraphes et les titres définis dans des balises en minuscules.
 

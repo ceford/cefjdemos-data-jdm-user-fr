@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:System_Dashboard / Display title: Tableau de bord du système -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:System_Dashboard",
+  "title": "Tableau de bord du système ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -17,7 +24,7 @@ Les éléments individuels sont couverts dans d'autres tutoriels.
 
 ## Capture d'écran
 
-![Tableau de bord du système](../../../en/images/dashboards/system-dashboard.png)
+![Tableau de bord du système](../../../en/images/dashboards/system-dashboard/01-system-dashboard.png)
 
 *Traduit par openai.com*
 

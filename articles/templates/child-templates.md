@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Child_Templates / Display title: Modèles Enfant  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Child_Templates",
+  "title": "Modèles Enfant  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 
 ## Exemple travaillé
@@ -10,7 +17,7 @@
 - Remplissez la boîte de dialogue contextuelle du modèle enfant et
   sélectionnez le bouton Créer un modèle enfant :
 
-![formulaire de création de modèle enfant](../../../en/images/templates/child-templates-create-green.png)
+![formulaire de création de modèle enfant](../../../en/images/templates/child-templates/01-child-templates-create-green.png)
 
 La sélection de Cassiopeia - Default dans le champ Styles de modèle
 supplémentaires semble inutile (est-ce un bug ?).
@@ -34,7 +41,7 @@ positions de modèle à ajouter ou supprimer.
 - Sélectionnez le type de fichier `.css`.
 - Sélectionnez le bouton *Créer*.
 
-![formulaire de création du fichier user css](../../../en/images/templates/child-templates-create-green-user-css.png)
+![formulaire de création du fichier user css](../../../en/images/templates/child-templates/02-child-templates-create-green-user-css.png)
 
 Le fichier user.css est vide, prêt pour que vous y saisissiez des styles
 personnalisés. Commencez par entrer le code suivant pour le thème vert :
@@ -93,7 +100,7 @@ une bonne place pour un nouvel élément de menu.
 - Sélectionnez *cassiopeia_manual - Default* dans le champ de formulaire
   *Style de modèle*.
 
-![formulaire de modification d'élément de menu de modèle enfant](../../../en/images/templates/child-templates-create-green-menu-item.png)
+![formulaire de modification d'élément de menu de modèle enfant](../../../en/images/templates/child-templates/03-child-templates-create-green-menu-item.png)
 
 - Pour le bien de la capture d'écran suivante, la disposition du blog a
   été réglée sur Articles principaux : 0, Articles d'introduction : 3 et
@@ -104,7 +111,7 @@ une bonne place pour un nouvel élément de menu.
 - Sur la page d'accueil de votre site, sélectionnez l'élément de menu
   nouvellement créé.
 
-![site montrant le modèle de thème vert personnalisé](../../../en/images/templates/child-templates-green-site-result.png)
+![site montrant le modèle de thème vert personnalisé](../../../en/images/templates/child-templates/04-child-templates-green-site-result.png)
 
 ### Modifier le style
 

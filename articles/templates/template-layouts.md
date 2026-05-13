@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Template_Layouts / Display title: Modèles de mise en page -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Template_Layouts",
+  "title": "Modèles de mise en page ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Structures de Fichiers de Gabarit
 
@@ -68,7 +75,7 @@ Votre session expirera à <br><?php echo $endTime; ?>
 
 Fermez les fichiers Cassiopeia. Sélectionnez **Contenu** → **Modules du Site** et ouvrez le module Login. Dans l'onglet Avancé, élément Disposition, vous trouverez que vous avez le choix entre **-- From Module -- / Default** et **-- From cassiopeia Template -- / expires**.
 
-![module de connexion montrant des dispositions alternatives](../../../en/images/templates/layouts-module-login.png)
+![module de connexion montrant des dispositions alternatives](../../../en/images/templates/template-layouts/01-layouts-module-login.png)
 
 Une façon d'utiliser cette fonctionnalité est d'avoir deux formulaires de connexion, l'un avec un accès public et l'autre avec un accès aux Super Users. Dans ce dernier, sélectionnez l'option **expires** et uniquement les Super Users verront le rappel du temps d'expiration de la session.
 
@@ -83,11 +90,11 @@ Vous pouvez traduire le nom du fichier en utilisant des Surcharges de Langue. Es
 - Sélectionnez le bouton **Nouveau** et remplissez le formulaire. Dans cet exemple, la clé de langue est **TPL_CASSIOPEIA_MOD_LOGIN_LAYOUT_EXPIRES** et le texte pourrait être **Connexion / Déconnexion avec expiration du temps**
 - Enregistrez et fermez et retournez au formulaire du module Login.
 
-![formulaire de modification de surcharge de langues](../../../en/images/templates/layouts-language-override-form.png)
+![formulaire de modification de surcharge de langues](../../../en/images/templates/template-layouts/02-layouts-language-override-form.png)
 
 Le champ de sélection de disposition de module avec **expires** traduit :
 
-![formulaire alternatif de sélection des dispositions du module](../../../en/images/templates/layouts-example-translated.png)
+![formulaire alternatif de sélection des dispositions du module](../../../en/images/templates/template-layouts/03-layouts-example-translated.png)
 
 
 ## Dispositions Alternatives des Composants
@@ -96,11 +103,11 @@ Les dispositions alternatives des composants fonctionnent de manière similaire 
 
 Vous pouvez définir une valeur globale pour les dispositions de composants dans la fenêtre Options du composant. Par exemple, dans la fenêtre Article : Options, il y a un paramètre *Choisir une Disposition* comme illustré ci-dessous :
 
-![formulaire des options d'articles avec la liste des dispositions alternatives](../../../en/images/templates/layouts-articles-options.png)
+![formulaire des options d'articles avec la liste des dispositions alternatives](../../../en/images/templates/template-layouts/04-layouts-articles-options.png)
 
 Comme pour les dispositions de module, les dispositions de composant sont affichées comme options de paramètre dans l'écran d'édition de chaque composant. Par exemple, pour un article, le paramètre s'affiche dans l'onglet Articles : Modifier les Options, comme illustré ci-dessous.
 
-![formulaire d'édition d'article montrant la liste des dispositions alternatives](../../../en/images/templates/layout-article-edit.png)
+![formulaire d'édition d'article montrant la liste des dispositions alternatives](../../../en/images/templates/template-layouts/05-layout-article-edit.png)
 
 Comme pour d'autres paramètres, le paramètre Utiliser Global utilisera le paramètre des Options. Le paramètre Par Défaut du Composant utilisera la disposition par défaut du composant. Les dispositions alternatives que vous avez créées pour différents modèles s'affichent sous chaque en-tête de modèle.
 
@@ -122,11 +129,11 @@ Les dispositions alternatives de catégorie fonctionnent comme les dispositions 
 
 Vous pouvez définir des dispositions de catégorie globalement, dans l'écran Options de chaque composant. Voici un exemple tiré des Contacts : Options / Formulaire de Catégorie :
 
-![formulaire des options du composant contacts montrant des dispositions alternatives](../../../en/images/templates/layouts-contacts-options.png)
+![formulaire des options du composant contacts montrant des dispositions alternatives](../../../en/images/templates/template-layouts/06-layouts-contacts-options.png)
 
 Les dispositions alternatives de catégorie apparaissent lorsque vous ajoutez ou modifiez une catégorie dans le formulaire Composant : Modifier une Catégorie / Options comme montré ci-dessous.
 
-![formulaire des options du composant contacts montrant des dispositions alternatives](../../../en/images/templates/layouts-contacts-category-options.png)
+![formulaire des options du composant contacts montrant des dispositions alternatives](../../../en/images/templates/template-layouts/07-layouts-contacts-category-options.png)
 
 Les dispositions alternatives de catégorie peuvent être utilisées pour des articles, des bannières, des contacts et des flux de nouvelles.
 
@@ -141,7 +148,7 @@ S'il existe un élément de menu configuré pour une catégorie spécifique, la 
 
 Pour les articles, il existe deux mises en page principales pour les catégories disponibles : Blog et Liste. Chacune de ces mises en page apparaît dans le formulaire Options des Articles sous l’onglet Catégorie, sous le titre "Depuis le Composant". Des mises en page alternatives apparaissent également dans la liste, permettant de choisir les mises en page Blog, Liste ou des modèles alternatifs comme mise en page par défaut pour les catégories, soit globalement, soit lors de la modification d'une seule catégorie d'article.
 
-![formulaire d'options du composant contacts montrant les mises en page alternatives](../../../en/images/templates/layouts-articles-options-category.png)
+![formulaire d'options du composant contacts montrant les mises en page alternatives](../../../en/images/templates/template-layouts/08-layouts-articles-options-category.png)
 
 Cela signifie que, comme pour d'autres options de mise en page, vous pouvez contrôler si les liens des catégories d'articles utilisent une mise en page de blog ou de liste. Il est important de comprendre que, comme pour d'autres paramètres de mise en page, cette option ne prendra effet que lorsqu'il n'y a pas d'élément de menu pour une seule catégorie.
 
@@ -153,7 +160,7 @@ Le fichier XML utilise le même format que les fichiers XML des éléments de me
 
 Les éléments de menu alternatifs apparaissent lorsque vous sélectionnez un type d'élément de menu comme indiqué ci-dessous.
 
-![liste de sélection des éléments de menu](../../../en/images/templates/layouts-menu-blog-menu-creation.png)
+![liste de sélection des éléments de menu](../../../en/images/templates/template-layouts/09-layouts-menu-blog-menu-creation.png)
 
 Les éléments de menu alternatifs sont utilisés et fonctionnent de la même manière que les éléments de menu standard. Puisqu'ils sont déjà basés sur des mises en page personnalisées, les substitutions de modèle ne s'appliquent pas aux éléments de menu alternatifs.
 

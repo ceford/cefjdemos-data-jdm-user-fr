@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Article_Preview / Display title: Article : Aperçu -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Article_Preview",
+  "title": "Article : Aperçu ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -28,7 +35,7 @@ Après vous être connecté à l'interface Administrateur :
 - Si vous recevez un message *La page demandée est introuvable*, connectez-vous à l'interface Frontend et réessayez.
 - Pour fermer la fenêtre d'aperçu, sélectionnez le bouton *X* dans le coin supérieur droit.
 
-![La fenêtre d'aperçu](../../../en/images/getting-started/article-edit-preview.png)
+![La fenêtre d'aperçu](../../../en/images/articles/article-preview/01-article-edit-preview.png)
 
 *Traduit par openai.com*
 

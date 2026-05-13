@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Articles_and_categories / Display title: Concepts de base -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Articles_and_categories",
+  "title": "Concepts de base ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 

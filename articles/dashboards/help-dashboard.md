@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Help / Display title: Tableau de bord d'aide  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Help",
+  "title": "Tableau de bord d'aide  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -6,7 +13,7 @@ L'écran d'Aide n'est pas intitulé un Tableau de bord, mais il possède toutes 
 
 ## Capture d'écran
 
-![Tableau de bord d'aide](../../../en/images/dashboards/help-dashboard.png)
+![Tableau de bord d'aide](../../../en/images/dashboards/help-dashboard/01-help-dashboard.png)
 
 *Traduit par openai.com*
 

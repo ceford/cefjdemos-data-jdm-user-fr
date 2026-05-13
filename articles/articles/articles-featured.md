@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Featured_Articles / Display title: Articles : À la une   -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Featured_Articles",
+  "title": "Articles : À la une   ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -27,7 +34,7 @@ Pour voir les articles sélectionnés pour un agencement *Articles en vedette* :
 
 La capture d'écran suivante montre une liste d'articles en vedette contenant quatre éléments, suffisamment pour créer une disposition de blog intéressante :
 
-![Articles en vedette](../../../en/images/articles/articles-featured.png)
+![Articles en vedette](../../../en/images/articles/articles-featured/01-articles-featured.png)
 
 ### Ordre des Articles en Vedette
 
@@ -39,7 +46,7 @@ Une disposition de blog fonctionne mieux si la quantité de texte dans chaque é
 
 ## Apparence du site
 
-![Vue du site des articles en vedette](../../../en/images/articles/articles-featured-site.png)
+![Vue du site des articles en vedette](../../../en/images/articles/articles-featured/02-articles-featured-site.png)
 
 *Traduit par openai.com*
 

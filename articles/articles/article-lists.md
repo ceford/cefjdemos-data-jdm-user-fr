@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Article_Lists / Display title: Article : Modifier - Listes  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Article_Lists",
+  "title": "Article : Modifier - Listes  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Types de listes
 
@@ -24,7 +31,7 @@ il est donc préférable de se limiter à un ou deux niveaux.
 
 La capture d'écran suivante montre une liste non ordonnée avec deux niveaux de retrait. Elle montre également l'ensemble complet des outils, ouvert en sélectionnant le bouton points de suspension (...) à la fin de la première rangée d'icônes d'outils.
 
-![Listes non ordonnées imbriquées](../../../en/images/articles/articles-edit-lists.png)
+![Listes non ordonnées imbriquées](../../../en/images/articles/article-lists/01-articles-edit-lists.png)
 
 Cette capture d'écran sera utilisée pour expliquer comment la liste à puces a été créée en utilisant les outils *Liste à puces* et *Augmenter le retrait* ou *Diminuer le retrait* :
 
@@ -41,7 +48,7 @@ Trois styles sont disponibles :
 La flèche vers le bas à droite de l'icône de liste à puces ouvre un petit panneau
 permettant de sélectionner le style préféré pour un élément de liste sélectionné :
 
-![Outils de manipulation de liste à puces](../../../en/images/articles/articles-edit-list-bullets.png)
+![Outils de manipulation de liste à puces](../../../en/images/articles/article-lists/02-articles-edit-list-bullets.png)
 
 L'icône de liste fonctionne comme un bascule. Si le curseur est dans un paragraphe et qu'une puce
 est sélectionnée, le paragraphe devient un élément de liste. Si la puce est sélectionnée à nouveau,
@@ -73,7 +80,7 @@ Six styles sont disponibles :
 - Lettres majuscules : A, B, C ...
 - Chiffres romains en majuscules : I, II, III ...
 
-![Outils de manipulation de liste numérotée](../../../en/images/articles/articles-edit-list-numbers.png)
+![Outils de manipulation de liste numérotée](../../../en/images/articles/article-lists/03-articles-edit-list-numbers.png)
 
 Les listes numérotées fonctionnent un peu différemment. Lorsqu’un élément de liste est indenté, il prend
 la première valeur numérique et les numéros du reste de la liste montent de sorte

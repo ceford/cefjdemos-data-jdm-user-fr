@@ -1,4 +1,11 @@
-<!-- Filename: Using_A_Sitemap / Display title: Utilisation d'un plan du site  -->
+<!--
+{
+  "source": "https://docs.joomla.org/Using_A_Sitemap",
+  "title": "Utilisation d'un plan du site  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Utiliser un Sitemap
 

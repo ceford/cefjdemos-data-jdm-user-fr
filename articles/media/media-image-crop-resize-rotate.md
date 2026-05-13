@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Media:_Image_Crop_Resize_Rotate / Display title: Rogner, redimensionner et faire pivoter l'image  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Media:_Image_Crop_Resize_Rotate",
+  "title": "Rogner, redimensionner et faire pivoter l'image  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -12,7 +19,7 @@ Ce sont des problèmes que le composant Média peut gérer.
 
 À titre d'exemple, l'image suivante montre un groupe d'animaux qui est un peu trop grand pour son usage prévu. Elle pourrait être recadrée ou redimensionnée.
 
-![Image d'animaux](../../../en/images/media/media-crop-serengeti.png)
+![Image d'animaux](../../../en/images/media/media-image-crop-resize-rotate/01-media-crop-serengeti.png)
 
 ## Recadrage
 

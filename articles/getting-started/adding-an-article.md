@@ -1,4 +1,11 @@
-<!-- Filename: J4.x:Getting_Started:_Adding_an_Article / Display title: Ajouter un article  -->
+<!--
+{
+  "source": "https://docs.joomla.org/J4.x:Getting_Started:_Adding_an_Article",
+  "title": "Ajouter un article  ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Introduction
 
@@ -14,7 +21,7 @@ Jusqu'à ce qu'un article soit créé, la page Articles affiche une page de remp
 
 Sur presque chaque page, juste en dessous de la barre de titre, se trouve une barre contenant des boutons d'action. Celle-ci est appelée la Barre d'Outils. Les boutons diffèrent d'une page à l'autre et sont parfois inactifs, apparaissant en gris, jusqu'à ce qu'un élément soit sélectionné dans la liste des éléments. La capture d'écran suivante montre la liste des *Articles* avec une case à cocher d'article sélectionnée. Le bouton *Action* est une liste déroulante qui a été sélectionnée pour montrer les options disponibles.
 
-![Liste des articles avec le bouton d'actions activé](../../../en/images/getting-started/articles-list.png)
+![Liste des articles avec le bouton d'actions activé](../../../en/images/getting-started/adding-an-article/01-articles-list.png)
 
 Sélectionnez le bouton *Nouveau* dans la *Barre d'Outils* de la page *Articles* pour ouvrir un formulaire de modification d'article. 
 
@@ -22,7 +29,7 @@ Sélectionnez le bouton *Nouveau* dans la *Barre d'Outils* de la page *Articles*
 
 Jusqu'à ce qu'un article soit enregistré, l'étiquette de la *barre de titre* est *Articles : Nouveau* et il dispose de quelques boutons dans la barre d'outils. Le bouton *Annuler* peut être utilisé pour annuler la création d'un article. Aucun message d'avertissement n'est affiché. Tout contenu saisi est supprimé. Après l'enregistrement, l'étiquette de la barre de titre passe à *Articles : Modifier* et la barre d'outils contient beaucoup plus de boutons.
 
-![Formulaire de modification d'article](../../../en/images/getting-started/article-edit-form.png)
+![Formulaire de modification d'article](../../../en/images/getting-started/adding-an-article/02-article-edit-form.png)
 
 Il y a un nombre déconcertant de champs de formulaire dans la page de modification, mais tous, sauf deux, ont des valeurs par défaut raisonnables. Les champs à remplir :
 
@@ -36,7 +43,7 @@ Il y a un nombre déconcertant de champs de formulaire dans la page de modificat
 
 Pour voir à quoi cela ressemble, vous pouvez sélectionner le bouton *Aperçu* dans la barre d'outils.
 
-![Liste des articles avec le bouton des actions activé](../../../en/images/getting-started/article-edit-preview.png)
+![Liste des articles avec le bouton des actions activé](../../../en/images/getting-started/adding-an-article/03-article-edit-preview.png)
 
 Notez les métadonnées de l'article : les informations entre le titre et le contenu. Vous pouvez configurer quelles informations apparaissent et où elles apparaissent avec ces autres champs de formulaire d'article. Plus tard...
 
@@ -56,7 +63,7 @@ Une nouvelle installation de Joomla dispose d'un menu Site avec un seul élémen
 
 La capture d'écran suivante montre une vue du site de la première partie de l'article décrit ci-dessus. Votre nouveau site Joomla! aura uniquement le *Menu Principal*, le *Formulaire de Connexion* et votre article. Cette capture d'écran concerne un site multilingue qui affiche la même page dans de nombreuses langues différentes et contient d'autres contenus utilisés dans des tutoriels ultérieurs.
 
-![Vue du site utilisant la mise en page du blog de catégorie](../../../en/images/getting-started/article-site-view.png)
+![Vue du site utilisant la mise en page du blog de catégorie](../../../en/images/getting-started/adding-an-article/04-article-site-view.png)
 
 ### Fil d'Ariane
 

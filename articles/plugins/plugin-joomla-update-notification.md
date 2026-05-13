@@ -1,4 +1,11 @@
-<!-- Filename: J3.x:Plugin_Joomla_Update_Notification / Display title: Notification de mise à jour de Joomla! -->
+<!--
+{
+  "source": "https://docs.joomla.org/J3.x:Plugin_Joomla_Update_Notification",
+  "title": "Notification de mise à jour de Joomla! ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Icône et Tâche
 

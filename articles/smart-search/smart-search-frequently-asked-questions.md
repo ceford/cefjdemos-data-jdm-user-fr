@@ -1,4 +1,11 @@
-<!-- Filename: Smart_Search_Frequently_Asked_Questions / Display title: FAQ sur la recherche intelligente -->
+<!--
+{
+  "source": "https://docs.joomla.org/Smart_Search_Frequently_Asked_Questions",
+  "title": "FAQ sur la recherche intelligente ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Pourquoi devrais-je utiliser la recherche intelligente ?
 

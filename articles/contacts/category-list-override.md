@@ -1,4 +1,11 @@
-<!-- Filename: category-list-override.md / Display title: Liste des catégories par défaut -->
+<!--
+{
+  "source": "https://docs.joomla.org/category-list-override.md",
+  "title": "Liste des catégories par défaut ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## L'élément de menu "Lister les contacts dans une catégorie"
 
@@ -36,7 +43,7 @@ La liste à puces des champs personnalisés peut être améliorée en supprimant
   padding-left: 0;
 }
 ```
-![comité d'affaires stylisé](../../../en/images/contacts/contact-business-committee-styled.png)
+![comité d'affaires stylisé](../../../en/images/contacts/category-list-override/01-contact-business-committee-styled.png)
 
 C'est tout ce qui peut être fait avec le style. Mieux mais toujours pas suffisant. Pour ajouter plus d'éléments et modifier la disposition, un remplacement de disposition sera nécessaire.
 
@@ -150,7 +157,7 @@ a:has(.contact-thumbnail) {
 
 ### Résultat
 
-![comité d'entreprise en grille](../../../en/images/contacts/contact-business-committee-grid.png)
+![comité d'entreprise en grille](../../../en/images/contacts/category-list-override/02-contact-business-committee-grid.png)
 
 *Traduit par openai.com*  
 

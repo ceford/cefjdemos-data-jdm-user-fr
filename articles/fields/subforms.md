@@ -1,4 +1,11 @@
-<!-- Filename: jdocmanual?manual=user&heading=fields&filename=subform.md / Display title: Champ de sous-formulaire   -->
+<!--
+{
+  "source": "https://docs.joomla.org/jdocmanual?manual=user&heading=fields&filename=subform.md",
+  "title": "Champ de sous-formulaire   ",
+  "description": "", 
+  "author": ""
+}
+-->
 
 ## Objectif
 
@@ -15,7 +22,7 @@ Options spéciales pour ce champ :
 - **Titre** et **Libellé** Dans cet exemple, ceux-ci sont définis sur *Spécimens*.
 - **Champs** Ajoutez les champs requis dans le sous-formulaire un par un. Chaque ligne dispose d'une liste déroulante des champs disponibles et d'un basculement Oui/Non pour afficher les valeurs. L'ordre des éléments peut être modifié avec l'icône de glissement.
 
-![Création de sous-formulaire](../../../en/images/fields/fields-subform-edit.png)
+![Création de sous-formulaire](../../../en/images/fields/subforms/01-fields-subform-edit.png)
 
 **Remarque :** Dans cet exemple, l'inclusion du type de champ dans le titre est uniquement à des fins de démonstration. Laissez-le de côté dans vos propres titres de champs.
 
@@ -24,14 +31,14 @@ Options spéciales pour ce champ :
 Dans le formulaire de saisie de données, vous devez ajouter des lignes pour chaque spécimen. Chaque ligne
 contient un champ Calendrier, un champ Texte et un champ Couleur.
 
-![Saisie de données dans un sous-formulaire](../../../en/images/fields/fields-subform-data-entry.png)
+![Saisie de données dans un sous-formulaire](../../../en/images/fields/subforms/02-fields-subform-data-entry.png)
 
 ## Affichage des données
 
 Dans l'article, le sous-formulaire intitulé Spécimens a une ligne pour chaque spécimen.
 Recherchez l'élément **Spécimens** dans cette capture d'écran :
 
-![affichage du site de sous-formulaire](../../../en/images/fields/fields-subform-site.png)
+![affichage du site de sous-formulaire](../../../en/images/fields/subforms/03-fields-subform-site.png)
 
 *Traduit par openai.com*
 
