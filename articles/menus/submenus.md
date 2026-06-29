@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Submenus",
-  "title": "Sous-menus  ",
+  "title": "Sous-menus ",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:User_Password_Reset",
-  "title": "Réinitialisation du mot de passe utilisateur ",
+  "title": "Réinitialisation du mot de passe utilisateur",
   "description": "", 
   "author": ""
 }

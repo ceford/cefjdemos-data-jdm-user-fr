@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Menu_Item_Order",
-  "title": "Commande d'article du menu  ",
+  "title": "Commande d'article du menu ",
   "description": "", 
   "author": ""
 }

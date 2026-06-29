@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/How_to_debug_SMTP_mail_in_Joomla_4",
-  "title": "SMTP mail et Gmail ",
+  "title": "SMTP mail et Gmail",
   "description": "", 
   "author": ""
 }

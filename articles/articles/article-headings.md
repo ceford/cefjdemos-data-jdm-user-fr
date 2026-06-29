@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Article_Headings",
-  "title": "Article : Modifier - Titres   ",
+  "title": "Article : Modifier - Titres  ",
   "description": "", 
   "author": ""
 }

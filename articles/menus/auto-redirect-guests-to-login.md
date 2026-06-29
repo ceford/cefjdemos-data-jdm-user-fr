@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Auto_redirect_guests_to_login",
-  "title": "Rediriger automatiquement les invités vers la connexion ",
+  "title": "Rediriger automatiquement les invités vers la connexion",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
-  "title": "Paramètres de champ ",
+  "title": "Paramètres de champ",
   "description": "", 
   "author": ""
 }

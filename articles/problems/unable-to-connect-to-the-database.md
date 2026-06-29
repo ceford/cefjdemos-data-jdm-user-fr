@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Unable_to_connect_to_the_database",
-  "title": "Connexion à la base de données  ",
+  "title": "Connexion à la base de données ",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Getting_Started:_Adding_a_Module",
-  "title": "Ajouter un module  ",
+  "title": "Ajouter un module ",
   "description": "", 
   "author": ""
 }

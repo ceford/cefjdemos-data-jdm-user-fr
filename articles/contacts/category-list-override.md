@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/category-list-override.md",
-  "title": "Liste des catégories par défaut ",
+  "title": "Liste des catégories par défaut",
   "description": "", 
   "author": ""
 }

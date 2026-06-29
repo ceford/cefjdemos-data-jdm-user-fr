@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Using_the_CLI",
-  "title": "Utilisation de l'interface en ligne de commande   ",
+  "title": "Utilisation de l'interface en ligne de commande  ",
   "description": "", 
   "author": ""
 }

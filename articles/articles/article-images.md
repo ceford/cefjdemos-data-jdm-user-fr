@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Adding_an_image_to_an_article",
-  "title": "Article : Édition - Images ",
+  "title": "Article : Édition - Images",
   "description": "", 
   "author": ""
 }

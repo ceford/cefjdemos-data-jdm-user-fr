@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Language_Overrides",
-  "title": "Remplacements de Langue ",
+  "title": "Remplacements de Langue",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Unsupported_PHP_Version",
-  "title": "Version PHP non prise en charge ",
+  "title": "Version PHP non prise en charge",
   "description": "", 
   "author": ""
 }

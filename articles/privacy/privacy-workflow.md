@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Privacy_Workflow",
-  "title": "Flux de Travail de Confidentialité  ",
+  "title": "Flux de Travail de Confidentialité ",
   "description": "", 
   "author": ""
 }

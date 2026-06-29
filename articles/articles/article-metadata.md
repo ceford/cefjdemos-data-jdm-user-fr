@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J6.x:_Article_Metadata",
-  "title": "Article : Modifier - Métadonnées  ",
+  "title": "Article : Modifier - Métadonnées ",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Menu_Dashboard",
-  "title": "Tableau de bord du menu ",
+  "title": "Tableau de bord du menu",
   "description": "", 
   "author": ""
 }

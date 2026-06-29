@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Help",
-  "title": "Tableau de bord d'aide  ",
+  "title": "Tableau de bord d'aide ",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Fields_and_Field_Groups",
-  "title": "Champs et Groupes de Champs ",
+  "title": "Champs et Groupes de Champs",
   "description": "", 
   "author": ""
 }

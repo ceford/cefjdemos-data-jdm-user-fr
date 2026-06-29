@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Content_Dashboard",
-  "title": "Tableau de Bord de Contenu ",
+  "title": "Tableau de Bord de Contenu",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Hosting_Setup",
-  "title": "Hébergement local sur Windows  ",
+  "title": "Hébergement local sur Windows ",
   "description": "", 
   "author": ""
 }

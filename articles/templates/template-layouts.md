@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Template_Layouts",
-  "title": "Modèles de mise en page ",
+  "title": "Modèles de mise en page",
   "description": "", 
   "author": ""
 }

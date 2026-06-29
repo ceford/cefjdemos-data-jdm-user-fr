@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Article_Links",
-  "title": "Article : Édition - Liens  ",
+  "title": "Article : Édition - Liens ",
   "description": "", 
   "author": ""
 }

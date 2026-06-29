@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Components_Dashboard",
-  "title": "Tableau de bord des composants  ",
+  "title": "Tableau de bord des composants ",
   "description": "", 
   "author": ""
 }

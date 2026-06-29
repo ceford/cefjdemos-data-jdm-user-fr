@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Joomla_Standard_Font_Awesome_Fonts",
-  "title": "Polices Font Awesome  ",
+  "title": "Polices Font Awesome ",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Assorted_Issues",
-  "title": "Divers Problèmes  ",
+  "title": "Divers Problèmes ",
   "description": "", 
   "author": ""
 }

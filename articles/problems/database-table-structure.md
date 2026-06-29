@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Fix_%22Database_Table_Structure_NOT_Up_to_Date%22_before_Update",
-  "title": "Structure de la Table de Base de Données  ",
+  "title": "Structure de la Table de Base de Données ",
   "description": "", 
   "author": ""
 }

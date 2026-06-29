@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Menu_Items",
-  "title": "Éléments du Menu  ",
+  "title": "Éléments du Menu ",
   "description": "", 
   "author": ""
 }

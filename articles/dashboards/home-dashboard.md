@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Home_Dashboard",
-  "title": "Tableau de bord de la maison ",
+  "title": "Tableau de bord de la maison",
   "description": "", 
   "author": ""
 }

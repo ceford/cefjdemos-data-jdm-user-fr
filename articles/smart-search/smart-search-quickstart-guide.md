@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Smart_Search_quickstart_guide",
-  "title": "Démarrage rapide de la recherche intelligente  ",
+  "title": "Démarrage rapide de la recherche intelligente ",
   "description": "", 
   "author": ""
 }

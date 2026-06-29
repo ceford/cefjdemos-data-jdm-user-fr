@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Keyboard_Shortcuts",
-  "title": "Raccourcis Clavier  ",
+  "title": "Raccourcis Clavier ",
   "description": "", 
   "author": ""
 }

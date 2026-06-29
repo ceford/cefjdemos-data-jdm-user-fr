@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Media:_Image_Crop_Resize_Rotate",
-  "title": "Rogner, redimensionner et faire pivoter l'image  ",
+  "title": "Rogner, redimensionner et faire pivoter l'image ",
   "description": "", 
   "author": ""
 }

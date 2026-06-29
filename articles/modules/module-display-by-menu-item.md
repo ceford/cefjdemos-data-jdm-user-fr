@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Module_Display_by_Menu_Item",
-  "title": "Affichage du Module par Élément de Menu  ",
+  "title": "Affichage du Module par Élément de Menu ",
   "description": "", 
   "author": ""
 }

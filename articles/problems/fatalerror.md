@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:FatalError",
-  "title": "ErreurFatale ",
+  "title": "ErreurFatale",
   "description": "", 
   "author": ""
 }

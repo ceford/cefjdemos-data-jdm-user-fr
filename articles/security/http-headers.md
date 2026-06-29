@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/https:",
-  "title": "En-têtes HTTP  ",
+  "title": "En-têtes HTTP ",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/What_are_web_standards%3F",
-  "title": "Quelles sont les normes web ?  ",
+  "title": "Quelles sont les normes web ? ",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
-  "title": "# Sites Multilingues ",
+  "title": "# Sites Multilingues",
   "description": "", 
   "author": ""
 }

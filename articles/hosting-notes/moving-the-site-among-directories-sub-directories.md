@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Moving_the_site_among_directories",
-  "title": "Déplacement du Répertoire d'Installation ",
+  "title": "Déplacement du Répertoire d'Installation",
   "description": "", 
   "author": ""
 }

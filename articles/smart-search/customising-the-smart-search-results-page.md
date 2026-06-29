@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Customising_the_Smart_Search_results_page",
-  "title": "Remplacements de disposition de recherche intelligente  ",
+  "title": "Remplacements de disposition de recherche intelligente ",
   "description": "", 
   "author": ""
 }

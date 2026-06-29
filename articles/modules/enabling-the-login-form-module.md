@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Enabling_the_Login_Form_module",
-  "title": "Formulaire de Connexion  ",
+  "title": "Formulaire de Connexion ",
   "description": "", 
   "author": ""
 }

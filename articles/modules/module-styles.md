@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/jdocmanual?manual=user&heading=modules&filename=module-styles.md",
-  "title": "Styles de Module ",
+  "title": "Styles de Module",
   "description": "", 
   "author": ""
 }

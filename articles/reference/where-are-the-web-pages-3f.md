@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Where_are_the_web_pages%3F",
-  "title": "Où sont les pages web ? ",
+  "title": "Où sont les pages web ?",
   "description": "", 
   "author": ""
 }

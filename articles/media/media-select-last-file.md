@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J5.x:Add_a_class_selector_to_the_create_link_dialog",
-  "title": "Sélectionner le dernier fichier ",
+  "title": "Sélectionner le dernier fichier",
   "description": "", 
   "author": ""
 }

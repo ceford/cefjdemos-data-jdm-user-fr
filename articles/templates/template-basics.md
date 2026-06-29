@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Template_Basics",
-  "title": "Notions de base sur les modèles  ",
+  "title": "Notions de base sur les modèles ",
   "description": "", 
   "author": ""
 }

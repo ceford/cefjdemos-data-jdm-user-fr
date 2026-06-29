@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
-  "title": "Champ de Calendrier ",
+  "title": "Champ de Calendrier",
   "description": "", 
   "author": ""
 }

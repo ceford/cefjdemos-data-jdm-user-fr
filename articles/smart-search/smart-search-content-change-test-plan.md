@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Smart_Search_content_change_test_plan",
-  "title": "Plan de Test de Recherche Intelligente ",
+  "title": "Plan de Test de Recherche Intelligente",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/jdocmanual?manual=user&heading=news&filename=news-display.md",
-  "title": "Affichage des Nouvelles ",
+  "title": "Affichage des Nouvelles",
   "description": "", 
   "author": ""
 }

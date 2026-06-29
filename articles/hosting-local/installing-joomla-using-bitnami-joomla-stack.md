@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/Installing_Joomla!_using_BitNami_Joomla!_stack",
-  "title": "Installation de Bitnami  ",
+  "title": "Installation de Bitnami ",
   "description": "", 
   "author": ""
 }

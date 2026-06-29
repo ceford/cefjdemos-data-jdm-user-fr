@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Users_Dashboard",
-  "title": "Tableau de bord des utilisateurs ",
+  "title": "Tableau de bord des utilisateurs",
   "description": "", 
   "author": ""
 }

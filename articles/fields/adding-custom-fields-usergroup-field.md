@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
-  "title": "Champ de Groupe d'Utilisateurs ",
+  "title": "Champ de Groupe d'Utilisateurs",
   "description": "", 
   "author": ""
 }

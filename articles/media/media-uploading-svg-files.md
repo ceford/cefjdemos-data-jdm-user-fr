@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:Media:_Uploading_SVG_files",
-  "title": "Téléchargement de fichiers SVG ",
+  "title": "Téléchargement de fichiers SVG",
   "description": "", 
   "author": ""
 }

@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/How_do_Windows_file_permissions_work%3F",
-  "title": "Permissions de fichiers Windows  ",
+  "title": "Permissions de fichiers Windows ",
   "description": "", 
   "author": ""
 }

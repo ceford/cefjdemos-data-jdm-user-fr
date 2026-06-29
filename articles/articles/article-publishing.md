@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J6.x:_Article_Publishing",
-  "title": "Article : Edition - Publication  ",
+  "title": "Article : Edition - Publication ",
   "description": "", 
   "author": ""
 }
