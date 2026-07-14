@@ -43,7 +43,19 @@ Il existe divers outils pour webmasters qui peuvent être utilisés pour identif
 
 [Article de support de Google sur l'utilisation des titres pour vos pages web](http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=35624)
 
-Dans Joomla, pour une seule page, le titre de l'article devient le titre de la page utilisé dans le head et affiché dans l'onglet du navigateur. Pour une page composite, comme *Articles en vedette* ou un *Blog de catégorie*, le titre de l'élément de menu devient le titre de la page. Il est donc nécessaire de bien réfléchir à la composition de bons titres descriptifs pour les articles et les éléments de menu.
+### Priorités des titres de page
+
+Dans Joomla, le titre de la page des métadonnées utilisé dans l'en-tête et affiché dans le
+L'onglet du navigateur est dérivé de l'une des sources suivantes dans l'ordre :
+
+1. Élément de menu > Affichage de la page > Titre de la page du navigateur (si défini dans le formulaire)
+2. Article > Options > Titre de la page du navigateur (si défini dans le formulaire)
+3. Titre de l'article (pour un seul article sans élément de menu)
+4. Titre de l'élément de menu (pour une page composite telle que *Articles en vedette*
+ou un *Blog de catégorie*)
+
+Vous devez donc réfléchir à la composition de bons titres descriptifs.
+et les titres de page pour les articles et les éléments de menu.
 
 ## La description de la page
 
