@@ -1,63 +1,96 @@
 <!--
 {
-  "source": "https://docs.joomla.org/category-list-override.md",
-  "title": "Liste des catégories par défaut",
-  "description": "", 
-  "author": ""
+    "source": "https://docs.joomla.org/category-list-override.md",
+    "title": "Remplacement de la liste des cat\u00e9gories",
+    "description": "D\u00e9couvrez comment cr\u00e9er une surcharge de mod\u00e8le pour am\u00e9liorer la mise en page d\u2019une liste de contacts dans une cat\u00e9gorie ",
+    "author": ""
 }
 -->
 
-## L'élément de menu "Lister les contacts dans une catégorie"
+## La liste des contacts d’une catégorie
 
-C'est peut-être une opinion personnelle, mais pour moi, la mise en page par défaut de la liste des catégories de contacts n'est pas tout à fait satisfaisante. Mes problèmes :
+La mise en page par défaut des contacts d’une catégorie est contrôlée par un modèle dans le code du composant 
+com_contacts. La mise en page par défaut ressemble à ceci :
 
-* Les photos des contacts sont trop grandes avec presque 500 pixels de largeur.
-* Le nom du contact n'est pas suffisamment mis en avant.
-* La liste à puces des informations personnelles n'a pas de titre et semble isolée.
-* La position n'a pas de titre, ce qui peut paraître isolé.
-* Les champs d'adresse et de code postal sont absents.
+![comité culturel utilisant la mise en page et le style par défaut](../../../en/images/contacts/category-list-override/01-contacts-culture-committee.png)
+
+C’est peut-être une opinion personnelle, mais la mise en page par défaut des contacts ne me 
+convient pas vraiment. Voici ce qui me pose problème :
+
+* Les images de portrait originales faisaient 500 pixels de large et étaient beaucoup trop imposantes.
+* Le nom du contact n’est pas suffisamment mis en évidence.
+* La liste à puces des informations personnelles n’a pas de titre et semble isolée.
+* La fonction de la personne n’a pas de titre.
+* Les champs d’adresse et de code postal sont absents.
 * Les données de localisation sont incomplètes.
-* La déclaration personnelle est manquante.
-* La liste est présentée dans un tableau qui est un peu mieux sur les écrans étroits mais plutôt serrée.
+* Les données de chaque contact sont présentées dans un tableau et sont assez serrées sur les écrans étroits.
 
-Alors, comment y remédier à mon goût ?
+Alors, comment faire pour l’adapter à mes préférences ? Ma solution consiste à créer une surcharge de modèle 
+et à ajouter quelques styles personnalisés. Voici le résultat :
+![comité d’entreprise utilisant une surcharge de modèle et des styles personnalisés](../../../en/images/contacts/category-list-override/02-contacts-business-committee.png)
 
-## Style
+## Surcharge de la mise en page du modèle
 
-L'image a le style CSS `contact-thumbnail img-thumbnail`. Les outils de développement du navigateur indiquent que img-thumbnail est réglé sur `max-width: 100%;` mais contact-thumbnail n'est pas utilisé. La seule occurrence de ce dernier style dans tout le site se trouve à cet endroit, il semble donc sûr de définir un remplacement dans user.css pour restreindre la largeur de l'image. Et la taille de la police du nom de contact peut être augmentée en utilisant sa balise `a` englobante :
+Le dossier com_contact/tmpl/category contient trois fichiers PHP : default.php,
+default_children.php et default_items.php. Le dernier de cette liste contient
+la mise en page du tableau pour la liste.
+
+Les fichiers de surcharge sont créés via Système / Modèles de site / Cassiopeia
+Détails et fichiers / Créer des substitutions. Sélectionnez com_contact, puis category.
+Le dossier html contient alors com_contact/category avec les trois fichiers de modèle
+mentionnés ci-dessus.
+
+### Modifier le fichier default.php en mydefault.php
+
+Le fichier `default.php` contient une ligne qui spécifie la mise en page à utiliser pour 
+chaque enregistrement individuel. Sélectionnez ce fichier pour le modifier et **renommez**-le 
+en `mydefault.php` (ou utilisez le préfixe de votre choix à la place de `my`). N’utilisez pas 
+de caractère de soulignement dans le nom de fichier !
+
+Lorsque vous accéderez ensuite au formulaire Contacts / Catégorie / Modifier, le champ
+Mise en page de l’onglet Options vous permettra de choisir entre la mise en page du composant et votre
+mise en page personnalisée. Il se présente ainsi :
 
 ```
-.contact-thumbnail {
-  max-width: 200px;
-  margin-right: 1rem;
-}
-a:has(.contact-thumbnail) {
-  font-weight: 700;
-  font-size: larger;
-}
+---From Global Options---
+  Use Global
+---From Component---
+  Default
+---From cassiopeia Template---
+  mydefault
+
 ```
-La liste à puces des champs personnalisés peut être améliorée en supprimant les puces et le remplissage en sélectionnant uniquement les listes à puces qui apparaissent dans une balise ayant la classe contactList :
-```
-#contactList ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-```
-![comité d'affaires stylisé](../../../en/images/contacts/category-list-override/01-contact-business-committee-styled.png)
 
-C'est tout ce qui peut être fait avec le style. Mieux mais toujours pas suffisant. Pour ajouter plus d'éléments et modifier la disposition, un remplacement de disposition sera nécessaire.
+### Modifier le fichier mydefault.php
 
-## Remplacement de la mise en page du modèle
-
-Le dossier com_contact/tmpl/category contient trois fichiers PHP : default.php, default_children.php et default_items.php. Le dernier de cette liste contient la mise en page du tableau pour la liste.
-
-Les fichiers de remplacement sont créés via Système / Modèles du site / Détails et fichiers Cassiopeia / Créer des Remplacements. Sélectionnez com_contact puis category. Le dossier html contient alors com_contact/category avec les trois fichiers de modèle mentionnés ci-dessus. Le fichier default_items.php est celui à sélectionner pour l'édition. Les lignes 83 à 203 contiennent le tableau utilisé pour la mise en page.
-
-Cela peut ne pas sembler évident mais $this->items est un tableau de membres de catégorie et chaque membre contient en fait toutes les données pour chaque item, pas seulement celles mentionnées dans les paramètres du menu.
-
-Ce qui suit est un remplacement de la section `<table>...</table>` du fichier default_items.php en utilisant une grille Bootstrap. Sur les écrans étroits, les trois colonnes sont empilées. Sur les écrans de plus de 768 pixels, les colonnes sont côte à côte. Plus d'explications suivent le code.
+La ligne 20 de `mydefault.php` contient `$this->subtemplatename = 'items';`.
+Remplacez `items` par `myitems` afin que les lignes 18 à 23 soient les suivantes :
 
 ```html
+<div class="com-contact-category">
+    <?php
+        $this->subtemplatename = 'myitems';
+        echo LayoutHelper::render('joomla.content.category_default', $this);
+    ?>
+</div>
+```
+
+### Modifier le fichier default_items.php en mydefault_myitems.php
+
+Le fichier `default_items.php` contient la mise en page de chaque contact. Il doit être
+renommé afin de conserver la possibilité d’utiliser la mise en page d’origine. La première partie
+du nom n’a pas d’importance. C’est la partie `myitems`, mentionnée dans le fichier
+`mydefault.php`, qui est utilisée pour la mise en page.
+
+### Modifier le fichier mydefault_myitems.php
+
+La section `<table>...</table>` de ce fichier s’étend des lignes 85 à 204. Pour
+la surcharge de mise en page, j’ai remplacé le balisage du tableau par le balisage de grille
+Bootstrap suivant. Sur les écrans étroits, les trois colonnes sont empilées. Sur les écrans de plus de
+768 pixels de large, les colonnes sont côte à côte. Le balisage révisé a déplacé les
+champs personnalisés sous le nom du contact.
+
+```
 <div class="container-fluid text-center border border-2">
 <?php $nrows = 0; foreach ($this->items as $i => $item) : ?>
     <?php if ($item->published !== 1 ||
@@ -71,7 +104,7 @@ Ce qui suit est un remplacement de la section `<table>...</table>` du fichier de
                             'joomla.html.image',
                             [
                                 'src'   => $item->image,
-                                'alt'   => 'image officielle de ' . $item->name,
+                                'alt'   => 'official image of ' . $item->name,
                                 'class' => 'contact-thumbnail img-thumbnail',
                             ]
                         ); ?>
@@ -79,13 +112,16 @@ Ce qui suit est un remplacement de la section `<table>...</table>` du fichier de
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-3">
+                <div class="parliament-committee-fields">
                 <a href="<?php echo Route::_(RouteHelper::getContactRoute($item->slug, $item->catid, $item->language)); ?>">
                     <span class="fs-2"><?php echo $this->escape($item->name); ?></span>
                 </a>
+                    <?php echo $item->event->beforeDisplayContent; ?>
+                </div>
             </div>
             <div class="col-12 col-md-6 text-start">
                 <?php if ($this->params->get('show_position_headings') && !empty($item->con_position)) : ?>
-                    <strong>Position</strong><br>
+                    <strong><?php echo Text::_('COM_CONTACT_FIELD_INFORMATION_POSITION_LABEL'); ?></strong><br>
                     <?php echo $item->con_position; ?><br>
                 <?php endif; ?>
                 <?php if ($this->params->get('show_suburb_headings')) : ?>
@@ -102,7 +138,7 @@ Ce qui suit est un remplacement de la section `<table>...</table>` du fichier de
                     <?php if (!empty($item->postcode)) : ?>
                         <?php $location[] = $item->postcode; ?>
                     <?php endif; ?>
-                        <strong>Adresse</strong><br>
+                        <strong><?php echo Text::_('COM_CONTACT_FIELD_INFORMATION_ADDRESS_LABEL'); ?></strong><br>
                     <?php echo implode("<br>\n", $location); ?><br>
                 <?php endif; ?>
                 <?php if (!empty($item->misc)) : ?>
@@ -113,51 +149,48 @@ Ce qui suit est un remplacement de la section `<table>...</table>` du fichier de
     <?php endforeach; ?>
 </div>
 ```
-### Explication
 
-La liste de contacts peut contenir des éléments qui ne sont pas publiés, ou qui ont des dates de publication_up et publication_down qui ne sont pas courantes. Ils doivent être exclus de l'affichage et un compteur séparé est nécessaire pour maintenir l'alternance des couleurs de fond dans chaque ligne.
+## Mise en forme
 
-La balise img est rendue comme suit :
-```html
-<img src="/j51/images/parliament/Official_portrait_of_Liam_Byrne_crop_2.jpg"
-alt="image officielle de Liam Byrne" class="contact-thumbnail img-thumbnail"
-width="479" height="639" loading="lazy">
+Les classes de style Bootstrap peuvent être définies dans le fichier `mydefault_myitems.php`.
+Par exemple, `<span class="fs-2">...</span>` est utilisé pour augmenter la taille de la police
+du nom du contact. D’autres styles peuvent être ajoutés dans le fichier `user.css`, par
+exemple, la personnalisation des listes à puces apparaissant uniquement au sein d’une balise
+ayant une classe `contactList`.
+
+Voici les styles saisis dans le fichier user.css pour obtenir la mise en page
+du comité d’entreprise illustré ci-dessus.
+
 ```
-La classe `<span class="fs-2">...</span>` définit le nom du contact à une taille de police 2, ce qui serait équivalent à un titre de niveau 2.
-
-L'item `show_suburb_headings` est utilisé comme proxy pour afficher l'adresse complète car certains des éléments individuels de l'adresse n'ont pas de sélecteurs Montrer/Masquer dans l'élément du menu.
-
-### Style Supplémentaire
-
-La version en grille de la liste de contacts a besoin de styles supplémentaires dans user.css :
-```css
 .contact-thumbnail {
   max-width: 200px;
   margin-right: 1rem;
 }
-
 a:has(.contact-thumbnail) {
   font-weight: 700;
   font-size: larger;
 }
-
 #contactList ul {
   list-style-type: none;
   padding-left: 0;
 }
-
 .cat-list-row0 {
   background-color: #efefef;
 }
-
 .cat-list-row0:hover, .cat-list-row1:hover  {
   background-color: #ddd;
 }
+div.parliament-committee-fields {
+  text-align: left;
+  margin-top: 1rem;
+}
+div.parliament-committee-fields ul.fields-container {
+  list-style-type: none;
+  padding-left: 0;
+}
+div.parliament-committee-fields ul.fields-container span.field-label {
+  font-weight: 700;
+}
 ```
 
-### Résultat
-
-![comité d'entreprise en grille](../../../en/images/contacts/category-list-override/02-contact-business-committee-grid.png)
-
-*Traduit par openai.com*  
-
+*Traduit par openai.com*

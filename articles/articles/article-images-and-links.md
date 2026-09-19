@@ -57,11 +57,11 @@ Exactement la même saisie de données que le Lien A.
 
 La capture d'écran ci-dessous montre une mise en page de blog de catégorie avec l'*Image d'Intro*. Il aurait peut-être été préférable d'utiliser une image panoramique de la même hauteur mais beaucoup plus large pour occuper l'espace blanc vacant.
 
-![Page de blog de la catégorie Amphibiens](../../../en/images/articles/article-images-and-links/02-articles-site-amphibians-blog.png)
+![Exemple d'image d'introduction sur la page de catégorie du blog](../../../en/images/articles/article-images-and-links/02-site-intro-image.png)
 
 La capture d'écran ci-dessous montre la page d'un article individuel avec l'*Image de l'Article Complet* et le Lien A. L'image a été alignée à droite et la légende visible dit quelque chose pour compléter ce que la Description dit, afin que cela semble logique pour les lecteurs d'écran.
 
-![Page d'un article individuel sur les grenouilles](../../../en/images/articles/article-images-and-links/03-articles-site-amphibians-frogs.png)
+![Exemple d'image complète sur la page de l'article](../../../en/images/articles/article-images-and-links/03-site-full-article-image.png)
 
 *Traduit par openai.com*
 

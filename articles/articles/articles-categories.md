@@ -114,7 +114,7 @@ Dans l'onglet *Affichage de la page*, essayez de régler le champ *Afficher l'en
 
 La capture d'écran suivante montre l'affichage du site d'une page de blog de catégorie en développement.
 
-![Page de blog de la catégorie Mammifères](../../../en/images/articles/articles-categories/04-article-mammals-articles-blog-site-view.png)
+![Page de blog de la catégorie Mammifères](../../../en/images/articles/articles-categories/04-category-blog-site-view.png)
 
 ## Conseils
 
