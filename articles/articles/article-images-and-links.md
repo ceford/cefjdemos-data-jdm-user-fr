@@ -65,3 +65,4 @@ La capture d'écran ci-dessous montre la page d'un article individuel avec l'*Im
 
 *Traduit par openai.com*
 
+
