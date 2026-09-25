@@ -41,4 +41,3 @@ Recherchez l'élément **Spécimens** dans cette capture d'écran :
 ![affichage du site de sous-formulaire](../../../en/images/fields/subforms/03-fields-subform-site.png)
 
 *Traduit par openai.com*
-
