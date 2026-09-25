@@ -50,4 +50,6 @@ Dans le formulaire de saisie des données, le champ de note apparaît parmi les 
 
 Si *Afficher dans l’interface publique* est défini sur *Oui*, le champ de note apparaît parmi les autres champs dans l’interface publique. Il peut alors contenir des informations générales communes à un groupe d’articles.
 
+![Note field site display](../../../en/images/fields/adding-custom-fields-note-field/03-fields-note-site.png)
+
 *Traduit par openai.com*

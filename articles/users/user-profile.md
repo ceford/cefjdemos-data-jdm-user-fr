@@ -39,7 +39,7 @@ Depuis le menu Administrateur :
 
 - Connectez-vous au site et utilisez le lien pour vérifier le profil utilisateur.
 
-![formulaire de résumé de l'élément de menu de profil utilisateur](../../../en/images/users/user-profile/03-user-profile-summary.png)
+![formulaire de résumé de l'élément de menu de profil utilisateur](../../../en/images/users/user-profile/03-user-profile-edit.png.png)
 
 - Essayez le bouton **Modifier le profil**.
 

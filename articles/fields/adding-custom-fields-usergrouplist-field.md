@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J3.x:Adding_custom_fields",
-  "title": "Champ de Groupe d'Utilisateurs",
+  "title": "Champ de liste des groupes d'utilisateurs",
   "description": "", 
   "author": ""
 }
@@ -18,7 +18,7 @@ Les options spéciales pour ce champ sont :
 
 - **Multiple** Permettre de sélectionner plusieurs valeurs.
 
-![création de champ de groupes d'utilisateurs](../../../en/images/fields/adding-custom-fields-usergroup-field/01-fields-usergroups-edit.png)
+![création de champ de groupes d'utilisateurs](../../../en/images/fields/adding-custom-fields-usergrouplist-field/01-fields-usergrouplist-edit.png)
 
 **Remarque :** Dans cet exemple, l'inclusion du type de champ dans le titre est uniquement à des fins de démonstration. Ne l'incluez pas dans vos propres titres de champs.
 
@@ -27,14 +27,14 @@ Les options spéciales pour ce champ sont :
 
 Simple, il suffit de sélectionner un ou plusieurs groupes dans la liste des groupes.
 
-![saisie de données du champ groupes d'utilisateurs](../../../en/images/fields/adding-custom-fields-usergroup-field/02-fields-usergroups-data-entry.png)
+![saisie de données du champ groupes d'utilisateurs](../../../en/images/fields/adding-custom-fields-usergrouplist-field/02-fields-usergrouplist-data-entry.png)
 
 
 ## Affichage des données
 
 La capture d'écran suivante du site montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-![affichage du site du champ des groupes d'utilisateurs](../../../en/images/fields/adding-custom-fields-usergroup-field/03-fields-usergroups-site.png)
+![affichage du site du champ des groupes d'utilisateurs](../../../en/images/fields/adding-custom-fields-usergrouplist-field/03-fields-usergrouplist-site.png)
 
 L’étiquette du champ est suivie d’une liste des groupes sélectionnés, séparée par des virgules.
 

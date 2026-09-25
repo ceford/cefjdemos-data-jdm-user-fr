@@ -1,7 +1,7 @@
 <!--
 {
   "source": "https://docs.joomla.org/J4.x:FatalError",
-  "title": "ErreurFatale",
+  "title": "Erreur Fatale",
   "description": "", 
   "author": ""
 }
@@ -16,11 +16,11 @@ De temps en temps, Joomla peut afficher une page d'erreur au lieu de la page que
 
 ### Page d'erreur système
 
-![Page d'erreur fatale du système](../../../en/images/problems/fatalerror/01-fatal-error.png)
+![Page d'erreur fatale du système](../../../en/images/problems/fatal-error/01-fatal-error.png)
 
 ### Page d'erreur de modèle
 
-![Page d'erreur de modèle](../../../en/images/problems/fatalerror/02-template-error.png)
+![Page d'erreur de modèle](../../../en/images/problems/fatal-error/02-template-error.png)
 
 ## Comment Résoudre
 
@@ -46,7 +46,7 @@ Si votre interface d'administration **ne fonctionne pas**, modifiez le fichier *
 
 Avec les modifications effectuées, rechargez la page qui causait l'erreur. Vous devriez maintenant voir une trace de pile. Exemple :
 
-![Page d'erreur de modèle](../../../en/images/problems/fatalerror/03-template-error-stack-trace.png)
+![Page d'erreur de modèle](../../../en/images/problems/fatal-error/03-template-error-stack-trace.png)
 
 Le premier élément de la trace de pile indique où l'erreur a été déclenchée. Parfois, cela suffit pour identifier l'Extension défaillante. Parfois, l'Extension défaillante se trouve plus bas dans la trace de pile. Cela peut ne pas signifier grand-chose pour vous, mais la trace de pile est inestimable pour les experts qui répondent aux questions dans les Forums Joomla.
 
