@@ -15,7 +15,7 @@ Le champ numérique permet de saisir un nombre réel, avec la possibilité d’a
 
 ### Onglet Général
 
-![Création d'un champ numérique](../../../en/images/fields/adding-custom-fields-number-field/01-fields-number-edit.png)
+![Création d'un champ numérique](../../../fr/images/fields/adding-custom-fields-number-field/01-fields-number-edit.png)
 
 - **Type** Numérique, qui ne peut pas être modifié après la sélection.
 - **Name** Le nom unique du champ.
@@ -70,7 +70,7 @@ Le contenu de ces onglets est évident et est traité ailleurs.
 
 Saisie de données : saisissez simplement la valeur souhaitée. Cet exemple correspond au point d’ébullition de l’argon :
 
-![Saisie de données dans un champ numérique](../../../en/images/fields/adding-custom-fields-number-field/02-fields-number-data-entry.png)
+![Saisie de données dans un champ numérique](../../../fr/images/fields/adding-custom-fields-number-field/02-fields-number-data-entry.png)
 
 **Attention :** si le nombre que vous saisissez est en dehors de la plage minimale et maximale définie dans les options de création du champ, une étiquette au survol du navigateur vous l’indiquera, mais cette information n’est pas appliquée. Vous pouvez saisir un nombre en dehors de la plage, et il sera accepté.
 
@@ -78,6 +78,6 @@ Saisie de données : saisissez simplement la valeur souhaitée. Cet exemple corr
 
 L’image suivante montre l’affichage d’un élément avec une valeur négative :
 
-![Affichage d’un champ numérique sur le site](../../../en/images/fields/adding-custom-fields-number-field/03-fields-number-site.png)
+![Affichage d’un champ numérique sur le site](../../../fr/images/fields/adding-custom-fields-number-field/03-fields-number-site.png)
 
 *Traduit par openai.com*

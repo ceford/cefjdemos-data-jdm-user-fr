@@ -13,7 +13,7 @@ Le tableau de bord de contenu est accessible via l'icône à droite de l'éléme
 
 ## Capture d'écran
 
-![Tableau de bord du contenu](../../../en/images/dashboards/content-dashboard/01-content-dashboard.png)
+![Tableau de bord du contenu](../../../fr/images/dashboards/content-dashboard/01-content-dashboard.png)
 
 *Traduit par openai.com*
 

@@ -14,7 +14,7 @@ Un menu est positionné sur une page via un module de menu. Pour voir tous vos m
 - Sélectionnez **Contenu → Modules du site** dans le menu de l'administrateur.
 - Filtrez avec **- Sélectionner le type -** réglé sur *Menu* comme dans l'illustration suivante :
 
-![liste des modules filtrés par type de menu](../../../en/images/menus/menu-positions/01-menus-menu-positions.png)
+![liste des modules filtrés par type de menu](../../../fr/images/menus/menu-positions/01-menus-menu-positions.png)
 
 Pour référence, le modèle Cassiopeia a les positions suivantes :
 
@@ -31,7 +31,7 @@ Depuis la liste des Modules (Site) :
 
 L’illustration suivante montre un module de menu avec une partie de la liste des positions. Elle est assez longue car elle contient les positions disponibles dans le modèle Cassiopeia suivies des positions actives en cours d’utilisation.
 
-![Formulaire d'édition du module de menu](../../../en/images/menus/menu-positions/03-menus-menu-edit-position.png)
+![Formulaire d'édition du module de menu](../../../fr/images/menus/menu-positions/03-menus-menu-edit-position.png)
 
 ## Disposition du Menu
 

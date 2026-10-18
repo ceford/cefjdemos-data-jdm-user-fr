@@ -32,7 +32,7 @@ La section *Champ Générique* permet d'entrer des paires *Titre* et *Valeur* en
 
 Ci-dessous un exemple de schéma de Livre dans un formulaire de modification d'Article.
 
-![A book schema edit form](../../../en/images/schemas/book/01-edit-schema-book.png)
+![A book schema edit form](../../../fr/images/schemas/book/01-edit-schema-book.png)
 
 *Traduit par openai.com*
 

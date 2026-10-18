@@ -37,7 +37,7 @@ La section *Generic Field* permet d'entrer des paires *Title* et *Value* en plus
 
 Ci-dessous un exemple de schéma de recette dans un formulaire de modification d'article.
 
-![A recipe schema edit form](../../../en/images/schemas/recipe/01-edit-schema-recipe.png)
+![A recipe schema edit form](../../../fr/images/schemas/recipe/01-edit-schema-recipe.png)
 
 *Traduit par openai.com*
 

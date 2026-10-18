@@ -27,11 +27,11 @@ Pour voir les positions des modules, vous devez ajouter soit ?tp=1, soit &tp=1 �
 
 ### Positions du modèle Administrateur Atum
 
-![positions des modèles atum](../../../en/images/modules/module-positions/01-template-positions-templates-page.png)
+![positions des modèles atum](../../../fr/images/modules/module-positions/01-template-positions-templates-page.png)
 
 ### Positions du modèle de site Cassiopeia
 
-![positions des modèles cassiopeia](../../../en/images/modules/module-positions/02-template-positions-site-page.png)
+![positions des modèles cassiopeia](../../../fr/images/modules/module-positions/02-template-positions-site-page.png)
 
 Vous pouvez également trouver ce schéma des positions des modules utile :
 

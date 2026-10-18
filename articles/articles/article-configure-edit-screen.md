@@ -13,7 +13,7 @@ Les écrans de modification des articles ont des mises en page différentes dans
 
 ## Capture d'écran
 
-![L'onglet de configuration de l'écran d'édition](../../../en/images/articles/article-configure-edit-screen/01-articles-edit-configure-edit-screen-tab.png)
+![L'onglet de configuration de l'écran d'édition](../../../fr/images/articles/article-configure-edit-screen/01-articles-edit-configure-edit-screen-tab.png)
 
 ## Configurer le panneau d'édition de l'écran
 

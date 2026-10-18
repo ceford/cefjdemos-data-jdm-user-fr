@@ -23,11 +23,11 @@ Les utilisateurs enregistrés peuvent soumettre une demande d'information via un
 
 - Le type de demande : Exporter ou Supprimer choisi dans la liste déroulante.
 
-![flux de travail de confidentialité demande utilisateur](../../../en/images/privacy/privacy-workflow/01-privacy-workflow-user-request.png)
+![flux de travail de confidentialité demande utilisateur](../../../fr/images/privacy/privacy-workflow/01-privacy-workflow-user-request.png)
 
 À la soumission, un message indiquera soit que la demande a été acceptée et qu'un email de vérification est en cours :
 
-![flux de travail de demande utilisateur accepté](../../../en/images/privacy/privacy-workflow/02-privacy-workflow-user-request-accepted.png)
+![flux de travail de demande utilisateur accepté](../../../fr/images/privacy/privacy-workflow/02-privacy-workflow-user-request-accepted.png)
 
 soit que *Votre demande d'information n'a pas pu être créée. Il y a déjà une demande d'information active pour cette adresse email et ce type de demande. Veuillez contacter le propriétaire du site pour des mises à jour sur cette demande.*
 
@@ -47,7 +47,7 @@ Une fois créée, la demande ne peut être modifiée. Elle ne peut être qu'Inva
 
 Une fois qu'une demande a été créée, peu importe comment elle est créée, l'utilisateur recevra un email contenant un lien vers un formulaire de confirmation.
 
-![flux de travail de confidentialité confirmation de la demande de l'utilisateur](../../../en/images/privacy/privacy-workflow/03-privacy-workflow-user-request-confirm.png)
+![flux de travail de confidentialité confirmation de la demande de l'utilisateur](../../../fr/images/privacy/privacy-workflow/03-privacy-workflow-user-request-confirm.png)
 
 L'utilisateur doit entrer le jeton fourni dans l'email et soumettre le formulaire. Le jeton est valide pendant 24 heures. Si une demande n'est pas confirmée dans ce délai, elle sera marquée comme **Invalide** dans la liste des demandes de confidentialité et une nouvelle demande doit être soumise.
 
@@ -56,7 +56,7 @@ Une fois que l'utilisateur confirme la demande, un email sera envoyé aux Super 
 - Sélectionnez **Utilisateurs → Confidentialité → Demandes** dans le menu Administrateur.
 - Les demandes nécessitant une action seront marquées comme **Confirmées**.
 
-![flux de travail de confidentialité liste des demandes d'information](../../../en/images/privacy/privacy-workflow/04-privacy-workflow-information-requests-list.png)
+![flux de travail de confidentialité liste des demandes d'information](../../../fr/images/privacy/privacy-workflow/04-privacy-workflow-information-requests-list.png)
 
 ## Traitement d'une demande d'exportation
 
@@ -87,7 +87,7 @@ Après traitement de la demande, celle-ci doit être marquée comme complétée.
   - Sélectionnez le bouton approprié **Exporter**, **E-mail** ou **Supprimer** dans la barre d'outils si cela n'a pas déjà été fait depuis la vue de liste.
 - Sélectionnez le bouton **Compléter** dans la barre d'outils (ou le bouton **Invalider** si la demande est jugée invalide).
 
-![examen du flux de travail de confidentialité demande d'information](../../../en/images/privacy/privacy-workflow/05-privacy-workflow-review-information-request.png)
+![examen du flux de travail de confidentialité demande d'information](../../../fr/images/privacy/privacy-workflow/05-privacy-workflow-review-information-request.png)
 
 ## Enfin
 

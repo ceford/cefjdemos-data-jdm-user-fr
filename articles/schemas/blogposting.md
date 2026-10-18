@@ -37,7 +37,7 @@ La section *Generic Field* permet de saisir des paires de *Titre* et *Valeur* en
 
 Ci-dessous un exemple de schéma BlogPosting dans un formulaire d'édition d'article.
 
-![A blogposting schema edit form](../../../en/images/schemas/blogposting/01-edit-schema-blogposting.png)
+![A blogposting schema edit form](../../../fr/images/schemas/blogposting/01-edit-schema-blogposting.png)
 
 *Traduit par openai.com*
 

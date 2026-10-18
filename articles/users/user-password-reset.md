@@ -11,19 +11,19 @@
 
 Si vos utilisateurs ont accès à la connexion au site et qu'un utilisateur ne peut pas se souvenir soit de son identifiant, soit de son mot de passe, il est préférable d'exiger que l'individu réinitialise lui-même ses identifiants en utilisant les liens dans le formulaire de connexion :
 
-![module de connexion utilisateur du site](../../../en/images/users/user-password-reset/01-user-site-login-module.png)
+![module de connexion utilisateur du site](../../../fr/images/users/user-password-reset/01-user-site-login-module.png)
 
 Dans chaque cas, la sélection d'un lien mène à un formulaire pour saisir l'adresse électronique associée au compte :
 
-![formulaire de réinitialisation de mot de passe oublié du site](../../../en/images/users/user-password-reset/02-user-forgot-password-reset.png)
+![formulaire de réinitialisation de mot de passe oublié du site](../../../fr/images/users/user-password-reset/02-user-forgot-password-reset.png)
 
 L'ensemble du processus est accompli par l'utilisateur sans intervention requise de la part d'un administrateur. Il s'agit du formulaire de vérification du mot de passe perdu :
 
-![formulaire de confirmation de mot de passe oublié du site](../../../en/images/users/user-password-reset/03-user-forgot-password-confirm.png)
+![formulaire de confirmation de mot de passe oublié du site](../../../fr/images/users/user-password-reset/03-user-forgot-password-confirm.png)
 
 Et enfin, l'utilisateur doit entrer un nouveau mot de passe :
 
-![formulaire de réinitialisation de mot de passe complète du site](../../../en/images/users/user-password-reset/04-user-forgot-password-complete.png)  
+![formulaire de réinitialisation de mot de passe complète du site](../../../fr/images/users/user-password-reset/04-user-forgot-password-complete.png)  
 
 ## Réinitialisation de l'administrateur
 
@@ -36,7 +36,7 @@ S'il n'y a qu'une connexion Administrateur, la réinitialisation d'un mot de pas
 - Réglez le champ **Exiger la Réinitialisation du Mot de Passe** sur *Oui*.
 - **Enregistrer & Fermer**
 
-![formulaire d'édition d'utilisateur administrateurs](../../../en/images/users/user-password-reset/05-users-edit-user-john-doe.png)
+![formulaire d'édition d'utilisateur administrateurs](../../../fr/images/users/user-password-reset/05-users-edit-user-john-doe.png)
 
 Vous devrez ensuite envoyer un email à l'utilisateur avec le nouveau mot de passe provisoire en texte clair. Après la connexion, l'utilisateur pourra voir la page d'accueil du site mais toute tentative de navigation vers une autre page l'amènera au formulaire de nouveau mot de passe.
 

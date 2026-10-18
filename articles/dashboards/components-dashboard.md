@@ -13,7 +13,7 @@ Pour ouvrir le tableau de bord des composants, sélectionnez l'icône du tableau
 
 ## Capture d'écran
 
-![Tableau de bord des composants](../../../en/images/dashboards/components-dashboard/01-components-dashboard.png)
+![Tableau de bord des composants](../../../fr/images/dashboards/components-dashboard/01-components-dashboard.png)
 
 *Traduit par openai.com*
 ```

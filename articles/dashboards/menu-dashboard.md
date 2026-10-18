@@ -15,7 +15,7 @@ Vous pouvez avoir autant de menus de Site et d'Administrateur que vous le souhai
 
 ## Capture d'écran
 
-![Tableau de bord du menu](../../../en/images/dashboards/menu-dashboard/01-menus-dashboard.png)
+![Tableau de bord du menu](../../../fr/images/dashboards/menu-dashboard/01-menus-dashboard.png)
 
 *Traduit par openai.com*
 

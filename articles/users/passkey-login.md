@@ -71,7 +71,7 @@ défaut. Un bouton **Se connecter avec une clé d’accès** sera présent dans
 les écrans de connexion par défaut de Joomla 4 et des versions ultérieures,
 comme illustré dans l’écran de connexion de l’administration :
 
-![formulaire de connexion sécurisé de l’administration](../../../en/images/users/passkey-login/02-login-form.png)
+![formulaire de connexion sécurisé de l’administration](../../../fr/images/users/passkey-login/02-login-form.png)
 
 ## Configuration de l’utilisateur
 
@@ -98,7 +98,7 @@ saisissant un code PIN ou une combinaison de ces méthodes selon votre
 authentificateur — le message disparaît, l’authentificateur est enregistré
 et l’écran se présente comme suit :
 
-![authentificateur enregistré pour la connexion sécurisée de l’administration](../../../en/images/users/passkey-login/04-registered-authenticator.png)
+![authentificateur enregistré pour la connexion sécurisée de l’administration](../../../fr/images/users/passkey-login/04-registered-authenticator.png)
 
 Il est très important de noter que vous pouvez uniquement enregistrer ou
 supprimer des authentificateurs sur votre propre compte utilisateur. Pour

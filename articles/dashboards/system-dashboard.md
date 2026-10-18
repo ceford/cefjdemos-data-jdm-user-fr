@@ -24,7 +24,7 @@ Les éléments individuels sont couverts dans d'autres tutoriels.
 
 ## Capture d'écran
 
-![Tableau de bord du système](../../../en/images/dashboards/system-dashboard/01-system-dashboard.png)
+![Tableau de bord du système](../../../fr/images/dashboards/system-dashboard/01-system-dashboard.png)
 
 *Traduit par openai.com*
 

@@ -56,7 +56,7 @@ Quand vous êtes prêt, sélectionnez le bouton **Enregistrer & Fermer**.
 Le module sera publié dans la barre latérale du site web et affichera
 le texte que vous avez saisi.
 
-![Exemple de Module Personnalisé](../../../en/images/modules/custom-module/01-modules-site-message.png)
+![Exemple de Module Personnalisé](../../../fr/images/modules/custom-module/01-modules-site-message.png)
 
 *Traduit par openai.com*
 

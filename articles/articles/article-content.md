@@ -13,7 +13,7 @@
 
 La capture d'écran suivante montre le formulaire d'édition avec un article qui a déjà été enregistré.
 
-![Le formulaire d'édition de contenu](../../../en/images/articles/article-content/01-articles-edit-content.png)
+![Le formulaire d'édition de contenu](../../../fr/images/articles/article-content/01-articles-edit-content.png)
 
 ## Saisie de Données
 

@@ -55,7 +55,7 @@ Lorsque vous êtes prêt, sélectionnez le bouton **Sauvegarder & Fermer**.
 
 Le module sera publié dans la barre latérale du site Web et affichera une liste de liens dictée par le nombre de mois à afficher définis dans le module.
 
-![Exemple de Module d'Articles Archivés](../../../en/images/modules/articles-archived-module/01-modules-archived-articles.png)
+![Exemple de Module d'Articles Archivés](../../../fr/images/modules/articles-archived-module/01-modules-archived-articles.png)
 
 ## Conseils
 

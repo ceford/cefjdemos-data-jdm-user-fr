@@ -19,7 +19,7 @@ Pour afficher la liste du Journal des actions de l'utilisateur :
 
 - Sélectionnez **Utilisateurs → Journal des actions de l'utilisateur** dans le menu Administrateur.
 
-![page de la liste du journal des actions de l'utilisateur](../../../en/images/users/user-actions-log/01-user-actions-log-list.png)
+![page de la liste du journal des actions de l'utilisateur](../../../fr/images/users/user-actions-log/01-user-actions-log-list.png)
 
 Depuis cette page, un Super Utilisateur a une vue d'ensemble globale de toutes les activités des utilisateurs effectuées sur un site.
 
@@ -34,7 +34,7 @@ Depuis cette page, un Super Utilisateur a une vue d'ensemble globale de toutes l
 
 Le formulaire Options du Journal des actions de l'utilisateur permet au Super Utilisateur de sélectionner les événements à enregistrer et de décider d'inclure ou non les adresses IP dans les données du journal.
 
-![page des options du journal des actions de l'utilisateur](../../../en/images/users/user-actions-log/02-user-actions-log-options.png)
+![page des options du journal des actions de l'utilisateur](../../../fr/images/users/user-actions-log/02-user-actions-log-options.png)
 
 ## Plugins
 
@@ -56,7 +56,7 @@ Lorsqu'il est activé, ce plugin exporte les données du journal des actions pou
 
 Ce module est affiché uniquement pour les Super Utilisateurs dans le tableau de bord d'accueil.
 
-![module de journal des actions de l'utilisateur](../../../en/images/users/user-actions-log/03-user-actions-log-module.png)
+![module de journal des actions de l'utilisateur](../../../fr/images/users/user-actions-log/03-user-actions-log-module.png)
 
 ## Comment connecter une extension au système
 

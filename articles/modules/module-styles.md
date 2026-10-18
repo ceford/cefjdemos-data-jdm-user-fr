@@ -65,7 +65,7 @@ Le titre du module est maintenant en bleu foncé. Il existe plusieurs façons de
 * Changez également la bordure inférieure de l'en-tête.
 * Appliquez ce style à plusieurs modules au lieu de les traiter un par un
 
-![Exemple de module d'articles archivés](../../../en/images/modules/module-styles/01-modules-site-message.png)
+![Exemple de module d'articles archivés](../../../fr/images/modules/module-styles/01-modules-site-message.png)
 
 *Traduit par openai.com*
 

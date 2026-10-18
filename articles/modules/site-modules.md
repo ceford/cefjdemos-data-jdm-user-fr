@@ -54,15 +54,15 @@ Et la liste suivante montre les positions de module disponibles par nom :
 
 Les modules de base sont ceux fournis avec une nouvelle installation de Joomla. Il existe des milliers de modules supplémentaires disponibles auprès de fournisseurs tiers. Supposons que vous souhaitiez afficher une image aléatoire pour rendre votre site plus intéressant pour les visiteurs. Dans le menu Administrateur, sélectionnez **Contenu → Modules du site** pour voir la liste des modules de site déjà en cours d'utilisation :
 
-![Liste des modules du site](../../../en/images/modules/site-modules/02-cassiopeia-modules-list.png)
+![Liste des modules du site](../../../fr/images/modules/site-modules/02-cassiopeia-modules-list.png)
 
 Sélectionnez le bouton Nouveau pour voir une liste des modules de site disponibles à installer :
 
-![Modules du site disponibles](../../../en/images/modules/site-modules/03-cassiopeia-modules-available.png)
+![Modules du site disponibles](../../../fr/images/modules/site-modules/03-cassiopeia-modules-available.png)
 
 Faites défiler la liste et sélectionnez le module Image aléatoire. Cela ouvrira le formulaire d'édition **Modules : Image aléatoire** prêt à être complété.
 
-![Module d'image aléatoire](../../../en/images/modules/site-modules/04-cassiopeia-module-random-image.png)
+![Module d'image aléatoire](../../../fr/images/modules/site-modules/04-cassiopeia-module-random-image.png)
 
 - **Titre** Il s'agit d'un champ obligatoire.
 - **Type d'image** Le format par défaut est jpg.
@@ -82,7 +82,7 @@ Après avoir enregistré, vous pourriez avoir besoin de changer l’ordre des mo
 
 ## Voir le Site
 
-![Vue du site du module d'image aléatoire](../../../en/images/modules/site-modules/05-cassiopeia-module-random-image-site.png)
+![Vue du site du module d'image aléatoire](../../../fr/images/modules/site-modules/05-cassiopeia-module-random-image-site.png)
 
 Vérifiez l'apparence du site. Dans ce cas, il pourrait être judicieux de centrer l'image. Cela peut être fait comme suit :
 

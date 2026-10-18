@@ -15,7 +15,7 @@ Pour accéder au formulaire *Média : Options*, sélectionnez le bouton **Option
 
 ## Capture d'écran
 
-![Le formulaire d'options des médias](../../../en/images/media/media-options/01-media-options.png)
+![Le formulaire d'options des médias](../../../fr/images/media/media-options/01-media-options.png)
 
 ## Chemin vers les Fichiers et les Dossiers
 
@@ -29,7 +29,7 @@ Dans le formulaire d'Options, entrez le nom du dossier dans le champ **Chemin ve
 
 Une fois configuré, vous pourrez choisir entre les dossiers images et fichiers dans la partie Locale de la vue Média.
 
-![La page des médias](../../../en/images/media/media-options/02-media-sample-data-cassiopeia.png)
+![La page des médias](../../../fr/images/media/media-options/02-media-sample-data-cassiopeia.png)
 
 ## Types d'images ou de documents supplémentaires
 

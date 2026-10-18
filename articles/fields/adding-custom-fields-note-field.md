@@ -15,7 +15,7 @@ Le type de champ de formulaire de note permet de créer des titres, des textes, 
 
 ### Onglet Général
 
-![Création d’un champ de note](../../../en/images/fields/adding-custom-fields-note-field/01-fields-note-edit.png)
+![Création d’un champ de note](../../../fr/images/fields/adding-custom-fields-note-field/01-fields-note-edit.png)
 
 - **Type** Nombre, qui ne peut pas être modifié après sélection.
 - **Name** Le nom unique du champ.
@@ -42,7 +42,7 @@ Le type de champ de formulaire de note permet de créer des titres, des textes, 
 
 Dans le formulaire de saisie des données, le champ de note apparaît parmi les autres champs sous forme de texte stylisé conformément aux choix de style définis dans le champ. Il peut contenir des instructions ou des informations.
 
-![Saisie des données du champ numérique](../../../en/images/fields/adding-custom-fields-note-field/02-fields-note-data-entry.png)
+![Saisie des données du champ numérique](../../../fr/images/fields/adding-custom-fields-note-field/02-fields-note-data-entry.png)
 
 **Astuce :** Utilisez le mécanisme de tri des champs pour classer la note parmi les autres champs. Vous pouvez disposer de plusieurs champs de note différents pour structurer et documenter vos champs.
 
@@ -50,6 +50,6 @@ Dans le formulaire de saisie des données, le champ de note apparaît parmi les 
 
 Si *Afficher dans l’interface publique* est défini sur *Oui*, le champ de note apparaît parmi les autres champs dans l’interface publique. Il peut alors contenir des informations générales communes à un groupe d’articles.
 
-![Note field site display](../../../en/images/fields/adding-custom-fields-note-field/03-fields-note-site.png)
+![Note field site display](../../../fr/images/fields/adding-custom-fields-note-field/03-fields-note-site.png)
 
 *Traduit par openai.com*

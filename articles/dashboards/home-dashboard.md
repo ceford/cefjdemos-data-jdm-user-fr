@@ -24,7 +24,7 @@ La plupart des éléments sont des liens explicites qui dupliquent ceux du menu 
 
 ## Capture d'écran
 
-![Tableau de bord d'accueil](../../../en/images/dashboards/home-dashboard/01-home-dashboard.png)
+![Tableau de bord d'accueil](../../../fr/images/dashboards/home-dashboard/01-home-dashboard.png)
 
 *Traduit par openai.com*
 

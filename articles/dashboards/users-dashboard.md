@@ -13,7 +13,7 @@ Le tableau de bord des utilisateurs est accessible via l'icône à droite de l'�
 
 ## Capture d'écran
 
-![Tableau de bord des utilisateurs](../../../en/images/dashboards/users-dashboard/01-users-dashboard.png)
+![Tableau de bord des utilisateurs](../../../fr/images/dashboards/users-dashboard/01-users-dashboard.png)
 
 *Traduit par openai.com*  
 

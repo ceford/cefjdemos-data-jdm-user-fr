@@ -24,7 +24,7 @@ La section *Generic Field* permet de saisir des paires *Title* et *Value* en plu
 
 Voici un exemple de schéma d'organisation dans un formulaire de modification d'article.
 
-![An organisation schema edit form](../../../en/images/schemas/organisation/01-edit-schema-organisation.png)
+![An organisation schema edit form](../../../fr/images/schemas/organisation/01-edit-schema-organisation.png)
 
 *Traduit par openai.com*
 

@@ -36,7 +36,7 @@ La section *Champ Générique* permet de saisir des paires *Titre* et *Valeur* e
 
 Ci-dessous un exemple de schéma d'Article dans un formulaire de modification d'Article.
 
-![An article schema edit form](../../../en/images/schemas/article/01-edit-schema-article.png)
+![An article schema edit form](../../../fr/images/schemas/article/01-edit-schema-article.png)
 
 *Traduit par openai.com*
 

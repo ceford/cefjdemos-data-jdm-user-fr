@@ -65,7 +65,7 @@ En continuant avec l'exemple des Montagnes :
 
 Ouvrez ou rechargez l'affichage du site pour vérifier que vos menus et articles s'affichent comme prévu.
 
-![vue du site des associations multilingues](../../../en/images/languages/multilingual-associations/03-multilingual-associations-site.png)
+![vue du site des associations multilingues](../../../fr/images/languages/multilingual-associations/03-multilingual-associations-site.png)
 
 *Traduit par openai.com*
 

@@ -23,7 +23,7 @@ pour ce champ. Un seul répertoire peut être sélectionné.
 - **Classe d'image** La classe ajoutée à la balise img à la sortie. Une classe de *w-25*
 réduira la largeur de l'image à 25 % de son conteneur parent.
 
-![création de champ média](../../../en/images/fields/adding-custom-fields-media-field/01-fields-media-edit.png)
+![création de champ média](../../../fr/images/fields/adding-custom-fields-media-field/01-fields-media-edit.png)
 
 **Remarque :** Dans cet exemple, l'inclusion du type de champ dans le Titre est uniquement à des fins
 de démonstration. Omettez-le dans vos propres titres de champ.
@@ -33,14 +33,14 @@ de démonstration. Omettez-le dans vos propres titres de champ.
 
 Le formulaire de saisie de données est une version simplifiée du formulaire de sélection de médias.
 
-![entrée de données du champ média](../../../en/images/fields/adding-custom-fields-media-field/02-fields-media-data-entry.png)
+![entrée de données du champ média](../../../fr/images/fields/adding-custom-fields-media-field/02-fields-media-data-entry.png)
 
 
 ## Affichage des Données
 
 La capture d'écran suivante du site montre le champ affiché dans un article. L'option *Affichage automatique* est responsable de la position du champ et votre modèle est responsable du design du champ.
 
-![affichage du champ média site](../../../en/images/fields/adding-custom-fields-media-field/03-fields-media-site.png)
+![affichage du champ média site](../../../fr/images/fields/adding-custom-fields-media-field/03-fields-media-site.png)
 
 *Traduit par openai.com*
 

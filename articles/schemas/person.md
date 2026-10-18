@@ -29,7 +29,7 @@ La section *Generic Field* permet de saisir des paires *Title* et *Value* en plu
 
 Voici un exemple de schéma de Personne dans un formulaire de modification d'Article.
 
-![A person schema edit form](../../../en/images/schemas/person/01-edit-schema-person.png)
+![A person schema edit form](../../../fr/images/schemas/person/01-edit-schema-person.png)
 
 *Traduit par openai.com*
 

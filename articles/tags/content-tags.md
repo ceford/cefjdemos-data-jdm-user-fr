@@ -36,7 +36,7 @@ seuls certains utilisateurs puissent ajouter de nouvelles étiquettes.
 La capture d’écran suivante montre des étiquettes utilisées sur un site contenant des articles sur les 
 sites du patrimoine mondial de l’UNESCO. Dans ce cas, chaque étiquette possède une couleur distinctive. 
 
-![la page de liste des étiquettes](../../../en/images/tags/content-tags/01-tags-example.png)
+![la page de liste des étiquettes](../../../fr/images/tags/content-tags/01-tags-example.png)
 
 Lorsque des étiquettes sont créées, elles s’affichent sous forme de liens dans les éléments associés. 
 Les styles et les positions des étiquettes sont définis par le modèle du site. Elles sont souvent 
@@ -54,7 +54,7 @@ Cette capture d’écran montre des étiquettes dans une structure utilisée pou
 Chaque langue possède une liste d’étiquettes avec une étiquette de langue comme parent. 
 L’étiquette parente est utilisée dans les modules *Étiquettes populaires* et *Étiquettes similaires*.
 
-![la page de liste des étiquettes](../../../en/images/tags/content-tags/02-tags-list.png)
+![la page de liste des étiquettes](../../../fr/images/tags/content-tags/02-tags-list.png)
 
 Quelles que soient les méthodes utilisées pour créer les étiquettes, elles peuvent être trouvées dans cette liste.
 
@@ -63,7 +63,7 @@ Quelles que soient les méthodes utilisées pour créer les étiquettes, elles p
 
 ### L’onglet Détails de l’étiquette
 
-![onglet d’options du formulaire de modification d’une étiquette affichant les classes CSS Bootstrap](../../../en/images/tags/content-tags/03-edit-tag-details-tab.png)
+![onglet d’options du formulaire de modification d’une étiquette affichant les classes CSS Bootstrap](../../../fr/images/tags/content-tags/03-edit-tag-details-tab.png)
 
 - **Titre** Il s’agit du seul champ *obligatoire*. 
 - **Alias** Il est créé à partir du titre lors de l’enregistrement.
@@ -83,7 +83,7 @@ Quelles que soient les méthodes utilisées pour créer les étiquettes, elles p
 - **Classe CSS du lien de l’étiquette** Par défaut, les étiquettes s’affichent sous forme de bouton bleu. Vous pouvez saisir ici des déclarations de classe pour personnaliser l’apparence des étiquettes et attribuer des couleurs différentes à chacune. Exemple : `bg-danger-subtle border border-danger` sont des classes Bootstrap qui produisent un bouton rose avec une bordure rouge.
 - **Image d’accroche et image complète** Définissez des images pour l’étiquette : une image d’accroche pour la liste des étiquettes et/ou une image complète pour la page de l’étiquette.
 
-![onglet d’options du formulaire de modification d’une étiquette affichant les classes CSS Bootstrap](../../../en/images/tags/content-tags/04-edit-tag-options-tab.png)
+![onglet d’options du formulaire de modification d’une étiquette affichant les classes CSS Bootstrap](../../../fr/images/tags/content-tags/04-edit-tag-options-tab.png)
 
 ### L’onglet Publication
 
@@ -130,12 +130,12 @@ Vous pouvez manipuler la liste de plusieurs façons :
 
 Une fois les tags créés sur votre site, ils sont disponibles pour être utilisés dans le contenu et dans des modules tels que **Tags populaires** et **Tags similaires**. Les exemples suivants montrent à quoi cela peut ressembler sur un site utilisant le template par défaut **Cassiopeia**.
 
-![tags affichés dans un article et dans les modules de tags populaires et de tags similaires](../../../en/images/tags/content-tags/05-tag-modules-site-view.png)
+![tags affichés dans un article et dans les modules de tags populaires et de tags similaires](../../../fr/images/tags/content-tags/05-tag-modules-site-view.png)
 
 Lorsque vous sélectionnez l’un des tags, vous êtes dirigé vers une page qui répertorie
 tous les éléments associés à ce tag particulier :
 
-![exemple d’utilisation des tags sur un site avec un labrador noir](../../../en/images/tags/content-tags/06-items-with-cultural-site-tag.png)
+![exemple d’utilisation des tags sur un site avec un labrador noir](../../../fr/images/tags/content-tags/06-items-with-cultural-site-tag.png)
 
 La liste des éléments est une liste filtrée du contenu du site comportant le tag sélectionné.
 Une zone de filtre est fournie pour faciliter la recherche d’éléments à mesure que la liste s’allonge. 

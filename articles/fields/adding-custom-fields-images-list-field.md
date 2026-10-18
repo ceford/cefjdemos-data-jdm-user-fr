@@ -23,7 +23,7 @@ Les options spéciales de ce champ sont les suivantes :
 limite la largeur de chaque image à 25 % de son conteneur et ajoute une unité
 de marge intérieure.
 
-![création du champ de liste d’images](../../../en/images/fields/adding-custom-fields-images-list-field/01-fields-images-list-edit.png)
+![création du champ de liste d’images](../../../fr/images/fields/adding-custom-fields-images-list-field/01-fields-images-list-edit.png)
 
 **Remarque :** Dans cet exemple, l’inclusion du type de champ dans le titre sert uniquement à
 des fins de démonstration. Ne l’incluez pas dans les titres de vos propres champs.
@@ -32,7 +32,7 @@ des fins de démonstration. Ne l’incluez pas dans les titres de vos propres ch
 
 Simple : sélectionnez une ou plusieurs images dans la liste.
 
-![saisie des données du champ de liste d’images](../../../en/images/fields/adding-custom-fields-images-list-field/02-fields-images-list-data-entry.png)
+![saisie des données du champ de liste d’images](../../../fr/images/fields/adding-custom-fields-images-list-field/02-fields-images-list-data-entry.png)
 
 ## Affichage des données
 
@@ -40,6 +40,6 @@ La capture d’écran suivante du site montre le champ affiché dans un article.
 *Affichage automatique* détermine la position du champ, tandis que votre modèle
 détermine la conception du champ.
 
-![affichage du champ de liste d’images sur le site](../../../en/images/fields/adding-custom-fields-images-list-field/03-fields-images-list-site.png)
+![affichage du champ de liste d’images sur le site](../../../fr/images/fields/adding-custom-fields-images-list-field/03-fields-images-list-site.png)
 
 *Traduit par openai.com*

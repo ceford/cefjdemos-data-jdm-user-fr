@@ -58,11 +58,11 @@ La capture d'écran suivante montre le lien *Catégories d'Articles* sur le Tabl
 vers la liste des catégories et le *Symbole Plus* adjacent qui mène au formulaire 
 *Articles : Nouvelle Catégorie*.
 
-![L'icône d'ajout de catégorie mise en évidence sur le tableau de bord d'accueil](../../../en/images/articles/articles-categories/01-category-add-via-home-dashboard.png)  
+![L'icône d'ajout de catégorie mise en évidence sur le tableau de bord d'accueil](../../../fr/images/articles/articles-categories/01-category-add-via-home-dashboard.png)  
 
 ## Les articles : Formulaire de nouvelle catégorie
 
-![Le formulaire d'édition de nouvelle catégorie d'articles](../../../en/images/articles/articles-categories/02-article-category-edit.png)
+![Le formulaire d'édition de nouvelle catégorie d'articles](../../../fr/images/articles/articles-categories/02-article-category-edit.png)
 
 La capture d'écran ci-dessus montre le formulaire rempli. Il n'y a que deux champs qui nécessitent un contenu. Tout le reste a des valeurs par défaut ou nulles que vous pouvez laisser pour l'instant et remplir plus tard si besoin est.
 
@@ -98,7 +98,7 @@ Les paramètres de cet onglet affectent l'apparence de cette catégorie dans les
 
 Fermer le formulaire d'édition mène à la page de liste **Articles : Catégories**.
 
-![Une liste de catégories filtrée par tag Nature](../../../en/images/articles/articles-categories/03-categories-list.png)
+![Une liste de catégories filtrée par tag Nature](../../../fr/images/articles/articles-categories/03-categories-list.png)
 
 ### Enregistrer dans le menu en tant que liste
 
@@ -114,7 +114,7 @@ Dans l'onglet *Affichage de la page*, essayez de régler le champ *Afficher l'en
 
 La capture d'écran suivante montre l'affichage du site d'une page de blog de catégorie en développement.
 
-![Page de blog de la catégorie Mammifères](../../../en/images/articles/articles-categories/04-category-blog-site-view.png)
+![Page de blog de la catégorie Mammifères](../../../fr/images/articles/articles-categories/04-category-blog-site-view.png)
 
 ## Conseils
 

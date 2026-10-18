@@ -47,7 +47,7 @@ Vous pouvez faire apparaître le module de formulaire de connexion sur une ou pl
   - **Sur toutes les pages sauf celles sélectionnées** : Le formulaire de connexion apparaîtra sur toutes les pages non sélectionnées.
 - **Sélection du menu** : Affiche une liste de tous les menus et éléments de menu parmi lesquels un ou plusieurs peuvent être sélectionnés. Ce champ est utilisé uniquement si le champ **Menus** est défini sur **Sélectionner des éléments de menu dans la liste**.
 
-  ![assignation de menu du module](../../../en/images/modules/enabling-the-login-form-module/01-modules-login-menu-assignment.png)
+  ![assignation de menu du module](../../../fr/images/modules/enabling-the-login-form-module/01-modules-login-menu-assignment.png)
 
 ## Pour personnaliser le module de formulaire de connexion
 

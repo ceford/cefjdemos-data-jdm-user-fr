@@ -13,7 +13,7 @@ Un module de menu peut être utilisé pour afficher un menu horizontal (généra
 
 Cependant, dans un menu vertical (barre latérale), il est souvent souhaitable de laisser un sous-menu ouvert lorsqu'il contient l'élément de menu actif. Dans Joomla 6.0, une nouvelle classe CSS, `nav-active-open`, a été introduite spécifiquement pour permettre de contrôler si les sous-menus sont automatiquement ouverts au chargement de la page pour l'élément de menu actif. La définition de cette classe permet désormais d'obtenir ce comportement. La classe est définie dans le module via l'administration.
 
-![paramètre de classe de menu dans l'administration pour nav-active-open afin que le menu reste ouvert sur l'élément actif](../../../en/images/menus/keep-submenus-open/01-menu-class-setting.png)
+![paramètre de classe de menu dans l'administration pour nav-active-open afin que le menu reste ouvert sur l'élément actif](../../../fr/images/menus/keep-submenus-open/01-menu-class-setting.png)
 
 ## Comment créer un menu de barre latérale sans basculement de menu déroulant
 
@@ -25,7 +25,7 @@ Voici comment cette surcharge particulière du modèle est réalisée :
 
 2. Passez à l'onglet Créer des surcharges et sélectionnez mod_menu :
 
-![sélection de la surcharge du modèle de menu de module](../../../en/images/menus/keep-submenus-open/02-create-override-select-mod-menu.png)
+![sélection de la surcharge du modèle de menu de module](../../../fr/images/menus/keep-submenus-open/02-create-override-select-mod-menu.png)
 
 Cela copiera tous les fichiers de mise en page du menu depuis le module de menu dans la surcharge. L'onglet Éditeur s'affiche ensuite.
 
@@ -33,7 +33,7 @@ Cela copiera tous les fichiers de mise en page du menu depuis le module de menu 
 
 4. Créez un nouveau fichier dans le dossier html → mod_menu. Son nom ne doit pas contenir de caractère de soulignement. Dans cet exemple, le nouveau fichier est nommé `treedefault.php`. Cela vous permet de sélectionner soit la mise en page de menu par défaut, soit cette autre mise en page dans n'importe lequel de vos modules de menu. Dans la liste suivante des fichiers de surcharge, l'original est encadré en rouge et la nouvelle alternative est encadrée en vert.
 
-![onglet de modification de la surcharge mod_menu - ouverture de default.php](../../../en/images/menus/keep-submenus-open/03-edit-mod-menu.png)
+![onglet de modification de la surcharge mod_menu - ouverture de default.php](../../../fr/images/menus/keep-submenus-open/03-edit-mod-menu.png)
 
 4. Modifiez le nouveau fichier de mise en page. Les étapes suivantes sont répertoriées dans l'ordre inverse afin de
 préserver les numéros de ligne pendant le processus de modification :
@@ -187,6 +187,6 @@ $startLevel = (int) $params->get('startLevel', 1);
 
 Le résultat est une simple liste, sans fonctionnalité de basculement pour le module de menu latéral, illustrée ici à gauche :
 
-![résultat avec surcharge de modèle - simple liste sans boutons ni fonctionnalité de basculement](../../../en/images/menus/keep-submenus-open/05-site-result.png)
+![résultat avec surcharge de modèle - simple liste sans boutons ni fonctionnalité de basculement](../../../fr/images/menus/keep-submenus-open/05-site-result.png)
 
 *Traduit par openai.com*

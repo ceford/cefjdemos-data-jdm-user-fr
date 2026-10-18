@@ -77,7 +77,7 @@ La nouvelle clé peut maintenant être traduite dans chaque langue. Les traducti
 - Enregistrez & Fermez le formulaire.
 - Répétez le processus de traduction pour chaque langue.
 
-![formulaire d'édition des substitutions de langue](../../../en/images/languages/language-overrides/01-language-overrides-edit.png)
+![formulaire d'édition des substitutions de langue](../../../fr/images/languages/language-overrides/01-language-overrides-edit.png)
 
 Enfin, vérifiez que la traduction a été mise en œuvre.
 

@@ -28,7 +28,7 @@ La section *Champ générique* permet d'entrer des paires *Titre* et *Valeur* en
 
 Ci-dessous un exemple de schéma d'Événement dans un formulaire de modification d'Article.
 
-![An event schema edit form](../../../en/images/schemas/event/01-edit-schema-event.png)
+![An event schema edit form](../../../fr/images/schemas/event/01-edit-schema-event.png)
 
 *Traduit par openai.com*
 

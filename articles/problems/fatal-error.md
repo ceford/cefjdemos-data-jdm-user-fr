@@ -16,11 +16,11 @@ De temps en temps, Joomla peut afficher une page d'erreur au lieu de la page que
 
 ### Page d'erreur système
 
-![Page d'erreur fatale du système](../../../en/images/problems/fatal-error/01-fatal-error.png)
+![Page d'erreur fatale du système](../../../fr/images/problems/fatal-error/01-fatal-error.png)
 
 ### Page d'erreur de modèle
 
-![Page d'erreur de modèle](../../../en/images/problems/fatal-error/02-template-error.png)
+![Page d'erreur de modèle](../../../fr/images/problems/fatal-error/02-template-error.png)
 
 ## Comment Résoudre
 

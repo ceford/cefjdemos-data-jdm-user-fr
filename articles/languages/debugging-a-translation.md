@@ -62,7 +62,7 @@ Ce plugin système contrôle ce qui est affiché lorsque le débogage est activ�
 
 Dans l'onglet **Langue** :
 
-![plugin système debug](../../../en/images/languages/debugging-a-translation/01-languages-debug-plugin.png)
+![plugin système debug](../../../fr/images/languages/debugging-a-translation/01-languages-debug-plugin.png)
 
 * **Erreurs Lors de l'Analyse des Fichiers de Langue** Afficher une erreur si un fichier de langue ne parvient pas à se charger.
 

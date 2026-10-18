@@ -19,7 +19,7 @@ Ce sont des problèmes que le composant Média peut gérer.
 
 À titre d'exemple, l'image suivante montre un groupe d'animaux qui est un peu trop grand pour son usage prévu. Elle pourrait être recadrée ou redimensionnée.
 
-![Image d'animaux](../../../en/images/media/media-image-crop-resize-rotate/01-media-crop-serengeti.png)
+![Image d'animaux](../../../fr/images/media/media-image-crop-resize-rotate/01-media-crop-serengeti.png)
 
 ## Recadrage
 
