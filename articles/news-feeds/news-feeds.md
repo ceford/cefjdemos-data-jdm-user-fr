@@ -39,13 +39,13 @@ Le flux RSS ne peut pas être masqué dans une page d'accueil d'Articles en vede
 
 Il existe un module de base que vous pouvez placer sur les pages de blog en vedette ou de catégorie pour fournir un lien de syndication. Remplissez les champs dans l'onglet du module. La plupart ont des valeurs par défaut appropriées. Si le champ Étiquette est laissé vide, l'étiquette par défaut en anglais est *Entrées de flux*. Dans l'onglet *Affectation du menu*, sélectionnez **Sur toutes les pages**. Le module n'apparaîtra que sur les pages de blog en vedette et de catégorie.
 
-![Saisie de données des flux de syndication](../../../en/images/news-feeds/news-feeds/02-news-syndication-feeds-form.png)
+![Saisie de données des flux de syndication](../../../fr/images/news-feeds/news-feeds/02-news-syndication-feeds-form.png)
 
 N'oubliez pas d'assigner le module à une *Position* et de le marquer comme *Publié*.
 
 Dans l'affichage de la page du site, le module affiche un lien. Il n'est pas destiné à être cliqué à moins que vous n'ayez un lecteur de nouvelles local configuré. Le lien doit être copié pour être utilisé dans un lecteur de nouvelles sur un autre site ou une application de lecteur de nouvelles.
 
-![Affichage des flux de syndication](../../../en/images/news-feeds/news-feeds/03-news-syndication-feeds-display.png)
+![Affichage des flux de syndication](../../../fr/images/news-feeds/news-feeds/03-news-syndication-feeds-display.png)
 
 Notez que le lien concerne les éléments de cette page. Donc, si votre site a plusieurs pages de blog de catégorie, vous aurez plusieurs flux RSS différents.
 
